@@ -64,9 +64,10 @@
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-                        <h4 class="section-heading">Programación web</h4>
+                        <h4 class="section-heading">Eliminación de cuentas y desbloqueos</h4>
                         <p class="text-muted">
-                            Diseño, maquetado, y programación de páginas y aplicaciones web.
+                            Eliminamos cuentas de Google, iCloud, MI, M@croPay, P@yJoy, reporte de
+                            extravío y liberación de equipos.
                         </p>
                 </div>
                 <div class="col-md-4">
