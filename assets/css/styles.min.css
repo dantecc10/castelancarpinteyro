@@ -169,13 +169,13 @@
     --bs-border-radius-xl: 1rem;
     --bs-border-radius-2xl: 2rem;
     --bs-border-radius-pill: 50rem;
-    --bs-link-color: #fd0000;
+    --bs-link-color: #567ed6;
     --bs-link-hover-color: #cba72b;
     --bs-code-color: #d63384;
     --bs-highlight-bg: #fff3cd
 }
 
 #mainNav .navbar-brand {
-    color: #fd0000;
+    color: #567ed6;
     font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive
 }
