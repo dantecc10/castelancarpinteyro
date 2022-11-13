@@ -1,0 +1,4 @@
+@import url("CSS GLOBAL - TEMA CLARO.css");
+@media (prefers-color-scheme: dark) {
+    @import url("CSS GLOBAL - TEMA OSCURO.css");
+}
