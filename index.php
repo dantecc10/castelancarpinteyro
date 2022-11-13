@@ -316,7 +316,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright&nbsp;© KALICEL 2022</span>
+                    <span class="copyright">Copyright&nbsp;© Dante Castelán Carpinteyro - <i>Führer Industries</i> - 2022</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
