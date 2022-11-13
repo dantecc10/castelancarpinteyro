@@ -1,0 +1,70 @@
+/*Reglas generales*/
+.bordeRojo {
+    -webkit-text-stroke: 2px #fe0000;
+}
+
+#títuloNavbar {
+    font-family: revert;
+    text-decoration: none;
+}
+
+.modal-content {
+    background-image: url("../img/pcb-blackwebp.webp");
+    color: white;
+}
+
+.modal-content .modal-body h2.text-uppercase {
+    /*margin-left: -426px;
+    font-size: 30px;*/
+    -webkit-text-stroke: 2.5px red;
+    font-family: revert;
+    text-decoration: none;
+}
+
+.modal-content .modal-body p.text-muted.item-intro {}
+
+/*Reglas responsivas*/
+@media only screen and (max-width: 768px) {
+    #títuloNavbar {
+        margin-left: -426px;
+        font-size: 30px;
+        -webkit-text-stroke: 2.5px red;
+        font-family: revert;
+        text-decoration: none;
+    }
+
+    #LogoNavBar {
+        height: auto;
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 991px) {
+    #títuloNavbar {
+        margin-left: -426px;
+        font-size: 30px;
+        -webkit-text-stroke: 2.5px red;
+        font-family: revert;
+        text-decoration: none;
+    }
+
+    #LogoNavBar {
+        height: auto;
+        width: 5%;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    #títuloNavbar {
+        margin-left: -300px;
+        font-size: 30px;
+        -webkit-text-stroke: 2.5px red;
+        font-family: revert;
+        text-decoration: none;
+    }
+
+    #LogoNavBar {
+        height: auto;
+        width: 7.55%;
+    }
+}
