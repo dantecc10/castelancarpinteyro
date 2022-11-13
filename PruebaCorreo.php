@@ -12,7 +12,7 @@ echo "The email message was sent.";
 
 
 //Segunda parte
-use PHPMailer/PHPMailer/PHPMailer;
+use PHPMailer;
 
 require '../vendor/autoload.php';
 $mail = new PHPMailer;
