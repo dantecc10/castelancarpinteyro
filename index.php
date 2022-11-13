@@ -64,12 +64,12 @@
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-                        <h4 class="section-heading">Eliminación de cuentas y desbloqueos</h4>
-                        <p class="text-muted">
-                            Eliminamos cuentas de Google, iCloud, MI, M@croPay, P@yJoy, reporte de
-                            extravío y liberación de equipos.
-                        </p>
                     </span>
+                    <h4 class="section-heading">Eliminación de cuentas y desbloqueos</h4>
+                    <p class="text-muted">
+                        Eliminamos cuentas de Google, iCloud, MI, M@croPay, P@yJoy, reporte de
+                        extravío y liberación de equipos.
+                    </p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="fa-stack-1x fa-inverse" style="margin-top: 32px;">
