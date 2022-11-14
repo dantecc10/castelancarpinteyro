@@ -21,6 +21,10 @@
     text-decoration: none;
 }
 
+#LogoNavBar {
+    border-radius: 50%;
+}
+
 .modal-content .modal-body p.text-muted.item-intro {}
 
 /*Reglas responsivas*/
