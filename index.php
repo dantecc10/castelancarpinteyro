@@ -35,6 +35,7 @@
                     <li class="nav-item"><a class="nav-link" href="#políticas">Políticas de garantía</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="btn btn-primary btn-success"><a class="nav-link" href="#contacto">Iniciar sesión</a></li>
                 </ul>
             </div>
         </div>
