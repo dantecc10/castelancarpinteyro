@@ -225,9 +225,9 @@
                     <div class="team-member">
                         <img class="rounded-circle mx-auto" src="/assets/img/team/luis_erf.png">
                         <h4>Luis Enrique Reyes Fernández</h4>
+                        </p>
                         <p class="text-muted">
                             Ingeniería Mecatrónica
-                        </p>
                         <ul class="list-inline social-buttons">
                             <li class="list-inline-item"><a href="https://www.facebook.com/qiiqeziithoo.reyezz"><i class="fa fa-facebook"></i></a></li>
                             <li class="list-inline-item"><a href="https://wa.me/522411352236?text=Hola,%20quiero%20consultar%20acerca%20de%20una%20reparación...%20"><i class="fa fa-whatsapp"></i></a></li>
@@ -315,9 +315,9 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="https://www.facebook.com/kalicelrepair"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="https://wa.me/522411352236?text=Hola,%20quiero%20consultar%20acerca%20de%20una%20reparación...%20"><i class="fa fa-whatsapp"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.tiktok.com/@kalicelrepair"><i class="fa fa-tiktok"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/dante.castelan.carpinteyro"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://wa.me/527979773095?text=Hola,%20tengo%20algunas%20dudas%20sobre%20programación"><i class="fa fa-whatsapp"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.twitter.com/dantecc10"><i class="fa fa-twitter"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
