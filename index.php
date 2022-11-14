@@ -119,9 +119,9 @@
                         <img class="img-fluid" src="/assets/img/iOS-Android.webp">
                     </a>
                     <div class="portfolio-caption">
-                        <h4></h4>
+                        <h4>Contrucción</h4>
                         <p class="text-muted">
-                            para iOS y Android.
+                            de una base de datos.
                         </p>
                     </div>
                 </div>
@@ -135,9 +135,9 @@
                         <img class="img-fluid" src="/assets/img/reparación-display-samsung.png">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Reconstrucción</h4>
+                        <h4>Crear un sitio</h4>
                         <p class="text-muted">
-                            de pantallas y cambio de display.
+                            con un repositorio de GitHub.
                         </p>
                     </div>
                 </div>
