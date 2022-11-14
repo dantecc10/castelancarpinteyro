@@ -1,3 +1,7 @@
+<?php
+include "Scripts PHP/ConexiónUsuarios.php";
+include "Scripts PHP/InicioSesión.php";
+?>
 <!DOCTYPE html>
 <html lang="es-419">
 
