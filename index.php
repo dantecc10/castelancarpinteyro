@@ -90,12 +90,11 @@
                         Manejo de bases de datos, y protección de integridad de la información a través de inicios de sesión.
                     </p>
                 </div>
-
-                <div class="col">Gloria Krystal</div>
-                <div class="col">Gloria Krystal</div>
-                <div class="col">Gloria Krystal</div>
-                <div class="col">Gloria Krystal</div>
-                <div class="col">Gloria Krystal</div>
+                <!--<div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>-->
             </div>
         </div>
     </section>
