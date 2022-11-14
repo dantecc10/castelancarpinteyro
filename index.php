@@ -37,7 +37,7 @@
                     <li class="nav-item"><a class="nav-link" href="#políticas">Políticas de garantía</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                    <li class="btn btn-primary btn-success"><a href="#">Iniciar sesión</a></li>
+                    <li class="btn btn-primary btn-success"><a class="nav-link" href="#">Iniciar sesión</a></li>
                 </ul>
             </div>
         </div>
@@ -106,7 +106,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="text-uppercase section-heading">Tutoriales</h2>
+                    <h2 class="text-uppercase section-heading">Artículos</h2>
                     <h3 class="text-muted section-subheading">¿Te inicias en el desarrollo web? Aquí te dejo algunos artículos y videos para que puedas guiarte:</h3>
                 </div>
             </div>
