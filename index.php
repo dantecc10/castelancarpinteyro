@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Dante Castelán Carpinteyro - Inicio</title>
     <meta name="author" content="Dante Castelán Carpinteyro">
-    <meta property="og:image" content="https://kalicel.castelancarpinteyro.club/assets/img/DanteDEV-Black-Backgorund.png">
+    <meta property="og:image" content="https://kalicel.castelancarpinteyro.clubassets/img/DanteDEV-Black-Backgorund.png">
     <meta property="og:type" content="website">
     <meta name="description" content="Página de inicio de Dante Castelán Carpinteyro">
-    <link rel="icon" type="image/jpeg" sizes="960x957" href="/assets/img/Dante-DEV-Black-Background.png">
-    <link rel="icon" type="image/jpeg" sizes="960x957" href="/assets/img/Dante-DEV-Black-Background.png">
-    <link rel="icon" type="image/jpeg" sizes="96F0x957" href="/assets/img/Dante-DEV-Black-Background.png">
-    <link rel="icon" type="image/jpeg" sizes="960x957" href="/assets/img/Dante-DEV-Black-Background.png">
-    <link rel="icon" type="image/jpeg" sizes="960x957" href="/assets/img/Dante-DEV-Black-Background.png">
+    <link rel="icon" type="image/jpeg" sizes="960x957" href="assets/img/Dante-DEV-Black-Background.png">
+    <link rel="icon" type="image/jpeg" sizes="960x957" href="assets/img/Dante-DEV-Black-Background.png">
+    <link rel="icon" type="image/jpeg" sizes="96F0x957" href="assets/img/Dante-DEV-Black-Background.png">
+    <link rel="icon" type="image/jpeg" sizes="960x957" href="assets/img/Dante-DEV-Black-Background.png">
+    <link rel="icon" type="image/jpeg" sizes="960x957" href="assets/img/Dante-DEV-Black-Background.png">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/extra.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/extra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/img//logos/DanteDEV.png">
 </head>
 
@@ -40,7 +42,7 @@
             </div>
         </div>
     </nav>
-    <header class="masthead" style="background-image:url('/assets/img/pcb-blackwebp.webp');">
+    <header class="masthead" style="background-image:url('assets/img/pcb-blackwebp.webp');">
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in bordeRojo">
@@ -240,7 +242,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img class="rounded-circle mx-auto" src="/assets/img/team/luis_erf.png">
+                        <img class="rounded-circle mx-auto" src="assets/img/team/luis_erf.png">
                         <h4>Luis Enrique Reyes Fernández</h4>
                         </p>
                         <p class="text-muted">
@@ -254,7 +256,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img class="rounded-circle mx-auto" src="/assets/img/team/rosalba_nzm.png">
+                        <img class="rounded-circle mx-auto" src="assets/img/team/rosalba_nzm.png">
                         <h4>Rosalba Nazareth Zárate Morales</h4>
                         <p class="text-muted">
                             Ingeniería Mecatrónica
@@ -269,7 +271,7 @@
 
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img class="rounded-circle mx-auto" src="/assets/img/kalicel-staff.png">
+                        <img class="rounded-circle mx-auto" src="assets/img/kalicel-staff.png">
                         <h4>Dante Castelán Carpinteyro</h4>
                         <p class="text-muted">
                             --
@@ -285,7 +287,7 @@
         </div>
     </section>
 
-    <section id="contacto" style="background-image:url('/assets/img/map-image.png');">
+    <section id="contacto" style="background-image:url('assets/img/map-image.png');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -351,7 +353,7 @@
     include('modales.php');
     ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/script.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
