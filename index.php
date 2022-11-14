@@ -19,12 +19,13 @@
     <link rel="stylesheet" href="/assets/css/extra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/styles.min.css">
+    <link rel="favicon" type="image/jpg" href="assets/img//logos/DanteDEV.png">
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
         <div class="container">
-            <img src="assets\img\DanteDEV-Black-Background.png" id="LogoNavBar">
+            <img src="assets/img/logos/DanteDEV-Black-Blackground.png" id="LogoNavBar">
             <a id="títuloNavBar" href="#page-top">Dante</a>
             <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
