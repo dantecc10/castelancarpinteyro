@@ -25,7 +25,7 @@ include "Scripts PHP/InicioSesión.php";
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="image/x-icon" href="assets/img//logos/DanteDEV.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/logos/DanteDEV.png">
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
