@@ -25,7 +25,7 @@
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
         <div class="container">
-            <img src="assets/img/logos/DanteDEV-Black-Blackground.png" id="LogoNavBar">
+            <img src="assets/img/logos/DanteDEV-Black-Blackground-1-1.png" id="LogoNavBar">
             <a id="títuloNavBar" href="#page-top">Dante</a>
             <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -116,7 +116,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="/assets/img/iOS-Android.webp">
+                        <img class="img-fluid" src="assets/img/artículos/1/portada.png">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Contrucción</h4>
@@ -132,7 +132,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="/assets/img/reparación-display-samsung.png">
+                        <img class="img-fluid" src="assets/img/artículos/2/portada.png">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Crear un sitio</h4>
@@ -148,7 +148,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="/assets/img/reparación-laptop.png">
+                        <img class="img-fluid" src="assets/img/artículos/1/portada.png">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Formularios</h4>
@@ -164,7 +164,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="/assets/img/carga-software.jpeg">
+                        <img class="img-fluid" src="assets/img/artículos/1/portada.png">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Métodos POST y GET</h4>
@@ -180,7 +180,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="/assets/img/actualiza-laptops.png">
+                        <img class="img-fluid" src="assets/img/artículos/1/portada.png">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Creación de tablas</h4>
@@ -196,7 +196,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="/assets/img/celular-estrellado.png">
+                        <img class="img-fluid" src="assets/img/artículos/1/portada.png">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Uso de AJAX</h4>
