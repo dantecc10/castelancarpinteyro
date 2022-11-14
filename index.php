@@ -37,7 +37,7 @@
                     <li class="nav-item"><a class="nav-link" href="#políticas">Políticas de garantía</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                    <li class="btn btn-primary btn-success"><a class="nav-link" href="#">Iniciar sesión</a></li>
+                    <li class="btn btn-primary btn-success"><button onclick="document.getElementById('DivInicioSesión').style.display='block'" class="IniciarSesión DecoradoBotón" style="width:auto;" id="BotónAbreInicioSesión">Iniciar sesión</button></li>
                 </ul>
             </div>
         </div>
