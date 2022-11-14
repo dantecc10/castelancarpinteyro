@@ -167,9 +167,9 @@
                         <img class="img-fluid" src="/assets/img/carga-software.jpeg">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Carga</h4>
+                        <h4>Métodos POST y GET</h4>
                         <p class="text-muted">
-                            y recuperación de software.
+                            para peticiones al servidor con PHP.
                         </p>
                     </div>
                 </div>
@@ -183,9 +183,9 @@
                         <img class="img-fluid" src="/assets/img/actualiza-laptops.png">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Actualización</h4>
+                        <h4>Creación de tablas</h4>
                         <p class="text-muted">
-                            y mantenimiento de equipo de cómputo.
+                            con información de bases de datos SQL.
                         </p>
                     </div>
                 </div>
@@ -199,9 +199,9 @@
                         <img class="img-fluid" src="/assets/img/celular-estrellado.png">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Compra</h4>
+                        <h4>Uso de AJAX</h4>
                         <p class="text-muted">
-                            de equipos dañados, rotos o mojados para despiece.
+                            para filtrar información de una base de datos.
                         </p>
                     </div>
                 </div>
