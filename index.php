@@ -41,7 +41,7 @@ include "Scripts PHP/InicioSesión.php";
                     <li class="nav-item"><a class="nav-link" href="#políticas">Políticas de garantía</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                    <li class="btn btn-primary btn-success"><button onclick="document.getElementById('DivInicioSesión').style.display='block'" class="IniciarSesión DecoradoBotón" style="width:auto;" id="BotónAbreInicioSesión">Iniciar sesión</button></li>
+                    <li class="btn btn-primary btn-success"><a onclick="document.getElementById('DivInicioSesión').style.display='block'" class="IniciarSesión DecoradoBotón nav-link" style="width:auto;" id="BotónAbreInicioSesión">Iniciar sesión</a></li>
                 </ul>
             </div>
         </div>
