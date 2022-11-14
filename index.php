@@ -100,7 +100,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-light" id="portfolio">
+    <section class="bg-dark" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
