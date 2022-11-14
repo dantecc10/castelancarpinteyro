@@ -151,9 +151,9 @@
                         <img class="img-fluid" src="/assets/img/reparación-laptop.png">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Reparación</h4>
+                        <h4>Formularios</h4>
                         <p class="text-muted">
-                            de laptops; software y hardware.
+                            con JavaScript.
                         </p>
                     </div>
                 </div>
