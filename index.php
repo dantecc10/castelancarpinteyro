@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/assets/css/extra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/styles.min.css">
-    <link rel="favicon" type="image/jpg" href="assets/img//logos/DanteDEV.png">
+    <link rel="icon" type="image/x-icon" href="assets/img//logos/DanteDEV.png">
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
@@ -104,8 +104,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="text-uppercase section-heading">Reparaciones</h2>
-                    <h3 class="text-muted section-subheading">Consulta a detalle nuestras reparaciones: </h3>
+                    <h2 class="text-uppercase section-heading">Tutoriales</h2>
+                    <h3 class="text-muted section-subheading">¿Te inicias en el desarrollo web? Aquí te dejo algunos artículos y videos para que puedas guiarte:</h3>
                 </div>
             </div>
             <div class="row">
@@ -119,7 +119,7 @@
                         <img class="img-fluid" src="/assets/img/iOS-Android.webp">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Reparación multimarca</h4>
+                        <h4></h4>
                         <p class="text-muted">
                             para iOS y Android.
                         </p>
