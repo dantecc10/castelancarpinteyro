@@ -318,6 +318,7 @@
                         <li class="list-inline-item"><a href="https://www.facebook.com/dante.castelan.carpinteyro"><i class="fa fa-facebook"></i></a></li>
                         <li class="list-inline-item"><a href="https://wa.me/527979773095?text=Hola,%20tengo%20algunas%20dudas%20sobre%20programación"><i class="fa fa-whatsapp"></i></a></li>
                         <li class="list-inline-item"><a href="https://www.twitter.com/dantecc10"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.github.com/dantecc10"><i class="fa fa-github"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
