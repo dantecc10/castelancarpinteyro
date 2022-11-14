@@ -1,28 +1,31 @@
-<!DOCTYPE html>
-<html lang="es">
+<div id="DivInicioSesión" class="modal">
+    <form class="modal-content animate myForm" action="" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('DivInicioSesión').style.display='none'" class="CerrarCuadro" title="Close Modal">×</span>
+            <img src="IMG/img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión</title>
-</head>
+        <div class="container">
+            <label for="Usuario"><b>Usuario</b></label>
+            <input type="text" placeholder="usuario@prog5a*" name="Usuario" required="">
+            <br>
+            <label for="Contraseña"><b>Contraseña</b></label>
+            <input type="password" placeholder="Contraseña (@prog5a!!)*" name="Contraseña" required="">
 
-<body>
-    <?php
-    $hack = False;
-    ?>
-    <form action="InicioSesión.php" method="$_GET">
-        <p>
-            <label for="email">Usuario o email:</label>
-            <input type="email" name="email" required>
-        </p>
-        <p>
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" name="contraseña" required>
-        </p>
-        <input type="submit" value="Enviar" name="BotónEnviar">
+            <input type="hidden" name="latitude" value="">
+            <input type="hidden" name="longitude" value="">
+
+            <input type="submit" name="InicioSesión" value="Iniciar sesión" class="IniciarSesión DecoradoBotón">
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember">Recordarme
+            </label>
+
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('DivInicioSesión').style.display='none'" class="BotónCancelar DecoradoBotón">Cancel</button>
+            <span class="psw">¿Olvidaste tu <a href="#">contraseña</a>?</span>
+        </div>
     </form>
-</body>
-
-</html>
+</div>

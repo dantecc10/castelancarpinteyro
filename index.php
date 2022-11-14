@@ -35,7 +35,7 @@
                     <li class="nav-item"><a class="nav-link" href="#políticas">Políticas de garantía</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                    <li class="btn btn-primary btn-success"><a class="nav-link" href="#contacto">Iniciar sesión</a></li>
+                    <li class="btn btn-primary btn-success"><a href="#">Iniciar sesión</a></li>
                 </ul>
             </div>
         </div>
@@ -202,6 +202,22 @@
                         <h4>Uso de AJAX</h4>
                         <p class="text-muted">
                             para filtrar información de una base de datos.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item">
+                    <a class="portfolio-link" href="#portfolioModal6" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/artículos/1/portada.png">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Crear una API</h4>
+                        <p class="text-muted">
+                            usando JSON, y desplegándola en GitHub.
                         </p>
                     </div>
                 </div>
