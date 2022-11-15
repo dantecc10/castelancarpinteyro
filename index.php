@@ -25,6 +25,7 @@ include "Scripts PHP/InicioSesión.php";
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/Formulario.css">
     <link rel="icon" type="image/x-icon" href="assets/img/logos/DanteDEV.png">
 </head>
 
