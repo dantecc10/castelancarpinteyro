@@ -355,6 +355,7 @@ include "Scripts PHP/InicioSesión.php";
     </footer>
     <?php
     include('modales.php');
+    include('IniciarSesión.php');
     ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.min.js"></script>
