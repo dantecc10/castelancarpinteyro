@@ -68,7 +68,7 @@ span.psw {
 }
 
 /* The Modal (background) */
-.modal {
+.modal#DivInicioSesión {
     display: none;
     /* Hidden by default */
     position: fixed;
@@ -201,7 +201,7 @@ span.psw {
         border-radius: 50%;
     }
 
-    .container {
+    .container#container-login {
         padding: 16px;
     }
 
@@ -234,7 +234,7 @@ span.psw {
     }
 
     /* Modal Content/Box */
-    .modal-content {
+    .modal-content.animate.myform {
         background-color: #fefefe;
         margin: 5% auto 15% auto;
         /* 5% from the top, 15% from the bottom and centered */
