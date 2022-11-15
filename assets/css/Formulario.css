@@ -92,13 +92,15 @@ span.psw {
 }
 
 /* Modal Content/Box */
-.modal-content {
+.modal-content.animate.myform {
     background-color: #fefefe;
     margin: 5% auto 15% auto;
     /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 30%;
     /* Could be more or less, depending on screen size */
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
 }
 
 /* The Close Button (x) */
@@ -118,10 +120,6 @@ span.psw {
 }
 
 /* Add Zoom Animation */
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
 
 @-webkit-keyframes animatezoom {
     from {
@@ -144,9 +142,9 @@ span.psw {
 }
 
 @media screen and (max-width: 700px) {
-    body {
+    /*body {
         font-family: Arial, Helvetica, sans-serif;
-    }
+    }*/
 
     /* Full-width input fields */
     input[type=text],
@@ -170,7 +168,7 @@ span.psw {
     }
 
     /* Set a style for all buttons */
-    button {
+    /*button {
         background-color: #e5bc34;
         color: white;
         padding: 14px 20px;
@@ -178,7 +176,7 @@ span.psw {
         border: none;
         cursor: pointer;
         width: 100%;
-    }
+    }*/
 
     button:hover {
         opacity: 0.8;
