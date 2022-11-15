@@ -2,7 +2,7 @@
     <form class="modal-content animate myForm" action="" method="post">
         <div class="imgcontainer">
             <span onclick="document.getElementById('DivInicioSesión').style.display='none'" class="CerrarCuadro" title="Close Modal">×</span>
-            <img src="IMG/img_avatar2.png" alt="Avatar" class="avatar">
+            <img src="assets/img/usuarios-1-1.png" alt="Avatar" class="avatar">
         </div>
 
         <div class="container">
