@@ -10,7 +10,7 @@ include "Scripts PHP/InicioSesión.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Dante Castelán Carpinteyro - Inicio</title>
     <meta name="author" content="Dante Castelán Carpinteyro">
-    <meta property="og:image" content="https://kalicel.castelancarpinteyro.clubassets/img/DanteDEV-Black-Backgorund.png">
+    <meta property="og:image" content="https://castelancarpinteyro.clubassets/img/DanteDEV-Black-Backgorund.png">
     <meta property="og:type" content="website">
     <meta name="description" content="Página de inicio de Dante Castelán Carpinteyro">
     <link rel="icon" type="image/jpeg" sizes="960x957" href="assets/img/Dante-DEV-Black-Background.png">
@@ -231,7 +231,7 @@ include "Scripts PHP/InicioSesión.php";
             </div>
         </div>
     </section>
-    <section id="políticas">
+    <section id="políticas" hidden="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -246,34 +246,7 @@ include "Scripts PHP/InicioSesión.php";
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="rounded-circle mx-auto" src="assets/img/team/luis_erf.png">
-                        <h4>Luis Enrique Reyes Fernández</h4>
-                        </p>
-                        <p class="text-muted">
-                            Ingeniería Mecatrónica
-                        <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/qiiqeziithoo.reyezz"><i class="fa fa-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="https://wa.me/522411352236?text=Hola,%20quiero%20consultar%20acerca%20de%20una%20reparación...%20"><i class="fa fa-whatsapp"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-messenger"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="rounded-circle mx-auto" src="assets/img/team/rosalba_nzm.png">
-                        <h4>Rosalba Nazareth Zárate Morales</h4>
-                        <p class="text-muted">
-                            Ingeniería Mecatrónica
-                        </p>
-                        <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/rosalba.zarate.171098"><i class="fa fa-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="https://wa.me/522225209776?text=Hola,%20quiero%20consultar%20acerca%20de%20una%20reparación...%20"><i class="fa fa-whatsapp"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
+                   
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img class="rounded-circle mx-auto" src="assets/img/kalicel-staff.png">
