@@ -258,23 +258,23 @@ include "Scripts PHP/InicioSesión.php";
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                   
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="rounded-circle mx-auto" src="assets/img/kalicel-staff.png">
-                        <h4>Dante Castelán Carpinteyro</h4>
-                        <p class="text-muted">
-                            --
-                        </p>
-                        <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/DanteCC10.4T/"><i class="fa fa-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="https://wa.me/527979773095?text=Hola,%20quiero%20consultar%20acerca%20de%20una%20reparación...%20"><i class="fa fa-whatsapp"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        </ul>
+
+                    <div class="col-sm-4">
+                        <div class="team-member">
+                            <img class="rounded-circle mx-auto" src="assets/img/kalicel-staff.png">
+                            <h4>Dante Castelán Carpinteyro</h4>
+                            <p class="text-muted">
+                                --
+                            </p>
+                            <ul class="list-inline social-buttons">
+                                <li class="list-inline-item"><a href="https://www.facebook.com/DanteCC10.4T/"><i class="fa fa-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://wa.me/527979773095?text=Hola,%20quiero%20consultar%20acerca%20de%20una%20reparación...%20"><i class="fa fa-whatsapp"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="contacto" style="background-image:url('assets/img/map-image.png');">
