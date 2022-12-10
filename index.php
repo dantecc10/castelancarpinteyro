@@ -28,6 +28,18 @@ include "Scripts PHP/InicioSesión.php";
     <link rel="stylesheet" href="assets/css/Formulario.css">
     <link rel="icon" type="image/x-icon" href="assets/img/logos/DanteDEV.png">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3LRKVSP175"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3LRKVSP175');
+</script>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
