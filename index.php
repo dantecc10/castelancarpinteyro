@@ -10,7 +10,7 @@ include "Scripts PHP/InicioSesión.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Dante Castelán Carpinteyro - Inicio</title>
     <meta name="author" content="Dante Castelán Carpinteyro">
-    <meta property="og:image" content="https://castelancarpinteyro.clubassets/img/DanteDEV-Black-Backgorund.png">
+    <meta property="og:image" content="https://castelancarpinteyro.club/assets/img/DanteDEV-Black-Background.png">
     <meta property="og:type" content="website">
     <meta name="description" content="Página de inicio de Dante Castelán Carpinteyro">
     <link rel="icon" type="image/jpeg" sizes="960x957" href="assets/img/Dante-DEV-Black-Background.png">

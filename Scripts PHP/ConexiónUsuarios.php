@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$database = $dbname = "castelancarpinteyro";
+$database = $dbname = "";
 $username = "dantecastelancarpinteyro";
 $password = "@CastelanCarpinteyroWEB";
 // Create connection
