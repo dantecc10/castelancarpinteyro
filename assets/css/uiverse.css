@@ -1,5 +1,6 @@
 .btn.btn-primary.shadow {
   background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  width: 100%;
 }
 
 .btn.btn-primary.shadow:hover {
@@ -9,7 +10,7 @@
 }
 
 .div1-efecto {
-  /*width: 190px;*/
+  width: initial;
   /*height: 254px;*/
   background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
   border-radius: 20px;
@@ -138,6 +139,8 @@
   margin-left: 10px;
   animation: curbl 1200ms linear infinite;
 }
+
+.div1-efecto {}
 
 @keyframes curbl {
   0% {
