@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
+        <loc>https://castelancarpinteyro.com/aprende.html</loc>
+    </url>
+    <url>
         <loc>https://castelancarpinteyro.com/contacts.html</loc>
     </url>
     <url>
         <loc>https://castelancarpinteyro.com/</loc>
     </url>
     <url>
-        <loc>https://castelancarpinteyro.com/pricing.html</loc>
+        <loc>https://castelancarpinteyro.com/login.html</loc>
+    </url>
+    <url>
+        <loc>https://castelancarpinteyro.com/product.html</loc>
+    </url>
+    <url>
+        <loc>https://castelancarpinteyro.com/products.html</loc>
     </url>
     <url>
         <loc>https://castelancarpinteyro.com/projects.html</loc>
     </url>
     <url>
         <loc>https://castelancarpinteyro.com/services.html</loc>
+    </url>
+    <url>
+        <loc>https://castelancarpinteyro.com/signup.html</loc>
     </url>
 </urlset>
