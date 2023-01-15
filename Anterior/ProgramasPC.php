@@ -36,7 +36,7 @@
                 </a>
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
-                        <a href="IniciarSesión.php">Iniciar Sesión</a> 
+                        <a href="IniciarSesión.php">Iniciar Sesión</a>
                         <a href="https://politiza.castelancarpinteyro.club/">POLITIZA MX</a>
                         <a href="ProgramasPC.php">Programas avanzados para PC</a>
                         <a href="AcercaDe.php">Acerca de...</a>
