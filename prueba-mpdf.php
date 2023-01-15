@@ -341,7 +341,7 @@ $html = ("<body style='/*background: url(&quot;design.jpg&quot;);*/background-po
 <scribe-shadow id='shadow-root-scribe-elem' style='position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible;'></scribe-shadow></body>");
 
 
-$pdf =  new mPDF('c');
+$pdf = new mPDF('c');
 $pdf->WriteHTML($html);
 $pdf->Output();
 exit;
