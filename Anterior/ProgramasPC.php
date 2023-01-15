@@ -53,7 +53,7 @@
     <div class="Contenedor-Artículos" id="PartidosPolíticos">
         <h4 class="Autor-Artículo">Por Dante Castelán Carpinteyro.</h4>
         <h3 class="TítuloArtículo">Enlace</h3>
-        <p class="Descripción-Artículo"><a href="https://cecytepuebla-my.sharepoint.com/:f:/g/personal/d_castelanc_chg_2023_cecytepuebla_edu_mx/EoedF8GQeyNGoTTH1EWFB5ABJoaN8TzpFbPbBzNhYYR_sg?e=lAvdE3" target="_blank" rel="noopener noreferrer">
+        <p class="Descripción-Artículo"><a href="https://cecytepuebla-my.sharepoint.com/:f:/g/personal/d_castelanc_chg_2023_cecytepuebla_edu_mx/EoedF8GQeyNGoTTH1EWFB5ABJoaN8TzpFbPbBzNhYYR_sg?e=umvlS2" target="_blank" rel="noopener noreferrer">
                 Enlace directo a la carpeta.
             </a>
         </p>
@@ -61,7 +61,7 @@
     <footer>
         <div id="RedesSociales" align="center">
             <hr id="AntesSociales">
-            <script lang="JavaScript" src="../JavaScript/Redes Sociales.js"></script> 
+            <script lang="JavaScript" src="../JavaScript/Redes Sociales.js"></script>
             <h3><a href="mailto:dantecc10@gmail.com" class="TítuloArtículo" id="ContactoCorreo">Contacto</a></h3>
             <img class="RedSocial" alt="Ícono de Facebook" id="Facebook" onclick="javascript:AbrirFacebook();" src="../IMG/íconoFacebook.png" />
             <img class="RedSocial" alt="Ícono de WhatsApp" id="WhatsApp" onclick="javascript:AbrirWhatsApp();" src="../IMG/íconoWhatsApp.png" />
