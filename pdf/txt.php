@@ -7,7 +7,7 @@ while (!feof($archivo)) {
     // Leyendo una linea
     $traer = fgets($archivo);
     // Imprimiendo una linea
-    echo nl2br($traer);
+    echo /*nl2br*/ ($traer);
 }
 
 // Cerrando el archivo
