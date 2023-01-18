@@ -135,4 +135,4 @@ $mpdf->SetHTMLFooter('<footer class="bg-dark">
 $mpdf->WriteHTML('Hola');
 
 //guarde el archivo y coloque la ubicación que necesita carpeta/nombre de archivo
-$mpdf->Output("miempresa.pdf", 'F');
+$mpdf->Output("miempresa.pdf", '/');
