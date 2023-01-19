@@ -1,0 +1,18 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol"
+            },
+            "previewLimit": 50,
+            "server": "castelancarpinteyro.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Server CC.com",
+            "database": "castelancarpinteyro",
+            "username": "darkseid",
+            "connectionTimeout": 10000,
+            "askForPassword": true
+        }
+    ]
+}
