@@ -50,3 +50,4 @@ function formatearHTML()
     fclose($archivo);
     echo $textoFormateado;
 }
+formatearHTML();
