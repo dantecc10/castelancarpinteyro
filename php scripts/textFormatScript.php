@@ -38,11 +38,12 @@ function formatearHTML()
         } elseif ($contador = 2) {
             $textoFormateado .= ($traer . "</h2>");
         }
-
-        $textoFormateado .= ("<p>" . $traer . "</p>");
-        // Imprimiendo una linea
-        #echo /*nl2br*/ ($traer);
-        $contador++;
+        if ($traer != "" || $traer != " ") {
+            $textoFormateado .= ("<p>" . $traer . "</p>");
+            // Imprimiendo una linea
+            #echo /*nl2br*/ ($traer);
+            $contador++;
+        }
     }
 
     // Cerrando el archivo
