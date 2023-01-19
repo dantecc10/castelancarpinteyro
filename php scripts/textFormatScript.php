@@ -38,7 +38,7 @@ function formatearHTML()
         } elseif ($contador = 2) {
             $textoFormateado .= ("<h2>" . $traer . "</h2>");
         }
-        if ($traer != "" || $traer != " ") {
+        if ($contador != 1 && $contador != 2 && $traer != "" || $traer != " ") {
             $textoFormateado .= ("<p>" . $traer . "</p>");
             // Imprimiendo una linea
             #echo /*nl2br*/ ($traer);
