@@ -22,3 +22,30 @@ $pasada1 = str_replace("
 $textoHTML = ("<p>" . $pasada1);
 
 echo $textoHTML;
+
+function formatearHTML()
+{
+    $textoFormateado = "<h1>";
+    // Abriendo el archivo
+    $archivo = fopen("texto.txt", "r");
+    $contador = 1;
+    // Recorremos todas las lineas del archivo
+    while (!feof($archivo)) {
+        // Leyendo una linea
+        $traer = fgets($archivo);
+        if ($contador = 1) {
+            $textoFormateado .= ($traer . "</h1><h2>");
+        } elseif ($contador = 2) {
+            $textoFormateado .= ($traer . "</h2>");
+        }
+
+        $textoFormateado .= ("<p>" . $traer . "</p>");
+        // Imprimiendo una linea
+        #echo /*nl2br*/ ($traer);
+        $contador++;
+    }
+
+    // Cerrando el archivo
+    fclose($archivo);
+    echo $textoFormateado;
+}
