@@ -33,15 +33,22 @@ function formatearHTML()
     while (!feof($archivo)) {
         // Leyendo una linea
         $traer = fgets($archivo);
-        if ($contador = 1) {
-            $textoFormateado .= ("<h1>" . $traer . "</h1>");
-        } elseif ($contador = 2) {
-            $textoFormateado .= ("<h2>" . $traer . "</h2>");
-        }
-        if ($contador != 1 && $contador != 2 && $traer != "" || $traer != " ") {
-            $textoFormateado .= ("<p>" . $traer . "</p>");
-            // Imprimiendo una linea
-            #echo /*nl2br*/ ($traer);
+
+        switch ($contador) {
+            case 1:
+                $textoFormateado .= ("<h1>" . $traer . "</h1>");
+                break;
+            case 2:
+                $textoFormateado .= ("<h2>" . $traer . "</h2>");
+                break;
+
+            default:
+                if ($traer != "" || $traer != " ") {
+                    $textoFormateado .= ("<p>" . $traer . "</p>");
+                    // Imprimiendo una linea
+                    #echo /*nl2br*/ ($traer);
+                }
+                break;
         }
         $contador++;
     }
