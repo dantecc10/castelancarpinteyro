@@ -21,4 +21,4 @@ $pasada1 = str_replace("
 
 $textoHTML = ("<p>" . $pasada1);
 
-echo $texto;
+echo $textoHTML;
