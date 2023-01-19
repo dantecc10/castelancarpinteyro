@@ -21,7 +21,7 @@ $pasada1 = str_replace("
 
 $textoHTML = ("<p>" . $pasada1);
 
-echo $textoHTML;
+#echo $textoHTML;
 
 function formatearHTML()
 {
