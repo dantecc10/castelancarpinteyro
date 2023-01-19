@@ -25,7 +25,7 @@ $textoHTML = ("<p>" . $pasada1);
 
 function formatearHTML()
 {
-    $textoFormateado = "<h1>";
+    $textoFormateado = "";
     // Abriendo el archivo
     $archivo = fopen("texto.txt", "r");
     $contador = 1;
@@ -34,16 +34,16 @@ function formatearHTML()
         // Leyendo una linea
         $traer = fgets($archivo);
         if ($contador = 1) {
-            $textoFormateado .= ($traer . "</h1><h2>");
+            $textoFormateado .= ("<h1>" . $traer . "</h1>");
         } elseif ($contador = 2) {
-            $textoFormateado .= ($traer . "</h2>");
+            $textoFormateado .= ("<h2>" . $traer . "</h2>");
         }
         if ($traer != "" || $traer != " ") {
             $textoFormateado .= ("<p>" . $traer . "</p>");
             // Imprimiendo una linea
             #echo /*nl2br*/ ($traer);
-            $contador++;
         }
+        $contador++;
     }
 
     // Cerrando el archivo
