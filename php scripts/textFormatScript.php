@@ -43,7 +43,7 @@ function formatearHTML()
                 break;
 
             default:
-                if ($traer != "" || $traer != " ") {
+                if ($traer != "" && $traer != " ") {
                     $textoFormateado .= ("<p>" . $traer . "</p>");
                     // Imprimiendo una linea
                     #echo /*nl2br*/ ($traer);
