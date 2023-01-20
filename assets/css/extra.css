@@ -2,3 +2,7 @@ p.sangría {
   text-indent: 5%;
 }
 
+.hero-nature.carousel-hero.jumbotron {
+  font-family: monospace;
+}
+
