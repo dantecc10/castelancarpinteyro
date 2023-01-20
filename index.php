@@ -61,78 +61,8 @@
                 <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
                     <div class="text-center">
                         <p class="fw-bold text-success mb-2">Dante Castelán Carpinteyro</p>
-                        <div class="fw-bold typewriter">
-                            <h1>Programación, cursos y servicios web.</h1>
-                        </div>
-                        <style>
-                            /*
-                            div.typewriter {
-                                background: #333;
-                                display: flex;
-                                padding-top: 5em;
-                                justify-content: center;
-                                width: 180%;
-                                margin-left: -40%;
-                            }
-                                */
-
-                            div.typewriter h1 {
-                                color: #fff;
-                                font-family: monospace;
-                                overflow: hidden;
-                                border-right: .15em solid orange;
-                                white-space: nowrap;
-                                margin: 0 auto;
-                                letter-spacing: .15em;
-                                animation:
-                                    typing 3.5s steps(30, end),
-                                    blink-caret .5s step-end infinite;
-                            }
-
-                            @keyframes typing {
-                                from {
-                                    width: 0;
-                                }
-
-                                to {
-                                    width: 100%;
-                                }
-                            }
-
-                            @keyframes blink-caret {
-
-                                from,
-                                to {
-                                    border-color: transparent;
-                                }
-
-                                50% {
-                                    border-color: orange;
-                                }
-
-                            }
-                        </style>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-10 mx-auto align-items-center">
-                    <div class="contenedor">
-                        <div class="container_terminal"></div>
-                        <div class="terminal_toolbar">
-                            <div class="butt">
-                                <button class="btn-terminal btn-color-terminal"></button>
-                                <button class="btn-terminal"></button>
-                                <button class="btn-terminal"></button>
-                            </div>
-                            <p class="user-terminal">johndoe@admin: ~</p>
-                        </div>
-                        <div class="terminal_body">
-                            <div class="terminal_promt">
-                                <span class="terminal_user">johndoe@admin:</span>
-                                <span class="terminal_location">~</span>
-                                <span class="terminal_bling">$</span>
-                                <span class="terminal_cursor"></span>
-                            </div>
-                        </div>
+                        <h1 class="fw-bold">Programación y servicios web</h1>
+                        <p>¡Aprende con nosotros!</p>
                     </div>
                 </div>
             </div>
