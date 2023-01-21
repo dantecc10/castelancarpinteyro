@@ -72,43 +72,9 @@
             </div>
         </div><!-- End: Hero Clean Reverse -->
     </header><!-- Start: Brands -->
-    <section class="py-5">
-        <!-- Start: Carousel Hero -->
-        <div class="carousel slide" data-bs-ride="carousel" id="carousel-3">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="bg-light border rounded border-light hero-nature carousel-hero jumbotron py-5 px-4">
-                        <h1 class="hero-title">Curso de JavaScript</h1>
-                        <p class="hero-subtitle">Dale dinamismo y funciones avanzadas a tu página con los recursos y
-                            lecciones que tenemos de JavaScript.</p>
-                        <p><a class="btn btn-primary btn-lg hero-button" role="button" href="#">Conocer más</a></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="bg-light border rounded border-light hero-photography carousel-hero jumbotron py-5 px-4">
-                        <h1 class="hero-title">Hero Photography</h1>
-                        <p class="hero-subtitle">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
-                            dapibus ac facilisis in, egestas eget quam.</p>
-                        <p><a class="btn btn-primary btn-lg hero-button" role="button" href="#">Learn more</a></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="bg-light border rounded border-light hero-technology carousel-hero jumbotron py-5 px-4">
-                        <h1 class="hero-title">Hero Technology</h1>
-                        <p class="hero-subtitle">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
-                            dapibus ac facilisis in, egestas eget quam.</p>
-                        <p><a class="btn btn-primary btn-lg hero-button" role="button" href="#">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-            <div><a class="carousel-control-prev" href="#carousel-3" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-3" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carousel-3" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carousel-3" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carousel-3" data-bs-slide-to="2"></li>
-            </ol>
-        </div><!-- End: Carousel Hero -->
-    </section><!-- End: Brands -->
+    <?php
+    include "php scripts/construirCarruselPrincipal.php";
+    ?>
     <!-- Start: Brands -->
     <section class="py-5">
         <div class="container text-center py-5">
