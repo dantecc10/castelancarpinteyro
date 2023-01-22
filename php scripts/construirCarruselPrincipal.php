@@ -50,7 +50,7 @@ $carruselÍtems .= $ciSupCont1; // Contenedor estático de ítems
 $carruselIndexes = $ciSupCont2; // Contenedor estático de indexes
 
 /*$carruselPrincipal .=*/
-echo $carruselÍtems;
+#echo $carruselÍtems;
 /*$carruselPrincipal .=*/
 echo $carruselIndexes;
 #echo $carruselPrincipal;
