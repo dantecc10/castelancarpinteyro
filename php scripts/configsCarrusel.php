@@ -24,5 +24,5 @@ $apSubCont2 = '<p class="hero-subtitle">';
 $ciSubCont2 = '</p>';
 
 //Subcontenedor 3: Link
-$apSubCont = '<p><a class="btn btn-primary btn-lg hero-button" role="button" href="';
-$ciSubCont = '">Conocer más</a></p>';
+$apSubCont3 = '<p><a class="btn btn-primary btn-lg hero-button" role="button" href="';
+$ciSubCont3 = '">Conocer más</a></p>';
