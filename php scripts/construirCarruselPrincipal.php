@@ -24,16 +24,16 @@ while ($columna = mysqli_fetch_array($resultado)) {
 
     for ($i = 1; $i < count($campos); $i++) {
         switch ($i) {
-                #            case 2:
-                #                $carruselÍtems .= ($apSubCont1 . $resultado[$campos[$i]] . $ciSubCont1);
-                #                break;
-                #            case 3:
-                #                $carruselÍtems .= ($apSubCont2 . $resultado[$campos[$i]] . $ciSubCont2);
-                #                break;
-                #            case 4:
-                #                $carruselÍtems .= ($apSubCont3 . $resultado[$campos[$i]] . $ciSubCont3);
-                #                break;
-                #
+            case 2:
+                $carruselÍtems .= ($apSubCont1 . $columna[$campos[$i]] . $ciSubCont1);
+                break;
+            case 3:
+                $carruselÍtems .= ($apSubCont2 . $columna[$campos[$i]] . $ciSubCont2);
+                break;
+            case 4:
+                $carruselÍtems .= ($apSubCont3 . $columna[$campos[$i]] . $ciSubCont3);
+                break;
+
             default:
                 # Error
                 break;
