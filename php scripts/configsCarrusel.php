@@ -26,22 +26,3 @@ $ciSubCont2 = '</p>';
 //Subcontenedor 3: Link
 $apSubCont = '<p><a class="btn btn-primary btn-lg hero-button" role="button" href="';
 $ciSubCont = '">Conocer más</a></p>';
-
-//Subcontenedor 4
-$apSubCont;
-$ciSubCont;
-
-
-//Contenedor 2 (carousel item): dinámico
-$apCont2 = '';
-$ciCont2 = '';
-
-
-$dante = ('<div class="carousel-item">
-    <div class="bg-light border rounded border-light hero-photography carousel-hero jumbotron py-5 px-4">
-        <h1 class="hero-title"></h1>
-        <p class="hero-subtitle">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam.</p>
-        <p><a class="btn btn-primary btn-lg hero-button" role="button" href="#">Learn more</a></p>
-    </div>
-</div>');
