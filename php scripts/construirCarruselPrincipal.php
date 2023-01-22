@@ -14,13 +14,13 @@ $carruselIndexes = $apSupCont2; // Contenedor estático de indexes
 
 $contador = 1;
 while ($columna = mysqli_fetch_array($resultado)) {
-    #    if ($contador = 1) {
-    #        $carruselÍtems .= $apCont1[1];
-    #        $carruselIndexes .= ($apCont2 . ($contador - 1) . $ciCont2[1]);
-    #    } else {
-    #        $carruselÍtems .= $apCont1[0];
-    #        $carruselIndexes .= ($apCont2 . ($contador - 1) . $ciCont2[0]);
-    #    }
+    if ($contador = 1) {
+        $carruselÍtems .= $apCont1[1];
+        $carruselIndexes .= ($apCont2 . ($contador - 1) . $ciCont2[1]);
+    } else {
+        $carruselÍtems .= $apCont1[0];
+        $carruselIndexes .= ($apCont2 . ($contador - 1) . $ciCont2[0]);
+    }
     #
     #    for ($i = 1; $i < count($campos); $i++) {
     #        switch ($i) {
