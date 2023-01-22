@@ -25,7 +25,7 @@ while ($columna = mysqli_fetch_array($resultado)) {
     for ($i = 1; $i < count($campos); $i++) {
         switch ($i) {
             case 1:
-                $carruselÍtems .= ($apSupCont1 . $resultado[$campos[$i]] . $ciSubCont1);
+                $carruselÍtems .= ($apSubCont1 . $resultado[$campos[$i]] . $ciSubCont1);
                 break;
 
             default:
