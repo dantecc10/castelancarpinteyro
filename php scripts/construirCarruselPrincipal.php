@@ -7,9 +7,10 @@ $campos = ['', 'id_ítem', 'título_ítem', 'descripción_ítem', 'link_ítem', 
 $consulta = ("SELECT * FROM `" . $tablaSQL  . "` WHERE (`activo_ítem` = true)");
 $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
 
-$carruselPrincipal .= $apSupCont1; // Súpercontenedor
+$carruselPrincipal; // Súpercontenedor
 
-$carruselÍtems = $apCont1; // Contenedor cíclico
+$carruselÍtems = $apSupCont1; // Contenedor estático de ítems
+$carruselIndexes = $apSupCont2; // Contenedor estático de indexes
 
 $contador = 1;
 while ($columna = mysqli_fetch_array($resultado)) {
@@ -30,16 +31,20 @@ while ($columna = mysqli_fetch_array($resultado)) {
             default:
                 # Error
                 break;
-        }
+            }
         $camposSQL[$i] = ($campos[$i] /* . "_" . substr_replace($tablaSQL, "", -1)*/);
     }
-
+    
     $carruselÍtems .= $ciCont1;
 
     $contador++;
 }
 
-$carruselÍtems = $ciCont1; // Contenedor cíclico
+$carruselÍtems .= $ciSupCont1; // Contenedor estático de ítems
+$carruselIndexes = $ciSupCont2; // Contenedor estático de indexes
+
+$carruselPrincipal .= ($carruselÍtems . $carruselIndexes);
+
 
 
 while ($columna = mysqli_fetch_array($resultado)) {

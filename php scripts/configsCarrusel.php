@@ -4,8 +4,8 @@ $apSupCont1 = '<section class="py-5"><!-- Start: Carousel Hero --><div class="ca
 $ciSupCont1 = '</div>';
 
 //Supercontenedor 2 (carousel indexes): estático
-$apSupCont1 = '<div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div><ol class="carousel-indicators">';
-$ciSupCont1 = '</ol></div><!-- End: Carousel Hero --></section><!-- End: Brands -->';
+$apSupCont2 = '<div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div><ol class="carousel-indicators">';
+$ciSupCont2 = '</ol></div><!-- End: Carousel Hero --></section><!-- End: Brands -->';
 
 //Contenedor 1 (carousel item): dinámico
 $apCont1[] = ['<div class="carousel-item"><div class="bg-light border rounded border-light hero-nature carousel-hero jumbotron py-5 px-4">', '<div class="carousel-item active"><div class="bg-light border rounded border-light hero-nature carousel-hero jumbotron py-5 px-4">'];

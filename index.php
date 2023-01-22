@@ -16,7 +16,7 @@
         gtag('config', 'G-HV59T08TYC');
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>Castelán Carpinteyro - Inicio</title>
     <meta name="theme-color" content="#5436cd">
     <meta name="description" content="Programación; artículos, tutoriales y cursos disponibles para entusiastas de la programación en Castelán Carpinteyro.">
     <meta name="twitter:description" content="Cursos de programación y servicios de hosting web">
