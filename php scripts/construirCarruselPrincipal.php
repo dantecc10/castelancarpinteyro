@@ -7,7 +7,7 @@ $campos = ['', 'id_ítem', 'título_ítem', 'descripción_ítem', 'link_ítem', 
 $consulta = ("SELECT * FROM `" . $tablaSQL  . "` WHERE (`activo_ítem` = true)");
 $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
 
-$carruselPrincipal; // Súpercontenedor
+$carruselPrincipal = ""; // Súpercontenedor
 
 $carruselÍtems = $apSupCont1; // Contenedor estático de ítems
 $carruselIndexes = $apSupCont2; // Contenedor estático de indexes
