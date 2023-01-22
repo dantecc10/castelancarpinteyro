@@ -24,17 +24,23 @@ while ($columna = mysqli_fetch_array($resultado)) {
 
     for ($i = 1; $i < count($campos); $i++) {
         switch ($i) {
-            case 1:
+            case 2:
                 $carruselÍtems .= ($apSubCont1 . $resultado[$campos[$i]] . $ciSubCont1);
+                break;
+            case 3:
+                $carruselÍtems .= ($apSubCont2 . $resultado[$campos[$i]] . $ciSubCont2);
+                break;
+            case 4:
+                $carruselÍtems .= ($apSubCont3 . $resultado[$campos[$i]] . $ciSubCont3);
                 break;
 
             default:
                 # Error
                 break;
-            }
-        $camposSQL[$i] = ($campos[$i] /* . "_" . substr_replace($tablaSQL, "", -1)*/);
+        }
+        #$camposSQL[$i] = ($campos[$i] /* . "_" . substr_replace($tablaSQL, "", -1)*/);
     }
-    
+
     $carruselÍtems .= $ciCont1;
 
     $contador++;
@@ -44,15 +50,4 @@ $carruselÍtems .= $ciSupCont1; // Contenedor estático de ítems
 $carruselIndexes = $ciSupCont2; // Contenedor estático de indexes
 
 $carruselPrincipal .= ($carruselÍtems . $carruselIndexes);
-
-
-
-while ($columna = mysqli_fetch_array($resultado)) {
-    echo "<tr>"; // Contenedor cíclico
-    for ($i = 1; $i < count($campos); $i++) {
-        echo "<td>" . $columna[$camposSQL[$i]] . "</td>";
-    }
-    echo "</tr>"; // Contenedor cíclico
-}
-
-echo "</table>"; // Súpercontenedor
+echo $carruselPrincipal;
