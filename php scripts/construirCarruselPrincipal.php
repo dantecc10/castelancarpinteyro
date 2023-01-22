@@ -49,8 +49,6 @@ while ($columna = mysqli_fetch_array($resultado)) {
 $carruselÍtems .= $ciSupCont1; // Contenedor estático de ítems
 $carruselIndexes = $ciSupCont2; // Contenedor estático de indexes
 
-/*$carruselPrincipal .=*/
-#echo $carruselÍtems;
-/*$carruselPrincipal .=*/
-echo $carruselIndexes;
-#echo $carruselPrincipal;
+$carruselPrincipal .= $carruselÍtems;
+$carruselPrincipal .= $carruselIndexes;
+echo $carruselPrincipal;
