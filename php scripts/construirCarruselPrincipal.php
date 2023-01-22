@@ -17,13 +17,13 @@ while ($columna = mysqli_fetch_array($resultado)) {
     for ($i = 0; $i < count($campos); $i++) {
         switch ($i) {
             case 1:
-                echo "Pasa el switch 1";
                 if ($contador = 1) {
-                    $carruselÍtems .= $apCont1[1];
-                    $carruselIndexes .= ($apCont2 . /*($columna['id_ítem'] - 1)*/  ($contador - 1) . $ciCont2[1]);
+                    echo "Pasa el switch 1";
+                    $carruselÍtems .= $apCont1["a"][1];
+                    $carruselIndexes .= ($apCont2 . /*($columna['id_ítem'] - 1)*/  ($contador - 1) . $ciCont2["b"][1]);
                 } else {
-                    $carruselÍtems .= $apCont1[0];
-                    $carruselIndexes .= ($apCont2 . /*($columna['id_ítem'] - 1)*/  ($contador - 1) . $ciCont2[0]);
+                    $carruselÍtems .= $apCont1["a"][0];
+                    $carruselIndexes .= ($apCont2 . /*($columna['id_ítem'] - 1)*/  ($contador - 1) . $ciCont2["b"][0]);
                 }
                 break;
             case 2:

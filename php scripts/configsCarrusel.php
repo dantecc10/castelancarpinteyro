@@ -8,12 +8,12 @@ $apSupCont2 = '<div><a class="carousel-control-prev" href="#carousel-1" role="bu
 $ciSupCont2 = '</ol></div><!-- End: Carousel Hero --></section><!-- End: Brands -->';
 
 //Contenedor 1 (carousel item): dinámico
-$apCont1[] = ['<div class="carousel-item"><div class="bg-light border rounded border-light hero-nature carousel-hero jumbotron py-5 px-4">', '<div class="carousel-item active"><div class="bg-light border rounded border-light hero-nature carousel-hero jumbotron py-5 px-4">'];
+$apCont1["a"] = ['<div class="carousel-item"><div class="bg-light border rounded border-light hero-nature carousel-hero jumbotron py-5 px-4">', '<div class="carousel-item active"><div class="bg-light border rounded border-light hero-nature carousel-hero jumbotron py-5 px-4">'];
 $ciCont1 = '</div></div>';
 
 //Contenedor 2 (carousel index): dinámico
 $apCont2 = '<li data-bs-target="#carousel-1" data-bs-slide-to="';
-$ciCont2[] = ['"></li>', '" class="active"></li>'];
+$ciCont2["b"] = ['"></li>', '" class="active"></li>'];
 
 //Subcontenedor 1: Título
 $apSubCont1 = '<h1 class="hero-title">';
