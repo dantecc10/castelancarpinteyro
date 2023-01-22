@@ -18,7 +18,6 @@ while ($columna = mysqli_fetch_array($resultado)) {
         switch ($i) {
             case 1:
                 if ($contador = 1) {
-                    echo "Pasa el switch 1";
                     $carruselÍtems .= $apCont1["a"][1];
                     $carruselIndexes .= ($apCont2 . /*($columna['id_ítem'] - 1)*/  ($contador - 1) . $ciCont2["b"][1]);
                 } else {
