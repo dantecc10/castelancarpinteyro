@@ -21,7 +21,7 @@ while ($columna = mysqli_fetch_array($resultado)) {
         $carruselÍtems .= $apCont1[0];
         $carruselIndexes .= ($apCont2 . ($contador - 1) . $ciCont2[0]);
     }
-    #
+
     #    for ($i = 1; $i < count($campos); $i++) {
     #        switch ($i) {
     #            case 2:
@@ -40,10 +40,10 @@ while ($columna = mysqli_fetch_array($resultado)) {
     #        }
     #        #$camposSQL[$i] = ($campos[$i] /* . "_" . substr_replace($tablaSQL, "", -1)*/);
     #    }
-    #
-    #    $carruselÍtems .= $ciCont1;
-    #
-    #    $contador++;
+
+    $carruselÍtems .= $ciCont1;
+
+    $contador++;
 }
 
 $carruselÍtems .= $ciSupCont1; // Contenedor estático de ítems
