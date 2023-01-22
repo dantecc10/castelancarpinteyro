@@ -14,16 +14,15 @@ $carruselIndexes = $apSupCont2; // Contenedor estático de indexes
 
 $contador = 1;
 while ($columna = mysqli_fetch_array($resultado)) {
-
     for ($i = 1; $i < count($campos); $i++) {
         switch ($i) {
             case 1:
                 if ($contador = 1) {
                     $carruselÍtems .= $apCont1[1];
-                    $carruselIndexes .= ($apCont2 . ($columna[$campos[$i]] - 1) . $ciCont2[1]);
+                    $carruselIndexes .= ($apCont2 . /*($columna['id_ítem'] - 1)*/  ($contador - 1) . $ciCont2[1]);
                 } else {
                     $carruselÍtems .= $apCont1[0];
-                    $carruselIndexes .= ($apCont2 . ($columna[$campos[$i]] - 1) . $ciCont2[0]);
+                    $carruselIndexes .= ($apCont2 . /*($columna['id_ítem'] - 1)*/  ($contador - 1) . $ciCont2[0]);
                 }
                 break;
             case 2:
@@ -45,7 +44,7 @@ while ($columna = mysqli_fetch_array($resultado)) {
 
     $carruselÍtems .= $ciCont1;
 
-    $contador++;
+    $contador = $contador + 1;
 }
 
 $carruselÍtems .= $ciSupCont1; // Contenedor estático de ítems
