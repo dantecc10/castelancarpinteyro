@@ -6,3 +6,7 @@ p.sangría {
   font-family: monospace;
 }
 
+div.carousel-hero h1.hero-title, div-carousel-hero p.hero-subtitle {
+  font-family: monospace;
+}
+
