@@ -9,8 +9,8 @@ $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a 
 
 $carruselPrincipal = ""; // Súpercontenedor
 
-$carruselÍtems = $apSupCont1; // Contenedor estático de ítems
-$carruselIndexes = $apSupCont2; // Contenedor estático de indexes
+$carruselÍtems .= $apSupCont1; // Contenedor estático de ítems
+$carruselIndexes .= $apSupCont2; // Contenedor estático de indexes
 
 $contador = 1;
 while ($columna = mysqli_fetch_array($resultado)) {
