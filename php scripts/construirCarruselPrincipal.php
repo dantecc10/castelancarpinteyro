@@ -16,6 +16,10 @@ $carruselCSS .= $apStyleCSS; // Contenedor estático de CSS
 $contador = 1;
 while ($columna = mysqli_fetch_array($resultado)) {
     $claseDinámicaCSS = ($baseClaseDinámicaCSS . $columna['id_ítem']);
+    $carruselCSS .= ("div.carousel-hero.banner-carrusel-" . $contador . " {
+        background-image: url('" . $columna['imagen_ítem'] . "');
+    }
+    ");
     for ($i = 0; $i < count($campos); $i++) {
         switch ($i) {
             case 1:
@@ -37,12 +41,6 @@ while ($columna = mysqli_fetch_array($resultado)) {
                 break;
             case 4:
                 $carruselÍtems .= ($apSubCont3 . $columna[$campos[$i]] . $ciSubCont3);
-                break;
-            case 4:
-                $carruselCSS .= ("div.carousel-hero.banner-carrusel-" . $contador . " {
-                    background-image: url('" . $columna['imagen_ítem'] . "');
-                }
-                ");
                 break;
 
             default:
