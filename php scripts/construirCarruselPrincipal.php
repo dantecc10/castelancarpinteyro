@@ -26,11 +26,9 @@ while ($columna = mysqli_fetch_array($resultado)) {
                 if ($contador = 1) {
                     $carruselÍtems .= ($apCont1["a"][1] . $claseDinámicaCSS . $apCont1_1);
                     $carruselIndexes .= ($apCont2 . ($columna['id_ítem'] - 1) . $ciCont2["b"][1]);
-                    #$carruselIndexes .= ($apCont2 . /*($columna['id_ítem'] - 1)*/  ($contador - 1) . $ciCont2["b"][1]);
                 } else {
                     $carruselÍtems .= ($apCont1["a"][0] . $claseDinámicaCSS . $apCont1_1);
                     $carruselIndexes .= ($apCont2 . ($columna['id_ítem'] - 1) . $ciCont2["b"][0]);
-                    #$carruselIndexes .= ($apCont2 . /*($columna['id_ítem'] - 1)*/  ($contador - 1) . $ciCont2["b"][0]);
                 }
                 break;
             case 2:
@@ -47,11 +45,9 @@ while ($columna = mysqli_fetch_array($resultado)) {
                 # Error
                 break;
         }
-        #        #$camposSQL[$i] = ($campos[$i] /* . "_" . substr_replace($tablaSQL, "", -1)*/);
     }
 
     $carruselÍtems .= $ciCont1;
-
     $contador = $contador + 1;
 }
 // Clausura de variables para impresión
