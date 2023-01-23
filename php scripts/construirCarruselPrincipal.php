@@ -19,10 +19,10 @@ while ($columna = mysqli_fetch_array($resultado)) {
             case 1:
                 if ($contador = 1) {
                     $carruselÍtems .= $apCont1["a"][1];
-                    $carruselIndexes .= ($apCont2 . /*($columna['id_ítem'] - 1)*/  ($contador - 1) . $ciCont2["b"][1]);
+                    $carruselIndexes .= ($apCont2 . ($columna['id_ítem'] - 1) . $ciCont2["b"][1]);
                 } else {
                     $carruselÍtems .= $apCont1["a"][0];
-                    $carruselIndexes .= ($apCont2 . /*($columna['id_ítem'] - 1)*/  ($contador - 1) . $ciCont2["b"][0]);
+                    $carruselIndexes .= ($apCont2 . ($columna['id_ítem'] - 1) . $ciCont2["b"][0]);
                 }
                 break;
             case 2:
