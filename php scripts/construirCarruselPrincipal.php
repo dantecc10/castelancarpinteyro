@@ -15,7 +15,7 @@ $carruselCSS .= $apStyleCSS; // Contenedor estático de CSS
 
 $contador = 1;
 while ($columna = mysqli_fetch_array($resultado)) {
-    $claseDinámicaCSS = ($baseClaseDinámicaCSS . $contador);
+    $claseDinámicaCSS = ($baseClaseDinámicaCSS . strval($contador));
     for ($i = 0; $i < count($campos); $i++) {
         switch ($i) {
             case 1:
