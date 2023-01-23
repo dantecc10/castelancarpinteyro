@@ -37,7 +37,7 @@ while ($columna = mysqli_fetch_array($resultado)) {
                 $carruselÍtems .= ($apSubCont3 . $columna[$campos[$i]] . $ciSubCont3);
                 break;
             case 4:
-                $carruselCSS .= ("div.carousel-hero." . $claseDinámicaCSS . " {
+                $carruselCSS .= ("div.carousel-hero.bannercarrusel-" . $contador . " {
                     background-image: url('" . $columna['imagen_ítem'] . "');
                 }
                 ");
