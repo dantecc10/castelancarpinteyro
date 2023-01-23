@@ -1,4 +1,6 @@
 <?php
+$comilla = '"';
+
 //Supercontenedor 1 (carousel items): estático
 $apSupCont1 = '<section class="py-5"><!-- Start: Carousel Hero --><div class="carousel slide" data-bs-ride="carousel" id="carousel-1"><div class="carousel-inner">';
 $ciSupCont1 = '</div>';
@@ -13,7 +15,7 @@ $ciCont1 = '</div></div>';
 
 //Contenedor 2 (carousel index): dinámico
 $apCont2 = '<li data-bs-target="#carousel-1" data-bs-slide-to="';
-$ciCont2["b"] = ['"></li>', '" class="active"></li>'];
+$ciCont2["b"] = [($comilla . '></li>'), ($comilla . ' class="active"></li>')];
 
 //Subcontenedor 1: Título
 $apSubCont1 = '<h1 class="hero-title">';
@@ -24,5 +26,5 @@ $apSubCont2 = '<p class="hero-subtitle">';
 $ciSubCont2 = '</p>';
 
 //Subcontenedor 3: Link
-$apSubCont3 = '<p><a class="btn btn-primary btn-lg hero-button" role="button" href="';
-$ciSubCont3 = '">Conocer más</a></p>';
+$apSubCont3 = ('<p><a class="btn btn-primary btn-lg hero-button" role="button" href=' . $comilla);
+$ciSubCont3 = ($comilla . '>Conocer más</a></p>');
