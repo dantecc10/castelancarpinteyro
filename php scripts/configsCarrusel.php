@@ -1,4 +1,6 @@
 <?php
+//Variables
+$baseClaseDinámicaCSS = "banner-carrusel-";
 $comilla = '"';
 
 //Supercontenedor 1 (carousel items): estático
@@ -10,7 +12,7 @@ $apSupCont2 = '<div><a class="carousel-control-prev" href="#carousel-1" role="bu
 $ciSupCont2 = '</ol></div><!-- End: Carousel Hero --></section><!-- End: Brands -->';
 
 //Contenedor 1 (carousel item): dinámico
-$apCont1["a"] = ['<div class="carousel-item"><div class="bg-light border rounded border-light hero-nature carousel-hero jumbotron py-5 px-4">', '<div class="carousel-item active"><div class="bg-light border rounded border-light hero-nature carousel-hero jumbotron py-5 px-4">'];
+$apCont1["a"] = [('<div class="carousel-item"><div class="bg-light border rounded border-light ' . $claseDinámicaCSS . ' carousel-hero jumbotron py-5 px-4">'), ('<div class="carousel-item active"><div class="bg-light border rounded border-light ' . $claseDinámicaCSS . ' carousel-hero jumbotron py-5 px-4">')];
 $ciCont1 = '</div></div>';
 
 //Contenedor 2 (carousel index): dinámico
@@ -24,6 +26,10 @@ $ciSubCont1 = '</h1>';
 //Subcontenedor 2: Descripción
 $apSubCont2 = '<p class="hero-subtitle">';
 $ciSubCont2 = '</p>';
+
+//Contenedores CSS
+$apStyleCSS = "<style>";
+$ciStyleCSS = "</style>";
 
 //Subcontenedor 3: Link
 $apSubCont3 = ('<p><a class="btn btn-primary btn-lg hero-button" role="button" href=' . $comilla);

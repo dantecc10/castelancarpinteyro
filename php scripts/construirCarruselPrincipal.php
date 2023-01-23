@@ -11,12 +11,14 @@ $carruselPrincipal = ""; // Súpercontenedor
 
 $carruselÍtems .= $apSupCont1; // Contenedor estático de ítems
 $carruselIndexes .= $apSupCont2; // Contenedor estático de indexes
+$carruselCSS .= $apStyleCSS; // Contenedor estático de CSS
 
 $contador = 1;
 while ($columna = mysqli_fetch_array($resultado)) {
     for ($i = 0; $i < count($campos); $i++) {
         switch ($i) {
             case 1:
+                $claseDinámicaCSS = ($baseClaseDinámicaCSS . ($columna['id_ítem']));
                 if ($contador = 1) {
                     $carruselÍtems .= $apCont1["a"][1];
                     $carruselIndexes .= ($apCont2 . ($columna['id_ítem'] - 1) . $ciCont2["b"][1]);
@@ -34,6 +36,12 @@ while ($columna = mysqli_fetch_array($resultado)) {
             case 4:
                 $carruselÍtems .= ($apSubCont3 . $columna[$campos[$i]] . $ciSubCont3);
                 break;
+            case 4:
+                $carruselCSS .= ("div.carousel-hero." . $claseDinámicaCSS . " {
+                    background-image: url('" . $columna[$campos[$i]] . "');
+                }
+                ");
+                break;
 
             default:
                 # Error
@@ -49,6 +57,7 @@ while ($columna = mysqli_fetch_array($resultado)) {
 
 $carruselÍtems .= $ciSupCont1; // Contenedor estático de ítems
 $carruselIndexes .= $ciSupCont2; // Contenedor estático de indexes
+$carruselCSS .= $ciStyleCSS; // Contenedor estático de CSS
 
 $carruselPrincipal .= $carruselÍtems;
 $carruselPrincipal .= $carruselIndexes;
