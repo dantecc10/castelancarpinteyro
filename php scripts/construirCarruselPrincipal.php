@@ -61,4 +61,5 @@ $carruselCSS .= $ciStyleCSS; // Contenedor estático de CSS
 
 $carruselPrincipal .= $carruselÍtems;
 $carruselPrincipal .= $carruselIndexes;
+$carruselPrincipal .= $carruselCSS;
 echo $carruselPrincipal;
