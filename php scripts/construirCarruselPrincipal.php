@@ -20,10 +20,10 @@ while ($columna = mysqli_fetch_array($resultado)) {
         switch ($i) {
             case 1:
                 if ($contador = 1) {
-                    $carruselÍtems .= $apCont1["a"][1];
+                    $carruselÍtems .= ($apCont1["a"][1] . $claseDinámicaCSS . $apCont1["b"][0]);
                     $carruselIndexes .= ($apCont2 . ($columna['id_ítem'] - 1) . $ciCont2["b"][1]);
                 } else {
-                    $carruselÍtems .= $apCont1["a"][0];
+                    $carruselÍtems .= ($apCont1["a"][0] . $claseDinámicaCSS . $apCont1["b"][0]);
                     $carruselIndexes .= ($apCont2 . ($columna['id_ítem'] - 1) . $ciCont2["b"][0]);
                 }
                 break;
@@ -37,7 +37,7 @@ while ($columna = mysqli_fetch_array($resultado)) {
                 $carruselÍtems .= ($apSubCont3 . $columna[$campos[$i]] . $ciSubCont3);
                 break;
             case 4:
-                $carruselCSS .= ("div.carousel-hero.bannercarrusel-" . $contador . " {
+                $carruselCSS .= ("div.carousel-hero.banner-carrusel-" . $contador . " {
                     background-image: url('" . $columna['imagen_ítem'] . "');
                 }
                 ");
