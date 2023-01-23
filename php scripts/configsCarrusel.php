@@ -17,7 +17,7 @@ $apCont1_1 = ' carousel-hero jumbotron py-5 px-4">';
 $ciCont1 = '</div></div>';
 
 //Contenedor 2 (carousel index): dinámico
-$apCont2_1 = '<li data-bs-target="#carousel-1" data-bs-slide-to="';
+$apCont2 = '<li data-bs-target="#carousel-1" data-bs-slide-to="';
 $ciCont2["b"] = [($comilla . '></li>'), ($comilla . ' class="active"></li>')];
 
 //Subcontenedor 1: Título
