@@ -54,7 +54,7 @@ while ($columna = mysqli_fetch_array($resultado)) {
 
     $contador = $contador + 1;
 }
-
+// Clausura de variables para impresión
 $carruselÍtems .= $ciSupCont1; // Contenedor estático de ítems
 $carruselIndexes .= $ciSupCont2; // Contenedor estático de indexes
 $carruselCSS .= $ciStyleCSS; // Contenedor estático de CSS
