@@ -44,7 +44,8 @@ function formatearHTML()
 
             default:
                 if ($traer != "" && $traer != " ") {
-                    $textoFormateado .= ('<p class="sangría" style="text-align: justify;"><span style="background color: rgba(248, 249, 250, 0);">' . $traer . "</span><br></p>");
+                    $textoFormateado .= ('
+                    <p class="sangría" style="text-align: justify;"><span style="background color: rgba(248, 249, 250, 0);">' . $traer . "</span><br></p>");
                     // Imprimiendo una linea
                     #echo /*nl2br*/ ($traer);
                 }
