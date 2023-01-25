@@ -73,7 +73,9 @@
         </div><!-- End: Hero Clean Reverse -->
     </header><!-- Start: Brands -->
     <?php
-    include "php scripts/construirCarruselPrincipal.php";
+    #include "php scripts/construirCarruselPrincipal.php";
+    include "php scripts/selectorConstructores.php";
+    seleccionarConstructor(1);
     ?>
     <!-- Start: Brands -->
     <section class="py-5">

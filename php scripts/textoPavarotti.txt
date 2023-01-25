@@ -1,5 +1,4 @@
-<?php
-$texto = ("Luciano Pavarotti
+Luciano Pavarotti
 El rey del Do de Pecho
 
 Aunque esta nota no es la más aguda que pueden dar los tenores en ciertas arias, el cantante de Ópera puede alcanzar hasta el re sobreagudo e incluso notas aún más altas. Pero está claro que esto conlleva un mayor grado de dificultad, ya que son extremadamente difíciles de interpretar con una voz natural sin usar el falsete.
@@ -14,48 +13,4 @@ Pavarotti también se destacó por su generosidad, trabajando a favor de los ref
 
 Pavarotti se ganó su fama mundial por la belleza de su voz en las diversas interpretaciones que nos hicieron vibrar al escucharlas una y otra vez. Él se convirtió en uno de los más grandes tenores contemporáneos y, por supuesto, el mejor pagado de la historia.
 
-Lamentablemente, este hombre de gran talento y corazón murió de cáncer de páncreas el 6 de septiembre del 2007. Todo el mundo quedó inmóvil al saber de su fallecimiento.");
-
-$pasada1 = str_replace("
-", "</p><p>", $texto);
-
-$textoHTML = ("<p>" . $pasada1);
-
-#echo $textoHTML;
-
-function formatearHTML()
-{
-    $textoFormateado = "";
-    // Abriendo el archivo
-    $archivo = fopen("texto.txt", "r");
-    $contador = 1;
-    // Recorremos todas las lineas del archivo
-    while (!feof($archivo)) {
-        // Leyendo una linea
-        $traer = fgets($archivo);
-
-        switch ($contador) {
-                /* case 1:
-                $textoFormateado .= ("<h1>" . $traer . "</h1>");
-                break;
-            case 2:
-                $textoFormateado .= ("<h2>" . $traer . "</h2>");
-                break; */
-
-            default:
-                if ($traer != "" && $traer != " ") {
-                    $textoFormateado .= ('
-                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">' . $traer . "</span><br></p>");
-                    // Imprimiendo una linea
-                    #echo /*nl2br*/ ($traer);
-                }
-                break;
-        }
-        $contador++;
-    }
-
-    // Cerrando el archivo
-    fclose($archivo);
-    echo $textoFormateado;
-}
-formatearHTML();
+Lamentablemente, este hombre de gran talento y corazón murió de cáncer de páncreas el 6 de septiembre del 2007. Todo el mundo quedó inmóvil al saber de su fallecimiento.

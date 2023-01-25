@@ -10,3 +10,9 @@ div.carousel-hero h1.hero-title, div-carousel-hero p.hero-subtitle {
   font-family: monospace;
 }
 
+@media (max-width: 360px) {
+  div1-efecto {
+    width: 100%;
+  }
+}
+
