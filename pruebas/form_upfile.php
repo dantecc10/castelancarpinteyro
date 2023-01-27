@@ -45,7 +45,7 @@
             </div>
         </div>
     </nav><!-- End: Navbar Centered Links -->
-    <!-- Start: Contact Details -->
+    <!-- Start: File Details -->
     <section class="py-5">
         <div class="container">
             <div class="row mb-5">
@@ -69,7 +69,7 @@
                 </div>
             </div>
         </div>
-    </section><!-- End: Contact Details -->
+    </section><!-- End: File Details -->
     <!-- Start: Newsletter Subscription Color -->
     <section class="py-5">
         <div class="container">
