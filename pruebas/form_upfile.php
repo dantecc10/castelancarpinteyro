@@ -2,13 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Form</title>
+    <meta name="theme-color" content="#5436cd">
+    <meta name="description" content="Programación; artículos, tutoriales y cursos disponibles para entusiastas de la programación en Castelán Carpinteyro.">
+    <meta name="twitter:description" content="Cursos de programación y servicios de hosting web">
+    <meta name="twitter:title" content="Castelán Carpinteyro">
+    <meta name="author" content="Dante Castelán Carpinteyro">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
+    <link rel="icon" type="image/png" sizes="4405x3333" href="../assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
+    <link rel="icon" type="image/png" sizes="4405x3333" href="../assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="../manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
-    <title>Upload</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/Carousel-Hero.css">
+    <link rel="stylesheet" href="../assets/css/extra.css">
+    <link rel="stylesheet" href="../assets/css/uiverse.css">
 </head>
 
 <body>
