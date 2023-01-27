@@ -50,8 +50,7 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <p class="fw-bold text-success mb-2">Contacto</p>
-                    <h2 class="fw-bold">Podemos resolver tus dudas</h2>
+                    <p class="fw-bold text-success mb-2">Subir articulo</p>
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
@@ -66,7 +65,7 @@
                             <div><button class="btn btn-primary shadow d-block w-100" type="submit">Enviar</button></div>
                         </form>
                     </div>
-                </div>
+                </div><!-- 
                 <div class="col-md-4 col-xl-4 d-flex justify-content-center justify-content-xl-start">
                     <div class="d-flex flex-wrap flex-md-column justify-content-md-start align-items-md-start h-100">
                         <div class="d-flex align-items-center p-3">
@@ -97,7 +96,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section><!-- End: Contact Details -->
