@@ -59,7 +59,7 @@
                         <form class="p-3 p-xl-4" method="post">
                             <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name" placeholder="Nombre"></div>
                             <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email"></div>
-                            <div class="mb-3"><input class="form-control" type="file" id="file" name="file" placeholder="Archivo"></div>
+                            <div class="mb-3"><input class="form-control" type="file" id="file" name="file"></div>
                             <div class="mb-3"><textarea class="form-control" id="descripción" name="descripción" rows="6" placeholder="Descripcion del archivo"></textarea></div>
                             <div>
                                 <button class="btn btn-primary shadow d-block w-100" type="submit">Enviar</button>
