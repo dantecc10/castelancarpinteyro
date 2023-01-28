@@ -39,7 +39,7 @@
                                     <div class="text-center">
                                         <h4 class="text-dark mb-4">Hola de nuevo</h4>
                                     </div>
-                                    <form class="user">
+                                    <form class="user" method="post" action="php scripts/login.php">
                                         <div class="mb-3"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Dirección de correo electrónico" name="email"></div>
                                         <div class="mb-3"><input class="form-control form-control-user" type="password" id="exampleInputPassword" placeholder="Contraseña" name="password"></div>
                                         <div class="mb-3">
