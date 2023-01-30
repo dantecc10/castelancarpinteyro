@@ -15,7 +15,7 @@ if ($datos = $sql->fetch_object()) {
     $_SESSION['email_usuario'] = $datos->email_usuario;
     $_SESSION['email_dominio'] = $datos->email_dominio;
     $_SESSION['activo_usuario'] = $datos->activo_usuario;
-    header("Location: ../index.php");
+    header("Location: index.php");
 } else {
     echo "Acceso denegado";
 }
