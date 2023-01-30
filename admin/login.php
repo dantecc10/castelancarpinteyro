@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Login - Castelán Carpinteyro</title>
+    <title>Iniciar sesión - Castelán Carpinteyro</title>
     <meta name="twitter:description" content="Panel de administrador de Castelán Carpinteyro; es necesario acceder.">
     <meta name="twitter:image" content="https://castelancarpinteyro.com/admin/assets/img/DanteDEV-Black-Blackground.png">
     <meta property="og:image" content="https://castelancarpinteyro.com/admin/assets/img/DanteDEV-Black-Blackground.png">
