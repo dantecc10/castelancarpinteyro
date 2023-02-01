@@ -83,6 +83,11 @@
                         <i><a href="https://castelancarpinteyro.com/aprende/artículos/2/qué-es-git/">Git</a></i>
                         en tus proyectos, así como las páginas de GitHub para ver en línea tus primeros despliegues.
                     </span><br></p>
+                <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">GitHub es una plataforma de desarrollo de código propiedad
+                        de Microsoft que te permite tener todo tu código en un sólo lugar, haciéndote la vida más sencila. Además, tiene un montón de integraciones, opciones de despliegue en servidores
+                        y métodos de autenticación para que crees así un excelente flujo de trabajo.
+                    </span><br></p>
+                <div class="div1-efecto"><img src="media/1.png" alt="Crear repositorio en GitHub"></div>
             </div>
         </div>
     </div><!-- End: Hero Clean Reverse -->
