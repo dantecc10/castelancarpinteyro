@@ -61,7 +61,7 @@
     <header class="bg-dark">
         <!-- Start: Hero Clean Reverse -->
         <div class="container pt-4 pt-xl-5">
-            <div class="row pt-5">
+            <div class="row">
                 <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
                     <div class="text-center">
                         <p class="fw-bold text-success mb-2">31 de enero del 2023</p>
