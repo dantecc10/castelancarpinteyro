@@ -17,7 +17,7 @@
         }
     ],
     "debug.console.closeOnEnd": true,
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Monokai Dimmed",
     "workbench.preferredDarkColorTheme": "Tomorrow Night Blue",
     "workbench.colorCustomizations": {
         "[Abyss]": {}
