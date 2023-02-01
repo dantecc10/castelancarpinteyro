@@ -70,86 +70,86 @@
                     </div>
                 </div>
             </div>
-    </header>
-    <div class="row pt-5">
-        <div class="col">
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Hola, papás:
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Aquí Dante Castelán Carpinteyro su hijo.
-                    No sé exactamente a qué hora estarán leyendo esto; pero yo sí sé a qué hora lo escribo: 1:26
-                    de la tarde del martes 24 de enero del 2023.
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Si bien la junta de padres de familia es a
-                    las 2:10, yo sé bién qué puedo y qué no puedo hacer; y no me habría comprometido a escribir
-                    esta carta de esta forma de no ser capaz de hacerla y escribirla.
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Esta carta es generada a través de un
-                    script de PHP que yo mismo he creado; para ahorrar tiempo. Yo la escribo, sólo que mi propio
-                    código hace la construcción del código HTML para copiar, pegar y tener esta presentación
-                    que, me parece, es decente y un poco sofisticada; pero no los quiero aburrir con los
-                    detalles técnicos, que poca gente me entiende cuando de programación se trata.
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Me percibo en soledad; en inmensa soledad
-                    porque casi nadie sabe de qué hablo y adoro hablar de código y programación.
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Estamos en un punto en el que para ustedes
-                    estoy sentado en la compu y no hago nada de provecho, pero no tienen idea de lo mucho que
-                    aprendo y de la ventaja que le llevo y saco gracias a eso a mis maestros.
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Tengo que agradecer su participación en
-                    eso, que me han brindado los recursos para lograrlo; mi laptop, que es mi mejor amiga y
-                    aliada; el idioma inglés, en el que invirtieron bastante; y mi servidor; que me ha inspirado
-                    y motivado a ser cada días más profesional.
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Es claro que soy mucho, he evolucionado
-                    bastante, y les debo gran parte de eso. Yo no sería una persona intelectual y dedicada de no
-                    ser por las conversaciones tan amenas que mantenemos sobre literatura, ciencia, cultura,
-                    política y tecnología que tenemos; son diálogos en los que toda nuestra familia crece y nos
-                    favorece como sus hijos. Sé que eso no es una práctica común en las familias, así que les
-                    agradezco enormemente que lo hagan conmigo y que me den el gusto de vivir en su hogar y
-                    haber recibido su educación hasta el momento.
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Les diría en quejas y sugerencias, que por
-                    favor, me permitan ser más libre; dedicarle más tiempo a la ingeniería, y a la programación,
-                    que mucho me darán a mí, y mucho les retribuirá a ustedes.
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">No sé si quiero mayor o menor interacción
-                    social con ustedes, pero sin duda quiero que sea de calidad.
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Creo que lo que haga ahora, con mi vida,
-                    con mi futuro en la universidad, será decisivo en mi vida, pero también en la suya. Tengo
-                    muchos proyectos, quiero tener un empleo, luego una compañía, fundación, emprender negocios
-                    y acciones de impacto social. Quiero convertirme en una figura pública y que mi ustedes; mi
-                    familia sean parte de ello.
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">No me veo teniendo éxito y disfrutándolo
-                    sin que ustedes estén ahí, conmigo, respaldándome.
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Es por eso que quiero expresarles mi
-                    gratitud y amor. No les diría esto en persona, porque no soy así; porque tampoco me criaron
-                    así y mi personalidad se moldea según los límites, métodos y estándares que se aprenden en
-                    casa. Ustedes sabrán que a veces sentarme junto a ustedes es todo lo que tengo que hacer
-                    para comunicarles que los quiero y que les tengo aprecio.
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Creo, también que quiero seguir siendo
-                    como soy, y no deberían tratar de hacer un cambio, o alguna modificación; considero que la
-                    formación que me han dado es buena, de calidad; pero ya he adquirido mis bases de criterio;
-                    lógica, sentido común y estilo de vida; hay mucho de mí que no demuestro pero que sé que es
-                    bueno y en el futuro los hará sentir orgullosos.
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Si bien me encanta tratar de ser siempre
-                    el mejor en todo, no hay nada que haga por hacerme daño o a ustedes.
-                </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Seamos felices, permítanme crecer para
-                    retribuir a la familia lo que he recibido.</span><br></p>
+        </header>
+            <div class="row pt-5">
+                <div class="col">
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Hola, papás:
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Aquí Dante Castelán Carpinteyro su hijo.
+                            No sé exactamente a qué hora estarán leyendo esto; pero yo sí sé a qué hora lo escribo: 1:26
+                            de la tarde del martes 24 de enero del 2023.
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Si bien la junta de padres de familia es a
+                            las 2:10, yo sé bién qué puedo y qué no puedo hacer; y no me habría comprometido a escribir
+                            esta carta de esta forma de no ser capaz de hacerla y escribirla.
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Esta carta es generada a través de un
+                            script de PHP que yo mismo he creado; para ahorrar tiempo. Yo la escribo, sólo que mi propio
+                            código hace la construcción del código HTML para copiar, pegar y tener esta presentación
+                            que, me parece, es decente y un poco sofisticada; pero no los quiero aburrir con los
+                            detalles técnicos, que poca gente me entiende cuando de programación se trata.
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Me percibo en soledad; en inmensa soledad
+                            porque casi nadie sabe de qué hablo y adoro hablar de código y programación.
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Estamos en un punto en el que para ustedes
+                            estoy sentado en la compu y no hago nada de provecho, pero no tienen idea de lo mucho que
+                            aprendo y de la ventaja que le llevo y saco gracias a eso a mis maestros.
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Tengo que agradecer su participación en
+                            eso, que me han brindado los recursos para lograrlo; mi laptop, que es mi mejor amiga y
+                            aliada; el idioma inglés, en el que invirtieron bastante; y mi servidor; que me ha inspirado
+                            y motivado a ser cada días más profesional.
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Es claro que soy mucho, he evolucionado
+                            bastante, y les debo gran parte de eso. Yo no sería una persona intelectual y dedicada de no
+                            ser por las conversaciones tan amenas que mantenemos sobre literatura, ciencia, cultura,
+                            política y tecnología que tenemos; son diálogos en los que toda nuestra familia crece y nos
+                            favorece como sus hijos. Sé que eso no es una práctica común en las familias, así que les
+                            agradezco enormemente que lo hagan conmigo y que me den el gusto de vivir en su hogar y
+                            haber recibido su educación hasta el momento.
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Les diría en quejas y sugerencias, que por
+                            favor, me permitan ser más libre; dedicarle más tiempo a la ingeniería, y a la programación,
+                            que mucho me darán a mí, y mucho les retribuirá a ustedes.
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">No sé si quiero mayor o menor interacción
+                            social con ustedes, pero sin duda quiero que sea de calidad.
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Creo que lo que haga ahora, con mi vida,
+                            con mi futuro en la universidad, será decisivo en mi vida, pero también en la suya. Tengo
+                            muchos proyectos, quiero tener un empleo, luego una compañía, fundación, emprender negocios
+                            y acciones de impacto social. Quiero convertirme en una figura pública y que mi ustedes; mi
+                            familia sean parte de ello.
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">No me veo teniendo éxito y disfrutándolo
+                            sin que ustedes estén ahí, conmigo, respaldándome.
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Es por eso que quiero expresarles mi
+                            gratitud y amor. No les diría esto en persona, porque no soy así; porque tampoco me criaron
+                            así y mi personalidad se moldea según los límites, métodos y estándares que se aprenden en
+                            casa. Ustedes sabrán que a veces sentarme junto a ustedes es todo lo que tengo que hacer
+                            para comunicarles que los quiero y que les tengo aprecio.
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Creo, también que quiero seguir siendo
+                            como soy, y no deberían tratar de hacer un cambio, o alguna modificación; considero que la
+                            formación que me han dado es buena, de calidad; pero ya he adquirido mis bases de criterio;
+                            lógica, sentido común y estilo de vida; hay mucho de mí que no demuestro pero que sé que es
+                            bueno y en el futuro los hará sentir orgullosos.
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Si bien me encanta tratar de ser siempre
+                            el mejor en todo, no hay nada que haga por hacerme daño o a ustedes.
+                        </span><br></p>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Seamos felices, permítanme crecer para
+                            retribuir a la familia lo que he recibido.</span><br></p>
 
-            <p class="text-end" style="text-align: justify;"><strong><em><span style="background-color: rgba(248, 249, 250, 0);">Jamás duden de lo mucho que los
-                            aprecio, porque les debo casi todo a ustedes.<br><i>- Dante Castelán Carpinteyro; su
-                                programador.</i></span></em></strong></p>
-        </div>
-    </div>
-    </div><!-- End: Hero Clean Reverse -->
-
+                    <p class="text-end" style="text-align: justify;"><strong><em><span style="background-color: rgba(248, 249, 250, 0);">Jamás duden de lo mucho que los
+                                    aprecio, porque les debo casi todo a ustedes.<br><i>- Dante Castelán Carpinteyro; su
+                                        programador.</i></span></em></strong></p>
+                </div>
+            </div>
+        </div><!-- End: Hero Clean Reverse -->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://castelancarpinteyro.com/assets/js/bs-init.js"></script>
