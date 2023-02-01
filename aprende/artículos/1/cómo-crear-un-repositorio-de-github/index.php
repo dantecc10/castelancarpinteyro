@@ -73,35 +73,35 @@
     </header>
     <div class="row pt-5">
         <div class="col">
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Hola, papás:
+            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0); color: white;">Hola, papás:
                 </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Aquí Dante Castelán Carpinteyro su hijo.
+            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0); color: white;">Aquí Dante Castelán Carpinteyro su hijo.
                     No sé exactamente a qué hora estarán leyendo esto; pero yo sí sé a qué hora lo escribo: 1:26
                     de la tarde del martes 24 de enero del 2023.
                 </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Si bien la junta de padres de familia es a
+            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0); color: white;">Si bien la junta de padres de familia es a
                     las 2:10, yo sé bién qué puedo y qué no puedo hacer; y no me habría comprometido a escribir
                     esta carta de esta forma de no ser capaz de hacerla y escribirla.
                 </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Esta carta es generada a través de un
+            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0); color: white;">Esta carta es generada a través de un
                     script de PHP que yo mismo he creado; para ahorrar tiempo. Yo la escribo, sólo que mi propio
                     código hace la construcción del código HTML para copiar, pegar y tener esta presentación
                     que, me parece, es decente y un poco sofisticada; pero no los quiero aburrir con los
                     detalles técnicos, que poca gente me entiende cuando de programación se trata.
                 </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Me percibo en soledad; en inmensa soledad
+            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0); color: white;">Me percibo en soledad; en inmensa soledad
                     porque casi nadie sabe de qué hablo y adoro hablar de código y programación.
                 </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Estamos en un punto en el que para ustedes
+            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0); color: white;">Estamos en un punto en el que para ustedes
                     estoy sentado en la compu y no hago nada de provecho, pero no tienen idea de lo mucho que
                     aprendo y de la ventaja que le llevo y saco gracias a eso a mis maestros.
                 </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Tengo que agradecer su participación en
+            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0); color: white;">Tengo que agradecer su participación en
                     eso, que me han brindado los recursos para lograrlo; mi laptop, que es mi mejor amiga y
                     aliada; el idioma inglés, en el que invirtieron bastante; y mi servidor; que me ha inspirado
                     y motivado a ser cada días más profesional.
                 </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Es claro que soy mucho, he evolucionado
+            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0); color: white;">Es claro que soy mucho, he evolucionado
                     bastante, y les debo gran parte de eso. Yo no sería una persona intelectual y dedicada de no
                     ser por las conversaciones tan amenas que mantenemos sobre literatura, ciencia, cultura,
                     política y tecnología que tenemos; son diálogos en los que toda nuestra familia crece y nos
@@ -109,11 +109,11 @@
                     agradezco enormemente que lo hagan conmigo y que me den el gusto de vivir en su hogar y
                     haber recibido su educación hasta el momento.
                 </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">Les diría en quejas y sugerencias, que por
+            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0); color: white;">Les diría en quejas y sugerencias, que por
                     favor, me permitan ser más libre; dedicarle más tiempo a la ingeniería, y a la programación,
                     que mucho me darán a mí, y mucho les retribuirá a ustedes.
                 </span><br></p>
-            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 1);">No sé si quiero mayor o menor interacción
+            <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0); color: white;">No sé si quiero mayor o menor interacción
                     social con ustedes, pero sin duda quiero que sea de calidad.
                 </span><br></p>
 
