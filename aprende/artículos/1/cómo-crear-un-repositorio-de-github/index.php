@@ -48,10 +48,10 @@
                     navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aprende.php">Aprende a programar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.php">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="products.php">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://castelancarpinteyro.com/index.php">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://castelancarpinteyro.com/aprende.php">Aprende a programar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://castelancarpinteyro.com/servicios.php">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://castelancarpinteyro.com/products.php">Productos</a></li>
                 </ul>
                 <div class="div1-efecto"><a class="btn btn-primary shadow div2-efecto" role="button" href="registro.php">Iniciar sesión</a></div>
             </div>
