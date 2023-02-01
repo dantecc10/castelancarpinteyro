@@ -27,7 +27,6 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
     <link rel="icon" type="image/png" sizes="4398x3333" href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV.png">
     <link rel="icon" type="image/png" sizes="4405x3333" href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
     <link rel="stylesheet" href="https://castelancarpinteyro.com/assets/bootstrap/css/bootstrap.min.css">
     <link rel="manifest" href="https://castelancarpinteyro.com/manifest.json">
