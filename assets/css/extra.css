@@ -16,3 +16,8 @@ div.carousel-hero h1.hero-title, div-carousel-hero p.hero-subtitle {
   }
 }
 
+.img-article {
+  border-radius: 10%;
+  align-self: center;
+}
+

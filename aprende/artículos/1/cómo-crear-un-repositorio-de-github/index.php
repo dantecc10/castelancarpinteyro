@@ -87,7 +87,9 @@
                         de Microsoft que te permite tener todo tu código en un sólo lugar, haciéndote la vida más sencila. Además, tiene un montón de integraciones, opciones de despliegue en servidores
                         y métodos de autenticación para que crees así un excelente flujo de trabajo.
                     </span><br></p>
-                <div class="div1-efecto"><img src="media/1.png" alt="Crear repositorio en GitHub"></div>
+                <div class="d-lg-flex justify-content-center align-content-center mx-auto justify-content-lg-center div1-efecto" style="width: 70%;">
+                    <img class="img-fluid d-lg-flex justify-content-center align-self-center justify-content-lg-center align-items-lg-center img-article" data-bs-toggle="tooltip" data-bss-tooltip="" src="media/1.png" width="98%">
+                </div>
             </div>
         </div>
     </div><!-- End: Hero Clean Reverse -->
