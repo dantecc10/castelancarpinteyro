@@ -26,20 +26,20 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image"
         content="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV.png">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV.png">
     <link rel="icon" type="image/png" sizes="4405x3333"
-        href="../assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
+        href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV.png">
     <link rel="icon" type="image/png" sizes="4405x3333"
-        href="../assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="manifest" href="../manifest.json">
+        href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
+    <link rel="stylesheet" href="https://castelancarpinteyro.com/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="https://castelancarpinteyro.com/manifest.json">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
-    <link rel="stylesheet" href="../assets/css/Carousel-Hero.css">
-    <link rel="stylesheet" href="../assets/css/extra.css">
-    <link rel="stylesheet" href="../assets/css/uiverse.css">
+    <link rel="stylesheet" href="https://castelancarpinteyro.com/assets/css/Carousel-Hero.css">
+    <link rel="stylesheet" href="https://castelancarpinteyro.com/assets/css/extra.css">
+    <link rel="stylesheet" href="https://castelancarpinteyro.com/assets/css/uiverse.css">
 </head>
 
 <body style="/*background: url(&quot;design.jpg&quot;);*/background-position: 0 -60px;">
@@ -178,8 +178,8 @@
     </header>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/bs-init.js"></script>
-    <script src="../assets/js/bold-and-dark.js"></script>
+    <script src="https://castelancarpinteyro.com/assets/js/bs-init.js"></script>
+    <script src="https://castelancarpinteyro.com/assets/js/bold-and-dark.js"></script>
 </body>
 
 </html>
