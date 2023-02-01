@@ -27,9 +27,6 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
     <link rel="icon" type="image/png" sizes="4398x3333" href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV.png">
-    <link rel="icon" type="image/png" sizes="4405x3333" href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV.png">
     <link rel="icon" type="image/png" sizes="4405x3333" href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
     <link rel="stylesheet" href="https://castelancarpinteyro.com/assets/bootstrap/css/bootstrap.min.css">
     <link rel="manifest" href="https://castelancarpinteyro.com/manifest.json">
@@ -37,6 +34,8 @@
     <link rel="stylesheet" href="https://castelancarpinteyro.com/assets/css/Carousel-Hero.css">
     <link rel="stylesheet" href="https://castelancarpinteyro.com/assets/css/extra.css">
     <link rel="stylesheet" href="https://castelancarpinteyro.com/assets/css/uiverse.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
 
 <body style="/*background: url(&quot;design.jpg&quot;);*/background-position: 0 -60px;">
