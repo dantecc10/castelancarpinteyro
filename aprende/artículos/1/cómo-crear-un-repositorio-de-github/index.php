@@ -87,13 +87,18 @@
                         de Microsoft que te permite tener todo tu código en un sólo lugar, haciéndote la vida más sencila. Además, tiene un montón de integraciones, opciones de despliegue en servidores
                         y métodos de autenticación para que crees así un excelente flujo de trabajo.
                     </span><br></p>
-                <div class="d-lg-flex justify-content-center align-content-center mx-auto justify-content-lg-center div1-efecto" style="width: 70%;">
-                    <img class="img-fluid d-lg-flex justify-content-center align-self-center justify-content-lg-center align-items-lg-center img-article" data-bs-toggle="tooltip" data-bss-tooltip="" src="media/1.png">
-                </div>
                 <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Lo primero que debemos hacer es acceder a nuestra cuenta
                         de GitHub previamente creada para tener acceso a las opciones en la esquina superior izquierda. Haremos un click en la opción "+", y se nos desplegará un menú, en
                         el cual seleccionaremos "New repository".
                     </span><br></p>
+                <div class="d-lg-flex justify-content-center align-content-center mx-auto justify-content-lg-center div1-efecto" style="width: 70%;">
+                    <img class="img-fluid d-lg-flex justify-content-center align-self-center justify-content-lg-center align-items-lg-center img-article" data-bs-toggle="tooltip" data-bss-tooltip="" src="media/1.png">
+                </div>
+                <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Posteriormente, escribimos el nombre de nuestro repositoro
+                    </span><br></p>
+                <div class="d-lg-flex justify-content-center align-content-center mx-auto justify-content-lg-center div1-efecto" style="width: 70%;">
+                    <img class="img-fluid d-lg-flex justify-content-center align-self-center justify-content-lg-center align-items-lg-center img-article" data-bs-toggle="tooltip" data-bss-tooltip="" src="media/2.png">
+                </div>
             </div>
         </div>
     </div><!-- End: Hero Clean Reverse -->
