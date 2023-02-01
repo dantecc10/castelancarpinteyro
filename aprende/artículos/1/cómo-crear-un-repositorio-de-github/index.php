@@ -16,12 +16,12 @@
         gtag('config', 'G-HV59T08TYC');
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Carta a mis padres - Dante Castelán Carpinteyro</title>
+    <title>Cómo crear un repositorio de código en GitHub | Castelán Carpinteyro</title>
     <meta name="theme-color" content="#5436cd">
-    <meta name="description" content="Programación; artículos, tutoriales y cursos disponibles para entusiastas de la programación en Castelán Carpinteyro.">
+    <meta name="description" content="Aprende cómo crear un repositorio en GitHub para cargar tu código y usar el sistema de control de versiones de archivos Git. ">
     <meta name="twitter:description" content="Cursos de programación y servicios de hosting web">
     <meta name="twitter:title" content="Castelán Carpinteyro">
-    <meta name="author" content="Dante Castelán Carpinteyro">
+    <meta name="author" content="Dante Castelán Carpinteyro, Jeremy Hernández Balderas">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
     <meta name="twitter:card" content="summary_large_image">
