@@ -88,7 +88,7 @@
                         y métodos de autenticación para que crees así un excelente flujo de trabajo.
                     </span><br></p>
                 <div class="d-lg-flex justify-content-center align-content-center mx-auto justify-content-lg-center div1-efecto" style="width: 70%;">
-                    <img class="img-fluid d-lg-flex justify-content-center align-self-center justify-content-lg-center align-items-lg-center img-article" data-bs-toggle="tooltip" data-bss-tooltip="" src="media/1.png" width="98%">
+                    <img class="img-fluid d-lg-flex justify-content-center align-self-center justify-content-lg-center align-items-lg-center img-article" data-bs-toggle="tooltip" data-bss-tooltip="" src="media/1.png">
                 </div>
             </div>
         </div>
