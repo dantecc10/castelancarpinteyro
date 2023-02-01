@@ -65,7 +65,8 @@
                 <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
                     <div class="text-center">
                         <p class="fw-bold text-success mb-2">31 de enero del 2023</p>
-                        <h1 class="fw-bold">Cómo crear un </h1>
+                        <h1 class="fw-bold">Cómo crear un repositorio de GitHub para cargar código por Git
+                        </h1>
                         <p class="text-muted w-lg-50"><strong><span style="color: rgb(255, 255, 255);">Dante Castelán
                                     Carpinteyro y Jeremy Hernández Balderas</span></strong><br></p>
                     </div>
@@ -74,7 +75,7 @@
         </div>
     </header>
     <div class="container pt-4 pt-xl-5">
-        <div class="row pt-5">
+        <div class="row">
             <div class="col">
                 <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Entusiasta de la programación, en este
                         artículo te mostraremos cómo crear un repositorio de GitHub, para que puedas cargar tu código
