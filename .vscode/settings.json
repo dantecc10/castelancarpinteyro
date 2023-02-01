@@ -2,17 +2,24 @@
     "sqltools.connections": [
         {
             "mysqlOptions": {
-                "authProtocol": "xprotocol"
+                "authProtocol": "default"
             },
-            "previewLimit": 50,
+            "previewLimit": 100,
             "server": "castelancarpinteyro.com",
             "port": 3306,
-            "driver": "MySQL",
+            "driver": "MariaDB",
             "name": "Server CC.com",
             "database": "castelancarpinteyro",
             "username": "darkseid",
             "connectionTimeout": 10000,
-            "askForPassword": true
+            "password": "DarkseidPower22!!",
+            "askForPassword": false
         }
-    ]
+    ],
+    "debug.console.closeOnEnd": true,
+    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.preferredDarkColorTheme": "Tomorrow Night Blue",
+    "workbench.colorCustomizations": {
+        "[Abyss]": {}
+    }
 }
