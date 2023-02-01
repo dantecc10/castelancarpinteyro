@@ -71,18 +71,20 @@
                     </div>
                 </div>
             </div>
-            <div class="row pt-5">
-                <div class="col">
-                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Entusiasta de la programación, en este
-                            artículo te mostraremos cómo crear un repositorio de GitHub, para que puedas cargar tu código
-                            y usar el sistema de control de versiones de archivos
-                            <i><a href="https://castelancarpinteyro.com/aprende/artículos/2/qué-es-git/">Git</a></i>
-                            en tus proyectos, así como las páginas de GitHub para ver en línea tus primeros despliegues.
-                        </span><br></p>
-                </div>
-            </div>
-        </div><!-- End: Hero Clean Reverse -->
+        </div>
     </header>
+    <div class="container pt-4 pt-xl-5">
+        <div class="row pt-5">
+            <div class="col">
+                <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Entusiasta de la programación, en este
+                        artículo te mostraremos cómo crear un repositorio de GitHub, para que puedas cargar tu código
+                        y usar el sistema de control de versiones de archivos
+                        <i><a href="https://castelancarpinteyro.com/aprende/artículos/2/qué-es-git/">Git</a></i>
+                        en tus proyectos, así como las páginas de GitHub para ver en línea tus primeros despliegues.
+                    </span><br></p>
+            </div>
+        </div>
+    </div><!-- End: Hero Clean Reverse -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://castelancarpinteyro.com/assets/js/bs-init.js"></script>
