@@ -24,7 +24,7 @@ if ($password == null) {
 }
 
 // Buscar el usuario y contraseña en la tabla de usuarios
-$sql = "SELECT * FROM usuarios WHERE nombre_de_usuario = '$username' AND contraseña = '$password'";
+$sql = "SELECT * FROM usuarios WHERE (`email_usuario` = '$username' OR `email_dominio` = '$username') AND `password_usuario` = '$password'";
 $resultado = $conexiónPDO->query($sql);
 
 // Verificar si se encontró un usuario válido
