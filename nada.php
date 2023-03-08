@@ -1,3 +1,5 @@
 <?php
 
-echo("Hola, PHP");
+echo ("Hola, PHP");
+
+phpinfo();
