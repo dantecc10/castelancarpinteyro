@@ -1,4 +1,5 @@
 <?php
+include "Conexión.php";
 // Configurar la conexión a la base de datos
 #$servername = "nombre_del_servidor";
 #$username = "nombre_de_usuario";
@@ -6,7 +7,6 @@
 #$dbname = "nombre_de_la_base_de_datos";
 $conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
 
-include "Conexión.php";
 
 // Verificar si la conexión es exitosa
 if ($conexiónPDO->connect_error) {
