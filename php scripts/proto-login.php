@@ -15,7 +15,13 @@ if ($conexiónPDO->connect_error) {
 
 // Procesar el input de usuario y contraseña
 $username = mysqli_real_escape_string($conexiónPDO, $_POST['username']);
+if ($username == null) {
+    echo "Dato nulo";
+}
 $password = mysqli_real_escape_string($conexiónPDO, $_POST['password']);
+if ($password == null) {
+    echo "Dato nulo";
+}
 
 // Buscar el usuario y contraseña en la tabla de usuarios
 $sql = "SELECT * FROM usuarios WHERE nombre_de_usuario = '$username' AND contraseña = '$password'";
