@@ -4,7 +4,7 @@
 #$username = "nombre_de_usuario";
 #$password = "contraseña";
 #$dbname = "nombre_de_la_base_de_datos";
-#$conexiónPDO = new mysqli($servername, $username, $password, $dbname);
+$conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
 
 include "Conexión.php";
 
