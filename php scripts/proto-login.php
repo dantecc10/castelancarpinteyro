@@ -35,7 +35,7 @@ if ($resultado->num_rows > 0) {
 } else {
     // Acceso denegado, mostrar un mensaje de error y redireccionar a la página de inicio de sesión
     echo "Nombre de usuario o contraseña incorrectos";
-    header("location: ../index.php");
+    header("location: form-login.html");
 }
 
 // Cerrar la conexión a la base de datos
