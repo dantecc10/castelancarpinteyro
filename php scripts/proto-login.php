@@ -22,6 +22,7 @@ $password = mysqli_real_escape_string($conexiónPDO, $_POST['password']);
 if ($password == null) {
     echo "Dato nulo";
 }
+echo "Dato nulo";
 
 // Buscar el usuario y contraseña en la tabla de usuarios
 $sql = "SELECT * FROM usuarios WHERE (`email_usuario` = '$username' OR `email_dominio` = '$username') AND `password_usuario` = '$password'";
