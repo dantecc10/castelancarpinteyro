@@ -11,6 +11,8 @@ include "Conexión.php";
 // Verificar si la conexión es exitosa
 if ($conexiónPDO->connect_error) {
     die("La conexión a la base de datos falló: " . $conexiónPDO->connect_error);
+} else {
+    echo ("Conexión establecida");
 }
 
 // Procesar el input de usuario y contraseña
