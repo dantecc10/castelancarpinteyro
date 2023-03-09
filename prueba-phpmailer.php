@@ -13,9 +13,9 @@ $mail->Password = "DarkseidPower22!!";
 $mail->SMTPSecure = "tls";
 $mail->Port = "587";
 
-$mail->setFrom('dantecc10@gmail.com', 'Probador de Scripts');
+$mail->setFrom('dante@castelancarpinteyro.com', 'Probador de Scripts');
 $mail->addAddress('jeremy.hdez9@gmail.com');
-$mail->addReplyTo('dante@castelancarpinteyro.com');
+$mail->addReplyTo('dantecc10@gmail.com');
 
 $mail->isHTML(true);
 
