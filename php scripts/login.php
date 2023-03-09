@@ -1,5 +1,5 @@
 <?php
-include "Conexión.php";
+$conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
 
 #if ($conexiónPDO->connect_error) {
 #    die("La conexión a la base de datos falló: " . $conexiónPDO->connect_error);
