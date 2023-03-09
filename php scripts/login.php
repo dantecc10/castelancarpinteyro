@@ -7,10 +7,10 @@ if ($conexiónPDO->connect_error) {
     echo ("Conexión establecida");
 }
 
-$username = mysqli_real_escape_string($conexiónPDO, $_POST['username']);
+$username = mysqli_real_escape_string($conexiónPDO, $_POST['email']);
 $password = mysqli_real_escape_string($conexiónPDO, $_POST['password']);
 
-$sql = "SELECT * FROM usuarios WHERE (`email_usuario` = '$username' OR `email_dominio` = '$username') AND `password_usuario` = '$password'";
+$sql = "SELECT * FROM `usuarios` WHERE (`email_usuario` = '$username' OR `email_dominio` = '$username') AND `password_usuario` = '$password'";
 $resultado = $conexiónPDO->query($sql);
 
 // Verificar si se encontró un usuario válido
