@@ -75,8 +75,8 @@
                                 <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email"></div>
                                 <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Contraseña"></div>
                                 <div class="mb-3"><button class="btn btn-primary shadow d-block w-100" type="submit">Iniciar sesión</button></div>
-                                <p class="text-muted">¿Olvidaste tu <a href="forgot.html">contraseña</a>?</p>
-                                <p class="text-muted">¿No tienes una cuenta?&nbsp;<a href="signup.html">Regístrate</a>.<br></p>
+                                <p class="text-muted">¿Olvidaste tu <a href="forgot.php">contraseña</a>?</p>
+                                <p class="text-muted">¿No tienes una cuenta?&nbsp;<a href="signup.php">Regístrate</a>.<br></p>
                             </form>
                         </div>
                     </div>
