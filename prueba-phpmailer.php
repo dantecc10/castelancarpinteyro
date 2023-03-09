@@ -6,9 +6,9 @@ require "vendor/autoload.php";
 
 $mail = new PHPMailer();
 $mail->isSMTP();
-$mail->Host = "smtp.gmail.com";
+$mail->Host = "webmail.castelancarpinteyro.com";
 $mail->SMTPAuth = true;
-$mail->Username = "dantecc10@gmail.com";
+$mail->Username = "dante@castelancarpinteyro.com";
 $mail->Password = "DarkseidPower22!!";
 $mail->SMTPSecure = "tls";
 $mail->Port = "587";
