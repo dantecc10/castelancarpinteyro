@@ -3,4 +3,4 @@ $conexión = mysqli_connect("localhost", "castelancarpinteyro", "@CastelanCarpin
 
 $conexión[1] = mysqli_connect("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
 $conexión[2] = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
-$conexiónPDO = $conexión[2];
+$conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
