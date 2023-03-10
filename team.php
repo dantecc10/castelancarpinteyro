@@ -50,8 +50,9 @@
                     <li class="nav-item"><a class="nav-link" href="aprende.php">Aprende a programar</a></li>
                     <li class="nav-item"><a class="nav-link" href="servicios.php">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="products.php">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Software.php">Software</a></li>
                 </ul>
-                <div class="div1-efecto"><a class="btn btn-primary shadow div2-efecto" role="button" href="registro.php">Iniciar sesión</a></div>
+                <div class="div1-efecto"><a class="btn btn-primary shadow div2-efecto" role="button" href="login.php">Iniciar sesión</a></div>
             </div>
         </div>
     </nav><!-- End: Navbar Centered Links -->
