@@ -22,31 +22,83 @@
     require 'vendor/phpmailer/phpmailer/src/Exception.php';
 
 
-    $mail = new PHPMailer();
-    $mail->isSMTP();
-    $mail->Host = "webmail.castelancarpinteyro.com";
-    $mail->SMTPAuth = true;
-    $mail->Username = "dante@castelancarpinteyro.com";
-    $mail->Password = "DarkseidPower22!!";
-    $mail->SMTPSecure = "tls";
-    $mail->Port = "587";
 
-    $mail->setFrom('dante@castelancarpinteyro.com', 'Probador de Scripts');
-    $mail->addAddress('jeremy.hdez9@gmail.com');
-    $mail->addReplyTo('dantecc10@gmail.com');
+    //Código previo de .club
+    try {
+        //Create an instance; passing `true` enables exceptions
+        $mail = new PHPMailer(true);
+        //Server settings
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+        SMTP::DEBUG_OFF;                   //Enable verbose debug output
+        $mail->isSMTP();                                                             //Send using SMTP
+        $mail->Host = "smtp.ionos.mx"; // GMail
+        $mail->SMTPAuth = true;                                                    //Enable SMTP authentication
+        $mail->Username = 'script_test@prueba-pagos.castelancarpinteyro.club';                     //SMTP username
+        $mail->Password = 'script_test';                               //SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-    $mail->isHTML(true);
+        //Recipients
+        $mail->setFrom('script_test@prueba-pagos.castelancarpinteyro.club', 'Tienda');
+        $mail->addAddress('dantecc10@gmail.com', 'Dante');     //Add a recipient
+        $mail->addAddress('jeremy.hdez9@gmail.com', 'Jeremías');     //Add a recipient
+        $mail->addReplyTo('script_test@prueba-pagos.castelancarpinteyro.club', 'Tienda');
 
-    $mail->Subject = 'Pruebita';
-    $mail->Body = '<h1>Correo de prueba</h1><p>Este correo debe llegar porque me pondrá contento.</p>';
-    $mail->AltBody = 'Correito de prueba (modo plano)';
+        /*
+        $mail->addReplyTo('info@example.com', 'Information');
+        $mail->setFrom('no-reply@prueba-pagos.castelancarpinteyro.club', 'Tienda online');
+        $mail->addCC('cc@example.com');
+        $mail->addBCC('bcc@example.com'); 
+        */
 
-    if (!$mail->send()) {
-        echo 'El mensaje no se pudo enviar.';
-        echo 'Error: ' . $mail->ErrorInfo;
-    } else {
-        echo 'El mensaje se envió correctamente';
+        /*    //Envio de archivos
+        $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+        $mail->addAttachment('/tmp/image.jpg', 'new.jpg'); */    //Optional name
+
+        //Content
+        $mail->isHTML(true);                                  //Set email format to HTML
+        $mail->Subject = 'Detalles de compra';
+        $cuerpo = '<h4>Gracias por su compra</h4>';
+        $cuerpo .= ('<p>El ID de su compra es <b>' . $id_transacción . '</b></p>');
+        $mail->Body    = imap_utf8($cuerpo);
+        $mail->AltBody = 'Le enviamos los detalles de su compra.';
+
+        $mail->setLanguage('es', '../phpmailer/language/phpmailer.lang-es.php');
+
+        $mail->send();
+    } catch (Exception $e) {
+        echo "Error al enviar el correo electrónico de la compra: {$mail->ErrorInfo}";
+        exit;
     }
+    //Fin de código previo de .club
+
+    //Código de ChatGPT
+    #$mail = new PHPMailer();
+    #$mail->isSMTP();
+    #$mail->Host = "webmail.castelancarpinteyro.com";
+    #$mail->SMTPAuth = true;
+    #$mail->Username = "dante@castelancarpinteyro.com";
+    #$mail->Password = "DarkseidPower22!!";
+    #$mail->SMTPSecure = "tls";
+    #$mail->Port = "587";
+    #
+    #$mail->setFrom('dante@castelancarpinteyro.com', 'Probador de Scripts');
+    #$mail->addAddress('jeremy.hdez9@gmail.com');
+    #$mail->addReplyTo('dantecc10@gmail.com');
+    #
+    #$mail->isHTML(true);
+    #
+    #$mail->Subject = 'Pruebita';
+    #$mail->Body = '<h1>Correo de prueba</h1><p>Este correo debe llegar porque me pondrá contento.</p>';
+    #$mail->AltBody = 'Correito de prueba (modo plano)';
+    #
+    #if (!$mail->send()) {
+    #    echo 'El mensaje no se pudo enviar.';
+    #    echo 'Error: ' . $mail->ErrorInfo;
+    #} else {
+    #    echo 'El mensaje se envió correctamente';
+    #}
+    //Fin de código ChatGPT
     ?>
 </body>
 
