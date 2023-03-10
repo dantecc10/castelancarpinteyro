@@ -52,7 +52,7 @@ $msg = ("<h1>Tiempos de tormenta se acerca</h1>
 <br>
 <p>Esto fue hecho para tí, Osiel, habéis desconfiado de mi script de correos; me has tachado de terrorista digital; de atacante; de persona desalmada que sólo busca hacer daño con la tecnología; ¡qué despropósito!</p>
 <p>Esto está escrito en HTML, pero, ¡por favor! ¿Qué tipo de virus puede crear un estudiante de la carrera técnica en programación del CECyTE (¡del CECyTE!)?</p>
-<p>Tu ip es: " . $ip . " Esto apenas empieza...</p>
+<p>Tu ip es: " . $ip . ". Esto apenas empieza...</p>
 ");
 
 $mail->Body = $msg;
