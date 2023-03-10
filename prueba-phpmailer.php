@@ -99,6 +99,36 @@
     #    echo 'El mensaje se envió correctamente';
     #}
     //Fin de código ChatGPT
+
+    //Código versión 2 de ChatGPT
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
+    require 'vendor/autoload.php'; // Path a la carpeta de PHPMailer
+
+    // Configuración del servidor SMTP
+    $mail = new PHPMailer(true);
+    $mail->isSMTP();
+    $mail->Host = '162.222.203.222'; // Cambiar por la dirección IP o el hostname del servidor SMTP
+    $mail->SMTPAuth = false; // Cambiar a true si es necesario autenticar la conexión SMTP
+    $mail->Port = 465; // Cambiar el puerto SMTP según la configuración del servidor
+
+    // Configuración del correo
+    $mail->setFrom('correo@castelancarpinteyro.com', 'Nombre remitente');
+    $mail->addAddress('destinatario@dominio.com', 'Nombre destinatario');
+    $mail->Subject = 'Asunto del correo';
+    $mail->Body = 'Cuerpo del mensaje';
+
+    // Envío del correo
+    try {
+        $mail->send();
+        echo 'El correo se envió correctamente';
+    } catch (Exception $e) {
+        echo 'El correo no se pudo enviar. Error: ', $mail->ErrorInfo;
+    }
+
+    //Fin del código versión 2 de ChatGPT
+
     ?>
 </body>
 
