@@ -101,8 +101,8 @@
     //Fin de código ChatGPT
 
     //Código versión 2 de ChatGPT
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
+    #use PHPMailer\PHPMailer\PHPMailer;
+    #use PHPMailer\PHPMailer\Exception;
 
     require 'vendor/autoload.php'; // Path a la carpeta de PHPMailer
 
