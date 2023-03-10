@@ -23,3 +23,8 @@ div.carousel-hero h1.hero-title, div-carousel-hero p.hero-subtitle {
   height: 95%;
 }
 
+html::selection {
+  background-color: rgba(175, 64, 255, 0.3);
+  color: aliceblue !important;
+}
+
