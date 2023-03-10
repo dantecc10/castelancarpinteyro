@@ -110,7 +110,7 @@
     $mail = new PHPMailer(true);
     $mail->isSMTP();
     $mail->Host = 'castelancarpinteyro.com'; // Cambiar por la dirección IP o el hostname del servidor SMTP
-    $mail->SMTPAuth = false; // Cambiar a true si es necesario autenticar la conexión SMTP
+    $mail->SMTPAuth = true; // Cambiar a true si es necesario autenticar la conexión SMTP
     $mail->Port = 465; // Cambiar el puerto SMTP según la configuración del servidor
     $mail->Username = "dante@castelancarpinteyro.com";
     $mail->Password = "DarkseidPower22!!";
