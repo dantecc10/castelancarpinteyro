@@ -1,5 +1,7 @@
 <?php
-include "correos";
+include "correos/configuracion-de-correo.php";
+include "correos/PHPMailer.php";
+include "correos/SMTP.php";
 
 $mail->ClearAllRecipients();
 
