@@ -1,8 +1,12 @@
 <?php
+include "configuracion-de-correo.php";
+include "Exception.php";
+include "PHPMailer.php";
+include "SMTP.php";
 
 $mail->ClearAllRecipients();
 
-$mail->AddAddress("dante@castelancarpinteyro.com");#("destinatario@email.com");
+$mail->AddAddress("dante@castelancarpinteyro.com"); #("destinatario@email.com");
 $mail->AddCC("jeremy.hdez9@gmail.com"); #("concopia1@email.com");
 $mail->AddCC("dantecc10@gmail.com"); #("concopia2@email.com");
 
