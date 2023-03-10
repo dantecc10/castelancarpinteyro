@@ -33,16 +33,16 @@
         $mail->isSMTP();                                                             //Send using SMTP
         $mail->Host = "smtp.ionos.mx"; // GMail
         $mail->SMTPAuth = true;                                                    //Enable SMTP authentication
-        $mail->Username = 'script_test@prueba-pagos.castelancarpinteyro.club';                     //SMTP username
-        $mail->Password = 'script_test';                               //SMTP password
+        $mail->Username = 'dante@castelancarpinteyro.com';                     //SMTP username
+        $mail->Password = 'DarkseidPower22!!';                               //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('script_test@prueba-pagos.castelancarpinteyro.club', 'Tienda');
+        $mail->setFrom('dante@castelancarpinteyro.com', 'Dante');
         $mail->addAddress('dantecc10@gmail.com', 'Dante');     //Add a recipient
         $mail->addAddress('jeremy.hdez9@gmail.com', 'Jeremías');     //Add a recipient
-        $mail->addReplyTo('script_test@prueba-pagos.castelancarpinteyro.club', 'Tienda');
+        $mail->addReplyTo('dante@castelancarpinteyro.com', 'Dante');
 
         /*
         $mail->addReplyTo('info@example.com', 'Information');
