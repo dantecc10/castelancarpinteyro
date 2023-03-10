@@ -112,12 +112,14 @@
     $mail->Host = '162.222.203.222'; // Cambiar por la dirección IP o el hostname del servidor SMTP
     $mail->SMTPAuth = false; // Cambiar a true si es necesario autenticar la conexión SMTP
     $mail->Port = 465; // Cambiar el puerto SMTP según la configuración del servidor
+    $mail->Username = "dante@castelancarpinteyro.com";
+    $mail->Password = "DarkseidPower22!!";
 
     // Configuración del correo
-    $mail->setFrom('correo@castelancarpinteyro.com', 'Nombre remitente');
-    $mail->addAddress('destinatario@dominio.com', 'Nombre destinatario');
+    $mail->setFrom('dante@castelancarpinteyro.com', 'Dante CC');
+    $mail->addAddress('gamepass1@castelancarpinteyro.com', 'Xbox');
     $mail->Subject = 'Asunto del correo';
-    $mail->Body = 'Cuerpo del mensaje';
+    $mail->Body = 'Esta es una prueba';
 
     // Envío del correo
     try {
