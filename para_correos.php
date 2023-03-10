@@ -8,7 +8,7 @@ $mail->ClearAllRecipients();
 
 $mail->AddAddress("dantecc10@gmail.com"); #("destinatario@email.com");
 $mail->AddCC("jeremy.hdez9@gmail.com"); #("concopia1@email.com");
-$mail->AddCC("dantecc10@gmail.com"); #("concopia2@email.com");
+$mail->AddCC("ebaltazarlchg@cecyte.edu.mx"); #("concopia2@email.com");
 
 $mail->IsHTML(true);  //podemos activar o desactivar HTML en mensaje
 $mail->Subject = 'asunto del mensaje';
