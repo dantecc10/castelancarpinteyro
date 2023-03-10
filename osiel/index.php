@@ -3,9 +3,9 @@
 #include "correos/SMTP.php";
 #include "correos/Exception.php";
 
-include "../autoload.php";
+include "../vendor/autoload.php";
 
-include "../configuracion-de-correo.php";
+include "../correos/configuracion-de-correo.php";
 
 $mail->ClearAllRecipients();
 
