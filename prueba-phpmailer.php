@@ -24,52 +24,52 @@
 
 
     //Código previo de .club
-    try {
-        //Create an instance; passing `true` enables exceptions
-        $mail = new PHPMailer(true);
-        //Server settings
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-        SMTP::DEBUG_OFF;                   //Enable verbose debug output
-        $mail->isSMTP();                                                             //Send using SMTP
-        $mail->Host = "smtp.ionos.mx"; // GMail
-        $mail->SMTPAuth = true;                                                    //Enable SMTP authentication
-        $mail->Username = 'dante@castelancarpinteyro.com';                     //SMTP username
-        $mail->Password = 'DarkseidPower22!!';                               //SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
-        //Recipients
-        $mail->setFrom('dante@castelancarpinteyro.com', 'Dante');
-        $mail->addAddress('dantecc10@gmail.com', 'Dante');     //Add a recipient
-        $mail->addAddress('jeremy.hdez9@gmail.com', 'Jeremías');     //Add a recipient
-        $mail->addReplyTo('dante@castelancarpinteyro.com', 'Dante');
-
-        /*
-        $mail->addReplyTo('info@example.com', 'Information');
-        $mail->setFrom('no-reply@prueba-pagos.castelancarpinteyro.club', 'Tienda online');
-        $mail->addCC('cc@example.com');
-        $mail->addBCC('bcc@example.com'); 
-        */
-
-        /*    //Envio de archivos
-        $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-        $mail->addAttachment('/tmp/image.jpg', 'new.jpg'); */    //Optional name
-
-        //Content
-        $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'Detalles de compra';
-        $cuerpo = '<h4>Gracias por su compra</h4>';
-        $cuerpo .= ('<p>El ID de su compra es <b>' . $id_transacción . '</b></p>');
-        $mail->Body    = imap_utf8($cuerpo);
-        $mail->AltBody = 'Le enviamos los detalles de su compra.';
-
-        $mail->setLanguage('es', '../phpmailer/language/phpmailer.lang-es.php');
-
-        $mail->send();
-    } catch (Exception $e) {
-        echo "Error al enviar el correo electrónico de la compra: {$mail->ErrorInfo}";
-        exit;
-    }
+    #try {
+    #    //Create an instance; passing `true` enables exceptions
+    #    $mail = new PHPMailer(true);
+    #    //Server settings
+    #    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+    #    SMTP::DEBUG_OFF;                   //Enable verbose debug output
+    #    $mail->isSMTP();                                                             //Send using SMTP
+    #    $mail->Host = "smtp.ionos.mx"; // GMail
+    #    $mail->SMTPAuth = true;                                                    //Enable SMTP authentication
+    #    $mail->Username = 'dante@castelancarpinteyro.com';                     //SMTP username
+    #    $mail->Password = 'DarkseidPower22!!';                               //SMTP password
+    #    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    #    $mail->Port = 587;  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    #
+    #    //Recipients
+    #    $mail->setFrom('dante@castelancarpinteyro.com', 'Dante');
+    #    $mail->addAddress('dantecc10@gmail.com', 'Dante');     //Add a recipient
+    #    $mail->addAddress('jeremy.hdez9@gmail.com', 'Jeremías');     //Add a recipient
+    #    $mail->addReplyTo('dante@castelancarpinteyro.com', 'Dante');
+    #
+    #    /*
+    #    $mail->addReplyTo('info@example.com', 'Information');
+    #    $mail->setFrom('no-reply@prueba-pagos.castelancarpinteyro.club', 'Tienda online');
+    #    $mail->addCC('cc@example.com');
+    #    $mail->addBCC('bcc@example.com'); 
+    #    */
+    #
+    #    /*    //Envio de archivos
+    #    $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+    #    $mail->addAttachment('/tmp/image.jpg', 'new.jpg'); */    //Optional name
+    #
+    #    //Content
+    #    $mail->isHTML(true);                                  //Set email format to HTML
+    #    $mail->Subject = 'Detalles de compra';
+    #    $cuerpo = '<h4>Gracias por su compra</h4>';
+    #    $cuerpo .= ('<p>El ID de su compra es <b>' . $id_transacción . '</b></p>');
+    #    $mail->Body    = imap_utf8($cuerpo);
+    #    $mail->AltBody = 'Le enviamos los detalles de su compra.';
+    #
+    #    $mail->setLanguage('es', '../phpmailer/language/phpmailer.lang-es.php');
+    #
+    #    $mail->send();
+    #} catch (Exception $e) {
+    #    echo "Error al enviar el correo electrónico de la compra: {$mail->ErrorInfo}";
+    #    exit;
+    #}
     //Fin de código previo de .club
 
     //Código de ChatGPT
