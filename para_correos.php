@@ -1,5 +1,5 @@
 <?php
-include "correos.php";
+include "correos";
 
 $mail->ClearAllRecipients();
 
