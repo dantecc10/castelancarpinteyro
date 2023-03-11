@@ -11,9 +11,9 @@ $mail->ClearAllRecipients();
 
 #$mail->AddAddress("o.moralesm.chg.2023@cecytepuebla.edu.mx"); #("concopia2@email.com");
 #$mail->AddAddress("osiel.mm@gmail.com"); #("concopia2@email.com");
-$mail->AddAddress("dantecc10@gmail.com"); #("concopia2@email.com");
+$mail->AddAddress("agaliciav@cecyte.edu.mx"); #("concopia2@email.com");
 $mail->AddCC("dantecc10@gmail.com"); #("destinatario@email.com");
-$mail->AddCC("jeremy.hdez9@gmail.com"); #("concopia1@email.com");
+#$mail->AddCC("jeremy.hdez9@gmail.com"); #("concopia1@email.com");
 
 $mail->IsHTML(true);  //podemos activar o desactivar HTML en mensaje
 $mail->Subject = 'Se viene un ataque';
@@ -50,7 +50,7 @@ $msg = ("<h1>Tiempos de tormenta se acercan</h1>
 <br>
 <br>
 <br>
-<p>Esto fue hecho para tí, Osiel, habéis desconfiado de mi script de correos; me has tachado de terrorista digital; de atacante; de persona desalmada que sólo busca hacer daño con la tecnología; ¡qué despropósito!</p>
+<p>Esto fue hecho para tí, Andrea, habéis desconfiado de mi script de correos; me has tachado de terrorista digital; de atacante; de persona desalmada que sólo busca hacer daño con la tecnología; ¡qué despropósito!</p>
 <p>Esto está escrito en HTML, pero, ¡por favor! ¿Qué tipo de virus puede crear un estudiante de la carrera técnica en programación del CECyTE (¡del CECyTE!)?</p>
 <p>Tu ip es: " . $ip . ". Esto apenas empieza...</p>
 ");
