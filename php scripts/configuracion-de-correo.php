@@ -17,9 +17,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
-require_once('vendor/phpmailer/phpmailer/src/PHPMailer.php');
-require_once('vendor/phpmailer/phpmailer/src/SMTP.php');
-require_once('vendor/phpmailer/phpmailer/src/Exception.php');
+require_once('../vendor/phpmailer/phpmailer/src/PHPMailer.php');
+require_once('../vendor/phpmailer/phpmailer/src/SMTP.php');
+require_once('../vendor/phpmailer/phpmailer/src/Exception.php');
 
 include 'secrets.php';
 
