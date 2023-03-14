@@ -1,6 +1,6 @@
 <?php
 #include "Conexión.php";
-$conexión = mysqli_connect("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
+$conexión = mysqli_connect("localhost", "castelancarpinteyro", "$contraseñaDBcastelancarpinteyro", "castelancarpinteyro");
 include "configsCarrusel.php";
 $tablaSQL = "carrusel_principal_ítems"; // Línea de configuración
 $campos = ['', 'id_ítem', 'título_ítem', 'descripción_ítem', 'link_ítem', 'imagen_ítem', 'activo_ítem']; // Línea de configuración
