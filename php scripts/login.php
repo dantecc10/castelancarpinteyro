@@ -1,4 +1,5 @@
 <?php
+session_start();
 $conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
 
 if ($conexiónPDO->connect_error) {
@@ -17,7 +18,6 @@ $resultado = $conexiónPDO->query($sql);
 if ($resultado->num_rows > 0) {
     // Acceso concedido, redireccionar a la página de inicio del sitio web
     $conexiónPDO->close();
-    session_start();
     $_SESSION['Iniciada'] = true;
     $_SESSION['id'] = $resultado['id_usuario'];
     $_SESSION['nombre'] = $resultado['nombre_usuario'];
