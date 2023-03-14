@@ -51,7 +51,13 @@
                     <li class="nav-item"><a class="nav-link" href="products.php">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="Software.php">Software</a></li>
                 </ul>
-                <div class="div1-efecto"><a class="btn btn-primary shadow div2-efecto" role="button" href="login.php">Iniciar sesión</a></div>
+                <div class="div1-efecto"><a class="btn btn-primary shadow div2-efecto" role="button"
+                <?php if (isset($_SESSION['Iniciada'])) {
+                    echo (' href="account.php">'. $_SESSION['nombre']);
+                } else {
+                    echo ' href="login.php">Iniciar sesión';
+                }
+                ?></a></div>
             </div>
         </div>
     </nav><!-- End: Navbar Centered Links -->
