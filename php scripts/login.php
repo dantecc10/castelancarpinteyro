@@ -19,6 +19,14 @@ if ($resultado->num_rows > 0) {
     $conexiónPDO->close();
     session_start();
     $_SESSION['Iniciada'] = true;
+    $_SESSION['id'] = $resultado['id_usuario'];
+    $_SESSION['nombre'] = $resultado['nombre_usuario'];
+    $_SESSION['apellidoPaterno'] = $resultado['apellidoPaterno_usuario'];
+    $_SESSION['apellidoMaterno'] = $resultado['apellidoMaterno_usuario'];
+    $_SESSION['rol'] = $resultado['rol_usuario'];
+    $_SESSION['email'] = $resultado['email_usuario'];
+    $_SESSION['emailDominio'] = $resultado['email_dominio'];
+
     header("Location: ../index.php");
 } else {
     // Acceso denegado, mostrar un mensaje de error y redireccionar a la página de inicio de sesión
