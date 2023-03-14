@@ -17,15 +17,15 @@ $resultado = $conexiónPDO->query($sql);
 // Verificar si se encontró un usuario válido
 if ($resultado->num_rows > 0) {
     // Acceso concedido, redireccionar a la página de inicio del sitio web
-    while ($row = $result->fetch_assoc()) {
+    if ($datos = $resultado->fetch_object()) {
         $_SESSION['Iniciada'] = true;
-        $_SESSION['id'] = $row['id_usuario'];
-        $_SESSION['nombre'] = $row['nombre_usuario'];
-        $_SESSION['apellidoPaterno'] = $row['apellidoPaterno_usuario'];
-        $_SESSION['apellidoMaterno'] = $row['apellidoMaterno_usuario'];
-        $_SESSION['rol'] = $row['rol_usuario'];
-        $_SESSION['email'] = $row['email_usuario'];
-        $_SESSION['emailDominio'] = $row['email_dominio'];
+        $_SESSION['id'] = $datos->id_usuario;
+        $_SESSION['nombre'] = $datos->nombre_usuario;
+        $_SESSION['apellidoPaterno'] = $datos->apellidoPaterno_usuario;
+        $_SESSION['apellidoMaterno'] = $datos->apellidoMaterno_usuario;
+        $_SESSION['rol'] = $datos->rol_usuario;
+        $_SESSION['email'] = $datos->email_usuario;
+        $_SESSION['emailDominio'] = $datos->email_dominio;
     }
     $conexiónPDO->close();
 
