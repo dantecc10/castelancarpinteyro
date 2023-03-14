@@ -17,15 +17,17 @@ $resultado = $conexiónPDO->query($sql);
 // Verificar si se encontró un usuario válido
 if ($resultado->num_rows > 0) {
     // Acceso concedido, redireccionar a la página de inicio del sitio web
+    while ($row = $result->fetch_assoc()) {
+        $_SESSION['Iniciada'] = true;
+        $_SESSION['id'] = $row['id_usuario'];
+        $_SESSION['nombre'] = $row['nombre_usuario'];
+        $_SESSION['apellidoPaterno'] = $row['apellidoPaterno_usuario'];
+        $_SESSION['apellidoMaterno'] = $row['apellidoMaterno_usuario'];
+        $_SESSION['rol'] = $row['rol_usuario'];
+        $_SESSION['email'] = $row['email_usuario'];
+        $_SESSION['emailDominio'] = $row['email_dominio'];
+    }
     $conexiónPDO->close();
-    $_SESSION['Iniciada'] = true;
-    $_SESSION['id'] = $resultado['id_usuario'];
-    $_SESSION['nombre'] = $resultado['nombre_usuario'];
-    $_SESSION['apellidoPaterno'] = $resultado['apellidoPaterno_usuario'];
-    $_SESSION['apellidoMaterno'] = $resultado['apellidoMaterno_usuario'];
-    $_SESSION['rol'] = $resultado['rol_usuario'];
-    $_SESSION['email'] = $resultado['email_usuario'];
-    $_SESSION['emailDominio'] = $resultado['email_dominio'];
 
     header("Location: ../index.php");
 } else {
