@@ -17,6 +17,8 @@ $resultado = $conexiónPDO->query($sql);
 if ($resultado->num_rows > 0) {
     // Acceso concedido, redireccionar a la página de inicio del sitio web
     $conexiónPDO->close();
+    session_start();
+    $_SESSION['Iniciada'] = true;
     header("Location: ../index.php");
 } else {
     // Acceso denegado, mostrar un mensaje de error y redireccionar a la página de inicio de sesión
