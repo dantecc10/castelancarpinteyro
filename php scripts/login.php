@@ -1,5 +1,5 @@
 <?php
-$conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "$contraseñaDBcastelancarpinteyro", "castelancarpinteyro");
+$conexiónPDO = new mysqli("localhost", "castelancarpinteyro", $contraseñaDBcastelancarpinteyro, "castelancarpinteyro");
 
 if ($conexiónPDO->connect_error) {
     die("La conexión a la base de datos falló: " . $conexiónPDO->connect_error);
