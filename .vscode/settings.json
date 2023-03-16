@@ -10,10 +10,9 @@
             "driver": "MariaDB",
             "name": "Server CC.com",
             "database": "castelancarpinteyro",
-            "username": "darkseid",
+            "username": "castelancarpinteyro",
             "connectionTimeout": 10000,
-            "password": "DarkseidPower22!!",
-            "askForPassword": false
+            "password": "@CastelanCarpinteyroWEB"
         }
     ],
     "debug.console.closeOnEnd": true,
