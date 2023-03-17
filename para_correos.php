@@ -8,14 +8,13 @@ include "vendor/autoload.php";
 include "correos/configuracion-de-correo.php";
 include "php scripts/secrets.php";
 
-$asunto = $_GET['asunto'];
-$mensaje = $_GET['mensaje'];
-$destinatario = $_GET['destinatario'];
+#$asunto = $_GET['asunto'];
+#$mensaje = $_GET['mensaje'];
+#$destinatario = $_GET['destinatario'];
 
-echo ($asunto . "<br>");
-echo ($mensaje . "<br>");
-echo ($destinatario . "<br>");
-
+$destinatario = 'dannapaolaordonezfaro@gmail.com';
+$asunto = 'Credenciales del servidor para el equipo 4.';
+$mensaje = 'Hola, Dana Paola, a través de este correo te envío las credenciales de acceso al servidor de tu equipo, el número 4. El usuario será prog4b4 y la contraseña es Prog4B4!!. Ingresa desde prog5a.com:8443. Atentamente, Dante Castelán Carpinteyro.';
 
 $mail->ClearAllRecipients();
 $mail->AddAddress("$destinatario"); #("destinatario@email.com");
