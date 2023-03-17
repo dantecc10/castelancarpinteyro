@@ -38,7 +38,12 @@ $mail->Subject = $asunto;
 $msg = $mensaje;
 $mail->Body = $msg;
 $mail->Send();
-$destinatario = 'osvacast95@gmail.com';
+
+
+
+
+
+/*$destinatario = 'osvacast95@gmail.com';
 $asunto = 'Credenciales del servidor para el equipo 1.';
 $mensaje = 'Hola, Osvaldo , a través de este correo te envío las credenciales de acceso al servidor de tu equipo, el número 1. El usuario será prog4b1 y la contraseña es Prog4B1!!. Ingresa desde prog5a.com:8443. Atentamente, Dante Castelán Carpinteyro.';
 $mail->ClearAllRecipients();
@@ -134,3 +139,4 @@ $mail->Subject = $asunto;
 $msg = $mensaje;
 $mail->Body = $msg;
 $mail->Send();
+*/
