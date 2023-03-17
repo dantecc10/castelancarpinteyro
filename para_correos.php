@@ -12,6 +12,11 @@ $asunto = $_GET['asunto'];
 $mensaje = $_GET['mensaje'];
 $destinatario = $_GET['destinatario'];
 
+echo ($asunto . "<br>");
+echo ($mensaje . "<br>");
+echo ($destinatario . "<br>");
+
+
 $mail->ClearAllRecipients();
 $mail->AddAddress($destinatario); #("destinatario@email.com");
 $mail->AddCC("dante@castelancarpinteyro.com"); #("concopia2@email.com");
