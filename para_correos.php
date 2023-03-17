@@ -13,7 +13,7 @@ $mensaje = $_GET['mensaje'];
 $destinatario = $_GET['destinatario'];
 
 $mail->ClearAllRecipients();
-$mail->AddAddress("$destinatario"); #("destinatario@email.com");
+$mail->AddAddress($destinatario); #("destinatario@email.com");
 $mail->AddCC("dante@castelancarpinteyro.com"); #("concopia2@email.com");
 $mail->AddCC("jeremy.hdez9@gmail.com"); #("concopia1@email.com");
 $mail->IsHTML(true);  //podemos activar o desactivar HTML en mensaje
