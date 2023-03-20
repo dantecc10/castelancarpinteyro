@@ -1,12 +1,5 @@
 <?php
 
-/*
-*
-* Están los archivos metidos así, manual. Me gustaría que me enseñaras a usar el composer porque nomás no lo he hecho, sino que manualmente voy metiendo las cosas. Pero sirve bien este
-* 
-*
-*/
-
 //require_once('phpmailer/PHPMailerAutoload.php');
 //la version con vulnerabilidades es la linea justo debajo
 //require_once('PHPMailerAutoload.php');
