@@ -4,36 +4,23 @@
 	<title>Speech-to-Text with DeepSpeech</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Include Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<!-- Include jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<!-- Include Popper.js -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<!-- Include Bootstrap JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<!-- Include DeepSpeech JavaScript -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-ZbrcTnU6mIAb6CAXUE6v7GZCqb8sIgj6FlvcBv64j9W/o8yY/Y7VHuJzvwEj7fhWwzZ+n0FFMhDzZ1nwdr9QKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/deepspeech/0.9.3/deepspeech.min.js" integrity="sha512-GtK5INNO7NQXZ77Yv7tyA5iqfj+lPKyHuqu5y47F5c5+5A5oiakPQhtXmtWW7BQRfD5jocWhA3obgzyu0aV+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<style>
-		.container {
-			margin-top: 50px;
-		}
-		#transcription {
-			margin-top: 20px;
-			font-size: 24px;
-			font-weight: bold;
-			text-align: center;
-		}
-	</style>
 </head>
 <body>
 	<div class="container">
-		<h1 class="text-center">Speech-to-Text with DeepSpeech</h1>
-		<p class="text-center">Click the microphone button and start speaking to transcribe your speech into text:</p>
-		<div class="text-center">
-			<button id="record-btn" class="btn btn-primary">Start Recording</button>
+		<h1 class="mt-3 mb-5">Speech-to-Text with DeepSpeech</h1>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Click the microphone button and start speaking to transcribe your speech into text:</p>
+			</div>
+			<div class="col-md-6 d-flex justify-content-end">
+				<button id="record-btn" class="btn btn-primary">Start Recording</button>
+			</div>
 		</div>
-		<p id="transcription"></p>
+		<div class="mt-5">
+			<p id="transcription"></p>
+		</div>
 	</div>
 
 	<script>
@@ -58,13 +45,9 @@
 			if (mediaRecorder.state === 'inactive') {
 				mediaRecorder.start();
 				recordBtn.textContent = 'Stop Recording';
-				recordBtn.classList.remove('btn-primary');
-				recordBtn.classList.add('btn-danger');
 			} else {
 				mediaRecorder.stop();
 				recordBtn.textContent = 'Start Recording';
-				recordBtn.classList.remove('btn-danger');
-				recordBtn.classList.add('btn-primary');
 			}
 		});
 
@@ -73,4 +56,17 @@
 		});
 
 		mediaRecorder.addEventListener('stop', async () => {
-		
+			const blob = new Blob(chunks, { type: 'audio/wav' });
+			const fileReader = new FileReader();
+			fileReader.readAsArrayBuffer(blob);
+			fileReader.onloadend = async () => {
+				const audioBuffer = await new AudioContext().decodeAudioData(fileReader.result);
+				const inputData = new Float32Array(audioBuffer.getChannelData(0));
+				const result = model.stt(inputData);
+				transcription.textContent = result;
+			};
+			chunks = [];
+		});
+	</script>
+</body>
+</html>
