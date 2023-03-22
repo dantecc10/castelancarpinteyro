@@ -86,7 +86,7 @@ session_start();
     seleccionarConstructor(1);
     ?>
     <!-- Start: Brands -->
-    <section class="py-5">
+    <!--<section class="py-5">
         <div class="container text-center py-5">
             <p class="mb-4" style="font-size: 1.6rem;">Used by <span class="text-success"><strong>2400+</strong></span>&nbsp;of the best companies in the world.</p><a href="#"> <img class="m-3" src="../assets/img/brands/google.png"></a><a href="#"> <img class="m-3" src="../assets/img/brands/microsoft.png"></a><a href="#"> <img class="m-3" src="../assets/img/brands/apple.png"></a><a href="#"> <img class="m-3" src="../assets/img/brands/facebook.png"></a><a href="#"> <img class="m-3" src="../assets/img/brands/twitter.png"></a>
         </div>
