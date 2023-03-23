@@ -146,20 +146,23 @@
             <div class="row justify-content-center">
                 <!-- Start: Services -->
                 <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
-                    <h3 class="fs-6 fw-bold">Servicios</h3>
+                    <h3 class="fs-6 fw-bold">Integrantes</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#">Diseño web</a></li>
-                        <li><a href="#">Desarrollo backend-frontend</a></li>
-                        <li><a href="#">Hosting</a></li>
+                        <li><a href="#">Emmanuel Baltazar López #1</a></li>
+                        <li><a href="#">Dante Castelán Carpinteyro #4</a></li>
+                        <li><a href="#">Jeremy Hernández Balderas #15</a></li>
+                        <li><a href="#">Vania Yaraseth Herrera Martínez #17</a></li>
+                        <li><a href="#">Yeimi Margarita Luna Rodríguez #21</a></li>
                     </ul>
                 </div><!-- End: Services -->
                 <!-- Start: About -->
                 <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
                     <h3 class="fs-6 fw-bold">Acerca de</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#"><strong>Castelán Carpinteyro</strong></a></li>
-                        <li><a href="#">Equipo</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#"><strong>Colegio de Estudios Científicos y Tecnológicos del Estado de Puebla</strong><br></a></li>
+                        <li><a href="#">Plantel Chignahuapan</a></li>
+                        <li><a href="#"><strong>Módulo V, Submódulo II: </strong>Desarrolla aplicaciones móviles para iOS<br></a></li>
+                        <li><a href="#"><strong>Docente: </strong>Ing. Miguel Ángel Islas Arista<br></a></li>
                     </ul>
                 </div><!-- End: About -->
                 <!-- Start: Social Icons -->
