@@ -28,3 +28,7 @@ html::selection {
   color: aliceblue !important;
 }
 
+.tema-desglosable {
+  color: #00ff75;
+}
+
