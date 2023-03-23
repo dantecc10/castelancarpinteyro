@@ -32,3 +32,15 @@ html::selection {
   color: #00ff75;
 }
 
+.columna-1 {
+  width: 25%;
+}
+
+.columna-2 {
+  width: 37.5%;
+}
+
+.columna-3 {
+  width: 37.5%;
+}
+
