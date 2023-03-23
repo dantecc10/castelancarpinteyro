@@ -148,7 +148,7 @@
                 <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
                     <h3 class="fs-6 fw-bold">Acerca de</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#"><strong>Colegio de Estudios Científicos y Tecnológicos del Estado de Puebla</strong> Plantel Chignahuapan</a></li>
+                        <li><a href="#"><strong>Colegio de Estudios Científicos y Tecnológicos del Estado de Puebla</strong>&quot;Plantel Chignahuapan</a></li>
                         <li><a href="#"><strong>Módulo V, Submódulo II: </strong>Desarrolla aplicaciones móviles para iOS<br></a></li>
                         <li><a href="#"><strong>Docente: </strong>Ing. Miguel Ángel Islas Arista<br></a></li>
                     </ul>
