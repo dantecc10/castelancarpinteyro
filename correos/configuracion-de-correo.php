@@ -12,6 +12,7 @@
 //require_once('PHPMailerAutoload.php');
 //nueva version 6.1.1
 namespace PHPMailer\PHPMailer;
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
