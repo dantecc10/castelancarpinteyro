@@ -1339,3 +1339,24 @@ Thu Mar 23 2023 10:52:31 GMT-0600 (hora estándar central)
 fatal: not a git repository (or any of the parent directories): .git
 
 
+----------
+
+Thu Mar 23 2023 10:52:32 GMT-0600 (hora estándar central)
+
+warning: in the working copy of 'assets/css/extra.css', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Thu Mar 23 2023 10:52:33 GMT-0600 (hora estándar central)
+
+warning: in the working copy of 'error.log', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Thu Mar 23 2023 10:52:33 GMT-0600 (hora estándar central)
+
+warning: in the working copy of 'escolar/módulos/m5s2/producto2.html', LF will be replaced by CRLF the next time Git touches it
+
+
