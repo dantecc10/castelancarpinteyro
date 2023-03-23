@@ -88,24 +88,73 @@
             <div class="row pt-5">
                 <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
                     <div class="text-center">
-                        <h2 class="fw-bold tema-desglosable">Desarrollo</h2>
+                        <h2 class="fw-bold tema-desglosable">Comparación</h2>
+                        <p class="fw-bold text-center text-success mb-2">Aspectos generales</p>
                     </div>
                 </div>
             </div>
             <div class="row pt-5">
                 <div class="col">
-                    <p class="fw-bold text-center text-success mb-2">Requerimientos</p>
-                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Antes de diseñar una app, es necesario considerar las características mínimas y recomendadas de hardware, como lo es RAM, espacio disponible en disco o memoria; gráficos, y sensores en caso de aplicar.</span><br></p>
-                    <p class="sangría" style="text-align: justify;">También es importante contemplar las versiones del sistema operativo, de algunos SDK's (<em>Software Development Kit</em>) y de otro tipo de paquetes, como las API's.<br></p>
-                </div>
-                <div class="col">
-                    <p class="fw-bold text-center text-success mb-2">Herramientas</p>
-                    <p class="sangría" style="text-align: justify;">Para diseñar y desarrollar apps se utilizan varios tipos de editores. Usamos algunos que ofrecen interfaz gráfica para diseñar las vistas y <em>screens</em>.&nbsp;Por su parte, el código fuente suele ser creado desde IDE's (Integrated Development Environments). Algunos muy comunes son:<br></p>
-                    <ul>
-                        <li>Android Studio&nbsp;<i class="fab fa-android"></i></li>
-                        <li>Visual Studio&nbsp;<i class="fab fa-microsoft"></i></li>
-                        <li>JetBrains&nbsp;<i class="fas fa-brain"></i></li>
-                    </ul>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="columna-1 text-success" style="text-align: center;">Características</th>
+                                    <th class="columna-2" style="text-align: center;">Android&nbsp;<i class="fab fa-android" style="color: var(--bs-success);"></i></th>
+                                    <th class="columna-3" style="text-align: center;">iOS&nbsp;<i class="fab fa-apple" style="color: var(--bs-gray-600);"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center columna-1" style="text-align: center;"><strong>Privacidad</strong></td>
+                                    <td class="columna-2 sangría" style="text-align: justify;">
+                                        <p class="sangría">Es una plataforma de código abierto, por lo que es posible conocer cómo funciona la mayoría de sus características.</p>
+                                        <p class="sangría">Antes de las instalaciones, las apps deben informar los permisos que requieren para operar y el usuario otorga o no las autorizaciones correspondientes.<br></p>
+                                    </td>
+                                    <td class="columna-3" style="text-align: justify;">
+                                        <p class="sangría">Es un sistema cerrado, por lo que se restringe el acceso y visibilidad de código y concoimiento de las funciones que se ejecutan.</p>
+                                        <p class="sangría">Se seleccionan bajo una estricta política las aplicaciones que se pueden lanzar en App Store.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="columna-1" style="text-align: center;"><strong>Memoria</strong></td>
+                                    <td class="columna-2" style="text-align: justify;">
+                                        <p class="sangría">Los dispositivos Android tienen 3 tipos de memorias: RAM, zRAM (las cuales comparte el CPU y GPU), y de almacenamiento; EMMC.&nbsp;</p>
+                                    </td>
+                                    <td class="columna-3" style="text-align: justify;">
+                                        <p class="sangría">Usan memoria LPDDR4X que va desde los 4GB a los 6GB.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="columna-1" style="text-align: center;"><strong>Formato, diseño e interfaz</strong></td>
+                                    <td class="columna-2" style="text-align: justify;">
+                                        <p class="sangría">Los dispositivos Android tienen 3 tipos de memorias: RAM, zRAM (las cuales comparte el CPU y GPU), y de almacenamiento; EMMC.&nbsp;</p>
+                                    </td>
+                                    <td class="columna-3" style="text-align: justify;">
+                                        <p class="sangría">Usan memoria LPDDR4X que va desde los 4GB a los 6GB.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="columna-1" style="text-align: center;"><strong>Memoria</strong></td>
+                                    <td class="columna-2" style="text-align: justify;">
+                                        <p class="sangría">Los dispositivos Android tienen 3 tipos de memorias: RAM, zRAM (las cuales comparte el CPU y GPU), y de almacenamiento; EMMC.&nbsp;</p>
+                                    </td>
+                                    <td class="columna-3" style="text-align: justify;">
+                                        <p class="sangría">Usan memoria LPDDR4X que va desde los 4GB a los 6GB.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="columna-1" style="text-align: center;"><strong>Memoria</strong></td>
+                                    <td class="columna-2" style="text-align: justify;">
+                                        <p class="sangría">Los dispositivos Android tienen 3 tipos de memorias: RAM, zRAM (las cuales comparte el CPU y GPU), y de almacenamiento; EMMC.&nbsp;</p>
+                                    </td>
+                                    <td class="columna-3" style="text-align: justify;">
+                                        <p class="sangría">Usan memoria LPDDR4X que va desde los 4GB a los 6GB.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="row pt-5">
@@ -135,6 +184,35 @@
                         <li style="text-align: justify;"><strong>Costos de producción</strong>: El desarrollo de aplicaciones móviles no es precisamente el rubro más barato y sencillo de la programación; puesto que demanda recursos financieros estructurales, equipo especializado o con la suficiente capacidad operativa y, por supuesto; capital humano con la suficiente preparación técnica.</li>
                         <li style="text-align: justify;"><strong>Sin reutilización de código</strong>: Entre las distintas plataformas, no es posible partir de los mismos códigos fuentes porque cada sistema operativo es distinto, así como los lenguajes y entornos de desarrollo integrados.</li>
                     </ul>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="columna-1">Características</th>
+                                    <th class="columna-2">Android&nbsp;<i class="fab fa-android" style="color: var(--bs-success);"></i></th>
+                                    <th class="columna-3">iOS&nbsp;<i class="fab fa-apple" style="color: var(--bs-gray-600);"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="columna-1">Requerimientos</td>
+                                    <td class="columna-2">Cell 2</td>
+                                    <td class="columna-3">Cell 3</td>
+                                </tr>
+                                <tr>
+                                    <td class="columna-1">Cell 3</td>
+                                    <td class="columna-2">Cell 2</td>
+                                    <td class="columna-3">Cell 4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Antes de diseñar una app, es necesario considerar las características mínimas y recomendadas de hardware, como lo es RAM, espacio disponible en disco o memoria; gráficos, y sensores en caso de aplicar.</span><br></p>
+                    <p class="sangría" style="text-align: justify;">También es importante contemplar las versiones del sistema operativo, de algunos SDK's (<em>Software Development Kit</em>) y de otro tipo de paquetes, como las API's.<br></p>
                 </div>
             </div>
         </div><!-- End: Hero Clean Reverse -->

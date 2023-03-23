@@ -44,3 +44,14 @@ html::selection {
   width: 37.5%;
 }
 
+.columna-2.sangría {
+}
+
+tbody {
+  vertical-align: middle;
+}
+
+.columna-1, .columna-2, .columna-3 {
+  vertical-align: middle;
+}
+
