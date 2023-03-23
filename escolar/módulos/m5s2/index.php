@@ -48,6 +48,8 @@
                     </svg></span><span>Castelán Carpinteyro</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php">Producto 1</a></li>
                     <li class="nav-item"><a class="nav-link" href="producto2.html">Producto 2</a></li>
                     <li class="nav-item"><a class="nav-link" href="producto3.html">Producto 3</a></li>
                     <li class="nav-item"><a class="nav-link" href="producto4.html">Producto 4</a></li>
