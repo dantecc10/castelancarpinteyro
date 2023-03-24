@@ -142,7 +142,7 @@
     </header><!-- Start: Footer Multi Column -->
     <footer class="bg-dark">
         <div class="container py-4 py-lg-5">
-            <hr>
+            <hr> 
             <div class="row justify-content-center">
                 <!-- Start: About -->
                 <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
