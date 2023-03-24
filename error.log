@@ -1459,3 +1459,32 @@ Fri Mar 24 2023 00:16:01 GMT-0600 (hora estándar central)
 fatal: not a git repository (or any of the parent directories): .git
 
 
+----------
+
+Fri Mar 24 2023 00:16:02 GMT-0600 (hora estándar central)
+
+warning: in the working copy of 'error.log', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Fri Mar 24 2023 00:16:02 GMT-0600 (hora estándar central)
+
+warning: in the working copy of 'escolar/módulos/m5s2/producto2.html', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Fri Mar 24 2023 00:16:10 GMT-0600 (hora estándar central)
+
+To https://github.com/dantecc10/castelancarpinteyro.git
+   55aa792..e8c06c9  main -> main
+
+
+----------
+
+Fri Mar 24 2023 00:19:08 GMT-0600 (hora estándar central)
+
+fatal: not a git repository (or any of the parent directories): .git
+
+
