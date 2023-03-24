@@ -1519,3 +1519,18 @@ warning: in the working copy of 'error.log', LF will be replaced by CRLF the nex
 warning: in the working copy of 'escolar/módulos/m5s2/producto2.html', LF will be replaced by CRLF the next time Git touches it
 
 
+----------
+
+Fri Mar 24 2023 00:28:55 GMT-0600 (hora estándar central)
+
+To https://github.com/dantecc10/castelancarpinteyro.git
+   3169f63..9c5a517  main -> main
+
+
+----------
+
+Fri Mar 24 2023 00:31:23 GMT-0600 (hora estándar central)
+
+fatal: not a git repository (or any of the parent directories): .git
+
+
