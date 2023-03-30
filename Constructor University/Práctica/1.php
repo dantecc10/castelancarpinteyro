@@ -1,6 +1,6 @@
 <?php
 
-$day = readline(); # = intval($_GET['day']);
+$day = readline("Día: "); # = intval($_GET['day']);
 
 /*
 // Read input from user
