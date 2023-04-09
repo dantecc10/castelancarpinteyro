@@ -10,6 +10,9 @@
 
 <body>
     <p class="comentario" id="Prueba" ondblclick="javascript:speechS('Prueba');">Mi nombre es Dante Castelán Carpinteyro</p>
+    <i class="fas fa-play-circle text-secondary" id="playp1Bullet" onclick="speechS('Prueba')" style="cursor: pointer"></i> -
+    <i class="fas fa-pause-circle text-secondary" id="pausep1Bullet" onclick="speechS('Prueba')" style="cursor: pointer"></i> -
+    <i class="fas fa-stop-circle text-secondary" id="stopp1Bullet" onclick="speechS('Prueba')" style="cursor: pointer"></i>
     <script>
         function speechS(id) {
 
