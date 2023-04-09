@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <p id="Prueba" ondblclick="javascript:speechS('Prueba');">Mi nombre es Dante Castelán Carpinteyro</p>
+    <p class="comentario" id="Prueba" ondblclick="javascript:speechS('Prueba');">Mi nombre es Dante Castelán Carpinteyro</p>
     <script>
         function speechS(id) {
 
