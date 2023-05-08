@@ -9,6 +9,9 @@ include "Scripts PHP/InicioSesión.php";
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Dante Castelán Carpinteyro - Inicio</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9258502939818184"
+     crossorigin="anonymous"></script>
+    
     <meta name="author" content="Dante Castelán Carpinteyro">
     <meta property="og:image" content="https://castelancarpinteyro.club/assets/img/DanteDEV-Black-Background.png">
     <meta property="og:type" content="website">

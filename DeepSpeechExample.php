@@ -2,6 +2,9 @@
 <html>
 <head>
 	<title>Speech-to-Text with DeepSpeech</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9258502939818184"
+     crossorigin="anonymous"></script>
+    
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-ZbrcTnU6mIAb6CAXUE6v7GZCqb8sIgj6FlvcBv64j9W/o8yY/Y7VHuJzvwEj7fhWwzZ+n0FFMhDzZ1nwdr9QKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />

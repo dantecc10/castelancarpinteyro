@@ -17,6 +17,9 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Cómo crear un repositorio de código en GitHub | Castelán Carpinteyro</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9258502939818184"
+     crossorigin="anonymous"></script>
+    
     <meta name="theme-color" content="#5436cd">
     <meta name="description" content="Aprende cómo crear un repositorio en GitHub para cargar tu código y usar el sistema de control de versiones de archivos Git. ">
     <meta name="twitter:description" content="Cursos de programación y servicios de hosting web">

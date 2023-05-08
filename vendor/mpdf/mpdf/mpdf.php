@@ -1662,6 +1662,9 @@ class mPDF
 			echo '<html>
 	<head>
 	<title>mPDF File Progress</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9258502939818184"
+     crossorigin="anonymous"></script>
+    
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="' . _MPDF_URI . 'progbar.css" />
 		</head>

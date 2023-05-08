@@ -11,6 +11,9 @@
 <html>
 	<head>
 		<title>Spipu Qrcode <?php echo __CLASS_QRCODE__; ?></title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9258502939818184"
+     crossorigin="anonymous"></script>
+    
 		<meta name="Title"			content="Spipu - Qrcode <?php echo __CLASS_QRCODE__; ?>" > 
 		<meta name="Description"	content="Spipu - Qrcode <?php echo __CLASS_QRCODE__; ?>" >
 		<meta name="Keywords"		content="spipu">
