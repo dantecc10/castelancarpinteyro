@@ -17,9 +17,8 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Software - Castelán Carpinteyro</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9258502939818184"
-     crossorigin="anonymous"></script>
-    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9258502939818184" crossorigin="anonymous"></script>
+
     <meta name="theme-color" content="#5436cd">
     <meta name="description" content="Programación; artículos, tutoriales y cursos disponibles para entusiastas de la programación en Castelán Carpinteyro.">
     <meta name="twitter:description" content="Software - Descargas - Cursos de programación y servicios de hosting web">
@@ -56,13 +55,12 @@
                     <li class="nav-item"><a class="nav-link" href="products.php">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="Software.php">Software</a></li>
                 </ul>
-                <div class="div1-efecto"><a class="btn btn-primary shadow div2-efecto" role="button"
-                <?php if (isset($_SESSION['Iniciada'])) {
-                    echo (' href="account.php">'. $_SESSION['nombre']);
-                } else {
-                    echo ' href="login.php">Iniciar sesión';
-                }
-                ?></a></div>
+                <div class="div1-efecto"><a class="btn btn-primary shadow div2-efecto" role="button" <?php if (isset($_SESSION['Iniciada'])) {
+                                                                                                            echo (' href="account.php">' . $_SESSION['nombre']);
+                                                                                                        } else {
+                                                                                                            echo ' href="login.php">Iniciar sesión';
+                                                                                                        }
+                                                                                                        ?></a></div>
             </div>
         </div>
     </nav><!-- End: Navbar Centered Links -->
@@ -83,7 +81,7 @@
                     <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">¿Qué tal? Soy Dante Castelán Carpinteyro; y en este sitio web podrás tener acceso gratuito a una amplia gama de programas y software tanto para ser más productivo en la computadora; como para comenzar en programación o divertirte jugando.</span><br></p>
                     <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">El software que aquí se encuentra está alojado en un servidor de OneDrive, por lo que es posible que el link caduque y no te permita acceder; en ese caso; contáctame por cualquiera de las vías disponibles en la parte inferior de esta página web para que lo genere nuevamente y funcione.</span><br></p>
                     <p class="sangría" style="text-align: justify;">Cabe aclarar, que no todo es legítimo, y es el resultado de una colección de varios años, por lo que deberías ser cauteloso. Si conoces a alguien que necesite algún programa, apoya a <strong><em>Castelán Carpinteyro </em></strong>en la distribución de este link. ¡Compartir y enseñar es aprender y reforzar lo aprendido!</p>
-                    <p class="sangría" style="text-align: justify;"><a href="https://cecytepuebla-my.sharepoint.com/:f:/g/personal/d_castelanc_chg_2023_cecytepuebla_edu_mx/EoedF8GQeyNGoTTH1EWFB5ABJoaN8TzpFbPbBzNhYYR_sg?e=hcqxXw" target="_blank">Da click aquí</a> para ir a la carpeta de software.</p>
+                    <p class="sangría" style="text-align: justify;"><a href="https://cecytepuebla-my.sharepoint.com/:f:/g/personal/d_castelanc_chg_2023_cecytepuebla_edu_mx/EoedF8GQeyNGoTTH1EWFB5AB0rqQpaGqu46cCw0DXzs94w?e=DXJltP" target="_blank">Da click aquí</a> para ir a la carpeta de software.</p>
                     <p class="sangría" style="text-align: justify;">Recuerda que puedes contribuir con una <a href="https://www.paypal.me/CastelanCarpinteyroD" target="_blank">donación en PayPal</a>; así podremos buscar más software y ponerlo disponible para la comunidad 🤓😎😉.</p>
                 </div>
             </div>
