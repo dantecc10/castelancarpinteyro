@@ -116,11 +116,11 @@
     $mail->SMTPAuth = true; // Cambiar a true si es necesario autenticar la conexión SMTP
     $mail->Port = 465; // Cambiar el puerto SMTP según la configuración del servidor
     $mail->Username = "dante@castelancarpinteyro.com";
-    $mail->Password = "DarkseidPower22!!";
+    $mail->Password = "DarkseidPower23!!";
 
     // Configuración del correo
     $mail->setFrom('dante@castelancarpinteyro.com', 'Dante CC');
-    $mail->addAddress('gamepass1@castelancarpinteyro.com', 'Xbox');
+    $mail->addAddress('dantecc10@gmail.com', 'Dante');
     $mail->Subject = 'Asunto del correo';
     $mail->Body = 'Esta es una prueba';
 
