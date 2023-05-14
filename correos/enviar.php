@@ -4,7 +4,7 @@ include "configuracion-de-correo.php";
 
 $mail->ClearAllRecipients();
 
-$mail->AddAddress("destinatario@email.com");
+$mail->AddAddress("dantecc10@gmail.com");
 $mail->AddCC("concopia1@email.com");
 $mail->AddCC("concopia2@email.com");
 
