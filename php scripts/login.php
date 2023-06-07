@@ -9,7 +9,7 @@ if ($conexiónPDO->connect_error) {
 }
 
 $username = mysqli_real_escape_string($conexiónPDO, $_POST['email']);
-$password = mysqli_real_escape_string($conexiónPDO, $_POST['password']);
+$password = mysqli_real_escape_string($conexiónPDO, $_POST['password']); //Recepción de variables que pasan por filtro anti explits SQL
 
 $sql = "SELECT * FROM `usuarios` WHERE (`email_usuario` = '$username' OR `email_dominio` = '$username') AND `password_usuario` = '$password'";
 $resultado = $conexiónPDO->query($sql);
@@ -17,7 +17,7 @@ $resultado = $conexiónPDO->query($sql);
 // Verificar si se encontró un usuario válido
 if ($resultado->num_rows > 0) {
     // Acceso concedido, redireccionar a la página de inicio del sitio web
-    if ($datos = $resultado->fetch_object()) {
+    if ($datos = $resultado->fetch_object()) { //Asignación y confoguración de variables de sesión en arreglo de PHP
         $_SESSION['Iniciada'] = true;
         $_SESSION['id'] = $datos->id_usuario;
         $_SESSION['nombre'] = $datos->nombre_usuario;
