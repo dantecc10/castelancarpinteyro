@@ -8,4 +8,4 @@ if (null !== $_GET('cargaGET')) {
     }
 } else {
     echo "No se obtuvo el valor de cargaGET";
-}
+} 
