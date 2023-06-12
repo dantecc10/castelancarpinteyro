@@ -1,4 +1,4 @@
 <?php
-    $ip = $_SERVER['address'];
+    $ip = $_SERVER['REMOTE_ADDR'];
     echo $ip;
 ?>
