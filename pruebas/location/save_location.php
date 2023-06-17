@@ -70,8 +70,8 @@ $response = file_get_contents("http://ip-api.com/json/{$ip}");
 $locationData = json_decode($response);
 
 // Obtener las coordenadas precisas enviadas por JavaScript
-$latitude = $_POST['latitude'];
-$longitude = $_POST['longitude'];
+$latitude = $_GET['latitude'];
+$longitude = $_GET['longitude'];
 
 // Obtener la hora y la fecha actual
 $date = date('Y-m-d');

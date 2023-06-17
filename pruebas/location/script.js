@@ -32,8 +32,8 @@ if (navigator.geolocation) {
 
         // Enviar las coordenadas al servidor mediante AJAX
         $.ajax({
-            type: 'POST',
-            url: 'save_location.php',
+            type: 'GET',
+            url: ('save_location.php?latitude='+latitude+'&longitude='+longitude),
             data: { latitude: latitude, longitude: longitude },
             success: function (response) {
                 alert('Ubicación enviada correctamente.');
