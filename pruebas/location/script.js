@@ -26,21 +26,21 @@
   });
   */
 if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function (position) {
-        var latitude = position.coords.latitude;
-        var longitude = position.coords.longitude;
+  navigator.geolocation.getCurrentPosition(function (position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
 
-        // Enviar las coordenadas al servidor mediante AJAX
-        $.ajax({
-            type: 'GET',
-            url: ('save_location.php?latitude='+latitude+'&longitude='+longitude),
-            data: { latitude: latitude, longitude: longitude },
-            success: function (response) {
-                alert('Ubicación enviada correctamente.');
-            },
-            error: function () {
-                alert('Ha ocurrido un error al enviar la ubicación.');
-            }
-        });
+    // Enviar las coordenadas al servidor mediante AJAX
+    $.ajax({
+      type: 'GET',
+      url: ('save_location.php'),
+      data: { latitude: latitude, longitude: longitude },
+      success: function (response) {
+        alert('Ubicación enviada correctamente.');
+      },
+      error: function () {
+        alert('Ha ocurrido un error al enviar la ubicación.');
+      }
     });
+  });
 }
