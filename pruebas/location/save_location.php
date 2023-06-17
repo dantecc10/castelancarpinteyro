@@ -91,7 +91,7 @@ $username = "tu_usuario";
 $password = "tu_contraseña";
 $dbname = "tu_base_de_datos";
 
-$conexión = new mysqli("localhost", "dantecc10", "Dantus23!!", "localizacionesLink");
+$conn = new mysqli("localhost", "dantecc10", "Dantus23!!", "localizacionesLink");
 
 if ($conn->connect_error) {
     die("Error de conexión: " . $conn->connect_error);
