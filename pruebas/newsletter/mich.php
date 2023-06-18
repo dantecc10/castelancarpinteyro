@@ -53,7 +53,7 @@ if ($result->num_rows > 0) {
         $id = $row['id_mn'];
         //saludar($id);
 
-        include "../../php scripts/dynamicMailSettings.php";
+        /*include "../../php scripts/dynamicMailSettings.php";
 
         $mail = setMailParameters('newsletter');
         //use function PHPMailer\PHPMailer\setMailParameters;
@@ -85,7 +85,7 @@ if ($result->num_rows > 0) {
             echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
             echo "Excepción lanzada: " . $e->getMessage();
         }
-        //actualizar($id, $conn);
+        //actualizar($id, $conn);*/
         // Actualizar el estado a "Enviado"
         $sql = "UPDATE `test_mn` SET status_mn = 'Enviado' WHERE id_mn = $id";
         if ($conn->query($sql) === TRUE) {
