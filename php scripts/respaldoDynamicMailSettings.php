@@ -10,6 +10,8 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
+use function PHPMailer\PHPMailer\setMailParameters as PHPMailerSetMailParameters;
+
 require_once('../vendor/phpmailer/phpmailer/src/PHPMailer.php');
 require_once('../vendor/phpmailer/phpmailer/src/SMTP.php');
 require_once('../vendor/phpmailer/phpmailer/src/Exception.php');
@@ -35,8 +37,9 @@ function setMailParameters($turing)
     $tempFrom = $data[2]; #'academia@classicandsacrum.com';   /*Correo electrónico que estamos autenticando*/
     $tempFromName = $data[1];   /*Puedes poner tu nombre, el de tu empresa, nombre de tu web, etc.*/
     //echo ($data[0] . " " . $data[1] . " " . $data[2]); // Debug command line
-    return array ($tempUsername, $tempPassword, $tempFrom, $tempFromName);
+    return array($tempUsername, $tempPassword, $tempFrom, $tempFromName);
 }
+PHPMailerSetMailParameters('newsletter');
 $mail->Username = $tempUsername;
 $mail->Password = $tempPassword;
 $mail->From = $tempFrom;
