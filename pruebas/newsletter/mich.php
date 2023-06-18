@@ -55,7 +55,7 @@ if ($result->num_rows > 0) {
 
         include "../../php%20scripts/respaldoDynamicMailSettings.php";
 
-        setMailParameters('newsletter', $mail);
+        //setMailParameters('newsletter', $mail);
         //use function PHPMailer\PHPMailer\setMailParameters;
 
         $mail->ClearAllRecipients();
