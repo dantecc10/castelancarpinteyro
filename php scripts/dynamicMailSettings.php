@@ -34,6 +34,7 @@ function setMailParameters($turing)
     $mail->FromName = $data[1];   /*Puedes poner tu nombre, el de tu empresa, nombre de tu web, etc.*/
     $mail->CharSet = 'UTF-8';   /*Codificación del mensaje*/
     //echo ($data[0] . " " . $data[1] . " " . $data[2]); // Debug command line
+    return $mail;
 }
 
-setMailParameters('dante');
+//setMailParameters('dante');
