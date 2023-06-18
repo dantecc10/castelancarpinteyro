@@ -1,5 +1,4 @@
 <?php
-
 // Configuración de la conexión a la base de datos
 //$servername = "localhost";
 //$username = "nombre_de_usuario";
@@ -56,8 +55,7 @@ if ($result->num_rows > 0) {
         $nombreDestino = $row['nombre_destino_mn'];
         //saludar($id);
 
-        include "../../php scripts/respaldoDynamicMailSettings.php";
-
+        include "../../correos/newsletterMailSettings.php";
 
         $mail->ClearAllRecipients();
 
