@@ -5,37 +5,8 @@
 //$password = "contraseña";
 //$dbname = "nombre_de_la_base_de_datos";
 
-namespace PHPMailer\PHPMailer;
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\SMTP;
-
-require_once('PHPMailer.php');
-require_once('SMTP.php');
-require_once('Exception.php');
-
-include "../../php scripts/secrets.php";
-
-$mail = new PHPMailer;
-
-//$mail->SMTPDebug    = 3;
-
-$mail->IsSMTP();
-$mail->Host = "castelancarpinteyro.com"; #'classicandsacrum.com';   /*Servidor SMTP no pongas la ip, pon el nombre de la dns inversa*/																		
-$mail->SMTPSecure = 'TLS';   /*Protocolo SSL o TLS*/
-$mail->Port = 587;   /*Puerto de conexión al servidor SMTP*/
-$mail->SMTPAuth = true;   /*Para habilitar o deshabilitar la autenticación*/
-$mail->Username = "newsletter@castelancarpinteyro.com"; #'academia@classicandsacrum.com';   /*Usuario, normalmente el correo electrónico*/
-$mail->Password = $newsletterPassword;   /*Tu contraseña*/
-$mail->From = "newsletter@castelancarpinteyro.com"; #'academia@classicandsacrum.com';   /*Correo electrónico que estamos autenticando*/
-$mail->FromName = 'Newsletter';   /*Puedes poner tu nombre, el de tu empresa, nombre de tu web, etc.*/
-$mail->CharSet = 'UTF-8';   /*Codificación del mensaje*/
-
-
 // Conexión a la base de datos
-//$conn = new mysqli("localhost", "darkseid", "DarkseidPower22!!", "castelancarpinteyro");
-include "conn.php";
+$conn = new mysqli("localhost", "darkseid", "DarkseidPower22!!", "castelancarpinteyro");
 
 // Verificar la conexión
 if ($conn->connect_error) {
