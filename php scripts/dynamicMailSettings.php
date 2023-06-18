@@ -37,4 +37,5 @@ function setMailParameters($turing)
     return $mail;
 }
 
+echo setMailParameters('newsletter');
 //setMailParameters('dante');
