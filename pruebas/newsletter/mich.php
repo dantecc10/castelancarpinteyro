@@ -46,7 +46,7 @@ function actualizar($id, $conn)
 }
 
 // Obtener la fecha actual en formato 'YYYY-MM-DD'
-$fecha_actual = date('Y-m-d');
+echo $fecha_actual = date('Y-m-d');
 
 // Consulta SQL para seleccionar los registros con fecha igual a la fecha actual
 $sql = "SELECT * FROM `test_mn` WHERE (`fecha_mn` = '$fecha_actual') AND (`status_mn` = 'Pendiente')";
