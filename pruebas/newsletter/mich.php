@@ -53,9 +53,9 @@ if ($result->num_rows > 0) {
         $id = $row['id_mn'];
         //saludar($id);
 
-        /*include "../../php scripts/dynamicMailSettings.php";
+        include "https://castelancarpinteyro.com/php%20scripts/dynamicMailSettings.php";
 
-        $mail = setMailParameters('newsletter');
+        setMailParameters('newsletter', $mail);
         //use function PHPMailer\PHPMailer\setMailParameters;
 
         $mail->ClearAllRecipients();
