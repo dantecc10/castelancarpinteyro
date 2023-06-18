@@ -37,5 +37,5 @@ function setMailParameters($turing)
     return $mail;
 }
 
-setMailParameters('dante');
+$mail = setMailParameters('dante');
 echo $mail;
