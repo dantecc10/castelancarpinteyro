@@ -33,7 +33,7 @@ function setMailParameters($turing)
     $mail->From = $data[2]; #'academia@classicandsacrum.com';   /*Correo electrónico que estamos autenticando*/
     $mail->FromName = $data[1];   /*Puedes poner tu nombre, el de tu empresa, nombre de tu web, etc.*/
     $mail->CharSet = 'UTF-8';   /*Codificación del mensaje*/
-    echo ($data[0] . " " . $data[1] . " " . $data[2]);
+    //echo ($data[0] . " " . $data[1] . " " . $data[2]); // Debug command line
 }
 
 setMailParameters('dante');
