@@ -53,7 +53,7 @@ if ($result->num_rows > 0) {
         $id = $row['id_mn'];
         //saludar($id);
 
-        include "https://castelancarpinteyro.com/php%20scripts/dynamicMailSettings.php";
+        include "../../php%20scripts/dynamicMailSettings.php";
 
         setMailParameters('newsletter', $mail);
         //use function PHPMailer\PHPMailer\setMailParameters;
