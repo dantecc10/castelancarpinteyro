@@ -59,15 +59,17 @@ if ($result->num_rows > 0) {
 //la version con vulnerabilidades es la linea justo debajo
 //require_once('PHPMailerAutoload.php');
 //nueva version 6.1.1
+
 namespace PHPMailer\PHPMailer;
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
-require_once('../../vendor/phpmailer/src/PHPMailer.php');
+require_once('../../vendor/phpmailer/phpmailer/src/PHPMailer.php');
 require_once('../../vendor/phpmailer/phpmailer/src/SMTP.php');
 require_once('../../vendor/phpmailer/phpmailer/src/Exception.php');
+
 
 //$mail->SMTPDebug    = 3;
 $mail = new PHPMailer;

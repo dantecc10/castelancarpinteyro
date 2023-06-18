@@ -14,6 +14,7 @@ require_once('../vendor/phpmailer/phpmailer/src/PHPMailer.php');
 require_once('../vendor/phpmailer/phpmailer/src/SMTP.php');
 require_once('../vendor/phpmailer/phpmailer/src/Exception.php');
 
+
 //$mail->SMTPDebug    = 3;
 $mail = new PHPMailer;
 $mail->IsSMTP();
@@ -23,16 +24,23 @@ $mail->Port = 587;   /*Puerto de conexión al servidor SMTP*/
 $mail->SMTPAuth = true;   /*Para habilitar o deshabilitar la autenticación*/
 $mail->CharSet = 'UTF-8';   /*Codificación del mensaje*/
 
+function setMailParameters($turing)
+{
+    include "dynamicSecrets.php";
 
-include "dynamicSecrets.php";
-$turing = "newsletter";
-$data = generatePasskey($turing);
+    $data = generatePasskey($turing);
 
-$mail->Username = $data[2]; #'academia@classicandsacrum.com';   /*Usuario, normalmente el correo electrónico*/
-$mail->Password = $data[0];   /*Tu contraseña*/
-$mail->From = $data[2]; #'academia@classicandsacrum.com';   /*Correo electrónico que estamos autenticando*/
-$mail->FromName = $data[1];   /*Puedes poner tu nombre, el de tu empresa, nombre de tu web, etc.*/
+    $tempUsername = $data[2]; #'academia@classicandsacrum.com';   /*Usuario, normalmente el correo electrónico*/
+    $tempPassword = $data[0];   /*Tu contraseña*/
+    $tempFrom = $data[2]; #'academia@classicandsacrum.com';   /*Correo electrónico que estamos autenticando*/
+    $tempFromName = $data[1];   /*Puedes poner tu nombre, el de tu empresa, nombre de tu web, etc.*/
     //echo ($data[0] . " " . $data[1] . " " . $data[2]); // Debug command line
+    return array ($tempUsername, $tempPassword, $tempFrom, $tempFromName);
+}
+$mail->Username = $tempUsername;
+$mail->Password = $tempPassword;
+$mail->From = $tempFrom;
+$mail->FromName = $tempFromName;
 
-//setMailParameters('dante', $mail);
+//$mail = setMailParameters('dante');
 //echo $mail;
