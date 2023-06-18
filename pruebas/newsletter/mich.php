@@ -1,10 +1,5 @@
 <?php
 
-use function PHPMailer\PHPMailer\setMailParameters;
-
-include "../../php scripts/dynamicMailSettings.php";
-setMailParameters('newsletter');
-
 // Configuración de la conexión a la base de datos
 //$servername = "localhost";
 //$username = "nombre_de_usuario";
@@ -57,6 +52,10 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         $id = $row['id_mn'];
         //saludar($id);
+
+        include "../../php scripts/dynamicMailSettings.php";
+        //use function PHPMailer\PHPMailer\setMailParameters;
+        setMailParameters('newsletter');
 
         $mail->ClearAllRecipients();
 
