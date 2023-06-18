@@ -1,30 +1,23 @@
 <?php
 
-//require_once('phpmailer/PHPMailerAutoload.php');
-//la version con vulnerabilidades es la linea justo debajo
-//require_once('PHPMailerAutoload.php');
-//nueva version 6.1.1
 namespace PHPMailer\PHPMailer;
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
-use function PHPMailer\PHPMailer\setMailParameters as PHPMailerSetMailParameters;
-
 require_once('../vendor/phpmailer/phpmailer/src/PHPMailer.php');
 require_once('../vendor/phpmailer/phpmailer/src/SMTP.php');
 require_once('../vendor/phpmailer/phpmailer/src/Exception.php');
 
-
-//$mail->SMTPDebug    = 3;
+//$mail->SMTPDebug = 3;
 $mail = new PHPMailer;
 $mail->IsSMTP();
-$mail->Host = "castelancarpinteyro.com"; #'classicandsacrum.com';   /*Servidor SMTP no pongas la ip, pon el nombre de la dns inversa*/																		
-$mail->SMTPSecure = 'TLS';   /*Protocolo SSL o TLS*/
-$mail->Port = 587;   /*Puerto de conexión al servidor SMTP*/
-$mail->SMTPAuth = true;   /*Para habilitar o deshabilitar la autenticación*/
-$mail->CharSet = 'UTF-8';   /*Codificación del mensaje*/
+$mail->Host = "castelancarpinteyro.com";
+$mail->SMTPSecure = 'TLS';
+$mail->Port = 587;
+$mail->SMTPAuth = true;
+$mail->CharSet = 'UTF-8';
 
 function setMailParameters($turing)
 {
@@ -32,18 +25,24 @@ function setMailParameters($turing)
 
     $data = generatePasskey($turing);
 
-    $tempUsername = $data[2]; #'academia@classicandsacrum.com';   /*Usuario, normalmente el correo electrónico*/
-    $tempPassword = $data[0];   /*Tu contraseña*/
-    $tempFrom = $data[2]; #'academia@classicandsacrum.com';   /*Correo electrónico que estamos autenticando*/
-    $tempFromName = $data[1];   /*Puedes poner tu nombre, el de tu empresa, nombre de tu web, etc.*/
-    //echo ($data[0] . " " . $data[1] . " " . $data[2]); // Debug command line
+    $tempUsername = $data[2];
+    $tempPassword = $data[0];
+    $tempFrom = $data[2];
+    $tempFromName = $data[1];
+
     return array($tempUsername, $tempPassword, $tempFrom, $tempFromName);
 }
-setMailParameters('newsletter');
+
+// Llamamos a la función setMailParameters y almacenamos los valores en variables
+[$tempUsername, $tempPassword, $tempFrom, $tempFromName] = setMailParameters('newsletter');
+
 $mail->Username = $tempUsername;
 $mail->Password = $tempPassword;
 $mail->From = $tempFrom;
 $mail->FromName = $tempFromName;
+
+// Resto de tu código...
+
 
 //$mail = setMailParameters('dante');
 //echo $mail;
