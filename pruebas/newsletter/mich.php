@@ -23,20 +23,20 @@ if ($conn->connect_error) {
 $fecha_actual = date('Y-m-d');
 
 // Consulta SQL para seleccionar los registros con fecha igual a la fecha actual
-$sql = "SELECT * FROM `test_mn` WHERE `fecha_mn` = '$fecha_actual'";
+$sql = "SELECT * FROM `test_mn` WHERE (`fecha_mn` = '$fecha_actual') AND (`status_mn` = 'Pendiente')";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // Recorrer los resultados y ejecutar la función "saludar($i)"
     while ($row = $result->fetch_assoc()) {
         $id = $row['id_mn'];
-        saludar($id);
+        //saludar($id);
 
         $mail->ClearAllRecipients();
 
-        $mail->AddAddress("dantecc10@gmail.com");
+        $mail->AddAddress($row['email_destino_mn']);
         $mail->AddCC("dante@castelancarpinteyro.com");
-        //$mail->AddCC("concopia2@email.com");
+        $mail->AddCC("dantecc10@gmail.com");
 
         $mail->IsHTML(true);  //podemos activar o desactivar HTML en mensaje
         $mail->Subject = 'Correo de prueba del newsletter de Castelán Carpinteyro';
@@ -49,6 +49,7 @@ if ($result->num_rows > 0) {
 
         $mail->Body = $msg;
         $mail->Send();
+        actualizar($id, $conn);
     }
 } else {
     echo "No se encontraron registros con la fecha actual.";
@@ -58,8 +59,27 @@ if ($result->num_rows > 0) {
 $conn->close();
 
 // Función "saludar"
-function saludar($i)
+function saludar($id, $conn)
 {
-    echo "Saludando al registro con ID: " . $i . "<br>";
+    // Actualizar el estado a "Enviado"
+    $sql = "UPDATE test_mn SET status_mn = 'Enviado' WHERE id_mn = $id";
+    if ($conn->query($sql) === TRUE) {
+        echo "Saludando al registro con ID: " . $id . " y actualizando estado a 'Enviado'<br>";
+    } else {
+        echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
+    }
+    // Realizar otras acciones con el registro...
+}
+
+// Función "saludar"
+function actualizar($id, $conn)
+{
+    // Actualizar el estado a "Enviado"
+    $sql = "UPDATE test_mn SET status_mn = 'Enviado' WHERE id_mn = $id";
+    if ($conn->query($sql) === TRUE) {
+        echo "Saludando al registro con ID: " . $id . " y actualizando estado a 'Enviado'<br>";
+    } else {
+        echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
+    }
     // Realizar otras acciones con el registro...
 }
