@@ -39,7 +39,7 @@ function setMailParameters($turing)
     //echo ($data[0] . " " . $data[1] . " " . $data[2]); // Debug command line
     return array($tempUsername, $tempPassword, $tempFrom, $tempFromName);
 }
-PHPMailerSetMailParameters('newsletter');
+setMailParameters('newsletter');
 $mail->Username = $tempUsername;
 $mail->Password = $tempPassword;
 $mail->From = $tempFrom;
