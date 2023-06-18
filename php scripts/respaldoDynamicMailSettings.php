@@ -24,15 +24,15 @@ $mail->SMTPAuth = true;   /*Para habilitar o deshabilitar la autenticación*/
 $mail->CharSet = 'UTF-8';   /*Codificación del mensaje*/
 
 
-    include "dynamicSecrets.php";
+include "dynamicSecrets.php";
+$turing = "newsletter";
+$data = generatePasskey($turing);
 
-    $data = generatePasskey($turing);
-
-    $mail->Username = $data[2]; #'academia@classicandsacrum.com';   /*Usuario, normalmente el correo electrónico*/
-    $mail->Password = $data[0];   /*Tu contraseña*/
-    $mail->From = $data[2]; #'academia@classicandsacrum.com';   /*Correo electrónico que estamos autenticando*/
-    $mail->FromName = $data[1];   /*Puedes poner tu nombre, el de tu empresa, nombre de tu web, etc.*/
+$mail->Username = $data[2]; #'academia@classicandsacrum.com';   /*Usuario, normalmente el correo electrónico*/
+$mail->Password = $data[0];   /*Tu contraseña*/
+$mail->From = $data[2]; #'academia@classicandsacrum.com';   /*Correo electrónico que estamos autenticando*/
+$mail->FromName = $data[1];   /*Puedes poner tu nombre, el de tu empresa, nombre de tu web, etc.*/
     //echo ($data[0] . " " . $data[1] . " " . $data[2]); // Debug command line
 
-setMailParameters('dante', $mail);
+//setMailParameters('dante', $mail);
 //echo $mail;
