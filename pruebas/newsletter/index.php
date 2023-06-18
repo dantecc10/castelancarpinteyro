@@ -10,6 +10,7 @@ namespace PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
+
 require_once('PHPMailer.php');
 require_once('SMTP.php');
 require_once('Exception.php');
@@ -21,18 +22,25 @@ $mail = new PHPMailer;
 //$mail->SMTPDebug    = 3;
 
 $mail->IsSMTP();
-$mail->Host = "castelancarpinteyro.com";#'classicandsacrum.com';   /*Servidor SMTP no pongas la ip, pon el nombre de la dns inversa*/																		
+$mail->Host = "castelancarpinteyro.com"; #'classicandsacrum.com';   /*Servidor SMTP no pongas la ip, pon el nombre de la dns inversa*/																		
 $mail->SMTPSecure = 'TLS';   /*Protocolo SSL o TLS*/
 $mail->Port = 587;   /*Puerto de conexión al servidor SMTP*/
 $mail->SMTPAuth = true;   /*Para habilitar o deshabilitar la autenticación*/
-$mail->Username = "newsletter@castelancarpinteyro.com";#'academia@classicandsacrum.com';   /*Usuario, normalmente el correo electrónico*/
+$mail->Username = "newsletter@castelancarpinteyro.com"; #'academia@classicandsacrum.com';   /*Usuario, normalmente el correo electrónico*/
 $mail->Password = $newsletterPassword;   /*Tu contraseña*/
-$mail->From = "newsletter@castelancarpinteyro.com";#'academia@classicandsacrum.com';   /*Correo electrónico que estamos autenticando*/
+$mail->From = "newsletter@castelancarpinteyro.com"; #'academia@classicandsacrum.com';   /*Correo electrónico que estamos autenticando*/
 $mail->FromName = 'Newsletter';   /*Puedes poner tu nombre, el de tu empresa, nombre de tu web, etc.*/
 $mail->CharSet = 'UTF-8';   /*Codificación del mensaje*/
 
 
+// Conexión a la base de datos
+//$conn = new mysqli("localhost", "darkseid", "DarkseidPower22!!", "castelancarpinteyro");
+include "conn.php";
 
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("Error en la conexión a la base de datos: " . $conn->connect_error);
+}
 
 // Función "saludar"
 function saludar($id, $conn)
@@ -62,14 +70,6 @@ function actualizar($id, $conn)
 
 // Obtener la fecha actual en formato 'YYYY-MM-DD'
 $fecha_actual = date('Y-m-d');
-
-// Conexión a la base de datos
-$conn = new mysqli("localhost", "darkseid", "DarkseidPower22!!", "castelancarpinteyro");
-
-// Verificar la conexión
-if ($conn->connect_error) {
-    die("Error en la conexión a la base de datos: " . $conn->connect_error);
-}
 
 // Consulta SQL para seleccionar los registros con fecha igual a la fecha actual
 $sql = "SELECT * FROM `test_mn` WHERE (`fecha_mn` = '$fecha_actual') AND (`status_mn` = 'Pendiente')";
