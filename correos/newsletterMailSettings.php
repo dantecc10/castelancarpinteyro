@@ -36,3 +36,7 @@ $mail->Password = $newsletterPassword;   /*Tu contraseña*/
 $mail->From = "newsletter@castelancarpinteyro.com";#'academia@classicandsacrum.com';   /*Correo electrónico que estamos autenticando*/
 $mail->FromName = 'Newsletter';   /*Puedes poner tu nombre, el de tu empresa, nombre de tu web, etc.*/
 $mail->CharSet = 'UTF-8';   /*Codificación del mensaje*/
+
+///*Test
+
+//*/
