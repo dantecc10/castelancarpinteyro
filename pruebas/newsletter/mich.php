@@ -19,6 +19,32 @@ if ($conn->connect_error) {
     die("Error en la conexión a la base de datos: " . $conn->connect_error);
 }
 
+// Función "saludar"
+function saludar($id, $conn)
+{
+    // Actualizar el estado a "Enviado"
+    $sql = "UPDATE test_mn SET status_mn = 'Enviado' WHERE id_mn = $id";
+    if ($conn->query($sql) === TRUE) {
+        echo "Saludando al registro con ID: " . $id . " y actualizando estado a 'Enviado'<br>";
+    } else {
+        echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
+    }
+    // Realizar otras acciones con el registro...
+}
+
+// Función "saludar"
+function actualizar($id, $conn)
+{
+    // Actualizar el estado a "Enviado"
+    $sql = "UPDATE test_mn SET status_mn = 'Enviado' WHERE id_mn = $id";
+    if ($conn->query($sql) === TRUE) {
+        echo "Saludando al registro con ID: " . $id . " y actualizando estado a 'Enviado'<br>";
+    } else {
+        echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
+    }
+    // Realizar otras acciones con el registro...
+}
+
 // Obtener la fecha actual en formato 'YYYY-MM-DD'
 $fecha_actual = date('Y-m-d');
 
@@ -57,29 +83,3 @@ if ($result->num_rows > 0) {
 
 // Cerrar la conexión a la base de datos
 $conn->close();
-
-// Función "saludar"
-function saludar($id, $conn)
-{
-    // Actualizar el estado a "Enviado"
-    $sql = "UPDATE test_mn SET status_mn = 'Enviado' WHERE id_mn = $id";
-    if ($conn->query($sql) === TRUE) {
-        echo "Saludando al registro con ID: " . $id . " y actualizando estado a 'Enviado'<br>";
-    } else {
-        echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
-    }
-    // Realizar otras acciones con el registro...
-}
-
-// Función "saludar"
-function actualizar($id, $conn)
-{
-    // Actualizar el estado a "Enviado"
-    $sql = "UPDATE test_mn SET status_mn = 'Enviado' WHERE id_mn = $id";
-    if ($conn->query($sql) === TRUE) {
-        echo "Saludando al registro con ID: " . $id . " y actualizando estado a 'Enviado'<br>";
-    } else {
-        echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
-    }
-    // Realizar otras acciones con el registro...
-}
