@@ -40,17 +40,17 @@ for ($i = 0; $i < $_SESSION['límite']; $i++) {
         ";
 
         $mail->Body = $msg;
+        $mail->Send();
 
-        try {
-            // ...
-            // Código para enviar el correo electrónico
-            // ...
-
-            $mail->Send();
-            // Resto del código...
-        } catch (Exception $e) {
-            echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
-            echo "Excepción lanzada: " . $e->getMessage();
-        }
+        //try {
+        //    // ...
+        //    // Código para enviar el correo electrónico
+        //    // ...
+        //
+        //    // Resto del código...
+        //} catch (Exception $e) {
+        //    echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
+        //    echo "Excepción lanzada: " . $e->getMessage();
+        //}
     }
 }
