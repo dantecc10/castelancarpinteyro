@@ -103,6 +103,7 @@ if ($result->num_rows > 0) {
         $i++;
     }
     $_SESSION['límite'] = $i;
+    header("Location: envío.php");
 } else {
     echo "No se encontraron registros con la fecha actual.";
 }
