@@ -38,7 +38,7 @@ require_once('../vendor/phpmailer/phpmailer/src/Exception.php');
 //echo $mail;
 
 
-$mail = setMailParameters('newsletter'); // Inicializar el objeto $mail con la función setMailParameters()
+//$mail = setMailParameters('newsletter'); // Inicializar el objeto $mail con la función setMailParameters()
 
 for ($i = 0; $i < $_SESSION['límite']; $i++) {
     if ($_SESSION['id'][$i] != null) {
