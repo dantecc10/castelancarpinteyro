@@ -61,6 +61,7 @@ if ($result->num_rows > 0) {
         $_SESSION['fecha'][$i] = $fechaSQL;
         $nombreDestino = $row['nombre_destino_mn'];
         $_SESSION['nombre'][$i] = $nombreDestino;
+        $_SESSION['mensaje'][$i] = $row['contenido_mn'];
         //saludar($id);
 
         /*include "../../correos/newsletterMailSettings.php";
@@ -101,6 +102,7 @@ if ($result->num_rows > 0) {
         }
         $i++;
     }
+    $_SESSION['límite'] = $i;
 } else {
     echo "No se encontraron registros con la fecha actual.";
 }

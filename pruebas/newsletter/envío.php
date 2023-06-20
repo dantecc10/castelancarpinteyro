@@ -1,10 +1,29 @@
 <?php
+
+use function PHPMailer\PHPMailer\setMailParameters;
+
 session_start();
 
 include "../../php scripts/dynamicMailSettings.php"; //Importación de configuración dimámica
 
+/*
+$id = $row['id_mn'];
+        $_SESSION['id'][$i] = $id;
+
+        $emailDestino = $row['email_destino_mn'];
+        $_SESSION['email'][$i] = $emailDestino;
+
+        $fechaSQL = $row['fecha_mn'];
+        $_SESSION['fecha'][$i] = $fechaSQL;
+        $nombreDestino = $row['nombre_destino_mn'];
+        $_SESSION['nombre'][$i] = $nombreDestino;
+        $_SESSION['mensaje'][$i] = $row['contenido_mn'];
+*/
+
 for ($i = 0; $i < $_SESSION['n']; $i++) {
     if ($_SESSION['id'][$i] != null) {
+        setMailParameters('newsletter');
+        
         $mail->ClearAllRecipients();
 
         $mail->AddAddress($_SESSION['email']);
