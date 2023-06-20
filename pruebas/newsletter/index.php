@@ -55,7 +55,7 @@ if ($result->num_rows > 0) {
         $nombreDestino = $row['nombre_destino_mn'];
         //saludar($id);
 
-        include "../../correos/newsletterMailSettings.php";
+        /*include "../../correos/newsletterMailSettings.php";
 
         $mail->ClearAllRecipients();
 
@@ -81,15 +81,15 @@ if ($result->num_rows > 0) {
         } catch (Exception $e) {
             echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
             echo "Excepción lanzada: " . $e->getMessage();
-
-            //actualizar($id, $conn);*/
-            // Actualizar el estado a "Enviado"
-            $sql = "UPDATE `test_mn` SET status_mn = 'Enviado' WHERE id_mn = $id";
-            if ($conn->query($sql) === TRUE) {
-                echo "Saludando al registro con ID: " . $id . " y actualizando estado a 'Enviado'<br>";
-            } else {
-                echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
-            }
+        }*/
+        header("Location: dante.php");
+        //actualizar($id, $conn);*/
+        // Actualizar el estado a "Enviado"
+        $sql = "UPDATE `test_mn` SET status_mn = 'Enviado' WHERE id_mn = $id";
+        if ($conn->query($sql) === TRUE) {
+            echo "Saludando al registro con ID: " . $id . " y actualizando estado a 'Enviado'<br>";
+        } else {
+            echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
         }
     }
 } else {
