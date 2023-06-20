@@ -51,8 +51,8 @@ for ($i = 0; $i < $_SESSION['límite']; $i++) {
         $mail->IsHTML(true);  // Podemos activar o desactivar HTML en el mensaje
         $mail->Subject = 'Correo de prueba del newsletter de Castelán Carpinteyro';
 
-        $msg = "<h1>¡Hola" . $_SESSION['nombre'][$i] . "</h1>
-            <p>Según la base de datos, hoy " . $_SESSION['fecha'][$i] . " hay un mensaje para tí desde el newsletter</p>
+        $msg = "<h1>¡Hola " . $_SESSION['nombre'][$i] . "!</h1>
+            <p>Según la base de datos, hoy " . $_SESSION['fecha'][$i] . " hay un mensaje para tí desde el newsletter.</p>
             <p>De parte de <b><i>Dante Castelán Carpinteyro</i></b>, recibe el siguiente mensaje: '" . $_SESSION['mensaje'][$i] . "'.</p>
             <p>¡Gracias por ser parte de mis pruebas en el servidor! Me ayudas mucho. Por favor, siéntete libre de responder a este correo o por el medio que desees más mensajes personalizados para que los programe.</p>";
 
