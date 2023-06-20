@@ -17,7 +17,7 @@ require_once('../../vendor/phpmailer/phpmailer/src/Exception.php');
     include "../../php scripts/dynamicSecrets.php";
     include "../../php scripts/secrets.php.php";
 
-    $data = generatePasskey($turing);
+    $data = generatePasskey('newsletter');
 
     //$mail->SMTPDebug    = 3;
     $mail = new PHPMailer;
