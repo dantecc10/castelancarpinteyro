@@ -19,11 +19,11 @@ $id = $row['id_mn'];
         $_SESSION['nombre'][$i] = $nombreDestino;
         $_SESSION['mensaje'][$i] = $row['contenido_mn'];
 */
+setMailParameters('newsletter');
 
-for ($i = 0; $i < $_SESSION['n']; $i++) {
+for ($i = 0; $i < $_SESSION['límite']; $i++) {
     if ($_SESSION['id'][$i] != null) {
-        setMailParameters('newsletter');
-        
+
         $mail->ClearAllRecipients();
 
         $mail->AddAddress($_SESSION['email']);
