@@ -1,0 +1,37 @@
+<?php
+session_start();
+
+include "../../php scripts/dynamicMailSettings.php"; //Importación de configuración dimámica
+
+for ($i = 0; $i < $_SESSION['n']; $i++) {
+    if ($_SESSION['id'][$i] != null) {
+        $mail->ClearAllRecipients();
+
+        $mail->AddAddress($_SESSION['email']);
+        $mail->AddCC("dante@castelancarpinteyro.com");
+        $mail->AddCC("dantecc10@gmail.com");
+
+        $mail->IsHTML(true);  //podemos activar o desactivar HTML en mensaje
+        $mail->Subject = 'Correo de prueba del newsletter de Castelán Carpinteyro';
+
+        $msg = "<h1>¡Hola" . $_SESSION['nombre'] . "</h1>
+            <p>Según la base de datos, hoy " . $_SESSION['fecha'] . " hay un mensaje para tí desde el newsletter</p>
+            <p>De parte de <b><i>Dante Castelán Carpinteyro</i></b>, recibe el siguiente mensaje: '" . $_SESSION['mensaje'] . "'.</p>
+            <p>¡Gracias por ser parte de mis pruebas en el servidor! Me ayudas mucho. Por favor, siéntete libre de responder a este correo o por el medio que desees más mensajes personalizados para que los programe.</p>
+        ";
+
+        $mail->Body = $msg;
+
+        try {
+            // ...
+            // Código para enviar el correo electrónico
+            // ...
+
+            $mail->Send();
+            // Resto del código...
+        } catch (Exception $e) {
+            echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
+            echo "Excepción lanzada: " . $e->getMessage();
+        }
+    }
+}

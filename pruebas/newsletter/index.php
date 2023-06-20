@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Configuración de la conexión a la base de datos
 //$servername = "localhost";
 //$username = "nombre_de_usuario";
@@ -48,11 +49,18 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // Recorrer los resultados y ejecutar la función "saludar($i)"
+    $i = 1;
     while ($row = $result->fetch_assoc()) {
         $id = $row['id_mn'];
+        $_SESSION['id'][$i] = $id;
+
         $emailDestino = $row['email_destino_mn'];
+        $_SESSION['email'][$i] = $emailDestino;
+
         $fechaSQL = $row['fecha_mn'];
+        $_SESSION['fecha'][$i] = $fechaSQL;
         $nombreDestino = $row['nombre_destino_mn'];
+        $_SESSION['nombre'][$i] = $nombreDestino;
         //saludar($id);
 
         /*include "../../correos/newsletterMailSettings.php";
@@ -82,7 +90,7 @@ if ($result->num_rows > 0) {
             echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
             echo "Excepción lanzada: " . $e->getMessage();
         }*/
-        header("Location: dante.php");
+        //header("Location: dante.php"); //Redireccionamiento de debug
         //actualizar($id, $conn);*/
         // Actualizar el estado a "Enviado"
         $sql = "UPDATE `test_mn` SET status_mn = 'Enviado' WHERE id_mn = $id";
@@ -91,6 +99,7 @@ if ($result->num_rows > 0) {
         } else {
             echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
         }
+        $i++;
     }
 } else {
     echo "No se encontraron registros con la fecha actual.";
