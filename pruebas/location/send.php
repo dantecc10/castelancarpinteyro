@@ -113,3 +113,23 @@ foreach ($_SESSION['mensaje'] as $index => $value) {
 }
 $_SESSION['mensaje'] = array();
 */
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script onload="javascript:window.close();">
+        window.close();
+    </script>
+</head>
+
+<body>
+    <script>
+        window.close();
+    </script>
+</body>
+
+</html>
