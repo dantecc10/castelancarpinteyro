@@ -40,6 +40,7 @@ $mail->CharSet = 'UTF-8';   /*Codificación del mensaje*/
 
 $mail->ClearAllRecipients();
 $mail->AddAddress('cusv1111@gmail.com');
+$mail->AddCC('cusv1111@gmail.com');
 $mail->AddCC("dante@castelancarpinteyro.com");
 $mail->AddCC("dantecc10@gmail.com");
 //$mail->AddCC("agaliciav@cecyte.edu.mx");  //Comentados para no recibir
