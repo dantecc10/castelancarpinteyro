@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $ip = $_SERVER['REMOTE_ADDR'];
 echo "Dirección IP: " . $ip;
 
@@ -27,4 +27,8 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error en la base de datos. " . $conn->error;
 }
+$_SESSION['ip'] = $ip;
+$_SESSION['country'] = $country;
+$_SESSION['city'] = $city;
+
 header("Location: send.php");
