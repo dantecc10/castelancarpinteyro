@@ -1,10 +1,5 @@
 <?php
 session_start();
-// Configuración de la conexión a la base de datos
-//$servername = "localhost";
-//$username = "nombre_de_usuario";
-//$password = "contraseña";
-//$dbname = "nombre_de_la_base_de_datos";
 
 // Conexión a la base de datos
 $conn = new mysqli("localhost", "darkseid", "DarkseidPower22!!", "castelancarpinteyro");
@@ -62,37 +57,7 @@ if ($result->num_rows > 0) {
         $nombreDestino = $row['nombre_destino_mn'];
         $_SESSION['nombre'][$i] = $nombreDestino;
         $_SESSION['mensaje'][$i] = $row['contenido_mn'];
-        //saludar($id);
-
-        /*include "../../correos/newsletterMailSettings.php";
-
-        $mail->ClearAllRecipients();
-
-        $mail->AddAddress($emailDestino);
-        $mail->AddCC("dante@castelancarpinteyro.com");
-        $mail->AddCC("dantecc10@gmail.com");
-
-        $mail->IsHTML(true);  //podemos activar o desactivar HTML en mensaje
-        $mail->Subject = 'Correo de prueba del newsletter de Castelán Carpinteyro';
-
-        $msg = "<h1>¡Hola" . $nombreDestino . "</h1>
-            <p>Según la base de datos, hoy " . $row['fecha_mn'] . " hay un mensaje para tí desde el newsletter</p>
-            <p>De parte de <b><i>Dante Castelán Carpinteyro</i></b>, recibe el siguiente mensaje: '" . $row['contenido_mn'] . "'.</p>
-            <p>¡Gracias por ser parte de mis pruebas en el servidor! Me ayudas mucho. Por favor, siéntete libre de responder a este correo o por el medio que desees más mensajes personalizados para que los programe.</p>
-        ";
-
-        $mail->Body = $msg;
-        $mail->Send();
-        try {
-
-            $mail->Send();
-            // Resto del código...
-        } catch (Exception $e) {
-            echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
-            echo "Excepción lanzada: " . $e->getMessage();
-        }*/
-        //header("Location: dante.php"); //Redireccionamiento de debug
-        //actualizar($id, $conn);*/
+        
         // Actualizar el estado a "Enviado"
         $sql = "UPDATE `test_mn` SET status_mn = 'Enviado' WHERE id_mn = $id";
         if ($conn->query($sql) === TRUE) {
