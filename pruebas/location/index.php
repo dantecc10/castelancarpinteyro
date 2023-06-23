@@ -18,3 +18,12 @@ $city = $data['city'];
 // Imprime la información
 echo "País: " . $country . "<br>";
 echo "Ciudad: " . $city;
+
+$conn = new mysqli("localhost", "darkseid", "DarkseidPower22!!", "castelancarpinteyro");
+// Actualizar el estado a "Enviado"
+$sql = "INSERT INTO `ip_testing` (`id`, `ip`, `country`, `city`) VALUES ('', '$ip', '$country', '$city')";
+if ($conn->query($sql) === TRUE) {
+    echo "Inserción correcta en la base de datos<br>";
+} else {
+    echo "Error en la base de datos. " . $conn->error;
+}
