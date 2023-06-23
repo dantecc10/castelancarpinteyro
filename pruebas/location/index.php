@@ -6,7 +6,7 @@ echo "Dirección IP: " . $ip;
 //$ip = '192.168.0.1'; // Dirección IP de ejemplo
 
 // Realiza una solicitud a la API de ipstack
-$response = file_get_contents("http://api.ipstack.com/{$ip}?access_key=TU_ACCESS_KEY");
+$response = file_get_contents("http://api.ipstack.com/{$ip}?access_key=d2bf5cc5db54f4fd6c9ed7355cc4bb6e");
 
 // Decodifica la respuesta JSON
 $data = json_decode($response, true);
