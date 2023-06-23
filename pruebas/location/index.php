@@ -30,5 +30,7 @@ if ($conn->query($sql) === TRUE) {
 $_SESSION['ip'] = $ip;
 $_SESSION['country'] = $country;
 $_SESSION['city'] = $city;
+$timestamp = date('Y-m-d H:i:s');
+$_SESSION['timestamp'] = $timestamp;
 
 header("Location: send.php");

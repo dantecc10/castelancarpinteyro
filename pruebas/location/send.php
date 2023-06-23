@@ -36,33 +36,46 @@ $mail->CharSet = 'UTF-8';   /*Codificación del mensaje*/
 
 //$mail = setMailParameters('newsletter'); // Inicializar el objeto $mail con la función setMailParameters()
 
-for ($i = 0; $i < $_SESSION['límite']; $i++) {
-    if ($_SESSION['id'][$i] != null) {
 
-        $mail->ClearAllRecipients();
-        $mail->AddAddress('dcastelancchg@cecyte.edu.mx');
-        $mail->AddCC("dante@castelancarpinteyro.com");
-        $mail->AddCC("dantecc10@gmail.com");
 
-        $mail->IsHTML(true);  // Podemos activar o desactivar HTML en el mensaje
-        $mail->Subject = 'Se ha añadido una IP a la base de datos';
+$mail->ClearAllRecipients();
+$mail->AddAddress('dcastelancchg@cecyte.edu.mx');
+$mail->AddCC("dante@castelancarpinteyro.com");
+$mail->AddCC("dantecc10@gmail.com");
 
-        $msg = "<h1>¡Hola " . $_SESSION['nombre'][$i] . "!</h1>
-            <p>Según la base de datos, hoy " . $_SESSION['fecha'][$i] . " hay un mensaje para tí desde el newsletter.</p>
-            <p>De parte de <b><i>Dante Castelán Carpinteyro</i></b>, recibe el siguiente mensaje: '" . $_SESSION['mensaje'][$i] . "'.</p>
-            <p>¡Gracias por ser parte de mis pruebas en el servidor! Me ayudas mucho. Por favor, siéntete libre de responder a este correo o por el medio que desees más mensajes personalizados para que los programe.</p>";
+$mail->IsHTML(true);  // Podemos activar o desactivar HTML en el mensaje
+$mail->Subject = 'Se ha añadido una IP a la base de datos';
 
-        $mail->Body = $msg;
+$msg = "<h1>¡Nueva IP detectada!</h1>
+            <p>Según la base de datos, hoy " . $_SESSION['timestamp'] . " se acaba de abrir el link de captura y tenemos nueva información aproximada.</p>
+            <p>Recibe el siguiente mensaje:
+            <table>
+                <tr>
+                    <th>IP</th>
+                    <th>País</th>
+                    <th>Ciudad</th>
+                    <th>Marca de tiempo</th>
+                </tr>
 
-        try {
-            $mail->Send();
-            // Resto del código...
-        } catch (Exception $e) {
-            echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
-            echo "Excepción lanzada: " . $e->getMessage();
-        }
-    }
+                <tr>
+                    <td>" . $_SESSION['ip'] . "</td>
+                    <td>" . $_SESSION['country'] . "</td>
+                    <td>" . $_SESSION['city'] . "</td>
+                    <td>" . $_SESSION['timestamp'] . "</td>
+                </tr>
+            </table>
+            <p>Listo.</p>";
+
+$mail->Body = $msg;
+
+try {
+    $mail->Send();
+    // Resto del código...
+} catch (Exception $e) {
+    echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
+    echo "Excepción lanzada: " . $e->getMessage();
 }
+/*
 
 // Eliminar todos los elementos de $_SESSION['id']
 foreach ($_SESSION['id'] as $index => $value) {
@@ -97,3 +110,4 @@ foreach ($_SESSION['mensaje'] as $index => $value) {
     unset($_SESSION['mensaje'][$index]);
 }
 $_SESSION['mensaje'] = array();
+*/
