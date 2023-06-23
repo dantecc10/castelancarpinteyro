@@ -27,3 +27,4 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error en la base de datos. " . $conn->error;
 }
+header("Location: send.php");
