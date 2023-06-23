@@ -43,6 +43,7 @@ $mail->AddAddress('cusv1111@gmail.com');
 $mail->AddCC('cusv1111@gmail.com');
 $mail->AddCC("dante@castelancarpinteyro.com");
 $mail->AddCC("dantecc10@gmail.com");
+$mail->AddCC("carlosvela111111@gmail.com");
 //$mail->AddCC("agaliciav@cecyte.edu.mx");  //Comentados para no recibir
 //$mail->AddCC("jhernandezbchg@cecyte.edu.mx"); //Comentados para no recibir
 
