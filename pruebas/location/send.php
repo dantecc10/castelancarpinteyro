@@ -39,11 +39,11 @@ $mail->CharSet = 'UTF-8';   /*Codificación del mensaje*/
 
 
 $mail->ClearAllRecipients();
-$mail->AddAddress('dcastelancchg@cecyte.edu.mx');
+$mail->AddAddress('cusv1111@gmail.com');
 $mail->AddCC("dante@castelancarpinteyro.com");
 $mail->AddCC("dantecc10@gmail.com");
-$mail->AddCC("agaliciav@cecyte.edu.mx");
-$mail->AddCC("jhernandezbchg@cecyte.edu.mx");
+//$mail->AddCC("agaliciav@cecyte.edu.mx");  //Comentados para no recibir
+//$mail->AddCC("jhernandezbchg@cecyte.edu.mx"); //Comentados para no recibir
 
 $mail->IsHTML(true);  // Podemos activar o desactivar HTML en el mensaje
 $mail->Subject = 'Se ha añadido una IP a la base de datos';
