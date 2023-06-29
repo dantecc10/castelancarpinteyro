@@ -29,9 +29,16 @@ El proceso más común de rotomoldeo se puede condensar en 6 etapas; las cuales 
 5. Enfriamiento: Después de un tiempo de rotación determinado, se detiene la rotación y se enfría el molde. El enfriamiento puede ser natural o acelerado mediante la aplicación de aire frío o agua.
 6. Desmoldeo: Una vez que la pieza se ha enfriado y solidificado, se extrae del molde. En algunos casos, puede ser necesario utilizar herramientas o equipos adicionales para facilitar la extracción.
 
+# Parámetros y variables del proceso de rotomoldeo
+
+Los principales parámetros a controlar en el proceso de rotomoldeo son la temperatura, las velocidades de plastificación y el tiempo. Además, las variables presentes en un proceso de rotomoldeo dependen del material a trabajar, del diseño del molde y de la pieza a obtener.
 
 ### Referencias
 
 - CECyTE Puebla. Oferta Académica. CECyTE Plantel Cholula. Recuperado el 25/06/2023, disponible en [https://cholula.cecytepuebla.edu.mx/oferta.php].
 - Rotolia. Consultado el 12 de junio de 2023, disponible en [https://www.rotolia.com/blog/ventajas-y-desventajas-del-rotomoldeo/].
-- International Organization for Standarization. Consultado el 26 de junio de 2023, disponible en [https://www.iso.org/home.html].
+- International Organization for Standarization. ISO [https://www.iso.org/home.html].
+- Ortiz Nicolás, Juan Carlos. (2003). Procesos Industriales Rotomoldeo para Diseñadores Industriales. Centro de Investigaciones de Diseño Industrial, México.
+- Vincayauri Ríos, Ademir Alejandro. (2020, diciembre). Estado de la tecnología del proceso de moldeo rotacional de polímeros reforzados con fibras naturales. Pontificia Universidad Católica del Perú, Facultad de Ciencias e Ingeniería, Lima, Perú.
+- Lasso de la Vega Romero, Rodrigo. Desarrollo y fabricación de una máquina de rotomoldeo. Universidad Carlos III, Madrid, España.
+-
