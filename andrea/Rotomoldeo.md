@@ -1,4 +1,4 @@
-# Tipos y maquinaria de rotomoldeo
+## Tipos y maquinaria de rotomoldeo
 
 Como ya los antecedentes se encargan de exponer la evolución e historia del proceso de rotomoldeo, es hora de profundizar en la maquinaria que se ha empleó y se sigue empleando para llevar a cabo este proceso.
 R. Peters ya usaba en su rol de pionero una máquina de dos ejes y que requería de calor para producir las primeras piezas surgidas de este proceso.
@@ -18,7 +18,7 @@ Este tipo de rotomoldeo aloja en el mismo sitio la estación de calor y de enfri
 
 4.- 3.4.4   Rotomoldeo de carga múltiple o (Carousel Rotational Molding): En este método, se utilizan varias cargas de resina de plástico en el mismo molde, que se agregan en diferentes etapas del proceso de rotomoldeo. Esto permite la creación de piezas multicapa o la combinación de diferentes colores y materiales en una sola pieza. También se conoce como en Cascada.
 
-# Proceso de rotomoldeo
+## Proceso de rotomoldeo
 
 El proceso más común de rotomoldeo se puede condensar en 6 etapas; las cuales son:
 
@@ -29,11 +29,11 @@ El proceso más común de rotomoldeo se puede condensar en 6 etapas; las cuales 
 5. Enfriamiento: Después de un tiempo de rotación determinado, se detiene la rotación y se enfría el molde. El enfriamiento puede ser natural o acelerado mediante la aplicación de aire frío o agua.
 6. Desmoldeo: Una vez que la pieza se ha enfriado y solidificado, se extrae del molde. En algunos casos, puede ser necesario utilizar herramientas o equipos adicionales para facilitar la extracción.
 
-# Parámetros y variables del proceso de rotomoldeo
+## Parámetros y variables del proceso de rotomoldeo
 
 Los principales parámetros a controlar en el proceso de rotomoldeo son la temperatura, las velocidades de plastificación y el tiempo. Además, las variables presentes en un proceso de rotomoldeo dependen del material a trabajar, del diseño del molde y de la pieza a obtener.
 
-### Referencias
+## Referencias
 
 - CECyTE Puebla. Oferta Académica. CECyTE Plantel Cholula. Recuperado el 25/06/2023, disponible en [https://cholula.cecytepuebla.edu.mx/oferta.php].
 - Rotolia. Consultado el 12 de junio de 2023, disponible en [https://www.rotolia.com/blog/ventajas-y-desventajas-del-rotomoldeo/].
