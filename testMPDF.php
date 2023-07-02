@@ -1,6 +1,6 @@
 <?php
 // Incluir la clase mPDF
-require_once __DIR__ . 'vendor/autoload.php'; // Asegúrate de ajustar la ruta al archivo de autoload
+require_once __DIR__ . '/vendor/autoload.php'; // Asegúrate de ajustar la ruta al archivo de autoload
 
 // Crear una instancia de mPDF
 $mpdf = new \Mpdf\Mpdf();
