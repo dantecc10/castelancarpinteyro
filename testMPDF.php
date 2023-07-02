@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
 require_once __DIR__ . '/vendor/autoload.php'; // Asegúrate de ajustar la ruta al archivo de autoload
 
 // Crear una instancia de mPDF
-$mpdf = new \Mpdf\Mpdf();
+$mpdf = new Mpdf\Mpdf();
 
 // Generar el contenido HTML del documento
 $html = '
