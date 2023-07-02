@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 // Incluir la clase mPDF
 require_once __DIR__ . '/vendor/autoload.php'; // Asegúrate de ajustar la ruta al archivo de autoload
 
