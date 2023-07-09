@@ -85,7 +85,7 @@
                                 <div class="mb-3"><input class="form-control" type="text" name="apellidoMaterno" placeholder="Apellido materno" required /></div>
                                 <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email" required /></div>
                                 <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Crea una contraseña" required /></div>
-                                <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Confirma la contraseña" required /></div>
+                                <div class="mb-3"><input class="form-control" type="password" name="password2" placeholder="Confirma la contraseña" required /></div>
                                 <div class="mb-3"><button class="btn btn-primary shadow d-block w-100" type="submit">Registrarse</button></div>
                                 <p class="text-muted">¿Ya tienes una cuenta? <a href="../login.php">Log in</a></p>
                             </form>

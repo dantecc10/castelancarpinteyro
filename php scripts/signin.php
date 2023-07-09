@@ -1,15 +1,13 @@
 <?php
 //Script para procesar formulario de inicio de sesión
-//include 'Conexión.php';
-
-// Configuración de la conexión a la base de datos
-//$servername = "localhost";
-//$username = "nombre_usuario";
-//$password = "contraseña";
-//$dbname = "nombre_base_de_datos";
 
 // Datos del formulario de registro
+if ($_POST['password'] != $_POST['password2']) {
+    header("Location: ../signin.php");
+}
+
 $email = $_POST['email'];
+
 
 // Crear la conexión
 $conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
@@ -20,17 +18,51 @@ if ($conexiónPDO->connect_error) {
 }
 
 // Consulta para verificar si el usuario ya existe
+/*$sql = "SELECT * FROM `usuarios` WHERE `email_usuario` = '?'";
+$stmt = $conexiónPDO->prepare($sql);
+
+$stmt->bind_param("s", $emailEntrada);
+$emailEntrada = mysqli_real_escape_string($conexiónPDO, $email);*/
+
 $sql = "SELECT * FROM `usuarios` WHERE `email_usuario` = '$email'";
 $result = $conexiónPDO->query($sql);
 
 // Verificar si se encontraron resultados
 if ($result->num_rows > 0) {
     // El usuario ya existe, mostrar un mensaje de error o realizar alguna acción adicional
-    echo "El usuario ya está registrado.";
+    header("Location: ../signin.php");
+    //echo "El usuario ya está registrado.";
 } else {
     // El usuario no existe, se puede proceder con el registro
     // Aquí puedes incluir el código para insertar los datos del nuevo usuario en la base de datos
     echo "Registro exitoso.";
+
+    $nombre = $_POST['nombre'];
+    $apellidoPaterno = $_POST['apellidoPaterno'];
+    $apellidoMaterno = $_POST['apellidoMaterno'];
+    $password = $_POST['password'];
+
+
+    $sql = "INSERT INTO `usuarios` VALUES('', '?', '?', '?', 2, '?', '', '?', 1);";
+    $stmt = $conn->prepare($sql);
+
+    // Limpiar y vincular los parámetros
+    $stmt->bind_param("sssss", $clean_name, $clean_apellidoP, $clean_apellidoM, $clean_email, $clean_password);
+    $clean_name = mysqli_real_escape_string($conexiónPDO, $nombre);
+    $clean_apellidoP = mysqli_real_escape_string($conexiónPDO, $apellidoPaterno);
+    $clean_apellidoM = mysqli_real_escape_string($conexiónPDO, $apellidoMaterno);
+    $clean_email = mysqli_real_escape_string($conexiónPDO, $email);
+    $clean_password = mysqli_real_escape_string($conexiónPDO, $password);
+
+    // Ejecutar la sentencia preparada
+    $stmt->execute();
+
+    // Verificar el éxito de la inserción
+    if ($stmt->affected_rows > 0) {
+        echo "Registro exitoso.";
+    } else {
+        echo "Error al registrar el usuario.";
+    }
 }
 
 // Cerrar la conexión
