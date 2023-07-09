@@ -44,7 +44,7 @@ if ($result->num_rows > 0) {
 
 
     $sql = "INSERT INTO `usuarios` VALUES('', '?', '?', '?', 2, '?', '', '?', 1);";
-    $stmt = $conn->prepare($sql);
+    $stmt = $conexiónPDO->prepare($sql);
 
     // Limpiar y vincular los parámetros
     $stmt->bind_param("sssss", $clean_name, $clean_apellidoP, $clean_apellidoM, $clean_email, $clean_password);
