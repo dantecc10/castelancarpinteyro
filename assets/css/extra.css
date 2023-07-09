@@ -55,11 +55,3 @@ tbody {
   vertical-align: middle;
 }
 
-.columna-1#todo {
-  width: 100% !important;
-}
-
-#todo .columna-1, #todo {
-  /*width: 100% !important;*/
-}
-
