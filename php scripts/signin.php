@@ -35,7 +35,7 @@ if ($result->num_rows > 0) {
 } else {
     // El usuario no existe, se puede proceder con el registro
     // Aquí puedes incluir el código para insertar los datos del nuevo usuario en la base de datos
-    echo "Registro exitoso.";
+    //echo "Registro exitoso.";
 
     $nombre = $_POST['nombre'];
     $apellidoPaterno = $_POST['apellidoPaterno'];
