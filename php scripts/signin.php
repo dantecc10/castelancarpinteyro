@@ -60,6 +60,7 @@ if ($result->num_rows > 0) {
     // Verificar el éxito de la inserción
     if ($stmt->affected_rows > 0) {
         echo "Registro exitoso.";
+        header("Location: ../login.php");
     } else {
         echo "Error al registrar el usuario.";
     }
