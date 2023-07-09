@@ -1,13 +1,11 @@
 <?php
 //Script para procesar formulario de inicio de sesión
-
 // Datos del formulario de registro
 if ($_POST['password'] != $_POST['password2']) {
     header("Location: ../signin.php");
 }
 
 $email = $_POST['email'];
-
 
 // Crear la conexión
 $conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
@@ -48,11 +46,11 @@ if ($result->num_rows > 0) {
 
     // Limpiar y vincular los parámetros
     $stmt->bind_param("sssss", $clean_name, $clean_apellidoP, $clean_apellidoM, $clean_email, $clean_password);
-    $clean_name = mysqli_real_escape_string($conexiónPDO, $nombre);
-    $clean_apellidoP = mysqli_real_escape_string($conexiónPDO, $apellidoPaterno);
-    $clean_apellidoM = mysqli_real_escape_string($conexiónPDO, $apellidoMaterno);
-    $clean_email = mysqli_real_escape_string($conexiónPDO, $email);
-    $clean_password = mysqli_real_escape_string($conexiónPDO, $password);
+    $clean_name = $conexiónPDO->real_escape_string($nombre); //$clean_name = mysqli_real_escape_string($conexiónPDO, $nombre);
+    $clean_apellidoP = $conexiónPDO->real_escape_string($apellidoPaterno); //$clean_apellidoP = mysqli_real_escape_string($conexiónPDO, $apellidoPaterno);
+    $clean_apellidoM = $conexiónPDO->real_escape_string($apellidoMaterno); //$clean_apellidoM = mysqli_real_escape_string($conexiónPDO, $apellidoMaterno);
+    $clean_email = $conexiónPDO->real_escape_string($email); //$clean_email = mysqli_real_escape_string($conexiónPDO, $email);
+    $clean_password = $conexiónPDO->real_escape_string($password); //$clean_password = mysqli_real_escape_string($conexiónPDO, $password);
 
     // Ejecutar la sentencia preparada
     $stmt->execute();
