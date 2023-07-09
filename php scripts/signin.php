@@ -1,6 +1,6 @@
 <?php
 //Script para procesar formulario de inicio de sesión
-include 'Conexión.php';
+//include 'Conexión.php';
 
 // Configuración de la conexión a la base de datos
 //$servername = "localhost";
