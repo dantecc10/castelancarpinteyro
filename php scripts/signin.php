@@ -12,7 +12,7 @@ include 'Conexión.php';
 $email = $_POST['email'];
 
 // Crear la conexión
-//$conn = new mysqli($servername, $username, $password, $dbname);
+$conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
 
 // Verificar la conexión
 if ($conexiónPDO->connect_error) {
