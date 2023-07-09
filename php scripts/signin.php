@@ -15,13 +15,6 @@ if ($conexiónPDO->connect_error) {
     die("Conexión fallida: " . $conexiónPDO->connect_error);
 }
 
-// Consulta para verificar si el usuario ya existe
-/*$sql = "SELECT * FROM `usuarios` WHERE `email_usuario` = '?'";
-$stmt = $conexiónPDO->prepare($sql);
-
-$stmt->bind_param("s", $emailEntrada);
-$emailEntrada = mysqli_real_escape_string($conexiónPDO, $email);*/
-
 $sql = "SELECT * FROM `usuarios` WHERE `email_usuario` = '$email'";
 $result = $conexiónPDO->query($sql);
 
