@@ -34,7 +34,7 @@ if ($result->num_rows > 0) {
     $password = $_POST['password'];
 
 
-    $sql = "INSERT INTO `usuarios` VALUES('', ?, ?, ?, 2, ?, '', ?, 1);";
+    $sql = "INSERT INTO `usuarios` VALUES('', ?, ?, ?, 2, ?, '', ?, 0);";
     $stmt = $conexiónPDO->prepare($sql);
 
     // Limpiar y vincular los parámetros
@@ -51,7 +51,7 @@ if ($result->num_rows > 0) {
     // Verificar el éxito de la inserción
     if ($stmt->affected_rows > 0) {
         echo "Registro exitoso.";
-        header("Location: ../login.php");
+        header("Location: ../verify.php");
     } else {
         echo "Error al registrar el usuario.";
     }
