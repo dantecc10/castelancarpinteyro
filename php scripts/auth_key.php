@@ -26,7 +26,7 @@ $result = $conexiónPDO->query($sql);
 if ($result->num_rows > 0) {
     
     //header("Location: ../signin.php");
-    //echo "La clave ya está existe."; // Debug 🐞
+    echo "La clave ya está existe."; // Debug 🐞
 } else {}
 
 // Cerrar la conexión
