@@ -7,7 +7,7 @@ function generateKey() // Operative ✅
     # $dígitoAleatorioGenerado = rand(1, $max);
     $auth_key = rand($min, $max);
 
-    $auth_key = 486753; // Debug 🐞
+    //$auth_key = 486753; // Debug 🐞
     return $auth_key;
 }
 
