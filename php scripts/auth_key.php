@@ -18,8 +18,8 @@ $conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpint
 if ($conexiónPDO->connect_error) {
     die("Conexión fallida: " . $conexiónPDO->connect_error);
 }
-
-$sql = "SELECT * FROM `auth_keys` WHERE `auth_key` = '123456'";
+$key_compare = generateKey();
+$sql = "SELECT * FROM `auth_keys` WHERE `auth_key` = '$key_compare'";
 $result = $conexiónPDO->query($sql);
 
 // Verificar si se encontraron resultados
@@ -28,3 +28,6 @@ if ($result->num_rows > 0) {
     //header("Location: ../signin.php");
     //echo "La clave ya está existe."; // Debug 🐞
 } else {}
+
+// Cerrar la conexión
+$conexiónPDO->close();
