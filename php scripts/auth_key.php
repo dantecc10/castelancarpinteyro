@@ -1,5 +1,5 @@
 <?php
-function generaClave()
+function generateKey() // Operativa ✅
 {
     # $contadorDígitos = 0;
     $min = 100000;
@@ -10,4 +10,3 @@ function generaClave()
     # echo $claveRecuperación;
     return $claveRecuperación;
 }
-echo generaClave();
