@@ -19,7 +19,7 @@ if ($conexiónPDO->connect_error) {
     die("Conexión fallida: " . $conexiónPDO->connect_error);
 }
 
-$sql = "SELECT * FROM `auth_keys` WHERE `auth_key` = generateKey()";
+$sql = "SELECT * FROM `auth_keys` WHERE `auth_key` = '123456'";
 $result = $conexiónPDO->query($sql);
 
 // Verificar si se encontraron resultados
