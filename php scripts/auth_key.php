@@ -1,5 +1,6 @@
 <?php
-function generateKey() // Operative ✅
+$email = $_GET['email'];
+function generateKey($email) // Operative ✅
 {
     # $contadorDígitos = 0;
     $min = 100000;
@@ -17,7 +18,7 @@ function generateKey() // Operative ✅
     }
 
     $key_compare = $auth_key;
-    $sql = "SELECT * FROM `auth_keys` WHERE `auth_key` = '$key_compare'";
+    $sql = "SELECT * FROM `auth_keys` WHERE (`auth_key` = '$key_compare') OR (`related_email` = '$email')";
     $result = $conexiónPDO->query($sql);
     
     // Verificar si se encontraron resultados
@@ -25,7 +26,7 @@ function generateKey() // Operative ✅
         
         //header("Location: ../signin.php");
         $conexiónPDO->close();
-        echo "La clave ya está existe."; // Debug 🐞
+        //echo "La clave ya está existe o esa cuenta ya tiene una clave."; // Debug 🐞
         return null;
     } else {
         $conexiónPDO->close();
@@ -33,13 +34,33 @@ function generateKey() // Operative ✅
     }
 }
 
+function storeKey($auth_email)
+{
+    $auth_key = generateKey($auth_email);
+    while ($auth_key == null) {
+    //echo "Esto no se debería ver"; // Debug 🐞
+    $auth_key = generateKey($auth_email);
+    }
+    //echo $auth_key; // Debug 🐞
 
-$auth_key = generateKey();
-while ($auth_key == null) {
-    echo "Esto no se debería ver";
-    $auth_key = generateKey();
+
+    $sql = "INSERT INTO `auth_keys` VALUES ('', $auth_key, ?, 'Activa', CURRENT_TIMESTAMP())";
+    $stmt = $conexiónPDO->prepare($sql);
+    // Limpiar y vincular los parámetros
+    $stmt->bind_param("i", $clean_email);
+    $clean_email = $conexiónPDO->real_escape_string($auth_email); //$clean_password = mysqli_real_escape_string($conexiónPDO, $password);
+    // Ejecutar la sentencia preparada
+    $stmt->execute();
+
+    // Verificar el éxito de la inserción
+    if ($stmt->affected_rows > 0) {
+        //echo "Generación y almacenamiento de clave exitosos."; // Debug 🐞
+        header("Location: ../verify.php");
+    } else {
+        echo "Error almacenar y/o generar la clave."; // Debug 🐞
+    }
+
+    // Cerrar la conexión
+    $conexiónPDO->close();
 }
-echo $auth_key;
-
-
-// Cerrar la conexión
+storeKey($email);
