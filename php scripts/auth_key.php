@@ -36,28 +36,35 @@ function generateKey($email) // Operative ✅
 
 
     $auth_key = generateKey($email);
-    while ($auth_key == null) {
+    $contador = 0;
+    while ($contador < 5) {
     //echo "Esto no se debería ver"; // Debug 🐞
-    $auth_key = generateKey($email);
+        if ($auth_key == null) {
+            $auth_key = generateKey($email);
+        } else {
+            $conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
+            $sql = "INSERT INTO `auth_keys` VALUES ('', $auth_key, ?, 'Active', CURRENT_TIMESTAMP())";
+            $stmt = $conexiónPDO->prepare($sql);
+            // Limpiar y vincular los parámetros
+            $stmt->bind_param("s", $clean_email);
+            $clean_email = $conexiónPDO->real_escape_string($email); //$clean_password = mysqli_real_escape_string($conexiónPDO, $password);
+            // Ejecutar la sentencia preparada
+            $stmt->execute();
+
+            // Verificar el éxito de la inserción
+            if ($stmt->affected_rows > 0) {
+            //echo "Generación y almacenamiento de clave exitosos."; // Debug 🐞
+            header("Location: ../verify.php");
+            } else {
+                echo "Error almacenar y/o generar la clave."; // Debug 🐞
+            }
+
+            // Cerrar la conexión
+            $conexiónPDO->close();
+            break;
+        }
+        $contador++;
     }
     //echo $auth_key; // Debug 🐞
 
-    $conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
-    $sql = "INSERT INTO `auth_keys` VALUES ('', $auth_key, ?, 'Active', CURRENT_TIMESTAMP())";
-    $stmt = $conexiónPDO->prepare($sql);
-    // Limpiar y vincular los parámetros
-    $stmt->bind_param("s", $clean_email);
-    $clean_email = $conexiónPDO->real_escape_string($email); //$clean_password = mysqli_real_escape_string($conexiónPDO, $password);
-    // Ejecutar la sentencia preparada
-    $stmt->execute();
-
-    // Verificar el éxito de la inserción
-    if ($stmt->affected_rows > 0) {
-        //echo "Generación y almacenamiento de clave exitosos."; // Debug 🐞
-        header("Location: ../verify.php");
-    } else {
-        echo "Error almacenar y/o generar la clave."; // Debug 🐞
-    }
-
-    // Cerrar la conexión
-    $conexiónPDO->close();
+    
