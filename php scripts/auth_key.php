@@ -42,11 +42,11 @@ function generateKey($email) // Operative ✅
     }
     //echo $auth_key; // Debug 🐞
 
-
+    $conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
     $sql = "INSERT INTO `auth_keys` VALUES ('', $auth_key, ?, 'Activa', CURRENT_TIMESTAMP())";
     $stmt = $conexiónPDO->prepare($sql);
     // Limpiar y vincular los parámetros
-    $stmt->bind_param("i", $clean_email);
+    $stmt->bind_param("s", $clean_email);
     $clean_email = $conexiónPDO->real_escape_string($auth_email); //$clean_password = mysqli_real_escape_string($conexiónPDO, $password);
     // Ejecutar la sentencia preparada
     $stmt->execute();
