@@ -1,5 +1,5 @@
 <?php
-$email = $_GET['email'];
+$email = 'emicc1000@gmail.com';
 function generateKey($email) // Operative ✅
 {
     # $contadorDígitos = 0;
