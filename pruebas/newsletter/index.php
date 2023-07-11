@@ -57,7 +57,7 @@ if ($result->num_rows > 0) {
         $nombreDestino = $row['nombre_destino_mn'];
         $_SESSION['nombre'][$i] = $nombreDestino;
         $_SESSION['mensaje'][$i] = $row['contenido_mn'];
-        
+
         // Actualizar el estado a "Enviado"
         $sql = "UPDATE `test_mn` SET status_mn = 'Enviado' WHERE id_mn = $id";
         if ($conn->query($sql) === TRUE) {
@@ -68,7 +68,26 @@ if ($result->num_rows > 0) {
         $i++;
     }
     $_SESSION['límite'] = $i;
-    header("Location: envío.php");
+    //header("Location: envío.php");
+?>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            window.location.href = "envío.php";
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
+<?php
 } else {
     echo "No se encontraron registros con la fecha actual.";
 }

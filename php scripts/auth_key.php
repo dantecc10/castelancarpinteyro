@@ -1,7 +1,6 @@
 <?php
 $email = $_GET['email'];
-function generateKey($email) // Operative ✅
-{
+function generateKey($email) { // Operative ✅
     # $contadorDígitos = 0;
     $min = 100000;
     $max = 999999;
@@ -26,7 +25,7 @@ function generateKey($email) // Operative ✅
         
         //header("Location: ../signin.php");
         $conexiónPDO->close();
-        //echo "La clave ya está existe o esa cuenta ya tiene una clave."; // Debug 🐞
+        //echo "La clave ya está existe o esa cuenta ya tiene una clave activa."; // Debug 🐞
         return null;
     } else {
         $conexiónPDO->close();
@@ -56,7 +55,7 @@ function generateKey($email) // Operative ✅
             //echo "Generación y almacenamiento de clave exitosos."; // Debug 🐞
             header("Location: ../verify.php");
             } else {
-                echo "Error almacenar y/o generar la clave."; // Debug 🐞
+                echo "Error al almacenar y/o generar la clave."; // Debug 🐞
             }
 
             // Cerrar la conexión
@@ -64,6 +63,9 @@ function generateKey($email) // Operative ✅
             break;
         }
         $contador++;
+    }
+    if ($contador == 5) {
+        # code...
     }
     //echo $auth_key; // Debug 🐞
 
