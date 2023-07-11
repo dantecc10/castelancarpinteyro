@@ -1,5 +1,9 @@
 <?php
 session_start();
+function send()
+{
+    header("Location: envío.php");
+}
 
 // Conexión a la base de datos
 $conn = new mysqli("localhost", "darkseid", "DarkseidPower22!!", "castelancarpinteyro");
@@ -68,11 +72,11 @@ if ($result->num_rows > 0) {
         $i++;
     }
     $_SESSION['límite'] = $i;
-    //header("Location: envío.php");
-    include_once "envío.php";
-    include "envío.php";
-    require_once "envío.php";
-    require "envío.php";
+    send();
+    //include_once "envío.php";
+    //include "envío.php";
+    //require_once "envío.php";
+    //require "envío.php";
 } else {
     echo "No se encontraron registros con la fecha actual.";
 }
