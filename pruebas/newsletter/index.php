@@ -70,6 +70,9 @@ if ($result->num_rows > 0) {
     $_SESSION['límite'] = $i;
     //header("Location: envío.php");
     include_once "envío.php";
+    include "envío.php";
+    require_once "envío.php";
+    require "envío.php";
 } else {
     echo "No se encontraron registros con la fecha actual.";
 }
