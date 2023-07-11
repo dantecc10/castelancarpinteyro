@@ -18,7 +18,7 @@ function generateKey($email) // Operative ✅
     }
 
     $key_compare = $auth_key;
-    $sql = "SELECT * FROM `auth_keys` WHERE ((`auth_key` = '$key_compare') OR (`related_email` = '$email')) AND (`status` = 'Active')";
+    $sql = "SELECT * FROM `auth_keys` WHERE ((`auth_key` = '$key_compare') OR (`related_email` = '$email')) AND (`status` = 'Enabled')";
     $result = $conexiónPDO->query($sql);
     
     // Verificar si se encontraron resultados
@@ -43,7 +43,7 @@ function generateKey($email) // Operative ✅
             $auth_key = generateKey($email);
         } else {
             $conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
-            $sql = "INSERT INTO `auth_keys` VALUES ('', $auth_key, ?, 'Active', CURRENT_TIMESTAMP())";
+            $sql = "INSERT INTO `auth_keys` VALUES ('', $auth_key, ?, 'Enabled', CURRENT_TIMESTAMP())";
             $stmt = $conexiónPDO->prepare($sql);
             // Limpiar y vincular los parámetros
             $stmt->bind_param("s", $clean_email);
