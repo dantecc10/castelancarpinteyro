@@ -1,5 +1,5 @@
 <?php
-$email = 'emicc1000@gmail.com';
+$email = $_GET['email'];
 function generateKey($email) // Operative ✅
 {
     # $contadorDígitos = 0;
@@ -47,7 +47,7 @@ function generateKey($email) // Operative ✅
     $stmt = $conexiónPDO->prepare($sql);
     // Limpiar y vincular los parámetros
     $stmt->bind_param("s", $clean_email);
-    $clean_email = $conexiónPDO->real_escape_string($auth_email); //$clean_password = mysqli_real_escape_string($conexiónPDO, $password);
+    $clean_email = $conexiónPDO->real_escape_string($email); //$clean_password = mysqli_real_escape_string($conexiónPDO, $password);
     // Ejecutar la sentencia preparada
     $stmt->execute();
 
