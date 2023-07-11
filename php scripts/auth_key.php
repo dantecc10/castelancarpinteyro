@@ -26,12 +26,19 @@ function generateKey() // Operative ✅
         //header("Location: ../signin.php");
         $conexiónPDO->close();
         echo "La clave ya está existe."; // Debug 🐞
+        return null;
     } else {
         $conexiónPDO->close();
         return $auth_key;
     }
 }
-echo generateKey();
+
+
+$auth_key = generateKey();
+while ($auth_key == null) {
+    echo "Esto no se debería ver";
+}
+echo $auth_key;
 
 
 // Cerrar la conexión
