@@ -19,9 +19,9 @@ function saludar($id, $conn)
     // Actualizar el estado a "Enviado"
     $sql = "UPDATE test_mn SET status_mn = 'Enviado' WHERE id_mn = $id";
     if ($conn->query($sql) === TRUE) {
-        echo "Saludando al registro con ID: " . $id . " y actualizando estado a 'Enviado'<br>";
+        //echo "Saludando al registro con ID: " . $id . " y actualizando estado a 'Enviado'<br>";
     } else {
-        echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
+        //echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
     }
     // Realizar otras acciones con el registro...
 }
@@ -32,9 +32,9 @@ function actualizar($id, $conn)
     // Actualizar el estado a "Enviado"
     $sql = "UPDATE test_mn SET status_mn = 'Enviado' WHERE id_mn = $id";
     if ($conn->query($sql) === TRUE) {
-        echo "Saludando al registro con ID: " . $id . " y actualizando estado a 'Enviado'<br>";
+        //echo "Saludando al registro con ID: " . $id . " y actualizando estado a 'Enviado'<br>";
     } else {
-        echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
+        //echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
     }
     // Realizar otras acciones con el registro...
 }
@@ -65,9 +65,9 @@ if ($result->num_rows > 0) {
         // Actualizar el estado a "Enviado"
         $sql = "UPDATE `test_mn` SET status_mn = 'Enviado' WHERE id_mn = $id";
         if ($conn->query($sql) === TRUE) {
-            echo "Saludando al registro con ID: " . $id . " y actualizando estado a 'Enviado'<br>";
+            //echo "Saludando al registro con ID: " . $id . " y actualizando estado a 'Enviado'<br>";
         } else {
-            echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
+            //echo "Error al actualizar el estado del registro con ID: " . $id . ": " . $conn->error;
         }
         $i++;
     }
