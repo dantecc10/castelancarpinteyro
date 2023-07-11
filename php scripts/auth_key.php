@@ -34,12 +34,11 @@ function generateKey($email) // Operative ✅
     }
 }
 
-function storeKey($auth_email)
-{
-    $auth_key = generateKey($auth_email);
+
+    $auth_key = generateKey($email);
     while ($auth_key == null) {
     //echo "Esto no se debería ver"; // Debug 🐞
-    $auth_key = generateKey($auth_email);
+    $auth_key = generateKey($email);
     }
     //echo $auth_key; // Debug 🐞
 
@@ -62,5 +61,3 @@ function storeKey($auth_email)
 
     // Cerrar la conexión
     $conexiónPDO->close();
-}
-echo generateKey($email);
