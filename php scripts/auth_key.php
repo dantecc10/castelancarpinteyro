@@ -63,4 +63,4 @@ function storeKey($auth_email)
     // Cerrar la conexión
     $conexiónPDO->close();
 }
-generateKey($email);
+echo generateKey($email);
