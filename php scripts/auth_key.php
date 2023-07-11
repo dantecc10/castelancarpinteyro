@@ -37,6 +37,7 @@ function generateKey() // Operative ✅
 $auth_key = generateKey();
 while ($auth_key == null) {
     echo "Esto no se debería ver";
+    $auth_key = generateKey();
 }
 echo $auth_key;
 
