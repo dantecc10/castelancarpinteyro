@@ -69,25 +69,7 @@ if ($result->num_rows > 0) {
     }
     $_SESSION['límite'] = $i;
     //header("Location: envío.php");
-?>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script>
-            window.location.href = "envío.php";
-        </script>
-    </head>
-
-    <body>
-
-    </body>
-
-    </html>
-<?php
+    include_once "envío.php";
 } else {
     echo "No se encontraron registros con la fecha actual.";
 }
