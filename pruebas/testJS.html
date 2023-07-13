@@ -12,6 +12,22 @@
         $(':input').keyup(function () {
             $(this).next().focus();
         });
+
+        var inputBox = document.querySelectorAll('input');
+
+        for (var i = 0; i < inputBox.length; i++) {
+            inputBox[i].addEventListener('keyup', function (event) {
+                var maxLength = parseInt(this.getAttribute('maxlength'));
+                var currentLength = this.value.length;
+
+                if (currentLength >= maxLength) {
+                    var nextInput = this.nextElementSibling;
+                    if (nextInput && nextInput.tagName === 'INPUT') {
+                        nextInput.focus();
+                    }
+                }
+            });
+        }
     </script>
     <input type="text" id="input1">
     <input type="text" id="input2">
