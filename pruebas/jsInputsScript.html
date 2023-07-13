@@ -22,7 +22,7 @@
         function codeSend(index) {
             if (index < 6) {
                 var id = "input";
-                if (document.getElementById((id + index).value != '')) {
+                if (document.getElementById((id + index)).value != '') {
                     id += (index + 1); // Siguiente input
                     document.getElementById(id).focus();
                     console.log("Se escribió en el input " + index + " y se pasó al index " + (index + 1)); // Debug 🐞
