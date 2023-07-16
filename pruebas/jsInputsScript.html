@@ -35,9 +35,18 @@
                 }
             } else {
                 // Poner las instrucciones para cuando es el input 6 y se debería enviar el form
+                if (document.getElementById('input6').value != '') {
+                    console.log("Se escribió en el 6."); // Debug 🐞
+                }
+                else {
+                    id = "input";
+                    id += (index - 1); // Anterior input
+                    document.getElementById(id).focus();
+                    console.log("Se borró en el input " + index + " y se pasó al index " + (index - 1)); // Debug 🐞
+                }
             }
         }
-        function borro() {
+        /*function borro() {
             document.addEventListener("keydown", function (event) {
                 if (event.key === "Delete") {
                     // Se presionó la tecla de borrar (Delete)
@@ -45,15 +54,14 @@
                     // Realiza aquí las acciones que deseas realizar cuando se presiona la tecla de borrar
                 }
             });
-
-        }
+        }*/
     </script>
-    <input type="text" id="input1" onkeydown="borro()" onkeyup="javascript:codeSend(1);" maxlength="1">
-    <input type="text" id="input2" onkeydown="borro()" onkeyup="javascript:codeSend(2);" maxlength="1">
-    <input type="text" id="input3" onkeydown="borro()" onkeyup="javascript:codeSend(3);" maxlength="1">
-    <input type="text" id="input4" onkeydown="borro()" onkeyup="javascript:codeSend(4);" maxlength="1">
-    <input type="text" id="input5" onkeydown="borro()" onkeyup="javascript:codeSend(5);" maxlength="1">
-    <input type="text" id="input6" onkeydown="borro()" onkeyup="javascript:codeSend(6);" maxlength="1">
+    <input type="text" id="input1" onkeyup="javascript:codeSend(1);" maxlength="1">
+    <input type="text" id="input2" onkeyup="javascript:codeSend(2);" maxlength="1">
+    <input type="text" id="input3" onkeyup="javascript:codeSend(3);" maxlength="1">
+    <input type="text" id="input4" onkeyup="javascript:codeSend(4);" maxlength="1">
+    <input type="text" id="input5" onkeyup="javascript:codeSend(5);" maxlength="1">
+    <input type="text" id="input6" onkeyup="javascript:codeSend(6);" maxlength="1">
 </body>
 
 </html>
