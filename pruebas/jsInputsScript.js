@@ -33,11 +33,13 @@ function codeSend(index) {
         if (document.getElementById((id + index)).value != '') {
             id += (index + 1); // Siguiente input
             document.getElementById(id).focus();
+            document.getElementById(id).select();
             console.log("Se escribió en el input " + index + " y se pasó al index " + (index + 1)); // Debug 🐞
         } else {
             if (index > 1) {
                 id += (index - 1); // Anterior input
                 document.getElementById(id).focus();
+                document.getElementById(id).select();
                 console.log("Se escribió en el input " + index + " y se pasó al index " + (index - 1)); // Debug 🐞
             }
         }
@@ -53,6 +55,7 @@ function codeSend(index) {
             id = "input";
             id += (index - 1); // Anterior input
             document.getElementById(id).focus();
+            document.getElementById(id).select();
             console.log("Se borró en el input " + index + " y se pasó al index " + (index - 1)); // Debug 🐞
         }
     }
