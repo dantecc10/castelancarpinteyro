@@ -48,6 +48,7 @@ if (($_SESSION['key'] != null) && $_SESSION['email'] != null) {
     $msg = ("<h1>Falta poco.</h1>
             <p>Para completar la verificación de seguridad en Castelán Carpinteyro, ingresa el siguiente código en la página a la que fuiste redirigido:</p>
             <p>" . $_SESSION['key'] . "</p>
+            <p>Tienes un plazo de 24 horas para completar la autenticación de dos factores. Puedes hacerlo dando click en <a href='https://castelancarpinteyro.com/verify.php?email=" . urlencode($_SESSION['email']) . "'>este enlace.</a></p>
             <p>¡Gracias por tu registro!</p>
             <br><br><br>
             <p>Si no has intentado registrarte en Castelán Carpinteyro, por favor ignora este correo.</p>

@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+if (isset($_GET['email'])) {
+    $email = $_GET['email'];
+} else {
+    $email = $_SESSION['email'];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +29,7 @@ session_start();
         <input type="text" id="input6" onkeyup="javascript:codeSend(6);" maxlength="1">
         <br>
         <hr>
-        <input type="text" name="email" id="email" value="<?php echo $_SESSION['email'];?>" hidden>
+        <input type="text" name="email" id="email" value="<?php echo $email;?>" hidden>
     </form>
 
     <style>

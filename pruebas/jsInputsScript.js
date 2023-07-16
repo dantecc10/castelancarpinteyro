@@ -29,8 +29,6 @@ function verificarClave() {
     xhr.send("clave=" + clave + "&email=" + email);
 }
 
-
-
 function codeSend(index) {
     if (index < 6) {
         var id = "input";
@@ -52,13 +50,12 @@ function codeSend(index) {
         if (document.getElementById('input6').value != '') {
             console.log("Se escribió en el 6."); // Debug 🐞
             // document.getElementById("clave").submit();
-            verificarClave(); // Se invoca la función al escribirse algo en el campo 6 (asumiendo que todos los demás se llenaron)
-            console.log("Se escribió en el 6."); // Debug 🐞
-
             if (contador > 5) {
                 // Código AJAX para deshabilitar la clave de recuperación y generar una nueva (seguridad)
             } else {
                 contador++;
+                console.log("Se escribió en el 6."); // Debug 🐞
+                verificarClave(); // Se invoca la función al escribirse algo en el campo 6 (asumiendo que todos los demás se llenaron)
             }
         }
         else {
