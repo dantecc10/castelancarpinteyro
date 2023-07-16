@@ -1,4 +1,4 @@
-function verificarClave() {
+export function verificarClave() {
     // Obtener los valores de los campos de entrada
     let clave = "";
     for (let i = 1; i <= 6; i++) {

@@ -1,4 +1,4 @@
-
+import { verificarClave } from "./jsInputAJAX";
 function codeSend(index) {
     if (index < 6) {
         var id = "input";
@@ -31,9 +31,9 @@ function codeSend(index) {
         /*function borro() {
 document.addEventListener("keydown", function (event) {
 if (event.key === "Delete") {
-    // Se presionó la tecla de borrar (Delete)
-    console.log("Se presionó la tecla de borrar");
-    // Realiza aquí las acciones que deseas realizar cuando se presiona la tecla de borrar
+// Se presionó la tecla de borrar (Delete)
+console.log("Se presionó la tecla de borrar");
+// Realiza aquí las acciones que deseas realizar cuando se presiona la tecla de borrar
 }
 });
 }*/
