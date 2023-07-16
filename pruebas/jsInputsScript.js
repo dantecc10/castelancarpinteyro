@@ -1,6 +1,5 @@
 
 function codeSend(index) {
-    includeJS("jsInputAJAX");
     if (index < 6) {
         var id = "input";
         if (document.getElementById((id + index)).value != '') {
