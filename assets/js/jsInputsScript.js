@@ -1,4 +1,13 @@
 var contador = 0;
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function pause() {
+    await sleep(3000); // Pausa de 3 segundos
+}
+
 function verificarClave() {
     // Obtener los valores de los campos de entrada
     let clave = "";
@@ -18,15 +27,22 @@ function verificarClave() {
                 // Aquí puedes agregar código para manejar una clave y email válidos
                 alert("Clave y email válidos");
             } else {
-                // La clave o el email no son válidos
-                // Aquí puedes agregar código para manejar una clave o email no válidos
-                alert("Clave o email no válidos");
+
+                if (this.responseText == "false") {
+                    // La clave o el email no son válidos
+                    // Aquí puedes agregar código para manejar una clave o email no válidos
+                    alert("Clave o email no válidos");
+                } else {
+                    alert("La clave de verificación se ha inhabilitado por el número de intentos. Generaremos una nueva.");
+                    pause(); // Pausa
+                    window.location.href = ("../../php scripts/auth_key.php?email=" + encodeURI(email)); // Redirección
+                }
             }
         }
     };
-    xhr.open("POST", "jsInputPHP.php", true);
+    xhr.open("POST", "../../php scripts/jsInputPHP.php", true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr.send("clave=" + clave + "&email=" + email);
+    xhr.send("clave=" + clave + "&email=" + email + "&tries=" + contador);
 }
 
 function codeSend(index) {

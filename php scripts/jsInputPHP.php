@@ -2,6 +2,7 @@
 // Obtener la clave y el email del formulario
 $clave = $_POST["clave"];
 $email = $_POST["email"];
+$tries = $_POST["tries"];
 
 // Conectar a la base de datos
 $db = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
@@ -18,7 +19,18 @@ if ($result->num_rows > 0) {
     echo "true";
 } else {
     // La clave o el email no son válidos
-    echo "false";
+    if ($tries > 5) {
+        // Deshabilitar clave
+        $query = "UPDATE `auth_keys` SET `status`='Disabled' WHERE (`auth_key` = ?) AND (`related_email` = ?)";
+        $stmt = $db->prepare($query);
+        $stmt->bind_param("ss", $clave, $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        // Dar respuesta para AJAX
+        echo "disabled";
+    } else {
+        echo "false";
+    }
 }
 
 $db->close();
