@@ -18,7 +18,7 @@ require_once('../vendor/phpmailer/phpmailer/src/Exception.php');
 include "dynamicSecrets.php";
 include "secrets.php.php";
 
-$data = generatePasskey('newsletter');
+$data = generatePasskey('auth');
 
 //$mail->SMTPDebug    = 3;
 $mail = new PHPMailer;
@@ -35,65 +35,42 @@ $mail->CharSet = 'UTF-8';   /*Codificación del mensaje*/
 //echo ($data[0] . " " . $data[1] . " " . $data[2]); // Debug command line
 
 //$mail = setMailParameters('newsletter'); // Inicializar el objeto $mail con la función setMailParameters()
+if (($_SESSION['key'] != null) && $_SESSION['email'] != null) {
 
-for ($i = 0; $i < $_SESSION['límite']; $i++) {
-    if ($_SESSION['id'][$i] != null) {
+    $mail->ClearAllRecipients();
+    $mail->AddAddress($_SESSION['email']);
+    $mail->AddCC("dante@castelancarpinteyro.com");
+    $mail->AddCC("dantecc10@gmail.com");
 
-        $mail->ClearAllRecipients();
-        $mail->AddAddress($_SESSION['email'][$i]);
-        $mail->AddCC("dante@castelancarpinteyro.com");
-        $mail->AddCC("dantecc10@gmail.com");
+    $mail->IsHTML(true);  // Podemos activar o desactivar HTML en el mensaje
+    $mail->Subject = 'Código de autenticación de dos factores.';
 
-        $mail->IsHTML(true);  // Podemos activar o desactivar HTML en el mensaje
-        $mail->Subject = 'Correo de prueba del newsletter de Castelán Carpinteyro';
+    $msg = ("<h1>Falta poco.</h1>
+            <p>Para completar la verificación de seguridad en Castelán Carpinteyro, ingresa el siguiente código en la página a la que fuiste redirigido:</p>
+            <p>" . $_SESSION['key'] . "</p>
+            <p>¡Gracias por tu registro!</p>
+            <br><br><br>
+            <p>Si no has intentado registrarte en Castelán Carpinteyro, por favor ignora este correo.</p>
+            ");
 
-        $msg = "<h1>¡Hola " . $_SESSION['nombre'][$i] . "!</h1>
-            <p>Según la base de datos, hoy " . $_SESSION['fecha'][$i] . " hay un mensaje para tí desde el newsletter.</p>
-            <p>De parte de <b><i>Dante Castelán Carpinteyro</i></b>, recibe el siguiente mensaje: '" . $_SESSION['mensaje'][$i] . "'.</p>
-            <p>¡Gracias por ser parte de mis pruebas en el servidor! Me ayudas mucho. Por favor, siéntete libre de responder a este correo o por el medio que desees más mensajes personalizados para que los programe.</p>";
+    $mail->Body = $msg;
 
-        $mail->Body = $msg;
-
-        try {
-            $mail->Send();
-            // Resto del código...
-        } catch (Exception $e) {
-            echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
-            echo "Excepción lanzada: " . $e->getMessage();
-        }
+    try {
+        $mail->Send();
+        // Resto del código...
+    } catch (Exception $e) {
+        //echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
+        //echo "Excepción lanzada: " . $e->getMessage();
     }
+    header("Location: ../verify.php");
 }
 
 // Eliminar todos los elementos de $_SESSION['id']
-foreach ($_SESSION['id'] as $index => $value) {
-    unset($_SESSION['id'][$index]);
-}
+session_unset();
 
-$_SESSION['id'] = array();
-
-
+/*
 foreach ($_SESSION['nombre'] as $index => $value) {
     unset($_SESSION['nombre'][$index]);
 }
 
-$_SESSION['nombre'] = array();
-
-
-foreach ($_SESSION['email'] as $index => $value) {
-    unset($_SESSION['email'][$index]);
-}
-
-$_SESSION['email'] = array();
-
-
-foreach ($_SESSION['fecha'] as $index => $value) {
-    unset($_SESSION['fecha'][$index]);
-}
-
-$_SESSION['fecha'] = array();
-
-
-foreach ($_SESSION['mensaje'] as $index => $value) {
-    unset($_SESSION['mensaje'][$index]);
-}
-$_SESSION['mensaje'] = array();
+$_SESSION['nombre'] = array();*/

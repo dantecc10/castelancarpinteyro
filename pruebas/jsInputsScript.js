@@ -70,7 +70,7 @@ function codeSend(index) {
         }
     }
 }
-        /*function borro() {
+/*function borro() {
 document.addEventListener("keydown", function (event) {
 if (event.key === "Delete") {
 // Se presionó la tecla de borrar (Delete)

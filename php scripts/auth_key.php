@@ -1,4 +1,5 @@
 <?php
+session_start();
 $email = $_GET['email'];
 function generateKey($email) { // Operative ✅
     # $contadorDígitos = 0;
@@ -53,7 +54,9 @@ function generateKey($email) { // Operative ✅
             // Verificar el éxito de la inserción
             if ($stmt->affected_rows > 0) {
             //echo "Generación y almacenamiento de clave exitosos."; // Debug 🐞
-            header("Location: ../verify.php");
+            $_SESSION["key"] = $auth_key;
+            $_SESSION["email"] = $clean_email;
+            header("Location: ../send_key_mail.php");
             } else {
                 echo "Error al almacenar y/o generar la clave."; // Debug 🐞
             }
