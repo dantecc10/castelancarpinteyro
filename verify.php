@@ -19,7 +19,7 @@ if (isset($_GET['email'])) {
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--<script src="jsInputAJAX.js"></script>-->
-    <script src="pruebas/jsInputsScript.js"></script>
+    <script src="assets/js/jsInputsScript.js"></script>
     <form action="" id="clave">
         <input type="text" id="input1" onkeyup="javascript:codeSend(1);" maxlength="1">
         <input type="text" id="input2" onkeyup="javascript:codeSend(2);" maxlength="1">
