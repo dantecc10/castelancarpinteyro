@@ -1,4 +1,13 @@
-export function codeSend(index) {
+function includeJS(filePath) {
+    fetch(filePath)
+        .then(response => response.text())
+        .then(scriptCode => {
+            eval(scriptCode);
+        })
+        .catch(error => console.error('Error al cargar el archivo: ' + error));
+}
+function codeSend(index) {
+    includeJS("jsInputAJAX");
     if (index < 6) {
         var id = "input";
         if (document.getElementById((id + index)).value != '') {
@@ -17,6 +26,7 @@ export function codeSend(index) {
         if (document.getElementById('input6').value != '') {
             console.log("Se escribió en el 6."); // Debug 🐞
             // document.getElementById("clave").submit();
+
             verificarClave();
         }
         else {
@@ -36,4 +46,3 @@ console.log("Se presionó la tecla de borrar");
 }
 });
 }*/
-import { verificarClave } from "./jsInputAJAX";
