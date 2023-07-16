@@ -1,4 +1,5 @@
 <?php
+session_start();
 //Script para procesar formulario de inicio de sesión
 // Datos del formulario de registro
 if ($_POST['password'] != $_POST['password2']) {
@@ -6,6 +7,7 @@ if ($_POST['password'] != $_POST['password2']) {
 }
 
 $email = $_POST['email'];
+$_SESSION['email'] = $email;
 
 // Crear la conexión
 $conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
@@ -51,7 +53,7 @@ if ($result->num_rows > 0) {
     // Verificar el éxito de la inserción
     if ($stmt->affected_rows > 0) {
         echo "Registro exitoso.";
-        header("Location: ../verify.php");
+        header("Location: auth_key.php");
     } else {
         echo "Error al registrar el usuario.";
     }
