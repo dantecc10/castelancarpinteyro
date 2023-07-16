@@ -1,11 +1,4 @@
-function includeJS(filePath) {
-    fetch(filePath)
-        .then(response => response.text())
-        .then(scriptCode => {
-            eval(scriptCode);
-        })
-        .catch(error => console.error('Error al cargar el archivo: ' + error));
-}
+
 function codeSend(index) {
     includeJS("jsInputAJAX");
     if (index < 6) {
@@ -26,8 +19,8 @@ function codeSend(index) {
         if (document.getElementById('input6').value != '') {
             console.log("Se escribió en el 6."); // Debug 🐞
             // document.getElementById("clave").submit();
-
             verificarClave();
+            console.log("Se escribió en el 6."); // Debug 🐞
         }
         else {
             id = "input";
