@@ -66,8 +66,8 @@ if (($_SESSION['key'] != null) && $_SESSION['email'] != null) {
 }
 
 // Eliminar todos los elementos de $_SESSION['id']
-session_unset();
-
+//session_unset();
+unset($_SESSION['key']);
 /*
 foreach ($_SESSION['nombre'] as $index => $value) {
     unset($_SESSION['nombre'][$index]);
