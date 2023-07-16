@@ -1,5 +1,4 @@
-import { verificarClave } from "./jsInputAJAX";
-function codeSend(index) {
+export function codeSend(index) {
     if (index < 6) {
         var id = "input";
         if (document.getElementById((id + index)).value != '') {
@@ -37,3 +36,5 @@ console.log("Se presionó la tecla de borrar");
 }
 });
 }*/
+import { codeSend } from "./jsInputScripts";
+import { verificarClave } from "./jsInputAJAX";
