@@ -61,7 +61,7 @@ while ($contador < 5) {
             //echo "Generación y almacenamiento de clave exitosos."; // Debug 🐞
             $_SESSION["key"] = $auth_key;
             $_SESSION["email"] = $clean_email;
-            header("Location: ../send_key_mail.php");
+            header("Location: send_key_mail.php");
         } else {
             echo "Error al almacenar y/o generar la clave."; // Debug 🐞
         }
