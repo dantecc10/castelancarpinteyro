@@ -10,53 +10,18 @@
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
-    <script>
-        function codeSend(index) {
-            if (index < 6) {
-                var id = "input";
-                if (document.getElementById((id + index)).value != '') {
-                    id += (index + 1); // Siguiente input
-                    document.getElementById(id).focus();
-                    console.log("Se escribió en el input " + index + " y se pasó al index " + (index + 1)); // Debug 🐞
-                } else {
-                    if (index > 1) {
-                        id += (index - 1); // Anterior input
-                        document.getElementById(id).focus();
-                        console.log("Se escribió en el input " + index + " y se pasó al index " + (index - 1)); // Debug 🐞
-                    }
-                }
-            } else {
-                // Poner las instrucciones para cuando es el input 6 y se debería enviar el form
-                if (document.getElementById('input6').value != '') {
-                    console.log("Se escribió en el 6."); // Debug 🐞
-                }
-                else {
-                    id = "input";
-                    id += (index - 1); // Anterior input
-                    document.getElementById(id).focus();
-                    console.log("Se borró en el input " + index + " y se pasó al index " + (index - 1)); // Debug 🐞
-                }
-            }
-        }
-        /*function borro() {
-            document.addEventListener("keydown", function (event) {
-                if (event.key === "Delete") {
-                    // Se presionó la tecla de borrar (Delete)
-                    console.log("Se presionó la tecla de borrar");
-                    // Realiza aquí las acciones que deseas realizar cuando se presiona la tecla de borrar
-                }
-            });
-        }*/
-    </script>
-    <input type="text" id="input1" onkeyup="javascript:codeSend(1);" maxlength="1">
-    <input type="text" id="input2" onkeyup="javascript:codeSend(2);" maxlength="1">
-    <input type="text" id="input3" onkeyup="javascript:codeSend(3);" maxlength="1">
-    <input type="text" id="input4" onkeyup="javascript:codeSend(4);" maxlength="1">
-    <input type="text" id="input5" onkeyup="javascript:codeSend(5);" maxlength="1">
-    <input type="text" id="input6" onkeyup="javascript:codeSend(6);" maxlength="1">
-    <br>
-    <hr>
-    <input type="text" name="email" id="email">
+    <script src="jsInputsScript.js"></script>
+    <form action="" id="clave">
+        <input type="text" id="input1" onkeyup="javascript:codeSend(1);" maxlength="1">
+        <input type="text" id="input2" onkeyup="javascript:codeSend(2);" maxlength="1">
+        <input type="text" id="input3" onkeyup="javascript:codeSend(3);" maxlength="1">
+        <input type="text" id="input4" onkeyup="javascript:codeSend(4);" maxlength="1">
+        <input type="text" id="input5" onkeyup="javascript:codeSend(5);" maxlength="1">
+        <input type="text" id="input6" onkeyup="javascript:codeSend(6);" maxlength="1">
+        <br>
+        <hr>
+        <input type="text" name="email" id="email">
+    </form>
 </body>
 
 </html>

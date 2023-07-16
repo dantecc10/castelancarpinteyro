@@ -7,7 +7,7 @@ $email = $_POST["email"];
 $db = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
 
 // Verificar si la clave y el email están en la tabla auth_keys
-$query = "SELECT * FROM `auth_keys` WHERE `auth_key` = ? AND `related_email` = ?";
+$query = "SELECT * FROM `auth_keys` WHERE (`auth_key` = ?) AND (`related_email` = ?)";
 $stmt = $db->prepare($query);
 $stmt->bind_param("ss", $clave, $email);
 $stmt->execute();
