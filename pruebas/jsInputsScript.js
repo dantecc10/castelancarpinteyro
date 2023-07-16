@@ -17,7 +17,8 @@ function codeSend(index) {
         // Poner las instrucciones para cuando es el input 6 y se debería enviar el form
         if (document.getElementById('input6').value != '') {
             console.log("Se escribió en el 6."); // Debug 🐞
-//            document.getElementById("clave").submit();
+            // document.getElementById("clave").submit();
+            verificarClave();
         }
         else {
             id = "input";
