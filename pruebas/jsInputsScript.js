@@ -36,5 +36,4 @@ console.log("Se presionó la tecla de borrar");
 }
 });
 }*/
-import { codeSend } from "./jsInputScripts";
 import { verificarClave } from "./jsInputAJAX";
