@@ -24,8 +24,8 @@ function verificarClave(contador) {
             // Procesar la respuesta del servidor
             if (this.responseText == "true") {
                 // La clave y el email son válidos
-                // Aquí puedes agregar código para manejar una clave y email válidos
                 //alert("Clave e email válidos"); // Debug 🐞
+                window.location.href = ("login.php?email=" + encodeURI(email)); // Redirección
             } else {
 
                 if (this.responseText == "false") {
