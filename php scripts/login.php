@@ -1,4 +1,5 @@
 <?php
+session_destroy();
 session_start();
 $conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
 
@@ -11,7 +12,7 @@ if ($conexiónPDO->connect_error) {
 $username = mysqli_real_escape_string($conexiónPDO, $_POST['email']);
 $password = mysqli_real_escape_string($conexiónPDO, $_POST['password']); //Recepción de variables que pasan por filtro anti explits SQL
 
-$sql = "SELECT * FROM `usuarios` WHERE (`email_usuario` = '$username' OR `email_dominio` = '$username') AND `password_usuario` = '$password'";
+$sql = "SELECT * FROM `usuarios` WHERE (`email_usuario` = '$username' OR `email_dominio` = '$username') AND (`password_usuario` = '$password') AND (`activo_usuario` = 1)";
 $resultado = $conexiónPDO->query($sql);
 
 // Verificar si se encontró un usuario válido
