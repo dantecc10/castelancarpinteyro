@@ -20,7 +20,7 @@ $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
     // La clave y el email son válidos
-    $query = "UPDATE `usuarios` SET (`activo_usuario` = 1) WHERE (`email_usuario` = ?)";
+    $query = "UPDATE `usuarios` SET `activo_usuario` = 1 WHERE (`email_usuario` = ?)";
     $stmt = $db->prepare($query);
     $stmt->bind_param("s", $email);
     $email = $db->real_escape_string($email);
