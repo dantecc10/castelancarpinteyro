@@ -15,7 +15,7 @@ function verificarClave(contador) {
         clave += document.getElementById("input" + i).value;
     }
     let email = document.getElementById("email").value;
-    console.log("Correo: " + email + "\nClave: " + clave); // Debug 🐞
+    //console.log("Correo: " + email + "\nClave: " + clave); // Debug 🐞
 
     // Crear objeto XMLHttpRequest
     let xhr = new XMLHttpRequest();
@@ -25,15 +25,15 @@ function verificarClave(contador) {
             if (this.responseText == "true") {
                 // La clave y el email son válidos
                 // Aquí puedes agregar código para manejar una clave y email válidos
-                alert("Clave y email válidos");
+                //alert("Clave y email válidos"); // Debug 🐞
             } else {
 
                 if (this.responseText == "false") {
                     // La clave o el email no son válidos
                     // Aquí puedes agregar código para manejar una clave o email no válidos
-                    alert("Clave o email no válidos");
+                    alert("Clave o email no válidos"); // Debug 🐞
                 } else {
-                    alert("La clave de verificación se ha inhabilitado por el número de intentos. Generaremos una nueva.");
+                    alert("La clave de verificación se ha inhabilitado por el número de intentos. Generaremos una nueva."); // Debug 🐞
                     pause(); // Pausa
                     window.location.href = ("../../php scripts/auth_key.php?email=" + encodeURI(email)); // Redirección
                 }
@@ -52,25 +52,25 @@ function codeSend(index) {
             id += (index + 1); // Siguiente input
             document.getElementById(id).focus();
             document.getElementById(id).select();
-            console.log("Se escribió en el input " + index + " y se pasó al index " + (index + 1)); // Debug 🐞
+            //console.log("Se escribió en el input " + index + " y se pasó al index " + (index + 1)); // Debug 🐞
         } else {
             if (index > 1) {
                 id += (index - 1); // Anterior input
                 document.getElementById(id).focus();
                 document.getElementById(id).select();
-                console.log("Se escribió en el input " + index + " y se pasó al index " + (index - 1)); // Debug 🐞
+                //console.log("Se escribió en el input " + index + " y se pasó al index " + (index - 1)); // Debug 🐞
             }
         }
     } else {
         // Poner las instrucciones para cuando es el input 6 y se debería enviar el form
         if (document.getElementById('input6').value != '') {
-            console.log("Se escribió en el 6."); // Debug 🐞
+            //console.log("Se escribió en el 6."); // Debug 🐞
             // document.getElementById("clave").submit();
             if (contador > 5) {
                 // Código AJAX para deshabilitar la clave de recuperación y generar una nueva (seguridad)
             } else {
                 contador++;
-                console.log("Se escribió en el 6."); // Debug 🐞
+                //console.log("Se escribió en el 6."); // Debug 🐞
                 verificarClave(contador); // Se invoca la función al escribirse algo en el campo 6 (asumiendo que todos los demás se llenaron)
             }
         }
@@ -79,7 +79,7 @@ function codeSend(index) {
             id += (index - 1); // Anterior input
             document.getElementById(id).focus();
             document.getElementById(id).select();
-            console.log("Se borró en el input " + index + " y se pasó al index " + (index - 1)); // Debug 🐞
+            //console.log("Se borró en el input " + index + " y se pasó al index " + (index - 1)); // Debug 🐞
         }
     }
 }
