@@ -7,17 +7,6 @@ if (isset($_GET['email'])) {
     $email = $_SESSION['email'];
 }
 ?>
-
-<form action="" id="clave">
-    <input type="text" id="input1" onkeyup="javascript:codeSend(1);" maxlength="1">
-    <input type="text" id="input2" onkeyup="javascript:codeSend(2);" maxlength="1">
-    <input type="text" id="input3" onkeyup="javascript:codeSend(3);" maxlength="1">
-    <input type="text" id="input4" onkeyup="javascript:codeSend(4);" maxlength="1">
-    <input type="text" id="input5" onkeyup="javascript:codeSend(5);" maxlength="1">
-    <input type="text" id="input6" onkeyup="javascript:codeSend(6);" maxlength="1">
-    <br>
-    <hr>
-</form>
 <!--Inicia BSDesign-->
 <!DOCTYPE html>
 <html lang="en">
