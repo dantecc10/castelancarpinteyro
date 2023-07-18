@@ -8,6 +8,7 @@ if ($_POST['password'] != $_POST['password2']) {
 
 $email = $_POST['email'];
 $_SESSION['email'] = $email;
+$_SESSION['password'] = $_POST['password'];
 
 // Crear la conexión
 $conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
@@ -26,8 +27,7 @@ if ($result->num_rows > 0) {
     header("Location: ../signin.php");
     //echo "El usuario ya está registrado.";
 } else {
-    // El usuario no existe, se puede proceder con el registro
-    // Aquí puedes incluir el código para insertar los datos del nuevo usuario en la base de datos
+    // El usuario no existe, se puede proceder con el registro para insertar los datos del nuevo usuario en la base de datos
     //echo "Registro exitoso.";
 
     $nombre = $_POST['nombre'];

@@ -20,6 +20,11 @@ $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
     // La clave y el email son válidos
+    $query = "UPDATE `auth_keys` SET `status`='Used' WHERE (`auth_key` = ?) AND (`related_email` = ?)";
+    $stmt = $db->prepare($query);
+    $stmt->bind_param("ss", $clave, $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
     echo "true";
 } else {
     // La clave o el email no son válidos

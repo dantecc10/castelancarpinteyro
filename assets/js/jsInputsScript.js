@@ -8,7 +8,7 @@ async function pause() {
     await sleep(3000); // Pausa de 3 segundos
 }
 
-function verificarClave() {
+function verificarClave(contador) {
     // Obtener los valores de los campos de entrada
     let clave = "";
     for (let i = 1; i <= 6; i++) {
@@ -71,7 +71,7 @@ function codeSend(index) {
             } else {
                 contador++;
                 console.log("Se escribió en el 6."); // Debug 🐞
-                verificarClave(); // Se invoca la función al escribirse algo en el campo 6 (asumiendo que todos los demás se llenaron)
+                verificarClave(contador); // Se invoca la función al escribirse algo en el campo 6 (asumiendo que todos los demás se llenaron)
             }
         }
         else {
