@@ -25,7 +25,7 @@ function verificarClave(contador) {
             if (this.responseText == "true") {
                 // La clave y el email son válidos
                 // Aquí puedes agregar código para manejar una clave y email válidos
-                //alert("Clave y email válidos"); // Debug 🐞
+                //alert("Clave e email válidos"); // Debug 🐞
             } else {
 
                 if (this.responseText == "false") {
