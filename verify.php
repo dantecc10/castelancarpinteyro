@@ -78,7 +78,7 @@ if (isset($_GET['email'])) {
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
                     <p class="fw-bold text-success mb-2">Autenticación de dos factores</p>
                     <h2 class="fw-bold">Ingresa el código enviado</h2>
-                    <h3 class="fw-bold">a <em><span style="text-decoration: underline;">correo@mail.com</span></em></h3>
+                    <h3 class="fw-bold">a <em><span style="text-decoration: underline;"><?php echo $email; ?></span></em></h3>
                     <h6 class="fw-bold" style="height: 0px;padding-bottom: 2%;"><em><span style="text-decoration: underline; color: rgb(93, 99, 103);">puede llegar al spam, desmárcalo y consulta la clave.</span></em></h6>
                 </div>
             </div>
