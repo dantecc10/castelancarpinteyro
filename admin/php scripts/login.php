@@ -4,8 +4,8 @@ session_start();
 #if (!empty($_POST['email']) and !empty($_POST['password'])) {
 $email = $_POST['email'];
 $password = $_POST['password'];
-
-$consulta = $conexión[2]->query("SELECT * FROM `usuarios` WHERE (`email_usuario`='$email' OR `email_dominio`='$email') AND `password_usuario`='$password' AND `activo_usuario`=1;");
+$conexión = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
+$consulta = $conexión->query("SELECT * FROM `usuarios` WHERE (`email_usuario`='$email' OR `email_dominio`='$email') AND `password_usuario`='$password' AND `activo_usuario`=1;");
 if ($datos = $sql->fetch_object()) {
     $_SESSION['id_usuario'] = $datos->id_usuario;
     $_SESSION['nombre_usuario'] = $datos->nombre_usuario;
