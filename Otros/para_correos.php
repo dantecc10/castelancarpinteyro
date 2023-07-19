@@ -1,0 +1,142 @@
+<?php
+#include "correos/PHPMailer.php";
+#include "correos/SMTP.php";
+#include "correos/Exception.php";
+
+include "vendor/autoload.php";
+
+include "php scripts/configuracion-de-correo.php";
+include "php scripts/secrets.php";
+
+#$asunto = $_GET['asunto'];
+#$mensaje = $_GET['mensaje'];
+#$destinatario = $_GET['destinatario'];
+
+#$destinatario = 'dantecc10@gmail.com';
+#$asunto = 'Credenciales del servidor para el equipo 4.';
+#$mensaje = 'Hola, Dana Paola, a través de este correo te envío las credenciales de acceso al servidor de tu equipo, el número 4. El usuario será prog4b4 y la contraseña es Prog4B4!!. Ingresa desde prog5a.com:8443. Atentamente, Dante Castelán Carpinteyro.';
+#
+#$mail->ClearAllRecipients();
+#$mail->AddAddress($destinatario);
+#$mail->AddCC('dante@castelancarpinteyro.com');
+#$mail->AddCC('jeremy.hdez9@gmail.com');
+#$mail->IsHTML(true);
+#$mail->Subject = $asunto;
+#$msg = $mensaje;
+#$mail->Body = $msg;
+#$mail->Send();
+
+$destinatario = 'dantecc10@gmail.com';
+$asunto = 'Credenciales del servidor para el equipo 4.';
+$mensaje = 'Hola, Dana Paola, a través de este correo te envío las credenciales de acceso al servidor de tu equipo, el número 4. El usuario será prog4b4 y la contraseña es Prog4B4!!. Ingresa desde prog5a.com:8443. Atentamente, Dante Castelán Carpinteyro.';
+$mail->ClearAllRecipients();
+$mail->AddAddress($destinatario);
+$mail->AddCC('dante@castelancarpinteyro.com');
+$mail->AddCC('jeremy.hdez9@gmail.com');
+$mail->IsHTML(true);
+$mail->Subject = $asunto;
+$msg = $mensaje;
+$mail->Body = $msg;
+$mail->Send();
+
+
+
+
+
+/*$destinatario = 'osvacast95@gmail.com';
+$asunto = 'Credenciales del servidor para el equipo 1.';
+$mensaje = 'Hola, Osvaldo , a través de este correo te envío las credenciales de acceso al servidor de tu equipo, el número 1. El usuario será prog4b1 y la contraseña es Prog4B1!!. Ingresa desde prog5a.com:8443. Atentamente, Dante Castelán Carpinteyro.';
+$mail->ClearAllRecipients();
+$mail->AddAddress($destinatario);
+$mail->AddCC('dante@castelancarpinteyro.com');
+$mail->AddCC('jeremy.hdez9@gmail.com');
+$mail->IsHTML(true);
+$mail->Subject = $asunto;
+$msg = $mensaje;
+$mail->Body = $msg;
+$mail->Send();
+$destinatario = 'loreleyamador97@gmail.com';
+$asunto = 'Credenciales del servidor para el equipo 5.';
+$mensaje = 'Hola, Loreley , a través de este correo te envío las credenciales de acceso al servidor de tu equipo, el número 5. El usuario será prog4b5 y la contraseña es Prog4B5!!. Ingresa desde prog5a.com:8443. Atentamente, Dante Castelán Carpinteyro.';
+$mail->ClearAllRecipients();
+$mail->AddAddress($destinatario);
+$mail->AddCC('dante@castelancarpinteyro.com');
+$mail->AddCC('jeremy.hdez9@gmail.com');
+$mail->IsHTML(true);
+$mail->Subject = $asunto;
+$msg = $mensaje;
+$mail->Body = $msg;
+$mail->Send();
+$destinatario = 'natavioleta2212@gmail.com';
+$asunto = 'Credenciales del servidor para el equipo 3.';
+$mensaje = 'Hola, Nathalia, a través de este correo te envío las credenciales de acceso al servidor de tu equipo, el número 3. El usuario será prog4b3 y la contraseña es Prog4B3!!. Ingresa desde prog5a.com:8443. Atentamente, Dante Castelán Carpinteyro.';
+$mail->ClearAllRecipients();
+$mail->AddAddress($destinatario);
+$mail->AddCC('dante@castelancarpinteyro.com');
+$mail->AddCC('jeremy.hdez9@gmail.com');
+$mail->IsHTML(true);
+$mail->Subject = $asunto;
+$msg = $mensaje;
+$mail->Body = $msg;
+$mail->Send();
+$destinatario = 'chaveznefta05@gmail.com';
+$asunto = 'Credenciales del servidor para el equipo 2.';
+$mensaje = 'Hola, Yareth Neftalí , a través de este correo te envío las credenciales de acceso al servidor de tu equipo, el número 2. El usuario será prog4b2 y la contraseña es Prog4B2!!. Ingresa desde prog5a.com:8443. Atentamente, Dante Castelán Carpinteyro.';
+$mail->ClearAllRecipients();
+$mail->AddAddress($destinatario);
+$mail->AddCC('dante@castelancarpinteyro.com');
+$mail->AddCC('jeremy.hdez9@gmail.com');
+$mail->IsHTML(true);
+$mail->Subject = $asunto;
+$msg = $mensaje;
+$mail->Body = $msg;
+$mail->Send();
+$destinatario = 'joseeduardomtz20tello@gmail.com';
+$asunto = 'Credenciales del servidor para el equipo 1.';
+$mensaje = 'Hola, José Eduardo , a través de este correo te envío las credenciales de acceso al servidor de tu equipo, el número 1. El usuario será prog4b1 y la contraseña es Prog4B1!!. Ingresa desde prog5a.com:8443. Atentamente, Dante Castelán Carpinteyro.';
+$mail->ClearAllRecipients();
+$mail->AddAddress($destinatario);
+$mail->AddCC('dante@castelancarpinteyro.com');
+$mail->AddCC('jeremy.hdez9@gmail.com');
+$mail->IsHTML(true);
+$mail->Subject = $asunto;
+$msg = $mensaje;
+$mail->Body = $msg;
+$mail->Send();
+$destinatario = 'vichugoporty@gmail.com';
+$asunto = 'Credenciales del servidor para el equipo 6.';
+$mensaje = 'Hola, Victor Hugo , a través de este correo te envío las credenciales de acceso al servidor de tu equipo, el número 6. El usuario será prog4b6 y la contraseña es Prog4B6!!. Ingresa desde prog5a.com:8443. Atentamente, Dante Castelán Carpinteyro.';
+$mail->ClearAllRecipients();
+$mail->AddAddress($destinatario);
+$mail->AddCC('dante@castelancarpinteyro.com');
+$mail->AddCC('jeremy.hdez9@gmail.com');
+$mail->IsHTML(true);
+$mail->Subject = $asunto;
+$msg = $mensaje;
+$mail->Body = $msg;
+$mail->Send();
+$destinatario = 'ug3367718@gmail.com';
+$asunto = 'Credenciales del servidor para el equipo 3.';
+$mensaje = 'Hola, Uriel , a través de este correo te envío las credenciales de acceso al servidor de tu equipo, el número 3. El usuario será prog4b3 y la contraseña es Prog4B3!!. Ingresa desde prog5a.com:8443. Atentamente, Dante Castelán Carpinteyro.';
+$mail->ClearAllRecipients();
+$mail->AddAddress($destinatario);
+$mail->AddCC('dante@castelancarpinteyro.com');
+$mail->AddCC('jeremy.hdez9@gmail.com');
+$mail->IsHTML(true);
+$mail->Subject = $asunto;
+$msg = $mensaje;
+$mail->Body = $msg;
+$mail->Send();
+$destinatario = 'yosevr06@gmail.com';
+$asunto = 'Credenciales del servidor para el equipo 4.';
+$mensaje = 'Hola, Joseline , a través de este correo te envío las credenciales de acceso al servidor de tu equipo, el número 4. El usuario será prog4b4 y la contraseña es Prog4B4!!. Ingresa desde prog5a.com:8443. Atentamente, Dante Castelán Carpinteyro.';
+$mail->ClearAllRecipients();
+$mail->AddAddress($destinatario);
+$mail->AddCC('dante@castelancarpinteyro.com');
+$mail->AddCC('jeremy.hdez9@gmail.com');
+$mail->IsHTML(true);
+$mail->Subject = $asunto;
+$msg = $mensaje;
+$mail->Body = $msg;
+$mail->Send();
+*/
