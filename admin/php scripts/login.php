@@ -1,5 +1,5 @@
 <?php
-include "Conexión.php";
+include "conexión.php";
 session_start();
 #if (!empty($_POST['email']) and !empty($_POST['password'])) {
 $email = $_POST['email'];
