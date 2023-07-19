@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInitd461e5c8d49946ab5f695c940c1b2779
 {
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'TelegramBot\\Api\\' => 16,
+        ),
         'P' => 
         array (
             'PHPMailer\\PHPMailer\\' => 20,
@@ -14,6 +18,10 @@ class ComposerStaticInitd461e5c8d49946ab5f695c940c1b2779
     );
 
     public static $prefixDirsPsr4 = array (
+        'TelegramBot\\Api\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/telegram-bot/api/src',
+        ),
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
