@@ -1,0 +1,759 @@
+@media only screen and (min-width: 1200px)
+
+/*Punto de ruptura para pantallas grandes (equipos de escritorio)*/
+    {
+    #copyright {
+        text-align: center;
+        color: whitesmoke;
+        text-decoration: dotted;
+    }
+
+    a.Básica{
+        color:#60dbf1;
+    }
+
+    h2#IndicaArtículos {
+        color: #07A189;
+        text-align: justify;
+        font-size: 25px;
+        background-color: #0C37E832;
+        padding: 5px;
+        text-indent: 50px;
+    }
+
+    div.Contenedor-Artículos#PartidosPolíticos {
+        margin-top: 20px;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /*div h3 .TítuloArtículo    {        color: #07A189;        text-align: justify;        font-size: 25px;        background-color: #0C37E832;        padding: 5px;        padding-left: 20px;        border-radius: 10px;    }*/
+    h3.TítuloArtículo,
+    .TítuloArtículo#ContactoCorreo {
+        color: #07A189;
+        text-align: center;
+        font-size: 25px;
+        background-color: #0C37E832;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    h4.TítuloArtículo {
+        color: #07A189;
+        text-align: center;
+        font-size: 25px;
+        background-color: #0C37E832;
+        padding: 5px;
+        border-radius: 15px;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    div h4.Autor-Artículo,
+    div p.Autor-Artículo {
+        margin-top: -2px;
+        color: #60dbf1;
+        text-align: center;
+        font-size: 20px;
+        background-color: #0C37E832;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    div ol.Descripción-Artículo li.ElementoDeLista,
+    div ol.Descripción-Artículo#ListaDinámica li {
+        font-weight: 200;
+        color: whitesmoke;
+        font-size: 20px;
+        text-align: justify;
+        border-radius: 25px;
+        text-indent: 20px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        margin-left: 40px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+
+    div .Descripción-Artículo {
+        font-weight: 200;
+        color: whitesmoke;
+        font-size: 20px;
+        text-align: justify;
+        background-color: #07a18a5f;
+        border-radius: 25px;
+        text-indent: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    img.LogoPartidista {
+        height: 100px;
+        border-radius: 25px;
+        margin: 15px;
+    }
+
+    img.LogoPartidista#LogoPRI {
+        background-color: white;
+        border-radius: 60px;
+    }
+
+    img.LogoPartidista#LogoPVEM {
+        background-color: lightgreen;
+        border-radius: 15px;
+    }
+
+    div#ContenedorListas {
+        padding: 10px;
+        border-radius: 25px;
+        height: 500px;
+        align-items: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    div#ContenedorListas h4 {
+        font-weight: 200;
+        color: whitesmoke;
+        font-size: 20px;
+        margin: 5px;
+        text-align: center;
+        width: 100px;
+    }
+
+    select#Lista1,
+    select#Lista2,
+    select#Lista3,
+    select#Lista4 {
+        text-align: center;
+        color: #07A189;
+        background-color: #0c38e8;
+        width: 50%;
+        font-size: 20px;
+        border-radius: 20px;
+        border: 2px groove white;
+
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    select#Lista1:hover,
+    select#Lista2:hover,
+    select#Lista3:hover,
+    select#Lista4:hover {
+        border: 2px double whitesmoke;
+        color: #0c38e8;
+        background-color: #07A189;
+
+    }
+
+    table#InsertarResultados,
+    table#TablaFiltros {
+        width: 100%;
+    }
+
+    #InsertarResultados th,
+    #InsertarResultados tr,
+    #InsertarResultados td,
+    #TablaFiltros th,
+    #TablaFiltros tr,
+    #TablaFiltros td {
+        border: 2px solid #07A189;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    #TablaFiltros td,
+    #InsertarResultados td {
+        background-color: #041029;
+        color: whitesmoke;
+    }
+
+    #InsertarResultados th,
+    #TablaFiltros th {
+        background-color: #0c38e8;
+    }
+
+    .EncabezadoCasilla {
+        width: 15%;
+    }
+
+    tr {
+        font-size: 20px;
+        height: 30px;
+    }
+
+    tr#Fila1 {
+        height: 40px;
+        font-size: 20px;
+    }
+
+    div#MostrarDiputados {
+        background-color: #07a18a5f;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    div#RedesSociales {
+        align-items: center;
+    }
+
+    /*Redes sociales*/
+    img.RedSocial {
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+        cursor: pointer;
+        transition: 300ms;
+    }
+
+    img.RedSocial#Facebook:hover {
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+    }
+
+    img.RedSocial#WhatsApp:hover {
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+        ;
+    }
+
+    img.RedSocial#Messenger:hover {
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+    }
+
+    img.RedSocial#YouTube,
+    img.RedSocial#GitHub,
+    img.RedSocial#Facebook {
+        border-radius: 10px;
+    }
+
+    img.RedSocial#YouTube:hover {
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+        ;
+        border-radius: 10px;
+    }
+
+    img.RedSocial#Telegram:hover {
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+    }
+
+    img.RedSocial#Twitter:hover {
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+    }
+
+    img.RedSocial#GitHub:hover {
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+    }
+
+    hr {
+        width: 75%;
+        background-color: #041029;
+        height: 5px;
+        border-color: #07A189;
+        border-radius: 5px;
+        color: #041029;
+    }
+}
+
+/*Fin de punto de ruptura para pantallas grandes*/
+@media only screen and (max-width: 1024px)
+
+/*Punto de ruptura para tablets*/
+    {
+    h2#IndicaArtículos {
+        color: #07A189;
+        text-align: justify;
+        font-size: 25px;
+        background-color: #0C37E832;
+        padding: 5px;
+        text-indent: 50px;
+    }
+
+    div.Contenedor-Artículos.Limitado {
+        margin-top: -20px;
+        width: 90%;
+        overflow-y: auto;
+        overflow-x: auto;
+        height: 300px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    div.Contenedor-Artículos#PartidosPolíticos {
+        margin-top: 20px;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /*div h3 .TítuloArtículo    {        color: #07A189;        text-align: justify;        font-size: 25px;        background-color: #0C37E832;        padding: 5px;        padding-left: 20px;        border-radius: 10px;    }*/
+    h3.TítuloArtículo,
+    .TítuloArtículo#ContactoCorreo {
+        color: #07A189;
+        text-align: center;
+        font-size: 25px;
+        background-color: #0C37E832;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    h4.TítuloArtículo {
+        color: #07A189;
+        text-align: center;
+        font-size: 25px;
+        background-color: #0C37E832;
+        padding: 5px;
+        border-radius: 15px;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    div h4.Autor-Artículo,
+    div p.Autor-Artículo {
+        margin-top: -2px;
+        color: #60dbf1;
+        text-align: center;
+        font-size: 20px;
+        background-color: #0C37E832;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    div ol.Descripción-Artículo li.ElementoDeLista,
+    div ol.Descripción-Artículo#ListaDinámica li {
+        font-weight: 200;
+        color: whitesmoke;
+        font-size: 20px;
+        text-align: justify;
+        border-radius: 25px;
+        text-indent: 20px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        margin-left: 40px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    div .Descripción-Artículo {
+        font-weight: 200;
+        color: whitesmoke;
+        font-size: 20px;
+        text-align: justify;
+        background-color: #07a18a5f;
+        border-radius: 25px;
+        text-indent: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    img.LogoPartidista {
+        height: 100px;
+        border-radius: 25px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+
+    img.LogoPartidista#LogoPRI {
+        background-color: white;
+        border-radius: 60px;
+    }
+
+    div#ContenedorListas {
+        background-color: #07a18a5f;
+        padding: 10px;
+        border-radius: 25px;
+        height: 500px;
+        align-items: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    div#ContenedorListas h4 {
+        font-weight: 200;
+        color: whitesmoke;
+        font-size: 20px;
+        margin: 5px;
+        text-align: center;
+        width: 100px;
+    }
+
+    select#Lista1,
+    select#Lista2,
+    select#Lista3,
+    select#Lista4 {
+        text-align: center;
+        color: #07A189;
+        background-color: #0c38e8;
+        width: 50%;
+        font-size: 20px;
+        border-radius: 20px;
+        border: 2px groove white;
+
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    select#Lista1:hover,
+    select#Lista2:hover,
+    select#Lista3:hover,
+    select#Lista4:hover {
+        border: 2px double whitesmoke;
+        color: #0c38e8;
+        background-color: #07A189;
+
+    }
+
+    table#InsertarResultados,
+    table#TablaFiltros {
+        width: 100%;
+    }
+
+    #InsertarResultados th,
+    #InsertarResultados tr,
+    #InsertarResultados td,
+    #TablaFiltros th,
+    #TablaFiltros tr,
+    #TablaFiltros td {
+        border: 2px solid #07A189;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    #TablaFiltros td,
+    #InsertarResultados td {
+        background-color: #041029;
+        color: whitesmoke;
+    }
+
+    #InsertarResultados th,
+    #TablaFiltros th {
+        background-color: #0c38e8;
+    }
+
+    .EncabezadoCasilla {
+        width: 15%;
+    }
+
+    tr {
+        font-size: 20px;
+        height: 30px;
+    }
+
+    tr#Fila1 {
+        height: 40px;
+        font-size: 20px;
+    }
+
+    div#MostrarDiputados {
+        background-color: #07a18a5f;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #copyright {
+        text-align: center;
+        color: whitesmoke;
+        text-decoration: dotted;
+    }
+
+    div#RedesSociales {
+        align-items: center;
+    }
+
+    /*Redes sociales*/
+    img.RedSocial {
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+        cursor: pointer;
+        transition: 400ms;
+        border-radius: 10px;
+    }
+
+    img.RedSocial#Facebook:hover {
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+        ;
+        transition: 500ms;
+    }
+
+    img.RedSocial#WhatsApp:hover {
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+    }
+
+    img.RedSocial#Messenger:hover {
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+    }
+
+    img.RedSocial#YouTube:hover {
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+        ;
+        border-radius: 10px;
+    }
+
+    img.RedSocial#Telegram:hover {
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+    }
+
+    img.RedSocial#Twitter:hover {
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+    }
+
+    img.RedSocial#GitHub:hover {
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+    }
+
+    hr {
+        width: 75%;
+        background-color: #041029;
+        height: 5px;
+        border-color: #07A189;
+        border-radius: 5px;
+        color: #041029;
+    }
+}
+
+/*Fin de punto de ruptura para tablets*/
+@media only screen and (max-width: 480px)
+
+/*Punto de ruptura para móviles*/
+    {
+    h2#IndicaArtículos {
+        color: #07A189;
+        text-align: justify;
+        font-size: 25px;
+        background-color: #0C37E832;
+        padding: 5px;
+        text-indent: 50px;
+    }
+
+    div.Contenedor-Artículos {
+        margin-top: -20px;
+        width: 100%;
+    }
+
+    div.Contenedor-Artículos#PartidosPolíticos {
+        margin-top: 20px;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /*div h3 .TítuloArtículo    {        color: #07A189;        text-align: justify;        font-size: 25px;        background-color: #0C37E832;        padding: 5px;        padding-left: 20px;        border-radius: 10px;    }*/
+    h3.TítuloArtículo,
+    .TítuloArtículo#ContactoCorreo {
+        color: #07A189;
+        text-align: center;
+        font-size: 25px;
+        background-color: #0C37E832;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    h4.TítuloArtículo {
+        color: #07A189;
+        text-align: center;
+        font-size: 25px;
+        background-color: #0C37E832;
+        padding: 5px;
+        border-radius: 15px;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    div h4.Autor-Artículo,
+    div p.Autor-Artículo {
+        margin-top: -2px;
+        color: #60dbf1;
+        text-align: center;
+        font-size: 20px;
+        background-color: #0C37E832;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    div li.ElementoDeLista {
+        font-weight: 200;
+        color: whitesmoke;
+        font-size: 20px;
+        text-align: justify;
+        border-radius: 25px;
+        text-indent: 20px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        margin-left: 40px;
+        padding-right: 20px;
+    }
+
+    div .Descripción-Artículo {
+        font-weight: 200;
+        color: whitesmoke;
+        font-size: 20px;
+        text-align: justify;
+        background-color: #07a18a5f;
+        border-radius: 25px;
+        text-indent: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    ol.Descripción-Artículo {
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 75%;
+    }
+
+    p.Descripción-Artículo {
+        margin-left: 5px;
+        width: 75%;
+    }
+
+    img.LogoPartidista {
+        height: 100px;
+        border-radius: 25px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+
+    img.LogoPartidista#LogoPRI {
+        background-color: white;
+        border-radius: 60px;
+    }
+
+    div#ContenedorListas {
+        background-color: #07a18a5f;
+        padding: 10px;
+        border-radius: 25px;
+        height: 500px;
+        align-items: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    div#ContenedorListas h4 {
+        font-weight: 200;
+        color: whitesmoke;
+        font-size: 20px;
+        margin: 5px;
+        text-align: center;
+        width: 100px;
+    }
+
+    select#Lista1,
+    select#Lista2,
+    select#Lista3,
+    select#Lista4 {
+        text-align: center;
+        color: #07A189;
+        background-color: #0c38e8;
+        width: 50%;
+        font-size: 20px;
+
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    div#MostrarDiputados {
+        background-color: #07a18a5f;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    div#RedesSociales {
+        align-items: center;
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
+    /*Redes sociales*/
+    img.RedSocial {
+        width: 30px;
+        height: 30px;
+        margin: 7.5px;
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    img.RedSocial:hover {
+        width: 45px;
+        height: 45px;
+        margin-top: 7.5px;
+        margin-bottom: 7.5px;
+        margin-left: 0px;
+        margin-right: 0px;
+        transition: 500ms;
+    }
+
+    img.RedSocial#Facebook {
+        margin-left: 0px;
+    }
+
+    img.RedSocial#GitHub {
+        margin-right: 0px;
+    }
+
+    img.RedSocial#YouTube,
+    img.RedSocial#GitHub {
+        border-radius: 10px;
+    }
+
+    hr {
+        width: 75%;
+        background-color: #041029;
+        height: 5px;
+        border-color: #07A189;
+        border-radius: 5px;
+        color: #041029;
+    }
+}
+
+/*Fin de punto de ruptura para móviles*/

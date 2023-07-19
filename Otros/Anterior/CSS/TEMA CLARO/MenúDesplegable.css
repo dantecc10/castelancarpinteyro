@@ -1,0 +1,181 @@
+@media only screen and (min-width: 1200px) {
+
+    /*Punto de ruptura para pantallas grandes (equipos de escritorio)*/
+    .Menú-Desplegable {
+        position: relative;
+        display: inline-block;
+    }
+
+    .Botón-Desplegar {
+        font-weight: bold;
+        box-shadow: #07A189;
+        border-color: #38acff;
+        background-color: white;
+        color: #2F2F35;
+        padding: 16px;
+        font-size: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .Contenido-Desplegable {
+        display: none;
+        position: absolute;
+        background-color: #a2bfc7;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px #07B89E;
+        z-index: 1;
+    }
+
+    .Contenido-Desplegable a {
+        color: #2b4d66;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 12px 16px;
+        text-decoration: solid;
+        display: block;
+        text-align: center;
+    }
+
+    .Contenido-Desplegable a:hover {
+        background-color: #07A189;
+        color: #2F2F35;
+    }
+
+    /* Show the dropdown menu on hover */
+    .Menú-Desplegable:hover .Contenido-Desplegable {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .Menú-Desplegable:hover .Botón-Desplegar {
+        background-color: #2F2F35;
+        color: #07A189;
+    }
+}
+
+/*Fin de punto de ruptura para pantallas grandes*/
+@media only screen and (max-width: 1024px) {
+
+    /*Punto de ruptura para tablets*/
+    .Menú-Desplegable {
+        position: relative;
+        display: inline-block;
+    }
+
+    .Botón-Desplegar {
+        font-weight: bold;
+        box-shadow: #07A189;
+        border-color: #38acff;
+        background-color: white;
+        color: #2F2F35;
+        padding: 16px;
+        font-size: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 175px;
+    }
+
+    .Contenido-Desplegable {
+        display: none;
+        position: absolute;
+        background-color: #a2bfc7;
+        min-width: 90px;
+        max-width: 120px;
+        box-shadow: 0px 8px 16px 0px #07B89E;
+        z-index: 1;
+        margin-left: 175px;
+    }
+
+    .Contenido-Desplegable a {
+        color: #2b4d66;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 12px 16px;
+        text-decoration: solid;
+        display: block;
+        text-align: center;
+    }
+
+    .Contenido-Desplegable a:hover {
+        background-color: #07A189;
+        color: #2F2F35;
+    }
+
+    /* Show the dropdown menu on hover */
+    .Menú-Desplegable:hover .Contenido-Desplegable {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .Menú-Desplegable:hover .Botón-Desplegar {
+        background-color: #2F2F35;
+        color: #07A189;
+    }
+}
+
+/*Fin de punto de ruptura para tablets*/
+@media only screen and (max-width: 480px) {
+
+    /*Punto de ruptura para móviles*/
+    .Menú-Desplegable {
+        position: relative;
+        display: inline-block;
+    }
+
+    .Botón-Desplegar {
+        font-weight: bold;
+        box-shadow: #07A189;
+        border-color: #38acff;
+        background-color: white;
+        color: #2F2F35;
+        padding: 16px;
+        font-size: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 10%;
+        margin-top: -25px;
+    }
+
+    .Contenido-Desplegable {
+        display: none;
+        position: absolute;
+        background-color: #a2bfc7;
+        min-width: 90px;
+        max-width: 120px;
+        box-shadow: 0px 8px 16px 0px #07B89E;
+        z-index: 1;
+        margin-left: 3%;
+    }
+
+    .Contenido-Desplegable a {
+        color: #2b4d66;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 12px 16px;
+        text-decoration: solid;
+        display: block;
+        text-align: center;
+    }
+
+    .Contenido-Desplegable a:hover {
+        background-color: #07A189;
+        color: #2F2F35;
+    }
+
+    /* Show the dropdown menu on hover */
+    .Menú-Desplegable:hover .Contenido-Desplegable {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .Menú-Desplegable:hover .Botón-Desplegar {
+        background-color: #2F2F35;
+        color: #07A189;
+    }
+}
+
+/*Fin de punto de ruptura para móviles*/

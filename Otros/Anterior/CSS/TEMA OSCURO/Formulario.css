@@ -1,0 +1,49 @@
+form {
+    align-items: center;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    background-color: #07a18a5f;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+form * {
+    width: 100%;
+    color: black;
+}
+
+form *#Sexo {
+    color: black;
+}
+
+form *.EtiquetaFormulario {
+    color: white;
+}
+
+form *#CasillaFormularios {
+    width: 5px;
+}
+form *#EtiquetaCasillaFormularios {
+    width: 5px;
+}
+
+form input#BotónEnvío{
+    width: 25%;
+    margin-left: 37.5%;
+    margin-right: 37.5%;
+    border-radius: 100px;
+    height: 40px;
+    font-size: 20px;
+    background-color: aquamarine;
+}
+code{
+    align-items: center;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    background-color: black;
+    color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+}
