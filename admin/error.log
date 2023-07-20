@@ -471,3 +471,77 @@ Thu Jul 20 2023 15:13:35 GMT-0500 (hora de verano central)
 El sistema no puede encontrar la ruta especificada.
 
 
+----------
+
+Thu Jul 20 2023 15:13:37 GMT-0500 (hora de verano central)
+
+warning: in the working copy of 'admin/crear.html', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Thu Jul 20 2023 15:13:38 GMT-0500 (hora de verano central)
+
+warning: in the working copy of 'admin/error.log', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Thu Jul 20 2023 15:13:38 GMT-0500 (hora de verano central)
+
+warning: in the working copy of 'admin/index.html', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Thu Jul 20 2023 15:13:38 GMT-0500 (hora de verano central)
+
+warning: in the working copy of 'admin/profile.html', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Thu Jul 20 2023 15:13:38 GMT-0500 (hora de verano central)
+
+warning: in the working copy of 'admin/sitemap.xml', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Thu Jul 20 2023 15:13:38 GMT-0500 (hora de verano central)
+
+warning: in the working copy of 'admin/table.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'admin/table-1.html', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Thu Jul 20 2023 15:13:38 GMT-0500 (hora de verano central)
+
+El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
+
+----------
+
+Thu Jul 20 2023 15:13:42 GMT-0500 (hora de verano central)
+
+remote: 
+remote: GitHub found 1 vulnerability on dantecc10/castelancarpinteyro's default branch (1 high). To find out more, visit:        
+remote:      https://github.com/dantecc10/castelancarpinteyro/security/dependabot/1        
+remote: 
+
+
+----------
+
+Thu Jul 20 2023 15:13:42 GMT-0500 (hora de verano central)
+
+To https://github.com/dantecc10/castelancarpinteyro.git
+   b26f3db..8c246f7  main -> main
+
+
+----------
+
+Thu Jul 20 2023 15:15:15 GMT-0500 (hora de verano central)
+
+El sistema no puede encontrar la ruta especificada.
+
+
