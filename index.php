@@ -20,9 +20,8 @@ session_start();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Castelán Carpinteyro - Inicio</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9258502939818184"
-     crossorigin="anonymous"></script>
-    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9258502939818184" crossorigin="anonymous"></script>
+
     <meta name="theme-color" content="#5436cd">
     <meta name="description" content="Programación; artículos, tutoriales y cursos disponibles para entusiastas de la programación en Castelán Carpinteyro.">
     <meta name="twitter:description" content="Cursos de programación y servicios de hosting web">
@@ -59,13 +58,12 @@ session_start();
                     <li class="nav-item"><a class="nav-link" href="products.php">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="Software.php">Software</a></li>
                 </ul>
-                <div class="div1-efecto"><a class="btn btn-primary shadow div2-efecto" role="button"
-                <?php if (isset($_SESSION['Iniciada'])) {
-                    echo (' href="account.php">'. $_SESSION['nombre']);
-                } else {
-                    echo ' href="login.php">Iniciar sesión';
-                }
-                ?></a></div>
+                <div class="div1-efecto"><a class="btn btn-primary shadow div2-efecto" role="button" <?php if (isset($_SESSION['Iniciada'])) {
+                                                                                                            echo (' href="account.php">' . $_SESSION['nombre']);
+                                                                                                        } else {
+                                                                                                            echo ' href="login.php">Iniciar sesión';
+                                                                                                        }
+                                                                                                        ?></a></div>
             </div>
         </div>
     </nav><!-- End: Navbar Centered Links -->
