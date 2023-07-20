@@ -16,7 +16,7 @@ require_once('../vendor/phpmailer/phpmailer/src/SMTP.php');
 require_once('../vendor/phpmailer/phpmailer/src/Exception.php');
 
 include "dynamicSecrets.php";
-include "secrets.php.php";
+include "secrets.php";
 
 $data = generatePasskey('auth');
 
