@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-mx">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -35,13 +35,13 @@
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Panel</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Perfil</span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="table.html"><i class="fas fa-book-reader"></i><span>Artículos</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-book-reader"></i><span>Artículos</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Iniciar sesión</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="crear.html"><i class="fas fa-plus"></i><span>Crear artículo</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="https://castelancarpinteyro.com"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-globe">
                                 <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"></path>
                             </svg><span>&nbsp;Visitar plataforma</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="table-1.html"><svg></svg><span>Administrar usuarios</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="table-1.html"><svg></svg><span>Administrar usuarios</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
@@ -143,87 +143,140 @@
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-4">Publicaciones</h3>
+                    <h3 class="text-dark mb-4">Team</h3>
                     <div class="card shadow">
                         <div class="card-header py-3">
-                            <p class="text-primary m-0 fw-bold">Información de artículos, tutoriales, guías y cursos</p>
+                            <p class="text-primary m-0 fw-bold">Employee Info</p>
                         </div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6 text-nowrap">
-                                    <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label class="form-label">Mostrar</label></div>
+                                    <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label class="form-label">Show&nbsp;<select class="d-inline-block form-select form-select-sm">
+                                                <option value="10" selected="">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select>&nbsp;</label></div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="text-md-end dataTables_filter" id="dataTable_filter"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Buscar"></label></div>
+                                    <div class="text-md-end dataTables_filter" id="dataTable_filter"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label></div>
                                 </div>
                             </div>
                             <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
                                 <table class="table my-0" id="dataTable">
                                     <thead>
                                         <tr>
-                                            <th>Campo</th>
-                                            <th>Valor</th>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>ID</td>
-                                            <td><input type="number">&nbsp;</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Airi Satou</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>33</td>
+                                            <td>2008/11/28</td>
+                                            <td>$162,700</td>
                                         </tr>
                                         <tr>
-                                            <td>Título artículo</td>
-                                            <td><input type="number">&nbsp;</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar2.jpeg">Angelica Ramos</td>
+                                            <td>Chief Executive Officer(CEO)</td>
+                                            <td>London</td>
+                                            <td>47</td>
+                                            <td>2009/10/09<br></td>
+                                            <td>$1,200,000</td>
                                         </tr>
                                         <tr>
-                                            <td>Autor</td>
-                                            <td><input type="number">&nbsp;</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar3.jpeg">Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>San Francisco</td>
+                                            <td>66</td>
+                                            <td>2009/01/12<br></td>
+                                            <td>$86,000</td>
                                         </tr>
                                         <tr>
-                                            <td>Ruta (relativa)</td>
-                                            <td><input type="number">&nbsp;</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar4.jpeg">Bradley Greer</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>41</td>
+                                            <td>2012/10/13<br></td>
+                                            <td>$132,000</td>
                                         </tr>
                                         <tr>
-                                            <td>Fecha</td>
-                                            <td><input type="number">&nbsp;</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar5.jpeg">Brenden Wagner</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>28</td>
+                                            <td>2011/06/07<br></td>
+                                            <td>$206,850</td>
                                         </tr>
                                         <tr>
-                                            <td>Título meta</td>
-                                            <td><input type="number">&nbsp;</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Brielle Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>2012/12/02<br></td>
+                                            <td>$372,000</td>
                                         </tr>
                                         <tr>
-                                            <td>Descripción</td>
-                                            <td><input type="number">&nbsp;</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar2.jpeg">Bruno Nash<br></td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>38</td>
+                                            <td>2011/05/03<br></td>
+                                            <td>$163,500</td>
                                         </tr>
                                         <tr>
-                                            <td>Banner (absoluto)</td>
-                                            <td><input type="number">&nbsp;</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar3.jpeg">Caesar Vance</td>
+                                            <td>Pre-Sales Support</td>
+                                            <td>New York</td>
+                                            <td>21</td>
+                                            <td>2011/12/12<br></td>
+                                            <td>$106,450</td>
                                         </tr>
                                         <tr>
-                                            <td>Categoría</td>
-                                            <td><input type="number">&nbsp;</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar4.jpeg">Cara Stevens</td>
+                                            <td>Sales Assistant</td>
+                                            <td>New York</td>
+                                            <td>46</td>
+                                            <td>2011/12/06<br></td>
+                                            <td>$145,600</td>
                                         </tr>
                                         <tr>
-                                            <td>Activo</td>
-                                            <td><input type="number">&nbsp;</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar5.jpeg">Cedric Kelly</td>
+                                            <td>Senior JavaScript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2012/03/29<br></td>
+                                            <td>$433,060</td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                            <td><strong>Campo</strong></td>
-                                            <td><strong>Valor</strong></td>
+                                            <td><strong>Name</strong></td>
+                                            <td><strong>Position</strong></td>
+                                            <td><strong>Office</strong></td>
+                                            <td><strong>Age</strong></td>
+                                            <td><strong>Start date</strong></td>
+                                            <td><strong>Salary</strong></td>
                                         </tr>
                                     </tfoot>
                                 </table>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 align-self-center">
-                                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Mostrando 1 a 10 de 27</p>
+                                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27</p>
                                 </div>
                                 <div class="col-md-6">
                                     <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
                                         <ul class="pagination">
                                             <li class="page-item disabled"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
-                                            <li class="page-item active color-fresco-degradado"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
                                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                                             <li class="page-item"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
