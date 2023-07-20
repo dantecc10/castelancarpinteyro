@@ -743,3 +743,55 @@ Thu Jul 20 2023 16:47:04 GMT-0500 (hora de verano central)
 El sistema no puede encontrar la ruta especificada.
 
 
+----------
+
+Thu Jul 20 2023 16:47:05 GMT-0500 (hora de verano central)
+
+warning: in the working copy of 'admin/admin-users.html', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Thu Jul 20 2023 16:47:05 GMT-0500 (hora de verano central)
+
+warning: in the working copy of 'admin/error.log', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Thu Jul 20 2023 16:47:06 GMT-0500 (hora de verano central)
+
+El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
+
+----------
+
+Thu Jul 20 2023 16:47:09 GMT-0500 (hora de verano central)
+
+remote: 
+remote: GitHub found 1 vulnerability on dantecc10/castelancarpinteyro's default branch (1 high). To find out more, visit:        
+remote:      https://github.com/dantecc10/castelancarpinteyro/security/dependabot/1        
+remote: 
+
+
+----------
+
+Thu Jul 20 2023 16:47:09 GMT-0500 (hora de verano central)
+
+To https://github.com/dantecc10/castelancarpinteyro.git
+   04a1ebe..ad96fdb  main -> main
+
+
+----------
+
+Thu Jul 20 2023 17:29:07 GMT-0500 (hora de verano central)
+
+El sistema no puede encontrar la ruta especificada.
+
+
+----------
+
+Thu Jul 20 2023 17:29:08 GMT-0500 (hora de verano central)
+
+fatal: unable to access 'https://github.com/dantecc10/castelancarpinteyro.git/': Could not resolve host: github.com
+
+
