@@ -39,6 +39,7 @@ function generatePasskey($turing)
             break;
     }
     if ((isset($sqlRequest)) && ($sqlRequest == true)) {
+        echo ($user . " " . $turing . " " . $database); // Debug 🐞
         return array($user, $turing, $database);
     } else {
         return array($turing, $fromSettings, $emailSettings);
