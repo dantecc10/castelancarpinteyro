@@ -2,6 +2,18 @@ p.sangría {
   text-indent: 5%;
 }
 
+.nav-gradient-button {
+  background-image: linear-gradient(144deg, #e24725, #af40ff 50%, #00ddeb);
+}
+
+.nav-complete-gradient {
+  background-image: linear-gradient(90deg, #09422a, #0fdd4a 50%, #21bf75);
+}
+
+.text-indent {
+  text-indent: 4em;
+}
+
 .hero-nature.carousel-hero.jumbotron {
   font-family: monospace;
 }
