@@ -2,6 +2,10 @@ p.sangría {
   text-indent: 5%;
 }
 
+order-group-button {
+  width: 100%;
+}
+
 .nav-gradient-button {
   background-image: linear-gradient(144deg, #e24725, #af40ff 50%, #00ddeb);
 }
