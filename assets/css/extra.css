@@ -8,6 +8,7 @@ order-group-button {
 
 .nav-gradient-button {
   background-image: linear-gradient(144deg, #e24725, #af40ff 50%, #00ddeb);
+  padding: 9.6px 5px;
 }
 
 .nav-complete-gradient {
