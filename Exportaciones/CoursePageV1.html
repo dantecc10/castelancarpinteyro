@@ -90,6 +90,20 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                     <div class="d-flex justify-content-center">
+                        <style>
+                            .scrollable-nav-container {
+                                overflow-x: auto;
+                                /* Habilita el desplazamiento horizontal si el contenido es más ancho que el contenedor */
+                                display: flex;
+                                justify-content: center;
+                                /* Centra el contenido horizontalmente */
+                            }
+
+                            /* Opcionalmente, puedes agregar un ancho máximo al contenedor para evitar que se expanda demasiado */
+                            /* .scrollable-nav-container {
+        max-width: 100%;
+    } */
+                        </style>
                         <div class="col-md-6">
                             <div class="scrollable-nav-container">
                                 <nav class="justify-content-center dataTables_paginate paging_simple_numbers">
