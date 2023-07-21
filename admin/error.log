@@ -795,3 +795,23 @@ Thu Jul 20 2023 17:29:08 GMT-0500 (hora de verano central)
 fatal: unable to access 'https://github.com/dantecc10/castelancarpinteyro.git/': Could not resolve host: github.com
 
 
+----------
+
+Thu Jul 20 2023 17:29:08 GMT-0500 (hora de verano central)
+
+warning: in the working copy of 'admin/error.log', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Thu Jul 20 2023 17:29:09 GMT-0500 (hora de verano central)
+
+El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
+
+----------
+
+Thu Jul 20 2023 17:29:09 GMT-0500 (hora de verano central)
+
+fatal: unable to access 'https://github.com/dantecc10/castelancarpinteyro.git/': Could not resolve host: github.com
+
+
