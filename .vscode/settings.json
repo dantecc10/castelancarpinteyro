@@ -20,5 +20,7 @@
     "workbench.preferredDarkColorTheme": "Tomorrow Night Blue",
     "workbench.colorCustomizations": {
         "[Abyss]": {}
-    }
+    },
+    "liveServer.settings.multiRootWorkspaceName": "",
+    "liveServer.settings.fullReload": true
 }
