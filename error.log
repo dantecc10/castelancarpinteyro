@@ -2498,3 +2498,41 @@ Sat Jul 22 2023 23:26:00 GMT-0500 (hora de verano central)
 El sistema no puede encontrar la ruta especificada.
 
 
+----------
+
+Sat Jul 22 2023 23:26:02 GMT-0500 (hora de verano central)
+
+warning: in the working copy of 'assets/css/extra.css', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Sat Jul 22 2023 23:26:02 GMT-0500 (hora de verano central)
+
+El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
+
+----------
+
+Sat Jul 22 2023 23:26:08 GMT-0500 (hora de verano central)
+
+remote: 
+remote: GitHub found 1 vulnerability on dantecc10/castelancarpinteyro's default branch (1 high). To find out more, visit:        
+remote:      https://github.com/dantecc10/castelancarpinteyro/security/dependabot/1        
+remote: 
+
+
+----------
+
+Sat Jul 22 2023 23:26:08 GMT-0500 (hora de verano central)
+
+To https://github.com/dantecc10/castelancarpinteyro.git
+   8305e3a..e748964  main -> main
+
+
+----------
+
+Sat Jul 22 2023 23:26:28 GMT-0500 (hora de verano central)
+
+El sistema no puede encontrar la ruta especificada.
+
+
