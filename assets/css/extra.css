@@ -95,8 +95,6 @@ tbody {
   color: white !important;
   border-bottom: .5px solid #15b577 !important;
   border-top: none !important;
-  border-top-left-radius: 10% !important;
-  border-top-right-radius: 10% !important;
 }
 
 .lateral-efecto li.elementoLateral#lateralP:hover {
@@ -108,8 +106,6 @@ tbody {
   color: white !important;
   border-top: .5px solid #15b577 !important;
   border-bottom: none !important;
-  border-bottom-left-radius: 10% !important;
-  border-bottom-right-radius: 10% !important;
 }
 
 .lateral-efecto li.elementoLateral#lateralC:hover {
