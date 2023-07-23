@@ -95,12 +95,16 @@ tbody {
   color: white !important;
   border-bottom: .5px solid #15b577;
   border-top: none !important;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
 .lateral-efecto li.elementoLateral#lateralC {
   color: white !important;
   border-top: .5px solid #15b577;
   border-bottom: none !important;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
 }
 
 .disabled-invisible {
