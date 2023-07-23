@@ -103,3 +103,10 @@ tbody {
   border-bottom: none !important;
 }
 
+.disabled-invisible {
+  background-color: #ffffff00 !important;
+  background-image: none !important;
+  color: #ffffff00 !important;
+  border: none;
+}
+
