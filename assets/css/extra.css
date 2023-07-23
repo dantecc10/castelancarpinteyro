@@ -80,15 +80,15 @@ tbody {
   transition: all .2s;
 }
 
-.lateral-efecto li.elementoLateral:hover {
-  background-image: linear-gradient(144deg, #00ff75 0%, #3700ff 100%);
-  font-weight: 700 !important;
-}
-
 .lateral-efecto li.elementoLateral {
   color: white !important;
   border-top: .25px solid #15b577;
   border-bottom: .25px solid #15b577;
+}
+
+.lateral-efecto li.elementoLateral:hover {
+  background-image: linear-gradient(144deg, #00ff75 0%, #3700ff 100%);
+  font-weight: 700 !important;
 }
 
 .lateral-efecto li.elementoLateral#lateralP {
@@ -99,10 +99,20 @@ tbody {
   border-top-right-radius: 10% !important;
 }
 
+.lateral-efecto li.elementoLateral#lateralP:hover {
+  border-top-left-radius: 10% !important;
+  border-top-right-radius: 10% !important;
+}
+
 .lateral-efecto li.elementoLateral#lateralC {
   color: white !important;
   border-top: .5px solid #15b577 !important;
   border-bottom: none !important;
+  border-bottom-left-radius: 10% !important;
+  border-bottom-right-radius: 10% !important;
+}
+
+.lateral-efecto li.elementoLateral#lateralC:hover {
   border-bottom-left-radius: 10% !important;
   border-bottom-right-radius: 10% !important;
 }
