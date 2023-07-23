@@ -21,6 +21,12 @@ function courseNavigate(lesson) {
     //Saber si lesson.charAt(length(lesson) - 1) es un número
     lastParameterCharacter = lesson.charAt((lesson.length) - 1); // Operative ✅
 
+    var prefix = '';
+    for (var i = 0; i < ((lesson.length) - 1); i++) {
+        prefix += lesson.charAt(i);
+    }
+    //console.log("Este es el prefijo del objeto: " + prefix); // Debug 🐞
+
     if (parseInt(lastParameterCharacter)) {
         console.log(lastParameterCharacter);
     } else {
