@@ -25,7 +25,7 @@ function courseNavigate(lesson) {
     for (var i = 0; i < ((lesson.length) - 1); i++) {
         prefix += lesson.charAt(i);
     }
-    //console.log("Este es el prefijo del objeto: " + prefix); // Debug 🐞
+    console.log("Este es el prefijo del objeto: " + prefix); // Debug 🐞
 
     if (parseInt(lastParameterCharacter)) {
         console.log(lastParameterCharacter);
