@@ -9,7 +9,7 @@ $email = $_POST['email'];
 $cleanEmail = $db->real_escape_string($email);
 
 // Create a row in the `newsletter_subscribers` table; that has the following fields: `id_subscriber` (has auto_increment), `email_subscriber` (must be cleaned as it's a user input), and `status_subscriber`, set on 1. Don't forget to use stmt and real_escape_string for the email
-$stmt = $db->prepare("INSERT INTO `newsletter_subscribers` (`email_subscriber`, `status_subscriber`) VALUES (?, 1)");
+$stmt = $db->prepare("INSERT INTO `newsletter_subscribers` VALUES ('', ?, 1)");
 if ($stmt === false) {
     die("Error in query preparation: " . $db->error);
 }
