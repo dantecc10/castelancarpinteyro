@@ -20,9 +20,8 @@ $stmt->execute();
 $stmt->close();
 
 // If the row was created, show a success message
-if ($db->affected_rows == 1) {
+if ($stmt->affected_rows == 1) {
     echo "You have been added to the newsletter!";
 } else {
     echo "Something went wrong, please try again later.";
 }
-?>
