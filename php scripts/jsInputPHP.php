@@ -34,7 +34,6 @@ if ($result->num_rows > 0) {
     $clave = $db->real_escape_string($clave);
     $stmt->execute();
     $result = $stmt->get_result();
-
     echo "true";
 } else {
     // La clave o el email no son válidos
