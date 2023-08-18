@@ -6,7 +6,7 @@ function send()
 }
 
 // Conexión a la base de datos
-$conn = new mysqli("localhost", "darkseid", "DarkseidPower23!!", "castelancarpinteyro");
+$conn = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
 
 // Verificar la conexión
 if ($conn->connect_error) {
