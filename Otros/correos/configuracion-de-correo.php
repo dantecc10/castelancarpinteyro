@@ -25,7 +25,7 @@ include "../php scripts/secrets.php";
 
 $mail = new PHPMailer;
 
-$mail->SMTPDebug = 3;
+$mail->SMTPDebug = SMTP::DEBUG_CONNECTION;
 
 $mail->IsSMTP();
 $mail->Host = "castelancarpinteyro.com"; #'classicandsacrum.com';   /*Servidor SMTP no pongas la ip, pon el nombre de la dns inversa*/																		
