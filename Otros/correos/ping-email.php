@@ -42,7 +42,7 @@ $mail->ClearAllRecipients();
 
 $mail->AddAddress("dantecc10@gmail.com");
 $mail->AddCC("emiliano@castelancarpinteyro.com");
-$mail->AddCC("newsletter@castelancarpinteyro.com");
+$mail->AddCC("dante@castelancarpinteyro.com");
 
 $mail->IsHTML(true);  //podemos activar o desactivar HTML en mensaje
 $mail->Subject = 'Prueba de servidor de correos';
