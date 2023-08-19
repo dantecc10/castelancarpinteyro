@@ -5,15 +5,15 @@ include "configuracion-de-correo.php";
 $mail->ClearAllRecipients();
 
 $mail->AddAddress("dantecc10@gmail.com");
-$mail->AddCC("concopia1@email.com");
-$mail->AddCC("concopia2@email.com");
+$mail->AddCC("emiliano@castelancarpinteyro.com");
+$mail->AddCC("newsletter@castelancarpinteyro.com");
 
 $mail->IsHTML(true);  //podemos activar o desactivar HTML en mensaje
-$mail->Subject = 'asunto del mensaje';
+$mail->Subject = 'Prueba de servidor de correos';
 
-$msg = "<h2>Contenido mensaje HTML:</h2>
-<p>Contenido</p>
-<p>Más Contenido...</p>
+$msg = "<h1>¡Hola!</h1>
+<p>Si estás viendo este correo, significa que Dante Castelán Carpinteyro logró reactivar el servidor de correos automáticos de scripts.</p>
+<p>Si está en spam, por favor informa que no lo es.</p>
 ";
 
 $mail->Body = $msg;

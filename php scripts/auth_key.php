@@ -5,6 +5,8 @@ if (isset($_GET['email'])) {
 } else {
     $email = $_SESSION['email'];
 }
+
+
 function generateKey($email)
 { // Operative ✅
     # $contadorDígitos = 0;
