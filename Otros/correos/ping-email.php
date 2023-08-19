@@ -37,3 +37,20 @@ $mail->Password = $contraseñaScripts;   /*Tu contraseña*/
 $mail->From = "contacto@castelancarpinteyro.com"; #'academia@classicandsacrum.com';   /*Correo electrónico que estamos autenticando*/
 $mail->FromName = 'Castelán Carpinteyro';   /*Puedes poner tu nombre, el de tu empresa, nombre de tu web, etc.*/
 $mail->CharSet = 'UTF-8';   /*Codificación del mensaje*/
+
+$mail->ClearAllRecipients();
+
+$mail->AddAddress("dantecc10@gmail.com");
+$mail->AddCC("emiliano@castelancarpinteyro.com");
+$mail->AddCC("newsletter@castelancarpinteyro.com");
+
+$mail->IsHTML(true);  //podemos activar o desactivar HTML en mensaje
+$mail->Subject = 'Prueba de servidor de correos';
+
+$msg = "<h1>¡Hola!</h1>
+<p>Si estás viendo este correo, significa que Dante Castelán Carpinteyro logró reactivar el servidor de correos automáticos de scripts.</p>
+<p>Si está en spam, por favor informa que no lo es.</p>
+";
+
+$mail->Body = $msg;
+$mail->Send();
