@@ -1,88 +1,169 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .raccoon {
-            width: 200px;
-            height: 150px;
-            background-color: #a9a9a9;
-            position: relative;
-            border-radius: 50px 50px 10px 10px;
-            overflow: hidden;
-        }
-
-        .head {
-            width: 100px;
-            height: 100px;
-            background-color: #a9a9a9;
-            border-radius: 50%;
-            position: absolute;
-            top: 0;
-            left: 50px;
-            transform: translateX(-50%);
-        }
-
-        .eye {
-            width: 25px;
-            height: 25px;
-            background-color: #fff;
-            border-radius: 50%;
-            position: absolute;
-            top: 40px;
-        }
-
-        .eye.left {
-            left: 30px;
-        }
-
-        .eye.right {
-            right: 30px;
-        }
-
-        .nose {
-            width: 16px;
-            height: 16px;
-            background-color: #000;
-            border-radius: 50%;
-            position: absolute;
-            top: 55px;
-            left: 50px;
-            transform: translateX(-50%);
-        }
-
-        .ear {
-            width: 45px;
-            height: 70px;
-            background-color: #a9a9a9;
-            border-radius: 50% 50% 60% 60%;
-            position: absolute;
-            top: -15px;
-        }
-
-        .ear.left {
-            left: 0;
-            transform: rotate(-10deg);
-        }
-
-        .ear.right {
-            right: 0;
-            transform: rotate(10deg);
-        }
-    </style>
-</head>
+<head></head>
 
 <body>
-    <div class="raccoon">
+<style>
+    css
+
+.racoon {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #f2c94c;
+  animation: racoon-move 2s infinite;
+
+}
+
+
+.racoon.head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: #f2c94c;
+  border-radius: 50%;
+  animation: racoon-head 2s infinite;
+
+}
+
+
+.racoon.head.ear {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 10px;
+  background-color: #f2c94c;
+  border-radius: 50%;
+  animation: racoon-ear 2s infinite;
+
+}
+
+
+.racoon.head.ear:nth-child(1) {
+  animation-delay: 0.2s;
+
+}
+
+
+.racoon.head.ear:nth-child(2) {
+  animation-delay: 0.4s;
+
+}
+
+
+.racoon.head.body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: #f2c94c;
+  border-radius: 50%;
+  animation: racoon-body 2s infinite;
+
+}
+
+
+.racoon.head.tail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #f2c94c;
+  border-radius: 50%;
+  animation: racoon-tail 2s infinite;
+
+}
+
+
+.racoon.body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: #f2c94c;
+  border-radius: 50%;
+  animation: racoon-body 2s infinite;
+
+}
+
+
+.racoon.leg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: #f2c94c;
+  border-radius: 50%;
+  animation: racoon-leg 2s infinite;
+
+}
+
+
+.racoon.leg:nth-child(1) {
+  animation-delay: 0.2s;
+
+}
+
+
+.racoon.leg:nth-child(2) {
+  animation-delay: 0.4s;
+
+}
+
+
+@keyframes racoon-move {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+
+}
+
+
+@keyframes racoon-head {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+}
+
+</style>
+
+    <div class="racoon">
         <div class="head">
-            <div class="eye left"></div>
-            <div class="eye right"></div>
-            <div class="nose"></div>
+            <div class="ear"></div>
+            <div class="ear"></div>
+            <div class="body"></div>
+            <div class="tail"></div>
         </div>
-        <div class="ear left"></div>
-        <div class="ear right"></div>
+        <div class="body"></div>
+        <div class="leg"></div>
+        <div class="leg"></div>
+
     </div>
 </body>
 
