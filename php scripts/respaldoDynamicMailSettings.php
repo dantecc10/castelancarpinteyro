@@ -10,7 +10,7 @@ require_once('../vendor/phpmailer/phpmailer/src/PHPMailer.php');
 require_once('../vendor/phpmailer/phpmailer/src/SMTP.php');
 require_once('../vendor/phpmailer/phpmailer/src/Exception.php');
 
-//$mail->SMTPDebug = 3;
+$mail->SMTPDebug = 3;
 $mail = new PHPMailer;
 $mail->IsSMTP();
 $mail->Host = "castelancarpinteyro.com";

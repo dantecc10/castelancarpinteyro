@@ -20,8 +20,8 @@ include "../../php scripts/secrets.php.php";
 
 $data = generatePasskey('newsletter');
 
-//$mail->SMTPDebug    = 3;
 $mail = new PHPMailer;
+$mail->SMTPDebug = 3;
 $mail->IsSMTP();
 $mail->Host = "castelancarpinteyro.com"; #'classicandsacrum.com';   /*Servidor SMTP no pongas la ip, pon el nombre de la dns inversa*/																		
 $mail->SMTPSecure = 'TLS';   /*Protocolo SSL o TLS*/
