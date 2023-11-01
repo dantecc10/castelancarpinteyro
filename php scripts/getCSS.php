@@ -17,7 +17,7 @@ function getOnlineCSS($urls)
 
         // Verificar si hubo algún error en la solicitud
         if (curl_errno($ch)) {
-            echo 'Error al obtener el archivo CSS: ' . curl_error($ch);
+            //echo 'Error al obtener el archivo CSS: ' . curl_error($ch);
         }
 
         // Cerrar la sesión cURL
