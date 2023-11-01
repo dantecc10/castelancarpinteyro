@@ -13,7 +13,7 @@ $ciSupCont2 = '</ol></div><!-- End: Carousel Hero --></section><!-- End: Brands 
 
 //Contenedor 1 (carousel item): dinámico
 $apCont1["a"] = ['<div class="carousel-item"><div class="bg-light border rounded border-light ', '<div class="carousel-item active"><div class="bg-light border rounded border-light '];
-$apCont1_1 = ' carousel-hero jumbotron py-7 px-4">';
+$apCont1_1 = ' carousel-hero jumbotron py-5 px-4">';
 $ciCont1 = '</div></div>';
 
 //Contenedor 2 (carousel index): dinámico
