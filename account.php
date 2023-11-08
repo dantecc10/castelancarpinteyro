@@ -80,9 +80,7 @@
                         <div class="card mb-3">
                             <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="assets/img/avatar-icon.webp" width="160" height="160" />
                                 <div class="mb-3">
-                                    
-                                        <input type="image" alt="Cambiar ícono" class="btn btn-primary  btn-sm color-fresco-degradado" enabled />
-                                    
+                                    <input type="image" alt="Cambiar ícono" class="btn btn-primary  btn-sm color-fresco-degradado" enabled />
                                 </div>
                             </div>
                         </div>
@@ -197,7 +195,11 @@
                                             <div class="row">
                                                 <div class="col-lg-5">
                                                     <div class="mb-3"><label class="form-label" for="first_name"><strong>Correo
-                                                                profesional</strong></label><input id="first_name-1" class="form-control" type="text" placeholder="email@castelancarpinteyro.com" name="first_name" /></div>
+                                                                profesional</strong></label><input id="first_name-1" class="form-control" type="text" placeholder="<?php if ($_SESSION['email'] = "") {
+                                                                                                                                                                        echo "mail@castelancarpinteyro.com";
+                                                                                                                                                                    } else {
+                                                                                                                                                                        echo $_SESSION['email'];
+                                                                                                                                                                    } ?>" name="first_name" /></div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="mb-3"><label class="form-label" for="last_name"><strong>Fecha de
