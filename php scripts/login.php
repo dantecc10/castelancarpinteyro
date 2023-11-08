@@ -26,7 +26,7 @@ if ($resultado->num_rows > 0) {
         $_SESSION['apellidoMaterno'] = $datos->apellidoMaterno_usuario;
         $_SESSION['rol'] = $datos->rol_usuario;
         $_SESSION['usuario'] = $datos->nombreUsuario_usuario;
-        $_SESSION['img'] = ($datos->img_usuario);
+        $_SESSION['img'] = ("assets/img/avatar-icons/" . $datos->img_usuario);
         $_SESSION['nacimiento'] = $datos->nacimiento_usuario;
         $_SESSION['email'] = $datos->email_usuario;
         $_SESSION['emailDominio'] = $datos->email_dominio;

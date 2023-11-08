@@ -89,11 +89,7 @@ if (!isset($_SESSION["id"])) {
                 <div class="row mb-3">
                     <div class="col-lg-4">
                         <div class="card mb-3">
-                            <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="<?php if ($_SESSION['img'] = "") {
-                                                                                                                        echo "assets/img/avatar-icon.webp";
-                                                                                                                    } else {
-                                                                                                                        echo ("assets/img/avatar-icons/" . $_SESSION['img']);
-                                                                                                                    } ?>" width="160" height="160" />
+                            <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="<?php echo $_SESSION['img']; ?>" width="160" height="160" />
                                 <div class="mb-3">
                                     <input type="image" alt="Cambiar ícono" class="btn btn-primary  btn-sm color-fresco-degradado" enabled />
                                 </div>
