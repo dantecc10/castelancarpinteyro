@@ -81,7 +81,7 @@
                             <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="assets/img/avatar-icon.webp" width="160" height="160" />
                                 <div class="mb-3">
                                     <button class="btn btn-primary btn-sm color-fresco-degradado" type="button">
-                                        <input type="image" alt="Cambiar ícono" src="avatar" class="btn btn-primary btn-sm color-fresco-degradado" />
+                                        <input type="image" alt="Cambiar ícono" />
                                     </button>
                                 </div>
                             </div>
