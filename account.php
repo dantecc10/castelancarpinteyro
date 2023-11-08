@@ -203,7 +203,13 @@
                                                 </div>
                                                 <div class="col">
                                                     <div class="mb-3"><label class="form-label" for="last_name"><strong>Fecha de
-                                                                nacimiento</strong><br /></label><input class="form-control" type="date" readonly disabled /></div>
+                                                                nacimiento</strong><br /></label><input class="form-control" type="date" min="2005-mm-dd" <?php echo 'value="';
+                                                                                                                                                            if ($_SESSION['nacimiento'] = "") {
+                                                                                                                                                                echo "2023-01-01";
+                                                                                                                                                            } else {
+                                                                                                                                                                echo $_SESSION['nacimiento'];
+                                                                                                                                                                echo '" readonly disabled';
+                                                                                                                                                            } ?> /></div>
                                                 </div>
                                             </div>
                                             <div class="mb-3"><button class="btn btn-primary btn-sm color-fresco-degradado" type="submit">Guardar cambios</button></div>
