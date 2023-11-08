@@ -169,17 +169,17 @@
                                             <div class="row">
                                                 <div class="col">
                                                     <div class="mb-3"><label class="form-label" for="username"><strong>Nombre de
-                                                                usuario</strong></label><input id="username" class="form-control" type="text" placeholder="<?php echo $_SESSION['usuario']; ?>" name="username" /></div>
+                                                                usuario</strong></label><input id="username" class="form-control" type="text" placeholder="<?php echo $_SESSION['usuario']; ?>" value="<?php echo $_SESSION['usuario']; ?>" name="username" /></div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="mb-3"><label class="form-label" for="email"><strong>Correo
-                                                                electrónico</strong></label><input id="email" class="form-control" type="email" placeholder="<?php echo $_SESSION['email']; ?>" name="email" />
+                                                                electrónico</strong></label><input id="email" class="form-control" type="email" placeholder="<?php echo $_SESSION['email']; ?>" value="<?php echo $_SESSION['email']; ?>" name="email" />
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-lg-3">
-                                                    <div class="mb-3"><label class="form-label" for="first_name"><strong>Nombre(s)</strong></label><input id="first_name" class="form-control" type="text" placeholder="<?php echo $_SESSION['nombre']; ?>" name="first_name" /></div>
+                                                    <div class="mb-3"><label class="form-label" for="first_name"><strong>Nombre(s)</strong></label><input id="first_name" class="form-control" type="text" placeholder="<?php echo $_SESSION['nombre']; ?>" value="<?php echo $_SESSION['nombre']; ?>" name="first_name" /></div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="mb-3">
@@ -187,7 +187,7 @@
                                                             <strong>Apellido
                                                                 paterno</strong>
                                                         </label>
-                                                        <input id="last_name1" class="form-control" type="text" placeholder="<?php echo $_SESSION['apellidoPaterno']; ?>" name="last_name1" />
+                                                        <input id="last_name1" class="form-control" type="text" placeholder="<?php echo $_SESSION['apellidoPaterno']; ?>" value="<?php echo $_SESSION['apellidoPaterno']; ?>" name="last_name1" />
                                                     </div>
                                                 </div>
                                                 <div class="col">
@@ -197,7 +197,7 @@
                                                                 materno</strong>
                                                             <br>
                                                         </label>
-                                                        <input id="last_name2" class="form-control" type="text" placeholder="<?php echo $_SESSION['apellidoMaterno']; ?>" name="last_name2" />
+                                                        <input id="last_name2" class="form-control" type="text" value="<?php echo $_SESSION['apellidoMaterno']; ?>" placeholder="<?php echo $_SESSION['apellidoMaterno']; ?>" name="last_name2" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -208,7 +208,11 @@
                                                                                                                                                                         echo "mail@castelancarpinteyro.com";
                                                                                                                                                                     } else {
                                                                                                                                                                         echo $_SESSION['email'];
-                                                                                                                                                                    } ?>" name="first_name" /></div>
+                                                                                                                                                                    } ?>" value="<?php if ($_SESSION['email'] = "") {
+                                                                                                                                                                                        echo "mail@castelancarpinteyro.com";
+                                                                                                                                                                                    } else {
+                                                                                                                                                                                        echo $_SESSION['email'];
+                                                                                                                                                                                    } ?>" name="first_name" /></div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="mb-3"><label class="form-label" for="last_name"><strong>Fecha de
@@ -239,7 +243,7 @@
                                                 <div class="col">
                                                     <div class="mb-3">
                                                         <label class="form-label" for="country">
-                                                            <strong>Country</strong></label><input id="country" class="form-control" type="text" placeholder="USA" name="country" />
+                                                            <strong>País</strong></label><input id="country" class="form-control" type="text" placeholder="USA" name="country" />
                                                     </div>
                                                 </div>
                                             </div>
