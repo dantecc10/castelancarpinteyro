@@ -247,7 +247,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="mb-3"><button class="btn btn-primary btn-sm color-fresco-degradado" type="submit">Save Settings</button></div>
+                                            <div class="mb-3"><button class="btn btn-primary btn-sm color-fresco-degradado" type="submit">Guardar cambios</button></div>
                                         </form>
                                     </div>
                                 </div>
