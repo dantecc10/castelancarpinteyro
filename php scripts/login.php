@@ -18,7 +18,7 @@ $resultado = $conexiónPDO->query($sql);
 // Verificar si se encontró un usuario válido
 if ($resultado->num_rows > 0) {
     // Acceso concedido, redireccionar a la página de inicio del sitio web
-    if ($datos = $resultado->fetch_object()) { //Asignación y confoguración de variables de sesión en arreglo de PHP
+    if ($datos = $resultado->fetch_object()) { //Asignación y configuración de variables de sesión en arreglo de PHP
         $_SESSION['Iniciada'] = true;
         $_SESSION['id'] = $datos->id_usuario;
         $_SESSION['nombre'] = $datos->nombre_usuario;
@@ -26,7 +26,7 @@ if ($resultado->num_rows > 0) {
         $_SESSION['apellidoMaterno'] = $datos->apellidoMaterno_usuario;
         $_SESSION['rol'] = $datos->rol_usuario;
         $_SESSION['usuario'] = ($datos->nombreUsuario_usuario != "") ? "@usuario" : $datos->nombreUsuario_usuario;
-
+        $_SESSION['img'] = ($datos->img_usuario);
         $_SESSION['nacimiento'] = $datos->nacimiento_usuario;
         $_SESSION['email'] = $datos->email_usuario;
         $_SESSION['emailDominio'] = $datos->email_dominio;

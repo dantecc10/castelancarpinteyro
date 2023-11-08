@@ -58,7 +58,12 @@
                     <li class="nav-item"><a class="nav-link" href="Productos.php">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="Software.php">Software</a></li>
                 </ul>
-                <div class="div1-efecto"><a class="btn btn-primary shadow div2-efecto" role="button" href="https://castelancarpinteyro.com">Inicio</a></div>
+                <div class="div1-efecto"><a class="btn btn-primary shadow div2-efecto" role="button" <?php if (isset($_SESSION['Iniciada'])) {
+                                                                                                            echo (' href="account.php">' . $_SESSION['nombre']);
+                                                                                                        } else {
+                                                                                                            echo ' href="login.php">Iniciar sesión';
+                                                                                                        }
+                                                                                                        ?></a></div>
             </div>
         </div>
     </nav><!-- End: Navbar Centered Links -->
@@ -78,7 +83,11 @@
                 <div class="row mb-3">
                     <div class="col-lg-4">
                         <div class="card mb-3">
-                            <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="assets/img/avatar-icon.webp" width="160" height="160" />
+                            <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="<?php if ($_SESSION['img'] = "") {
+                                                                                                                        echo "assets/img/avatar-icon.webp";
+                                                                                                                    } else {
+                                                                                                                        echo ("assets/img/avatar-icons/" . $_SESSION['img']);
+                                                                                                                    } ?>" width="160" height="160" />
                                 <div class="mb-3">
                                     <input type="image" alt="Cambiar ícono" class="btn btn-primary  btn-sm color-fresco-degradado" enabled />
                                 </div>
