@@ -175,7 +175,15 @@ if (!isset($_SESSION["id"])) {
                                             <div class="row">
                                                 <div class="col">
                                                     <div class="mb-3"><label class="form-label" for="username"><strong>Nombre de
-                                                                usuario</strong></label><input id="username" class="form-control" type="text" placeholder="<?php echo $_SESSION['usuario']; ?>" value="<?php echo $_SESSION['usuario']; ?>" name="username" /></div>
+                                                                usuario</strong></label><input id="username" class="form-control" type="text" placeholder="<?php if ($_SESSION['usuario'] != "") {
+                                                                                                                                                                echo ("@" . $_SESSION['usuario']);
+                                                                                                                                                            } else {
+                                                                                                                                                                echo "@usuario";
+                                                                                                                                                            } ?>" value="<?php if ($_SESSION['usuario'] != "") {
+                                                                                                                                                                                echo ("@" . $_SESSION['usuario']);
+                                                                                                                                                                            } else {
+                                                                                                                                                                                echo "@usuario";
+                                                                                                                                                                            } ?>" name="username" /></div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="mb-3"><label class="form-label" for="email"><strong>Correo
