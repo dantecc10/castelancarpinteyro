@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="utf-8">
@@ -26,23 +26,23 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image"
         content="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="assets/img/castelancarpinteyro/DanteDEV.png">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="assets/img/castelancarpinteyro/DanteDEV.png">
     <link rel="icon" type="image/png" sizes="4405x3333"
-        href="../assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
+        href="assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="assets/img/castelancarpinteyro/DanteDEV.png">
     <link rel="icon" type="image/png" sizes="4405x3333"
-        href="../assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="manifest" href="../manifest.json">
+        href="assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="../assets/css/Accordion.css">
-    <link rel="stylesheet" href="../assets/css/Carousel-Hero.css">
-    <link rel="stylesheet" href="../assets/css/extra.css">
+    <link rel="stylesheet" href="assets/css/Accordion.css">
+    <link rel="stylesheet" href="assets/css/Carousel-Hero.css">
+    <link rel="stylesheet" href="assets/css/extra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="../assets/css/uiverse.css">
+    <link rel="stylesheet" href="assets/css/uiverse.css">
 </head>
 
 <body>
@@ -89,9 +89,13 @@
                     <div class="col-lg-4">
                         <div class="card mb-3">
                             <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4"
-                                    src="../assets/img/team/avatar1.jpg" width="160" height="160" />
-                                <div class="mb-3"><button class="btn btn-primary btn-sm color-fresco-degradado"
-                                        type="button">Change Photo</button></div>
+                                    src="assets/img/avatar-icon.webp" width="160" height="160" />
+                                <div class="mb-3">
+                                    <button class="btn btn-primary btn-sm color-fresco-degradado" type="button">
+                                        Change Photo
+                                    </button>
+                                    <input type="image" alt="Cambiar ícono" src="avatar" class="btn btn-primary btn-sm color-fresco-degradado" />
+                                </div>
                             </div>
                         </div>
                         <div class="card shadow mb-4">
@@ -389,9 +393,9 @@
     </footer><!-- End: Footer Multi Column -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/bs-init.js"></script>
-    <script src="../assets/js/bold-and-dark.js"></script>
-    <script src="../assets/js/course-navigation.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/bold-and-dark.js"></script>
+    <script src="assets/js/course-navigation.js"></script>
 </body>
 
 </html>
