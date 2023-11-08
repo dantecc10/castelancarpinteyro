@@ -25,6 +25,9 @@ if ($resultado->num_rows > 0) {
         $_SESSION['apellidoPaterno'] = $datos->apellidoPaterno_usuario;
         $_SESSION['apellidoMaterno'] = $datos->apellidoMaterno_usuario;
         $_SESSION['rol'] = $datos->rol_usuario;
+        $_SESSION['usuario'] = ($datos->nombreUsuario_usuario != "") ? "@usuario" : $datos->nombreUsuario_usuario;
+
+        $_SESSION['nacimiento_usuario'] = $datos->nacimiento_usuario;
         $_SESSION['email'] = $datos->email_usuario;
         $_SESSION['emailDominio'] = $datos->email_dominio;
     }
