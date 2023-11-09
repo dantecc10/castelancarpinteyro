@@ -89,9 +89,13 @@ if (!isset($_SESSION["id"])) {
                 <div class="row mb-3">
                     <div class="col-lg-4">
                         <div class="card mb-3">
-                            <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="<?php echo $_SESSION['img']; ?>" width="160" height="160" />
+                            <div class="card-body text-center shadow">
+                                <img class="rounded-circle mb-3 mt-4" src="<?php echo $_SESSION['img']; ?>" width="160" height="160" />
                                 <div class="mb-3">
-                                    <input type="image" alt="Cambiar ícono" class="btn btn-primary  btn-sm color-fresco-degradado" enabled />
+                                    <form action="php scripts/change_image.php" method="post" enctype="multipart/form-data">
+                                        <input type="file" accept="image/*" alt="Cambiar ícono" class="btn btn-primary  btn-sm color-fresco-degradado" enabled />
+                                        <input type="text" hidden name="src" id="src_input" value="<?php echo $_SESSION['img']; ?>">
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -226,12 +230,11 @@ if (!isset($_SESSION["id"])) {
                                                 </div>
                                                 <div class="col">
                                                     <div class="mb-3"><label class="form-label" for="last_name"><strong>Fecha de
-                                                                nacimiento</strong><br /></label><input class="form-control" type="date" min="2005-mm-dd" <?php echo 'value="';
+                                                                nacimiento</strong><br /></label><input class="form-control" type="date" min="2005-mm-dd" <?php
                                                                                                                                                             if ($_SESSION['nacimiento'] = "") {
-                                                                                                                                                                echo "2023-01-01";
+                                                                                                                                                                echo 'value="2023-01-01"';
                                                                                                                                                             } else {
-                                                                                                                                                                echo $_SESSION['nacimiento'];
-                                                                                                                                                                echo '"';
+                                                                                                                                                                echo ('value="' . $_SESSION['nacimiento'] . '"');
                                                                                                                                                             } ?> /></div>
                                                 </div>
                                             </div>
