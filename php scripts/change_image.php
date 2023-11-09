@@ -18,7 +18,7 @@ if (!file_exists($url_insert)) {
 
 //movemos el archivo de la carpeta temporal a la carpeta objetivo y verificamos si fue exitoso
 if (move_uploaded_file($url_temp, $url_target)) {
-    echo "El archivo " . $url_target . htmlspecialchars(basename($file)) . " ha sido cargado con éxito.";
+    echo "El archivo " . htmlspecialchars(basename($file)) . " ha sido cargado con éxito.";
 } else {
     echo "Ha habido un error al cargar tu archivo (" . htmlspecialchars(basename($file)) . ").";
 }
