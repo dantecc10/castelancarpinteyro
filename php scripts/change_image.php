@@ -30,7 +30,7 @@ unlink($url_target);
 // Conectar a la base de datos
 $db = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
 
-$query = "UPDATE `usuarios` SET `img_usuario` = $file WHERE (`id_usuario` = ?)";
+$query = "UPDATE `usuarios` SET `img_usuario` = '$file' WHERE (`id_usuario` = ?)";
 $stmt = $db->prepare($query);
 $stmt->bind_param("i", $_SESSION['id']);
 $id = $db->real_escape_string($_SESSION['id']);
