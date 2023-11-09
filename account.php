@@ -368,7 +368,8 @@ if (!isset($_SESSION["id"])) {
                                                     </div>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="mb-3"><label class="form-label" for="email">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="email">
                                                             <strong>
                                                                 Correo electrónico
                                                             </strong>
