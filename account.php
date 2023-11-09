@@ -350,26 +350,47 @@ if (!isset($_SESSION["id"])) {
                                         <form>
                                             <div class="row">
                                                 <div class="col">
-                                                    <div class="mb-3"><label class="form-label" for="username"><strong>Nombre de
-                                                                usuario</strong></label><input id="username" class="form-control" type="text" placeholder="<?php if ($_SESSION['usuario'] != "") {
-                                                                                                                                                                echo ("@" . $_SESSION['usuario']);
-                                                                                                                                                            } else {
-                                                                                                                                                                echo "@usuario";
-                                                                                                                                                            } ?>" value="<?php if ($_SESSION['usuario'] != "") {
-                                                                                                                                                                                echo ("@" . $_SESSION['usuario']);
-                                                                                                                                                                            } else {
-                                                                                                                                                                                echo "@usuario";
-                                                                                                                                                                            } ?>" name="username" /></div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="username">
+                                                            <strong>
+                                                                Nombre de usuario
+                                                            </strong>
+                                                        </label>
+                                                        <input id="username" class="form-control" type="text" placeholder="<?php if ($_SESSION['usuario'] != "") {
+                                                                                                                                echo ("@" . $_SESSION['usuario']);
+                                                                                                                            } else {
+                                                                                                                                echo "@usuario";
+                                                                                                                            } ?>" value="<?php if ($_SESSION['usuario'] != "") {
+                                                                                                                                                echo ("@" . $_SESSION['usuario']);
+                                                                                                                                            } else {
+                                                                                                                                                echo "@usuario";
+                                                                                                                                            } ?>" name="username" />
+                                                    </div>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="mb-3"><label class="form-label" for="email"><strong>Correo
-                                                                electrónico</strong></label><input id="email" class="form-control" type="email" placeholder="<?php echo $_SESSION['email']; ?>" value="<?php echo $_SESSION['email']; ?>" name="email" />
+                                                    <div class="mb-3"><label class="form-label" for="email">
+                                                            <strong>
+                                                                Correo electrónico
+                                                            </strong>
+                                                        </label>
+                                                        <input id="email" class="form-control" type="email" placeholder="<?php if ($_SESSION['email'] != "") {
+                                                                                                                                echo $_SESSION['email'];
+                                                                                                                            } ?>" value="<?php if ($_SESSION['email'] != "") {
+                                                                                                                                                echo $_SESSION['email'];
+                                                                                                                                            } ?>" name="email" />
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-lg-3">
-                                                    <div class="mb-3"><label class="form-label" for="first_name"><strong>Nombre(s)</strong></label><input id="first_name" class="form-control" type="text" placeholder="<?php echo $_SESSION['nombre']; ?>" value="<?php echo $_SESSION['nombre']; ?>" name="first_name" /></div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="first_name">
+                                                            <strong>
+                                                                Nombre(s)
+                                                            </strong>
+                                                        </label>
+                                                        <input id="first_name" class="form-control" type="text" placeholder="<?php echo $_SESSION['nombre']; ?>" value="<?php echo $_SESSION['nombre']; ?>" name="first_name" />
+                                                    </div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="mb-3">
@@ -394,24 +415,32 @@ if (!isset($_SESSION["id"])) {
                                             <div class="row">
                                                 <div class="col-lg-5">
                                                     <div class="mb-3"><label class="form-label" for="first_name"><strong>Correo
-                                                                profesional</strong></label><input id="first_name-1" class="form-control" type="email" placeholder="<?php if ($_SESSION['email'] = "") {
-                                                                                                                                                                        echo "mail@castelancarpinteyro.com";
-                                                                                                                                                                    } else {
-                                                                                                                                                                        echo $_SESSION['email'];
-                                                                                                                                                                    } ?>" value="<?php if ($_SESSION['email'] = "") {
-                                                                                                                                                                                        echo "mail@castelancarpinteyro.com";
-                                                                                                                                                                                    } else {
-                                                                                                                                                                                        echo $_SESSION['email'];
-                                                                                                                                                                                    } ?>" name="first_name" /></div>
+                                                                profesional
+                                                            </strong>
+                                                        </label>
+                                                        <input id="first_name-1" class="form-control" type="email" placeholder="<?php if ($_SESSION['emailDominio'] != "") {
+                                                                                                                                    echo $_SESSION['emailDominio'];
+                                                                                                                                } else {
+                                                                                                                                    echo "usuario@castelancarpinteyro.com";
+                                                                                                                                } ?>" value="<?php if ($_SESSION['emailDominio'] != "") {
+                                                                                                                                                    echo $_SESSION['emailDominio'];
+                                                                                                                                                } else {
+                                                                                                                                                    echo "usuario@castelancarpinteyro.com";
+                                                                                                                                                } ?>" name="emailDominio" />
+                                                    </div>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="mb-3"><label class="form-label" for="last_name"><strong>Fecha de
-                                                                nacimiento</strong><br /></label><input class="form-control" type="date" min="2005-mm-dd" <?php
-                                                                                                                                                            if ($_SESSION['nacimiento'] = "") {
-                                                                                                                                                                echo 'value="2023-01-01"';
-                                                                                                                                                            } else {
-                                                                                                                                                                echo ('value="' . $_SESSION['nacimiento'] . '"');
-                                                                                                                                                            } ?> /></div>
+                                                    <div class="mb-3"><label class="form-label" for="last_name">
+                                                            <strong>Fecha de nacimiento</strong>
+                                                            <br />
+                                                        </label>
+                                                        <input class="form-control" type="date" <?php
+                                                                                                if ($_SESSION['nacimiento'] = "") {
+                                                                                                    echo 'value="2023-01-01"';
+                                                                                                } else {
+                                                                                                    echo ('value="' . $_SESSION['nacimiento'] . '"');
+                                                                                                } ?> />
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="mb-3"><button class="btn btn-primary btn-sm color-fresco-degradado" type="submit">Guardar cambios</button></div>
