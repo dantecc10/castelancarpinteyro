@@ -77,39 +77,21 @@
             </div>
             <div class="row row-cols-2 row-cols-md-3 mx-auto" style="max-width: 700px;">
                 <div class="col mb-4">
-                    <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="../assets/img/team/avatar4.jpg">
+                    <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="assets/img/team/dante.jpg">
                         <h5 class="fw-bold mb-0"><strong>Dante Castelán Carpinteyro</strong></h5>
                         <p class="text-muted mb-2">Desarrollador</p>
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="../assets/img/team/avatar6.jpg">
+                    <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="assets/img/team/jeremy.jpeg">
                         <h5 class="fw-bold mb-0"><strong>Jeremy Hernández Balderas</strong></h5>
                         <p class="text-muted mb-2">Desarrollador</p>
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="../assets/img/team/avatar5.jpg">
+                    <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="assets/img/team/avatar5.jpg">
                         <h5 class="fw-bold mb-0"><strong>Deiby Graciano Agudelo</strong></h5>
                         <p class="text-muted mb-2">Desarrollador</p>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="../assets/img/team/avatar3.jpg">
-                        <h5 class="fw-bold mb-0"><strong>John Smith</strong></h5>
-                        <p class="text-muted mb-2">Erat netus</p>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="../assets/img/team/avatar1.jpg">
-                        <h5 class="fw-bold mb-0"><strong>John Smith</strong></h5>
-                        <p class="text-muted mb-2">Erat netus</p>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="../assets/img/team/avatar2.jpg">
-                        <h5 class="fw-bold mb-0"><strong>John Smith</strong></h5>
-                        <p class="text-muted mb-2">Erat netus</p>
                     </div>
                 </div>
             </div>
