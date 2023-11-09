@@ -38,6 +38,7 @@ $result = $db->query($query);
 // Verifica si la consulta se ejecutó con éxito
 if ($result) {
     echo "Actualización exitosa.";
+    $_SESSION['img'] = ("assets/img/avatar-icons/" . $file);
 } else {
     echo "Error al actualizar: " . $db->error;
 }
