@@ -3023,3 +3023,43 @@ To https://github.com/dantecc10/castelancarpinteyro.git
    b9b69b3..6ff0ef1  main -> main
 
 
+----------
+
+Wed Nov 08 2023 22:53:39 GMT-0600 (hora estándar central)
+
+warning: in the working copy of 'Exportaciones/Exportaciones/account.html', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Wed Nov 08 2023 22:53:39 GMT-0600 (hora estándar central)
+
+warning: in the working copy of 'Exportaciones/account.html', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Wed Nov 08 2023 22:53:39 GMT-0600 (hora estándar central)
+
+warning: in the working copy of 'Exportaciones/mail-template.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'sitemap.xml', LF will be replaced by CRLF the next time Git touches it
+
+
+----------
+
+Wed Nov 08 2023 22:53:42 GMT-0600 (hora estándar central)
+
+remote: 
+remote: GitHub found 1 vulnerability on dantecc10/castelancarpinteyro's default branch (1 high). To find out more, visit:        
+remote:      https://github.com/dantecc10/castelancarpinteyro/security/dependabot/1        
+remote: 
+
+
+----------
+
+Wed Nov 08 2023 22:53:42 GMT-0600 (hora estándar central)
+
+To https://github.com/dantecc10/castelancarpinteyro.git
+   42bbd57..e73147e  main -> main
+
+
