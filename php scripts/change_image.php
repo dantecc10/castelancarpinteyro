@@ -20,7 +20,7 @@ if (!file_exists($url_insert)) {
 if (move_uploaded_file($url_temp, $url_target)) {
     echo "El archivo " . htmlspecialchars(basename($file)) . " ha sido cargado con éxito.";
 } else {
-    echo "Ha habido un error al cargar tu archivo.";
+    echo "Ha habido un error al cargar tu archivo (" . htmlspecialchars(basename($file)) . ").";
 }
 
 $url_target = (str_replace('\\', '/', $url_insert) . '/' . $lastImg);
