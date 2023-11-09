@@ -36,7 +36,7 @@ if ($result->num_rows > 0) {
     $password = $_POST['password'];
 
 
-    $sql = "INSERT INTO `usuarios` VALUES('', ?, ?, ?, 2, ?, '', '', ?, '', '', 0);";
+    $sql = "INSERT INTO `usuarios` VALUES('', ?, ?, ?, 2, ?, NULL, NULL, ?, NULL, NULL, 0);";
     $stmt = $conexiónPDO->prepare($sql);
 
     // Limpiar y vincular los parámetros
