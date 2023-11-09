@@ -375,9 +375,13 @@ if (!isset($_SESSION["id"])) {
                                                         </label>
                                                         <input id="email" class="form-control" type="email" placeholder="<?php if ($_SESSION['email'] != "") {
                                                                                                                                 echo $_SESSION['email'];
+                                                                                                                            } else {
+                                                                                                                                echo "usuario@correo.com";
                                                                                                                             } ?>" value="<?php if ($_SESSION['email'] != "") {
-                                                                                                                                                echo $_SESSION['email'];
-                                                                                                                                            } ?>" name="email" />
+                                                                                                                                                    echo $_SESSION['email'];
+                                                                                                                                                } else {
+                                                                                                                                                    echo "usuario@correo.com";
+                                                                                                                                                } ?>" name="email" />
                                                     </div>
                                                 </div>
                                             </div>
