@@ -104,6 +104,7 @@ if (!isset($_SESSION["id"])) {
                                                 display: flex;
                                                 align-items: center;
                                                 justify-content: center;
+                                                padding: 5% 0% 5% 0%;
                                             }
 
                                             .input-div {
