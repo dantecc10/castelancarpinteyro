@@ -94,7 +94,7 @@ if (!isset($_SESSION["id"])) {
                                 <div class="mb-3">
                                     <form action="php scripts/change_image.php" method="post" enctype="multipart/form-data">
                                         <label for="Ícono">Carga tu nueva imagen</label>
-                                        <input type="file" style="color: transparent;" accept="image/*" class="btn btn-sm" enabled name="Ícono" />
+                                        <input type="file" style="background-color: blue; color: white; border-radius: 10px;" accept="image/*" class="btn btn-sm" enabled name="Ícono" />
                                         <input type="text" hidden name="src" id="src_input" value="<?php echo $_SESSION['img']; ?>">
                                         <input type="submit" value="Cargar imagen" class="btn btn-primary">
                                     </form>
