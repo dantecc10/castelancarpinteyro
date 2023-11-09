@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="assets/img/team/avatar5.jpg">
+                    <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="assets/img/team/deiby.jpg">
                         <h5 class="fw-bold mb-0"><strong>Deiby Graciano Agudelo</strong></h5>
                         <p class="text-muted mb-2">Desarrollador</p>
                     </div>
