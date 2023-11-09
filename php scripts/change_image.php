@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $file = $_FILES["Ícono"]["name"];
 $lastImg = $_POST['src'];
 
