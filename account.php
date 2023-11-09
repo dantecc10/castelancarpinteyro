@@ -142,10 +142,6 @@ if (!isset($_SESSION["id"])) {
                                 <div class="mb-3">
                                     <form action="php scripts/change_image.php" method="post" enctype="multipart/form-data">
                                         <label for="Ícono">Carga tu nueva imagen</label>
-                                        <!--
-                                            <input type="file" accept="image/*" enabled name="Ícono" />
-
-                                        -->
                                         <style>
                                             .input-label {
                                                 position: relative;
