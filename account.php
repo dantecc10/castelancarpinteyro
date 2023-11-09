@@ -149,8 +149,8 @@ if (!isset($_SESSION["id"])) {
                                         <style>
                                             .input-label {
                                                 position: relative;
-                                                width: 80%;
-                                                height: 80%;
+                                                width: 70%;
+                                                height: 70%;
                                                 aspect-ratio: 1 / 1;
                                                 border-radius: 50%;
                                                 border: 2px solid rgb(1, 235, 252);
