@@ -28,19 +28,19 @@
     <meta property="og:image" content="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
-    <link rel="icon" type="image/png" sizes="4405x3333" href="../assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
-    <link rel="icon" type="image/png" sizes="4405x3333" href="../assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="assets/img/castelancarpinteyro/DanteDEV.png">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="assets/img/castelancarpinteyro/DanteDEV.png">
+    <link rel="icon" type="image/png" sizes="4405x3333" href="assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="assets/img/castelancarpinteyro/DanteDEV.png">
+    <link rel="icon" type="image/png" sizes="4405x3333" href="assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../assets/css/Carousel-Hero.css">
-    <link rel="stylesheet" href="../assets/css/extra.css">
-    <link rel="stylesheet" href="../assets/css/uiverse.css">
+    <link rel="stylesheet" href="assets/css/Carousel-Hero.css">
+    <link rel="stylesheet" href="assets/css/extra.css">
+    <link rel="stylesheet" href="assets/css/uiverse.css">
 </head>
 
 <body style="/*background: url(&quot;design.jpg&quot;);*/background-position: 0 -60px;">
@@ -242,8 +242,8 @@
     </footer><!-- End: Footer Multi Column -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/bs-init.js"></script>
-    <script src="../assets/js/bold-and-dark.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/bold-and-dark.js"></script>
 </body>
 
 </html>

@@ -9,7 +9,7 @@ if (isset($_GET['email'])) {
 ?>
 <!--Inicia BSDesign-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="utf-8">
