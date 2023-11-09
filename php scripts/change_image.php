@@ -36,6 +36,7 @@ $stmt->bind_param("i", $_SESSION['id']);
 $id = $db->real_escape_string($_SESSION['id']);
 $stmt->execute();
 $result = $stmt->get_result();
+echo $result;
 
 $db->close();
 
