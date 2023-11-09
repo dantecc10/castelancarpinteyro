@@ -77,6 +77,19 @@ session_start();
                                     <a class="dropdown-item restrict-style" href="php scripts/logout.php">Cerrar sesión</a>
                                     <!-- Agrega más opciones según sea necesario -->
                                 </div>
+                                <style>
+                                    a.restrict-style {
+                                        color: white;
+                                        text-decoration: none;
+                                        background-color: #e02427;
+                                    }
+
+                                    a.restrict-style:hover {
+                                        color: #e02427;
+                                        text-decoration: none;
+                                        background-color: gray;
+                                    }
+                                </style>
                             <?php endif; ?>
                     </div>
                 </div>

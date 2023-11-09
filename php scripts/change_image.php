@@ -19,31 +19,30 @@ if (!file_exists($url_insert)) {
 //movemos el archivo de la carpeta temporal a la carpeta objetivo y verificamos si fue exitoso
 if (move_uploaded_file($url_temp, $url_target)) {
     echo "El archivo " . htmlspecialchars(basename($file)) . " ha sido cargado con éxito.";
+
+    $url_target = (str_replace('\\', '/', $url_insert) . '/' . $lastImg);
+    //Eliminar la imagen anterior
+    unlink($url_target);
+
+    $db = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
+    $id = $_SESSION['id'];
+
+    $query = "UPDATE `usuarios` SET `img_usuario` = '$file' WHERE (`id_usuario` = $id)";
+
+    // Utiliza el método query para ejecutar la consulta
+    $result = $db->query($query);
+
+    // Verifica si la consulta se ejecutó con éxito
+    if ($result) {
+        echo "Actualización exitosa.";
+        $_SESSION['img'] = ("assets/img/avatar-icons/" . $file);
+    } else {
+        echo "Error al actualizar: " . $db->error;
+    }
+
+    // Cierra la conexión
+    $db->close();
+    //header("Location: ../account.php");
 } else {
     echo "Ha habido un error al cargar tu archivo (" . htmlspecialchars(basename($file)) . ").";
 }
-
-$url_target = (str_replace('\\', '/', $url_insert) . '/' . $lastImg);
-//Eliminar la imagen anterior
-unlink($url_target);
-
-$db = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
-$id = $_SESSION['id'];
-
-$query = "UPDATE `usuarios` SET `img_usuario` = '$file' WHERE (`id_usuario` = $id)";
-
-// Utiliza el método query para ejecutar la consulta
-$result = $db->query($query);
-
-// Verifica si la consulta se ejecutó con éxito
-if ($result) {
-    echo "Actualización exitosa.";
-    $_SESSION['img'] = ("assets/img/avatar-icons/" . $file);
-} else {
-    echo "Error al actualizar: " . $db->error;
-}
-
-// Cierra la conexión
-$db->close();
-
-//header("Location: ../account.php");

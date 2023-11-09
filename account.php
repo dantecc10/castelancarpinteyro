@@ -83,7 +83,7 @@ if (!isset($_SESSION["id"])) {
                                 <!-- Lista desplegable con opciones para usuarios autenticados -->
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <a class="dropdown-item" href="index.php">Inicio</a>
-                                    <a class="dropdown-item" href="account.php">Mi cuenta</a>
+                                    <!--<a class="dropdown-item" href="account.php">Mi cuenta</a>-->
                                     <a class="dropdown-item" href="cursos.php">Mis cursos</a>
                                     <a class="dropdown-item restrict-style" href="php scripts/logout.php">Cerrar sesión</a>
                                     <!--<a class="dropdown-item" href="signin.php">Registrarse</a>-->
