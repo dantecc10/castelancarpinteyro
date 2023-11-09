@@ -93,8 +93,10 @@ if (!isset($_SESSION["id"])) {
                                 <img class="rounded-circle mb-3 mt-4" src="<?php echo $_SESSION['img']; ?>" width="160" height="160" />
                                 <div class="mb-3">
                                     <form action="php scripts/change_image.php" method="post" enctype="multipart/form-data">
-                                        <input type="file" accept="image/*" alt="Cambiar ícono" class="btn btn-primary  btn-sm color-fresco-degradado" enabled />
+                                        <label for="Ícono">Carga tu nueva imagen</label>
+                                        <input type="file" accept="image/*" class="btn btn-sm" enabled name="Ícono" />
                                         <input type="text" hidden name="src" id="src_input" value="<?php echo $_SESSION['img']; ?>">
+                                        <input type="submit" value="Cargar imagen" class="btn-primary">
                                     </form>
                                 </div>
                             </div>
