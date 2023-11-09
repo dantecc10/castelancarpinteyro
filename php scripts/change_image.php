@@ -29,15 +29,9 @@ unlink($url_target);
 
 // Conectar a la base de datos
 $db = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
-
-$query = "UPDATE `usuarios` SET `img_usuario` = '$file' WHERE (`id_usuario` = ?)";
-$stmt = $db->prepare($query);
-$stmt->bind_param("i", $_SESSION['id']);
-$id = $db->real_escape_string($_SESSION['id']);
-$stmt->execute();
-$result = $stmt->get_result();
-echo $result;
-
+$id = $_SESSION['id'];
+$query = "UPDATE `usuarios` SET `img_usuario` = '$file' WHERE (`id_usuario` = $id)";
+$db->execute_query($query);
 $db->close();
 
 //header("Location: ../account.php");
