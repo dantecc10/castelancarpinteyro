@@ -214,7 +214,7 @@ if (!isset($_SESSION["id"])) {
                                             <div class="row">
                                                 <div class="col-lg-5">
                                                     <div class="mb-3"><label class="form-label" for="first_name"><strong>Correo
-                                                                profesional</strong></label><input id="first_name-1" class="form-control" type="text" placeholder="<?php if ($_SESSION['email'] = "") {
+                                                                profesional</strong></label><input id="first_name-1" class="form-control" type="email" placeholder="<?php if ($_SESSION['email'] = "") {
                                                                                                                                                                         echo "mail@castelancarpinteyro.com";
                                                                                                                                                                     } else {
                                                                                                                                                                         echo $_SESSION['email'];
@@ -231,7 +231,7 @@ if (!isset($_SESSION["id"])) {
                                                                                                                                                                 echo "2023-01-01";
                                                                                                                                                             } else {
                                                                                                                                                                 echo $_SESSION['nacimiento'];
-                                                                                                                                                                echo '" readonly disabled';
+                                                                                                                                                                echo '"';
                                                                                                                                                             } ?> /></div>
                                                 </div>
                                             </div>
