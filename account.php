@@ -82,10 +82,26 @@ if (!isset($_SESSION["id"])) {
                             <?php if (isset($_SESSION['nombre'])) : ?>
                                 <!-- Lista desplegable con opciones para usuarios autenticados -->
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="index.php">Inicio</a>
                                     <a class="dropdown-item" href="account.php">Mi cuenta</a>
-                                    <a class="dropdown-item" href="#">Otra opción</a>
+                                    <a class="dropdown-item" href="cursos.php">Mis cursos</a>
+                                    <a class="dropdown-item restrict-style" href="php scripts/logout.php">Cerrar sesión</a>
+                                    <!--<a class="dropdown-item" href="signin.php">Registrarse</a>-->
                                     <!-- Agrega más opciones según sea necesario -->
                                 </div>
+                                <style>
+                                    a.restrict-style {
+                                        color: white;
+                                        text-decoration: none;
+                                        background-color: #e02427;
+                                    }
+
+                                    a.restrict-style:hover {
+                                        color: #e02427;
+                                        text-decoration: none;
+                                        background-color: gray;
+                                    }
+                                </style>
                             <?php endif; ?>
                     </div>
                 </div>
@@ -94,7 +110,6 @@ if (!isset($_SESSION["id"])) {
 
 
                 <!--
-                    
                     <div class="div1-efecto"><a class="btn btn-primary shadow div2-efecto" role="button" <?php /* if (isset($_SESSION['nombre'])) {
                         echo (' href="account.php">' . $_SESSION['nombre']);
                     } else {

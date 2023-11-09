@@ -58,12 +58,28 @@ session_start();
                     <li class="nav-item"><a class="nav-link" href="products.php">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="Software.php">Software</a></li>
                 </ul>
-                <div class="div1-efecto"><a class="btn btn-primary shadow div2-efecto" role="button" <?php if (isset($_SESSION['Iniciada'])) {
-                                                                                                            echo (' href="account.php">' . $_SESSION['nombre']);
-                                                                                                        } else {
-                                                                                                            echo ' href="login.php">Iniciar sesión';
-                                                                                                        }
-                                                                                                        ?></a></div>
+                <div class="div1-efecto">
+                    <div class="dropdown"> <!-- Agregamos una clase "dropdown" al contenedor -->
+                        <a class="btn btn-primary shadow div2-efecto dropdown-toggle" role="button" <?php
+                                                                                                    if (isset($_SESSION['nombre'])) {
+                                                                                                        echo 'href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $_SESSION['nombre'];
+                                                                                                    } else {
+                                                                                                        echo 'href="login.php">Iniciar sesión';
+                                                                                                    }
+                                                                                                    ?> </a>
+                            <?php if (isset($_SESSION['nombre'])) : ?>
+                                <!-- Lista desplegable con opciones para usuarios autenticados -->
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <!--<a class="dropdown-item" href="index.php">Inicio</a>-->
+                                    <!--<a class="dropdown-item" href="signin.php">Registrarse</a>-->
+                                    <a class="dropdown-item" href="account.php">Mi cuenta</a>
+                                    <a class="dropdown-item" href="cursos.php">Mis cursos</a>
+                                    <a class="dropdown-item restrict-style" href="php scripts/logout.php">Cerrar sesión</a>
+                                    <!-- Agrega más opciones según sea necesario -->
+                                </div>
+                            <?php endif; ?>
+                    </div>
+                </div>
             </div>
         </div>
     </nav><!-- End: Navbar Centered Links -->
