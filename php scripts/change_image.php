@@ -6,7 +6,7 @@ $lastImg = $_POST['src'];
 $url_temp = $_FILES["Ícono"]["tmp_name"]; //Ruta temporal a donde se carga el archivo 
 
 //dirname(__FILE__) nos otorga la ruta absoluta hasta el archivo en ejecución
-$url_insert = (dirname(__FILE__, 1) . "/assets/img/avatar-icons/"); //Carpeta donde subiremos nuestros archivos
+$url_insert = (dirname(__FILE__, 2) . "/assets/img/avatar-icons/"); //Carpeta donde subiremos nuestros archivos
 
 //Ruta donde se guardara el archivo, usamos str_replace para reemplazar los "\" por "/"
 $url_target = str_replace('\\', '/', $url_insert) . '/' . $file;
