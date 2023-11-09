@@ -27,11 +27,22 @@ $url_target = (str_replace('\\', '/', $url_insert) . '/' . $lastImg);
 //Eliminar la imagen anterior
 unlink($url_target);
 
-// Conectar a la base de datos
 $db = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
 $id = $_SESSION['id'];
+
 $query = "UPDATE `usuarios` SET `img_usuario` = '$file' WHERE (`id_usuario` = $id)";
-$db->execute_query($query);
+
+// Utiliza el método query para ejecutar la consulta
+$result = $db->query($query);
+
+// Verifica si la consulta se ejecutó con éxito
+if ($result) {
+    echo "Actualización exitosa.";
+} else {
+    echo "Error al actualizar: " . $db->error;
+}
+
+// Cierra la conexión
 $db->close();
 
 //header("Location: ../account.php");
