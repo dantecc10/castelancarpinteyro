@@ -42,7 +42,7 @@ if (move_uploaded_file($url_temp, $url_target)) {
 
     // Cierra la conexión
     $db->close();
-    //header("Location: ../account.php");
+    header("Location: ../account.php");
 } else {
     echo "Ha habido un error al cargar tu archivo (" . htmlspecialchars(basename($file)) . ").";
 }
