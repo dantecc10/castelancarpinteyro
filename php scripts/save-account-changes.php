@@ -19,6 +19,11 @@ if (isset($_POST)) {
         echo ("Hay " . sizeof($actualizar) . " campo(s) por actualizar");
     }
 
+    echo ("Actualizar: <br>");
+    for ($i = 0; $i < sizeof($actualizar); $i++) {
+        echo ("Campo " . $actualizar[$i][1] . "; '" . $actualizar[$i][0] . "'.<br>");
+    }
+
 
 
     include "dynamicSecrets.php";
