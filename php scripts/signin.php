@@ -10,8 +10,10 @@ $email = $_POST['email'];
 $_SESSION['email'] = $email;
 $_SESSION['password'] = $_POST['password'];
 
-// Crear la conexión
-$conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
+include "dynamicSecrets.php";
+$data = generatePasskey('sql');
+
+$conexiónPDO = new mysqli("localhost", $data[0], $data[1], $data[2]);
 
 // Verificar la conexión
 if ($conexiónPDO->connect_error) {

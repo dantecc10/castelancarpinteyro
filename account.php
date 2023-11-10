@@ -50,6 +50,22 @@ if (!isset($_SESSION["id"])) {
 
 <body>
     <!-- Start: Navbar Centered Links -->
+    <?php
+    if (isset($_GET["msg"])) {
+        $msg = $_GET['msg'];
+        switch ($msg) {
+            case 'success':
+                echo "<script>alert('Información actualizada exitosamente.')</script>";
+                break;
+            case 'fail':
+                echo "<script>alert('Falló la actualización de información.')</script>";
+                break;
+            default:
+                # code...
+                break;
+        }
+    }
+    ?>
     <nav class="navbar navbar-dark navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="https://castelancarpinteyro.com">
@@ -347,7 +363,7 @@ if (!isset($_SESSION["id"])) {
                                         <p class="text-primary m-0 fw-bold">Configuración de usuario</p>
                                     </div>
                                     <div class="card-body">
-                                        <form>
+                                        <form method="post" action="php scripts/save-account-changes.php">
                                             <div class="row">
                                                 <div class="col">
                                                     <div class="mb-3">
@@ -379,10 +395,10 @@ if (!isset($_SESSION["id"])) {
                                                                                                                             } else {
                                                                                                                                 echo "usuario@correo.com";
                                                                                                                             } ?>" value="<?php if ($_SESSION['email'] != "") {
-                                                                                                                                                    echo $_SESSION['email'];
-                                                                                                                                                } else {
-                                                                                                                                                    echo "usuario@correo.com";
-                                                                                                                                                } ?>" name="email" />
+                                                                                                                                                echo $_SESSION['email'];
+                                                                                                                                            } else {
+                                                                                                                                                echo "usuario@correo.com";
+                                                                                                                                            } ?>" name="email" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -423,7 +439,7 @@ if (!isset($_SESSION["id"])) {
                                                                 profesional
                                                             </strong>
                                                         </label>
-                                                        <input id="first_name-1" class="form-control" type="email" placeholder="<?php if ($_SESSION['emailDominio'] != "") {
+                                                        <input id="pro-email" class="form-control" type="email" placeholder="<?php if ($_SESSION['emailDominio'] != "") {
                                                                                                                                     echo $_SESSION['emailDominio'];
                                                                                                                                 } else {
                                                                                                                                     echo "usuario@castelancarpinteyro.com";
@@ -439,12 +455,12 @@ if (!isset($_SESSION["id"])) {
                                                             <strong>Fecha de nacimiento</strong>
                                                             <br />
                                                         </label>
-                                                        <input class="form-control" type="date" <?php
-                                                                                                if ($_SESSION['nacimiento'] = "") {
-                                                                                                    echo 'value="2023-01-01"';
-                                                                                                } else {
-                                                                                                    echo ('value="' . $_SESSION['nacimiento'] . '"');
-                                                                                                } ?> />
+                                                        <input class="form-control" name="date" type="date" <?php
+                                                                                                            if ($_SESSION['nacimiento'] = "") {
+                                                                                                                echo 'value="2023-01-01"';
+                                                                                                            } else {
+                                                                                                                echo ('value="' . $_SESSION['nacimiento'] . '"');
+                                                                                                            } ?> />
                                                     </div>
                                                 </div>
                                             </div>

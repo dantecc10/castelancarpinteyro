@@ -1,7 +1,10 @@
 <?php
 session_destroy();
 session_start();
-$conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
+include "dynamicSecrets.php";
+$data = generatePasskey('sql');
+
+$conexiónPDO = new mysqli("localhost", $data[0], $data[1], $data[2]);
 
 if ($conexiónPDO->connect_error) {
     die("La conexión a la base de datos falló: " . $conexiónPDO->connect_error);

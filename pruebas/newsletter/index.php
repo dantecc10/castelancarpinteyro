@@ -5,8 +5,10 @@ function send()
     header("Location: envío.php");
 }
 
-// Conexión a la base de datos
-$conn = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
+include "dynamicSecrets.php";
+$data = generatePasskey('sql');
+
+$conn = new mysqli("localhost", $data[0], $data[1], $data[2]);
 
 // Verificar la conexión
 if ($conn->connect_error) {

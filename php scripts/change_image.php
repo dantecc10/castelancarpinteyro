@@ -24,7 +24,13 @@ if (move_uploaded_file($url_temp, $url_target)) {
     //Eliminar la imagen anterior
     unlink($url_target);
 
-    $db = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
+    // Crear la conexión
+    include "dynamicSecrets.php";
+    $data = generatePasskey('sql');
+
+    //$conexión = mysqli_connect("localhost", $data[0], $data[1], $data[2]);
+
+    $db = new mysqli("localhost", $data[0], $data[1], $data[2]);
     $id = $_SESSION['id'];
 
     $query = "UPDATE `usuarios` SET `img_usuario` = '$file' WHERE (`id_usuario` = $id)";

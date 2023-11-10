@@ -17,7 +17,12 @@ function generateKey($email)
 
     //$auth_key = 486753; // Debug 🐞
     // Crear la conexión
-    $conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
+    include "dynamicSecrets.php";
+    $data = generatePasskey('sql');
+
+    //$conexión = mysqli_connect("localhost", $data[0], $data[1], $data[2]);
+
+    $conexiónPDO = new mysqli("localhost", $data[0], $data[1], $data[2]);
 
     // Verificar la conexión
     if ($conexiónPDO->connect_error) {

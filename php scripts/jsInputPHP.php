@@ -7,9 +7,10 @@ if (isset($_POST["clave"])) {
 }
 
 $email = $_POST["email"];
+include "dynamicSecrets.php";
+$data = generatePasskey('sql');
 
-// Conectar a la base de datos
-$db = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
+$db = new mysqli("localhost", $data[0], $data[1], $data[2]);
 
 // Verificar si la clave y el email están en la tabla auth_keys
 $query = "SELECT * FROM `auth_keys` WHERE (`auth_key` = ?) AND (`related_email` = ?) AND (`status` = 'Enabled')";
