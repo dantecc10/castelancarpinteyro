@@ -373,13 +373,13 @@ if (!isset($_SESSION["id"])) {
                                                             </strong>
                                                         </label>
                                                         <input id="username" class="form-control" type="text" placeholder="<?php if ($_SESSION['usuario'] != "") {
-                                                                                                                                echo ("@" . $_SESSION['usuario']);
+                                                                                                                                echo ($_SESSION['usuario']);
                                                                                                                             } else {
                                                                                                                                 echo "@usuario";
                                                                                                                             } ?>" value="<?php if ($_SESSION['usuario'] != "") {
-                                                                                                                                                echo ("@" . $_SESSION['usuario']);
+                                                                                                                                                echo ($_SESSION['usuario']);
                                                                                                                                             } else {
-                                                                                                                                                echo "@usuario";
+                                                                                                                                                echo "";
                                                                                                                                             } ?>" name="username" />
                                                     </div>
                                                 </div>
