@@ -74,6 +74,8 @@ if (isset($_POST)) {
 
             $stmt->execute();
             $result = $stmt->get_result();
+
+            $_SESSION[$actualizar[$i][3]] = $nuevoValor;
             /* //Esto no valida quién sabe por qué, pero si se llega aquí, es exitoso
             if ($result) {
                 echo "Actualización exitosa. De un dato.";
@@ -83,7 +85,7 @@ if (isset($_POST)) {
             */
         }
         header("Location: ../account.php?msg=success");
-    }else{
+    } else {
         header("Location: ../account.php?msg=no-changes");
     }
 }
