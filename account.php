@@ -3,6 +3,7 @@ session_start();
 if (!isset($_SESSION["id"])) {
     header("Location: login.php");
 }
+$fechaPredeterminada = date("Y-m-d"); // Fecha actual
 ?>
 <!DOCTYPE html>
 <html lang="es-MX">
@@ -459,8 +460,8 @@ if (!isset($_SESSION["id"])) {
                                                             <br />
                                                         </label>
                                                         <input class="form-control" name="date" type="date" <?php
-                                                                                                            if ($_SESSION['nacimiento'] = "") {
-                                                                                                                echo 'value="2023-01-01"';
+                                                                                                            if ($_SESSION['nacimiento'] = null) {
+                                                                                                                echo 'value="'.$fechaPredeterminada.'"';
                                                                                                             } else {
                                                                                                                 echo ('value="' . $_SESSION['nacimiento'] . '"');
                                                                                                             } ?> />
