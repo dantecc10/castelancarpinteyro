@@ -460,7 +460,7 @@ $fechaPredeterminada = date("Y-m-d"); // Fecha actual
                                                             <br />
                                                         </label>
                                                         <?php
-                                                        // Atorado aquí
+                                                        // Atorado aquí, pero ya toca dormir
                                                         if (isset($_SESSION['nacimiento'])) {
                                                             echo ("<div class='form-control' style='background-color: gray; color: white;'><span>" . strval($_SESSION['nacimiento']) . "</span></div>");
                                                         } else {
