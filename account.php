@@ -60,6 +60,9 @@ if (!isset($_SESSION["id"])) {
             case 'fail':
                 echo "<script>alert('Falló la actualización de información.')</script>";
                 break;
+            case 'no-changes':
+                echo "<script>alert('No modificaste nada de información.')</script>";
+                break;
             default:
                 # code...
                 break;

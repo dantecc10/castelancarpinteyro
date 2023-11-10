@@ -10,20 +10,20 @@ if (isset($_POST)) {
     for ($i = 0; $i < sizeof($datos); $i++) {
         # Agregar un elemento al arreglo en el último índice
         if ($_POST[$datos[$i][0]] != $_SESSION[$datos[$i][1]]) {
-            echo ("Compara: " . $_POST[$datos[$i][0]] . " y " . $_SESSION[$datos[$i][1]] . ".<br>");
+            //echo ("Compara: " . $_POST[$datos[$i][0]] . " y " . $_SESSION[$datos[$i][1]] . ".<br>");
             array_push($actualizar, [$_POST[$datos[$i][0]], $i, $datos[$i][0], $datos[$i][1]]);
         }
     }
 
     if (sizeof($actualizar) > 0) {
-        echo ("Hay " . sizeof($actualizar) . " campo(s) por actualizar");
+        //echo ("Hay " . sizeof($actualizar) . " campo(s) por actualizar");
         include "dynamicSecrets.php";
         $data = generatePasskey('sql');
 
         $db = new mysqli("localhost", $data[0], $data[1], $data[2]);
-        echo ("Actualizar: <br>");
+        //echo ("Actualizar: <br>");
         for ($i = 0; $i < sizeof($actualizar); $i++) {
-            echo ("Campo " . $actualizar[$i][1] . "; '" . $actualizar[$i][0] . "'.<br>");
+            //echo ("Campo " . $actualizar[$i][1] . "; '" . $actualizar[$i][0] . "'.<br>");
 
             $id = $_SESSION['id'];
             $nuevoValor = $_POST[$actualizar[$i][2]];
@@ -55,7 +55,7 @@ if (isset($_POST)) {
                     break;
 
                 default:
-                    echo ("¡Error fatal!");
+                    //echo ("¡Error fatal!");
                     break;
             }
 
@@ -74,32 +74,16 @@ if (isset($_POST)) {
 
             $stmt->execute();
             $result = $stmt->get_result();
-
+            /* //Esto no valida quién sabe por qué, pero si se llega aquí, es exitoso
             if ($result) {
                 echo "Actualización exitosa. De un dato.";
             } else {
                 echo "Error al actualizar: " . $db->error;
             }
-            /*
-                $id = $_SESSION['id'];
-
-                $query = "UPDATE `usuarios` SET `img_usuario` = '$file' WHERE (`id_usuario` = $id)";
-
-                // Utiliza el método query para ejecutar la consulta
-                $result = $db->query($query);
-
-                // Verifica si la consulta se ejecutó con éxito
-                if ($result) {
-                    echo "Actualización exitosa.";
-                    $_SESSION['img'] = ("assets/img/avatar-icons/" . $file);
-                } else {
-                    echo "Error al actualizar: " . $db->error;
-                }
-            
-                // Cierra la conexión
-                $db->close();
             */
         }
-        //header("Location: ../account.php?msg=success");
+        header("Location: ../account.php?msg=success");
+    }else{
+        header("Location: ../account.php?msg=no-changes");
     }
 }
