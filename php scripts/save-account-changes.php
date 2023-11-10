@@ -9,6 +9,7 @@ if (isset($_POST)) {
     for ($i = 0; $i < sizeof($datos); $i++) {
         # Agregar un elemento al arreglo en el último índice
         if ($_POST[$datos[$i][0]] != $_SESSION[$datos[$i][1]]) {
+            echo ("Compara: " . $_POST[$datos[$i][0]] . " y " . $_SESSION[$datos[$i][1]] . ".<br>");
             array_push($actualizar, [$_POST[$datos[$i][0]], $i]);
         }
     }
