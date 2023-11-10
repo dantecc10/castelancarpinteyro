@@ -459,12 +459,14 @@ $fechaPredeterminada = date("Y-m-d"); // Fecha actual
                                                             <strong>Fecha de nacimiento</strong>
                                                             <br />
                                                         </label>
-                                                        <input class="form-control" name="date" type="date" <?php
-                                                                                                            if ($_SESSION['nacimiento'] = null) {
-                                                                                                                echo 'value="'.$fechaPredeterminada.'"';
-                                                                                                            } else {
-                                                                                                                echo ('value="' . $_SESSION['nacimiento'] . '"');
-                                                                                                            } ?> />
+                                                        <?php
+                                                        if ($_SESSION['nacimiento'] = null) {
+                                                            echo '<input class="form-control" name="date" type="date" value="' . $fechaPredeterminada . '"/>';
+                                                        } else {
+                                                            echo ("<div class='form-control' style='background-color: gray'><span>" . $_SESSION['nacimiento'] . "</span></div>");
+                                                        } ?>
+
+
                                                     </div>
                                                 </div>
                                             </div>
