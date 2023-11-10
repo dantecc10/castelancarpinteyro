@@ -460,6 +460,7 @@ $fechaPredeterminada = date("Y-m-d"); // Fecha actual
                                                             <br />
                                                         </label>
                                                         <?php
+                                                        // Atorado aquí
                                                         if ($_SESSION['nacimiento'] = null) {
                                                             echo '<input class="form-control" name="date" type="date" value="' . $fechaPredeterminada . '"/>';
                                                         } else {

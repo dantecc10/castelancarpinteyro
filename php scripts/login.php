@@ -35,8 +35,8 @@ if ($resultado->num_rows > 0) {
         $_SESSION['emailDominio'] = $datos->email_dominio;
     }
     $conexiónPDO->close();
-
-    header("Location: ../index.php");
+    $fecha=$_SESSION['nacimiento'];
+    header("Location: ../index.php?nacimiento=$fecha");
 } else {
     // Acceso denegado, mostrar un mensaje de error y redireccionar a la página de inicio de sesión
     echo "Nombre de usuario o contraseña incorrectos";
