@@ -39,8 +39,9 @@ if (($_SESSION['key'] != null) && $_SESSION['email'] != null) {
 
     $mail->ClearAllRecipients();
     $mail->AddAddress($_SESSION['email']);
-    $mail->AddCC("dante@castelancarpinteyro.com");
-    $mail->AddCC("dantecc10@gmail.com");
+    $mail->AddCC("store-keys@castelancarpinteyro.com");
+    #$mail->AddCC("dante@castelancarpinteyro.com");
+    #$mail->AddCC("dantecc10@gmail.com");
 
     $mail->IsHTML(true);  // Podemos activar o desactivar HTML en el mensaje
     $mail->Subject = 'Código de autenticación de dos factores.';
