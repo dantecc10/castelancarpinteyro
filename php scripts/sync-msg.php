@@ -49,16 +49,16 @@ $resultado = $conexiónPDO->query($sql);
 if ($resultado->num_rows > 0) {
     // Acceso concedido, redireccionar a la página de inicio del sitio web
     if ($datos = $resultado->fetch_object()) { //Asignación y configuración de variables de sesión en arreglo de PHP
-        if(isset($_SESSION['chat'])){
+        if (isset($_SESSION['chat'])) {
             if ($_SESSION['chat'] != $datos) {
                 // Hay mensajes nuevos
                 $_SESSION['chat'] = $datos;
-                echo "Añadimos mensajes.";
+                echo ("Añadimos mensajes.");
             } else {
                 // No hay nuevos mensajes
                 header("Location: build-chat.php");
             }
-        }else{
+        } else {
             $_SESSION['chat'] = $datos;
         }
     }
