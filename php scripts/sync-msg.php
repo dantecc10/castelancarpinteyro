@@ -48,7 +48,7 @@ if ($stmt) {
             $new_time_msg = ("" . $fila["time_msg"] . "");
 
             //$_SESSION['chat'][$i] = [intval($new_id_msg), strval($new_sender_msg), strval($new_receiver_msg), strval($new_content_msg), strval($new_type_msg)];
-            session_chat_store($new_id_msg, $new_sender_msg, $new_receiver_msg, $new_content_msg, $new_type_msg, $new_time_msg, $i);
+            session_chat_store($new_id_msg, $new_sender_msg, $new_receiver_msg, $new_content_msg, $new_type_msg, $new_time_msg, $$i);
 
             $i++;
         }
