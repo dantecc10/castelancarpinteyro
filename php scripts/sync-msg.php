@@ -25,7 +25,7 @@ $resultado = $stmt->get_result();
 // Verificar si se encontró un usuario válido
 if ($resultado->num_rows > 0) {
     $i = 0;
-    while ($row = $resultado->fetch_assoc()) {
+    while ($row = $resultado->fetch_object()) {
         $_SESSION['chat']['id_msg'][$i] = $row->id_msg;
         $_SESSION['chat']['sender_msg'][$i] = $row->sender_msg;
         $_SESSION['chat']['receiver_msg'][$i] = $row->receiver_msg;
