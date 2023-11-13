@@ -28,13 +28,14 @@ if ($stmt) {
         //while ($row = $resultado->fetch_assoc()) {
         //usar while para analizar todos los resultados
         #while ($row = $resultado->fetch_array(MYSQLI_ASSOC)) {
-        while ($row = $resultado->fetch_assoc()) {
+        while ($row = $resultado->fetch_object()) {
             echo ("<br>" . var_dump($row) . "<br>");
-            $_SESSION['chat']['id_msg'][$i] = $row->id_msg;
-            $_SESSION['chat']['sender_msg'][$i] = $row['sender_msg'];
-            $_SESSION['chat']['receiver_msg'][$i] = $row['receiver_msg'];
-            $_SESSION['chat']['content_msg'][$i] = $row['content_msg'];
-            $_SESSION['chat']['type_msg'][$i] = $row['type_msg'];
+
+            $_SESSION['chat'][$i]['id_msg'] = $row->id_msg;
+            $_SESSION['chat'][$i]['sender_msg'] = $row->sender_msg;
+            $_SESSION['chat'][$i]['receiver_msg'] = $row->receiver_msg;
+            $_SESSION['chat'][$i]['content_msg'] = $row->content_msg;
+            $_SESSION['chat'][$i]['type_msg'] = $row->type_msg;
 
             $i++;
         }
