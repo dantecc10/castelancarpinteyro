@@ -25,19 +25,16 @@ if ($stmt) {
     if ($resultado->num_rows > 0) {
         $i = 0;
         while ($fila = $resultado->fetch_assoc()) {
-            $mensaje[$i]["user"] = $fila["receiver_msg"];
-            $mensaje[$i]["texto"] = $fila["content_msg"];
-            $mensaje[$i]["fecha"] = date("d/m/Y H:i:s", strtotime($fila["fecha"]));
-            $i++;
-        }
-        while ($row = $resultado->fetch_object()) {
+            #$mensaje[$i]["user"] = $fila["receiver_msg"];
+            #$mensaje[$i]["texto"] = $fila["content_msg"];
+            #$mensaje[$i]["fecha"] = date("d/m/Y H:i:s", strtotime($fila["fecha"]));
             echo ("<br>" . var_dump($row) . "<br>");
 
-            $_SESSION['chat'][$i]['id_msg'] = $row->id_msg;
-            $_SESSION['chat'][$i]['sender_msg'] = $row->sender_msg;
-            $_SESSION['chat'][$i]['receiver_msg'] = $row->receiver_msg;
-            $_SESSION['chat'][$i]['content_msg'] = $row->content_msg;
-            $_SESSION['chat'][$i]['type_msg'] = $row->type_msg;
+            $_SESSION['chat'][$i]['id_msg'] = $fila["id_msg"];
+            $_SESSION['chat'][$i]['sender_msg'] = $fila["sender_msg"];
+            $_SESSION['chat'][$i]['receiver_msg'] = $fila["receiver_msg"];
+            $_SESSION['chat'][$i]['content_msg'] = $fila["content_msg"];
+            $_SESSION['chat'][$i]['type_msg'] = $fila["type_msg"];
 
             $i++;
         }
