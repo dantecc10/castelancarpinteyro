@@ -1,4 +1,5 @@
 <?php
+/*
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -21,8 +22,8 @@ if ($conexiónPDO->connect_error) {
 } else {
     echo "Conexión establecida";
 }
-
-/*include "dynamicSecrets.php";
+*/
+include "dynamicSecrets.php";
 $data = generatePasskey('sql');
 $conexiónPDO = new mysqli("localhost", $data[0], $data[1], $data[2]);
 
@@ -37,7 +38,7 @@ session_start();
 $otherUser = 5;
 $user = mysqli_real_escape_string($conexiónPDO, $_SESSION['id']);
 $chatUser = mysqli_real_escape_string($conexiónPDO, $otherUser);
-
+/*
 #$username = mysqli_real_escape_string($conexiónPDO, $_POST['email']);
 #$password = mysqli_real_escape_string($conexiónPDO, $_POST['password']); //Recepción de variables que pasan por filtro anti exploits SQL
 
