@@ -19,7 +19,7 @@ $chatUser = mysqli_real_escape_string($conexiónPDO, $otherUser);
 #$username = mysqli_real_escape_string($conexiónPDO, $_POST['email']);
 #$password = mysqli_real_escape_string($conexiónPDO, $_POST['password']); //Recepción de variables que pasan por filtro anti exploits SQL
 
-$sql = "SELECT * FROM `messages` WHERE (`receiver_msg` = $currentUser AND `sender_msg` = $chatUser) OR (`sender_msg` = $chatUser AND `receiver_msg` = $currentUser)";
+$sql = "SELECT * FROM `messages` WHERE (`receiver_msg` = $currentUser AND `sender_msg` = $chatUser) OR (`sender_msg` = $currentUser AND `receiver_msg` = $chatUser)";
 $resultado = $conexiónPDO->query($sql);
 
 // Verificar si se encontró un usuario válido
