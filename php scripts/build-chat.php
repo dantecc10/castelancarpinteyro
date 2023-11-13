@@ -20,12 +20,12 @@
 
             echo "Mensaje: ";
 
-            if ($_SESSION['chat']['id_msg'] == $_SESSION['id']) {
+            if ($_SESSION['chat']['chat']['id_msg'] == $_SESSION['id']) {
                 // El mensaje fue enviado por el usuario logeado
-                echo $apMsgSent . $_SESSION['chat']['content_msg'] . $clMsgSent;
+                echo $apMsgSent . $_SESSION['chat']['chat']['content_msg'] . $clMsgSent;
             } else {
                 // El mensaje fue enviado por el otro usuario
-                echo $apMsgReceived . $_SESSION['chat']['content_msg'] . $clMsgReceived;
+                echo $apMsgReceived . $_SESSION['chat']['chat']['content_msg'] . $clMsgReceived;
             }
         }
     } else {
