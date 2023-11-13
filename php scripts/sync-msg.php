@@ -37,11 +37,11 @@ if ($stmt) {
             $new_type_msg = $fila["type_msg"];
 
             //Guarda las vairables anteriores en sesión
-            $_SESSION["lastMsgId"] = $new_id_msg;
-            $_SESSION["lastSender"] = $new_sender_msg;
-            $_SESSION["lastReceiver"] = $new_receiver_msg;
-            $_SESSION["lastContent"] = $new_content_msg;
-            $_SESSION["lastType"] = $new_type_msg;
+            $_SESSION["id_msg"] = $new_id_msg;
+            $_SESSION["sender_msg"] = $new_sender_msg;
+            $_SESSION["receiver_msg"] = $new_receiver_msg;
+            $_SESSION["content_msg"] = $new_content_msg;
+            $_SESSION["type_msg"] = $new_type_msg;
 
             //$_SESSION['chat'][$i] = [intval($new_id_msg), strval($new_sender_msg), strval($new_receiver_msg), strval($new_content_msg), strval($new_type_msg)];
 
