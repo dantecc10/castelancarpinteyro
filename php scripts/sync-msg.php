@@ -2,7 +2,7 @@
 session_start();
 include "dynamicSecrets.php";
 $data = generatePasskey('sql');
-
+/*
 $conexiónPDO = new mysqli("localhost", $data[0], $data[1], $data[2]);
 
 if ($conexiónPDO->connect_error) {
@@ -10,7 +10,7 @@ if ($conexiónPDO->connect_error) {
 } else {
     echo ("Conexión establecida");
 }
-/*
+
 $otherUser = 5;
 $user = mysqli_real_escape_string($conexiónPDO, $_SESSION['id']);
 $chatUser = mysqli_real_escape_string($conexiónPDO, $otherUser);
