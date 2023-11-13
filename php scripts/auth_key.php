@@ -54,7 +54,10 @@ while ($contador < 5) {
     if ($auth_key == null) {
         $auth_key = generateKey($email);
     } else {
-        $conexiónPDO = new mysqli("localhost", "castelancarpinteyro", "@CastelanCarpinteyroWEB", "castelancarpinteyro");
+        include "dynamicSecrets.php";
+        $data = generatePasskey('sql');
+
+        $conexiónPDO = new mysqli("localhost", $data[0], $data[1], $data[2]);
         $sql = "INSERT INTO `auth_keys` VALUES ('', $auth_key, ?, 'Enabled', CURRENT_TIMESTAMP())";
         $stmt = $conexiónPDO->prepare($sql);
         // Limpiar y vincular los parámetros

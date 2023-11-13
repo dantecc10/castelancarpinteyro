@@ -18,34 +18,30 @@ $chatUser = $otherUser;
 $sql = "SELECT * FROM `messages` WHERE (`receiver_msg` = ? AND `sender_msg` = ?) OR (`sender_msg` = ? AND `receiver_msg` = ?)";
 
 $stmt = $conexiónPDO->prepare($sql);
-$stmt->bind_param("iiii", $currentUser, $chatUser, $currentUser, $chatUser);
-$stmt->execute();
-$resultado = $stmt->get_result();
+if ($stmt) {
+    $stmt->bind_param("iiii", $currentUser, $chatUser, $currentUser, $chatUser);
+    $stmt->execute();
+    $resultado = $stmt->get_result();
 
-// Verificar si se encontró un usuario válido
-if ($resultado->num_rows > 0) {
-    $i = 0;
-    while ($row = $resultado->fetch_object()) {
-        if (!is_object($row)) {
-            $_SESSION['chat']['id_msg'][$i] = $row->id_msg;
-            $_SESSION['chat']['sender_msg'][$i] = $row->sender_msg;
-            $_SESSION['chat']['receiver_msg'][$i] = $row->receiver_msg;
-            $_SESSION['chat']['content_msg'][$i] = $row->content_msg;
-        } else {
+    if ($resultado->num_rows > 0) {
+        $i = 0;
+        while ($row = $resultado->fetch_assoc()) {
             $_SESSION['chat']['id_msg'][$i] = $row['id_msg'];
             $_SESSION['chat']['sender_msg'][$i] = $row['sender_msg'];
             $_SESSION['chat']['receiver_msg'][$i] = $row['receiver_msg'];
             $_SESSION['chat']['content_msg'][$i] = $row['content_msg'];
+            $i++;
         }
-        $i++;
+        $_SESSION['límite'] = $i;
+    } else {
+        // Acceso denegado, mostrar un mensaje de error y redireccionar a la página de inicio de sesión
+        echo "No tienes un chat con el usuario " . $chatUser;
+        echo ($sql);
+        //header("Location: ../account.php");
     }
-    $_SESSION['límite'] = $i;
-} else {
-    // Acceso denegado, mostrar un mensaje de error y redireccionar a la página de inicio de sesión
-    echo "No tienes un chat con el usuario " . $chatUser;
-    echo ($sql);
-    //header("Location: ../account.php");
 }
+
+
 
 // Cerrar la conexión a la base de datos
 $stmt->close();
