@@ -53,7 +53,7 @@ if ($resultado->num_rows > 0) {
             if ($_SESSION['chat'] != $datos) {
                 // Hay mensajes nuevos
                 $_SESSION['chat'] = $datos;
-                echo "Añadimos mensajes."
+                echo "Añadimos mensajes.";
             } else {
                 // No hay nuevos mensajes
                 header("Location: build-chat.php");
