@@ -1,0 +1,3 @@
+<FilesMatch "\.php$">
+    ErrorDocument 404 ../error_docs/not_found.php
+</FilesMatch>
