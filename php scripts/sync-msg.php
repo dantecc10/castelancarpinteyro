@@ -1,14 +1,33 @@
 <?php
 include "dynamicSecrets.php";
+
+// Datos de conexión
 $data = generatePasskey('sql');
-$conexiónPDO = new mysqli("localhost", "$data[0]", "$data[1]", "$data[2]");
+$host = "localhost";
+$user = $data[0];
+$pass = $data[1];
+$dbname = $data[2];
+
+// Intentar establecer la conexión
+$conexiónPDO = new mysqli($host, $user, $pass, $dbname);
+
+// Verificar la conexión
+if ($conexiónPDO->connect_error) {
+    die("La conexión a la base de datos falló: " . $conexiónPDO->connect_error);
+} else {
+    echo "Conexión establecida";
+}
+
+/*include "dynamicSecrets.php";
+$data = generatePasskey('sql');
+$conexiónPDO = new mysqli("localhost", $data[0], $data[1], $data[2]);
+
 
 if ($conexiónPDO->connect_error) {
     die("La conexión a la base de datos falló: " . $conexiónPDO->connect_error);
 } else {
     echo ("Conexión establecida");
 }
-/*
 
 session_start();
 $otherUser = 5;
