@@ -29,6 +29,7 @@ if ($stmt) {
         //usar while para analizar todos los resultados
         #while ($row = $resultado->fetch_array(MYSQLI_ASSOC)) {
         while ($row = $resultado->fetch_assoc()) {
+            var_dump($row);
             #$_SESSION['chat']['id_msg'][$i] = $row[->id_msg];
             #$_SESSION['chat']['id_msg'][$i] = $row[0];
             $_SESSION['chat']['id_msg'][$i] = $row['id_msg'];
