@@ -1,5 +1,4 @@
 <?php
-session_destroy();
 session_start();
 include "dynamicSecrets.php";
 $data = generatePasskey('sql');
@@ -11,6 +10,7 @@ if ($conexiónPDO->connect_error) {
 } else {
     echo ("Conexión establecida");
 }
+
 $otherUser = 5;
 $user = mysqli_real_escape_string($conexiónPDO, $_SESSION['id']);
 $chatUser = mysqli_real_escape_string($conexiónPDO, $otherUser);
@@ -18,7 +18,7 @@ $chatUser = mysqli_real_escape_string($conexiónPDO, $otherUser);
 #$username = mysqli_real_escape_string($conexiónPDO, $_POST['email']);
 #$password = mysqli_real_escape_string($conexiónPDO, $_POST['password']); //Recepción de variables que pasan por filtro anti explits SQL
 
-$sql = "SELECT * FROM `messages` WHERE (`receiver_msg` = '$currentUser' AND `sender_msg` = '$chatUser') OR (`sender_msg` = '$chatUser' AND `receiver_msg` = '$currentUser')";
+$sql = "SELECT * FROM `messages` WHERE (`receiver_msg` = $currentUser AND `sender_msg` = $chatUser) OR (`sender_msg` = $chatUser AND `receiver_msg` = $currentUser)";
 $resultado = $conexiónPDO->query($sql);
 
 // Verificar si se encontró un usuario válido
