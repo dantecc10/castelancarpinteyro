@@ -26,7 +26,7 @@
                 echo $apMsgSent . $_SESSION['chat']['chat']['content_msg'] . $clMsgSent;
             } else {
                 // El mensaje fue enviado por el otro usuario
-                echo $apMsgReceived . $_SESSION['chat']['chat'][3] . $clMsgReceived;
+                echo $apMsgReceived . $_SESSION['chat']['chat'][3][0] . $clMsgReceived;
             }
         }
     } else {
