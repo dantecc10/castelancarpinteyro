@@ -1,7 +1,7 @@
 <?php
-session_start();
 include "dynamicSecrets.php";
 $data = generatePasskey('sql');
+session_start();
 /*
 $conexiónPDO = new mysqli("localhost", $data[0], $data[1], $data[2]);
 
