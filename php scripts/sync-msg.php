@@ -26,7 +26,7 @@ $resultado = $stmt->get_result();
 if ($resultado->num_rows > 0) {
     $i = 0;
     while ($row = $resultado->fetch_object()) {
-        if (is_object($row)) {
+        if (!is_object($row)) {
             $_SESSION['chat']['id_msg'][$i] = $row->id_msg;
             $_SESSION['chat']['sender_msg'][$i] = $row->sender_msg;
             $_SESSION['chat']['receiver_msg'][$i] = $row->receiver_msg;
