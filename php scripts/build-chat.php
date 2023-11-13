@@ -20,7 +20,7 @@
         // Verificar si el objeto es válido
         if ($objeto) {
             // Recorrer las propiedades del objeto
-            foreach ($objeto as $clave => $valor) {
+            foreach ($objeto as $clave) {
                 echo ("Mensaje");
                 if ($objeto->$sender_msg == $_SESSION['id']) {
                     //El mensaje fue enviado por el usuario logeado
