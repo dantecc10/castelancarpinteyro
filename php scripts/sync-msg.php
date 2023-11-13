@@ -2,11 +2,12 @@
 session_start();
 function session_chat_store($a, $b, $c, $d, $e, $index)
 {
-    $_SESSION["chat"]["id_msg"][$index] = $a;
-    $_SESSION["chat"]["sender_msg"][$index] = $b;
-    $_SESSION["chat"]["receiver_msg"][$index] = $c;
-    $_SESSION["chat"]["content_msg"][$index] = $d;
-    $_SESSION["chat"]["type_msg"][$index] = $e;
+    $_SESSION["chat"][$index]=array($a, $b, $c, $d, $e)
+    #$_SESSION["chat"]["id_msg"][$index] = $a;
+    #$_SESSION["chat"]["sender_msg"][$index] = $b;
+    #$_SESSION["chat"]["receiver_msg"][$index] = $c;
+    #$_SESSION["chat"]["content_msg"][$index] = $d;
+    #$_SESSION["chat"]["type_msg"][$index] = $e;
 }
 
 $otherUser = 5; // Constante para pruebas, luego dinámico para establecer el chateador
@@ -38,7 +39,6 @@ if ($stmt) {
             #$mensaje[$i]["texto"] = $fila["content_msg"];
             #$mensaje[$i]["fecha"] = date("d/m/Y H:i:s", strtotime($fila["fecha"]));
             echo ("<br>" . var_dump($fila) . "<br>");
-
             $new_id_msg = $fila["id_msg"];
             $new_sender_msg = $fila["sender_msg"];
             $new_receiver_msg = $fila["receiver_msg"];
