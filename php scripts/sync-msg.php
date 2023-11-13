@@ -30,18 +30,11 @@ if ($stmt) {
         #while ($row = $resultado->fetch_array(MYSQLI_ASSOC)) {
         while ($row = $resultado->fetch_assoc()) {
             echo ("<br>" . var_dump($row) . "<br>");
-            #$_SESSION['chat']['id_msg'][$i] = $row[->id_msg];
-            #$_SESSION['chat']['id_msg'][$i] = $row[0];
-            $_SESSION['chat']['id_msg'][$i] = $row['id_msg'];
+            $_SESSION['chat']['id_msg'][$i] = $row->id_msg;
             $_SESSION['chat']['sender_msg'][$i] = $row['sender_msg'];
             $_SESSION['chat']['receiver_msg'][$i] = $row['receiver_msg'];
             $_SESSION['chat']['content_msg'][$i] = $row['content_msg'];
             $_SESSION['chat']['type_msg'][$i] = $row['type_msg'];
-
-            #$_SESSION['chat']['id_msg'][$i] = $row->id_msg;
-            #$_SESSION['chat']['sender_msg'][$i] = $row->sender_msg;
-            #$_SESSION['chat']['receiver_msg'][$i] = $row->receiver_msg;
-            #$_SESSION['chat']['content_msg'][$i] = $row->content_msg;
 
             $i++;
         }
