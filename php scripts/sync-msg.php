@@ -28,13 +28,15 @@ if ($stmt) {
             #$mensaje[$i]["user"] = $fila["receiver_msg"];
             #$mensaje[$i]["texto"] = $fila["content_msg"];
             #$mensaje[$i]["fecha"] = date("d/m/Y H:i:s", strtotime($fila["fecha"]));
-            echo ("<br>" . var_dump($row) . "<br>");
+            echo ("<br>" . var_dump($fila) . "<br>");
 
-            $_SESSION['chat'][$i]['id_msg'] = $fila["id_msg"];
-            $_SESSION['chat'][$i]['sender_msg'] = $fila["sender_msg"];
-            $_SESSION['chat'][$i]['receiver_msg'] = $fila["receiver_msg"];
-            $_SESSION['chat'][$i]['content_msg'] = $fila["content_msg"];
-            $_SESSION['chat'][$i]['type_msg'] = $fila["type_msg"];
+            $new_id_msg = $fila["id_msg"];
+            $new_sender_msg = $fila["sender_msg"];
+            $new_receiver_msg = $fila["receiver_msg"];
+            $new_content_msg = $fila["content_msg"];
+            $new_type_msg = $fila["type_msg"];
+
+            $_SESSION['chat'][$i] = [$new_id_msg, $new_sender_msg, $new_receiver_msg, $new_content_msg, $new_type_msg];
 
             $i++;
         }
