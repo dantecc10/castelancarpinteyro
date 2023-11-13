@@ -28,7 +28,7 @@ if ($stmt) {
         //while ($row = $resultado->fetch_assoc()) {
         //usar while para analizar todos los resultados
         #while ($row = $resultado->fetch_array(MYSQLI_ASSOC)) {
-        while ($row = $resultado->fetch_object()) {
+        while ($row = $resultado->fetch(PDO::FETCH_OBJ)) {
             echo ("<br>" . var_dump($row) . "<br>");
 
             $_SESSION['chat'][$i]['id_msg'] = $row->id_msg;
