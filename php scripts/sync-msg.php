@@ -41,7 +41,7 @@ if ($resultado->num_rows > 0) {
     }
     $conexiónPDO->close();
     //$fecha=$_SESSION['nacimiento'];
-    header("Location: ../index.php");
+    //header("Location: ../index.php");
 } else {
     // Acceso denegado, mostrar un mensaje de error y redireccionar a la página de inicio de sesión
     echo "No tienes un chat con el usuario " . $chatUser;
