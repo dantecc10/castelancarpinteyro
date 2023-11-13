@@ -13,6 +13,9 @@ $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a 
 
 $carruselPrincipal = ""; // Súpercontenedor
 
+$carruselÍtems = "";
+$carruselIndexes = "";
+$carruselCSS = "";
 $carruselÍtems .= $apSupCont1; // Contenedor estático de ítems
 $carruselIndexes .= $apSupCont2; // Contenedor estático de indexes
 $carruselCSS .= $apStyleCSS; // Contenedor estático de CSS
