@@ -72,3 +72,4 @@ if ($resultado->num_rows > 0) {
 }
 
 // Cerrar la conexión a la base de datos
+*/
