@@ -20,6 +20,7 @@
 
             echo "Mensaje: ";
 
+            var_dump($_SESSION['chat']);
             if ($_SESSION['chat'][0][$i] == $_SESSION['id']) {
                 // El mensaje fue enviado por el usuario logeado
                 echo $apMsgSent . $_SESSION['chat']['chat']['content_msg'] . $clMsgSent;
