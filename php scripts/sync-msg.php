@@ -10,7 +10,7 @@ if ($conexiónPDO->connect_error) {
 } else {
     echo ("Conexión establecida");
 }
-
+/*
 $otherUser = 5;
 $user = mysqli_real_escape_string($conexiónPDO, $_SESSION['id']);
 $chatUser = mysqli_real_escape_string($conexiónPDO, $otherUser);
