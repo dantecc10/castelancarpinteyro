@@ -37,6 +37,7 @@ if ($stmt) {
             $datos['chat'][$i] = [$new_id_msg, $new_receiver_msg, $new_sender_msg, $new_content_msg, $new_type_msg, $new_time_msg];
             $i++;
         }
+        $_SESSION['chat'] = $datos;
         $_SESSION['límite'] = $i;
         // Cerrar la conexión a la base de datos
         $stmt->close();
