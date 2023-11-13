@@ -15,6 +15,14 @@
     include "chat-configs.php";
 
     if (isset($_SESSION['chat'])) {
+
+        for ($i = 0; $i < $_SESSION['límite']; $i++) {
+            if ($_SESSION['chat'][$i] != null) {
+        
+            }
+        }
+        //fin replicando lógica de correos
+
         $objeto = $_SESSION['chat'];
 
         // Verificar si el objeto es válido

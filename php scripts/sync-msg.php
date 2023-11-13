@@ -24,24 +24,18 @@ $resultado = $conexiónPDO->query($sql);
 
 // Verificar si se encontró un usuario válido
 if ($resultado->num_rows > 0) {
-    // Acceso concedido, redireccionar a la página de inicio del sitio web
-    if ($datos = $resultado->fetch_object()) { //Asignación y configuración de variables de sesión en arreglo de PHP
-        if (isset($_SESSION['chat'])) {
-            if ($_SESSION['chat'] != $datos) {
-                // Hay mensajes nuevos
-                $_SESSION['chat'] = $datos;
-                echo ("Añadimos mensajes.");
-            } else {
-                // No hay nuevos mensajes
-                header("Location: build-chat.php");
-            }
-        } else {
-            $_SESSION['chat'] = $datos;
-        }
+
+    $i = 0;
+    while ($row = $resultado->fetch_assoc()) {
+        //$_SESSION['mensaje'][$i] = $row['contenido_mn'];
+        $_SESSION['chat']['id_msg'][$i] = $row['id_msg'];
+        $_SESSION['chat']['sender_msg'][$i] = $row['sender_msg'];
+        $_SESSION['chat']['receiver_msg'][$i] = $row['receiver_msg'];
+        $_SESSION['chat']['content_msg'][$i] = $row['content_msg'];
+        $i++;
     }
+    $_SESSION['límite'] = $i;
     $conexiónPDO->close();
-    //$fecha=$_SESSION['nacimiento'];
-    //header("Location: ../index.php");
 } else {
     // Acceso denegado, mostrar un mensaje de error y redireccionar a la página de inicio de sesión
     echo "No tienes un chat con el usuario " . $chatUser;
