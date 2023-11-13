@@ -15,15 +15,15 @@
     include "chat-configs.php";
 
     if (isset($_SESSION['chat'])) {
-
         $objeto = $_SESSION['chat'];
+
         // Verificar si el objeto es válido
         if ($objeto) {
             // Recorrer las propiedades del objeto
             foreach ($objeto as $clave => $valor) {
                 echo "Mensaje:";
 
-                if ($valor->$sender_msg == $_SESSION['id']) {
+                if ($valor->sender_msg == $_SESSION['id']) {
                     // El mensaje fue enviado por el usuario logeado
                     echo $apMsgSent . $valor->content_msg . $clMsgSent;
                 } else {
@@ -38,6 +38,7 @@
         echo "Aquí no hay nada de chats.";
     }
     ?>
+
 </body>
 
 </html>
