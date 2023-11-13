@@ -23,10 +23,10 @@
             var_dump($_SESSION['chat']);
             if ($_SESSION['chat']['chat']['sender_msg'] == $_SESSION['id']) {
                 // El mensaje fue enviado por el usuario logeado
-                echo $apMsgSent . $_SESSION['chat']['chat']['content_msg'][$i] . $clMsgSent;
+                echo ("Del usuario " . $_SESSION['chat']['chat']['sender_msg'] . ", para el usuario " . $_SESSION['chat']['chat']['receiver_msg'] . ":" . $apMsgSent . $_SESSION['chat']['chat']['content_msg'][$i] . $clMsgSent);
             } else {
                 // El mensaje fue enviado por el otro usuario
-                echo $apMsgReceived . $_SESSION['chat']['chat']['content_msg'][$i] . $clMsgReceived;
+                echo ("Del usuario " . $_SESSION['chat']['chat']['sender_msg'] . ", para el usuario " . $_SESSION['chat']['chat']['receiver_msg'] . ":" . $apMsgReceived . $_SESSION['chat']['chat']['content_msg'][$i] . $clMsgReceived);
             }
         }
     } else {
