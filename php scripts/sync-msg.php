@@ -38,7 +38,7 @@ session_start();
 $otherUser = 5;
 $user = mysqli_real_escape_string($conexiónPDO, $_SESSION['id']);
 $chatUser = mysqli_real_escape_string($conexiónPDO, $otherUser);
-/*
+
 #$username = mysqli_real_escape_string($conexiónPDO, $_POST['email']);
 #$password = mysqli_real_escape_string($conexiónPDO, $_POST['password']); //Recepción de variables que pasan por filtro anti exploits SQL
 
@@ -73,4 +73,3 @@ if ($resultado->num_rows > 0) {
 }
 
 // Cerrar la conexión a la base de datos
-*/
