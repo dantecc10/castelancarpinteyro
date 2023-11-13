@@ -27,7 +27,7 @@ if ($stmt) {
         $i = 0;
         //while ($row = $resultado->fetch_assoc()) {
         //usar while para analizar todos los resultados
-        while ($row = $resultado->fetch_array(MYSQLI_ASSOC)) {
+        while ($row = $resultado->fetch_array()) {
             if (is_object($row)) {
                 $_SESSION['chat']['id_msg'][$i] = $row->id_msg;
                 $_SESSION['chat']['sender_msg'][$i] = $row->sender_msg;
