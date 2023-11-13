@@ -34,7 +34,13 @@ if ($stmt) {
             $new_type_msg = ("" . $fila["type_msg"] . "");
             $new_time_msg = ("" . $fila["time_msg"] . "");
 
-            $datos['chat'][$i] = [$new_id_msg, $new_receiver_msg, $new_sender_msg, $new_content_msg, $new_type_msg, $new_time_msg];
+            //$datos['chat'][$i] = [$new_id_msg, $new_receiver_msg, $new_sender_msg, $new_content_msg, $new_type_msg, $new_time_msg];
+            $datos['chat']['id_msg'][$i] = $new_id_msg;
+            $datos['chat']['receiver_msg'][$i] = $new_receiver_msg;
+            $datos['chat']['sender_msg'][$i] = $new_sender_msg;
+            $datos['chat']['content_msg'][$i] = $new_content_msg;
+            $datos['chat']['type_msg'][$i] = $new_type_msg;
+            $datos['chat']['time_msg'][$i] = $new_time_msg;
             $i++;
         }
         $_SESSION['chat'] = $datos;
