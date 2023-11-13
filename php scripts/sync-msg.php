@@ -12,7 +12,8 @@ $pass = $data[1];
 $dbname = $data[2];
 
 // Intentar establecer la conexión
-$conexiónPDO = new mysqli($host, $user, $pass, $dbname);
+#$conexiónPDO = new mysqli($host, $user, $pass, $dbname);
+$conexiónPDO = $data[3];
 
 // Verificar la conexión
 if ($conexiónPDO->connect_error) {
