@@ -26,7 +26,7 @@ if ($stmt) {
     if ($resultado->num_rows > 0) {
         $i = 0;
         while ($row = $resultado->fetch_assoc()) {
-            if (!is_object($row)) {
+            if (is_object($row)) {
                 $_SESSION['chat']['id_msg'][$i] = $row->id_msg;
                 $_SESSION['chat']['sender_msg'][$i] = $row->sender_msg;
                 $_SESSION['chat']['receiver_msg'][$i] = $row->receiver_msg;
@@ -40,6 +40,9 @@ if ($stmt) {
             $i++;
         }
         $_SESSION['límite'] = $i;
+        // Cerrar la conexión a la base de datos
+        $stmt->close();
+        $conexiónPDO->close();
     } else {
         // Acceso denegado, mostrar un mensaje de error y redireccionar a la página de inicio de sesión
         echo "No tienes un chat con el usuario " . $chatUser;
@@ -47,9 +50,3 @@ if ($stmt) {
         //header("Location: ../account.php");
     }
 }
-
-
-
-// Cerrar la conexión a la base de datos
-$stmt->close();
-$conexiónPDO->close();
