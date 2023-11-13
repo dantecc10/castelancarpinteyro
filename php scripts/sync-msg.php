@@ -1,7 +1,7 @@
 <?php
 include "dynamicSecrets.php";
 $data = generatePasskey('sql');
-$conexiónPDO = new mysqli("localhost", $data[0], $data[1], $data[2]);
+$conexiónPDO = new mysqli("localhost", "$data[0]", "$data[1]", "$data[2]");
 
 if ($conexiónPDO->connect_error) {
     die("La conexión a la base de datos falló: " . $conexiónPDO->connect_error);
