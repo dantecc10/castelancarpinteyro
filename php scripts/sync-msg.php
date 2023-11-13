@@ -1,5 +1,8 @@
 <?php
 session_start();
+$otherUser = 5; // Constante para pruebas, luego dinámico para establecer el chateador
+$currentUser = $_SESSION['id'];
+$chatUser = $otherUser;
 
 include "dynamicSecrets.php";
 $data = generatePasskey('sql');
@@ -11,10 +14,6 @@ if ($conexiónPDO->connect_error) {
     echo "Conexión establecida";
 }
 
-$otherUser = 5; // Constante para pruebas, luego dinámico para establecer el chateador
-$currentUser = $_SESSION['id'];
-$chatUser = $otherUser;
-
 $sql = "SELECT * FROM `messages` WHERE (`receiver_msg` = ? AND `sender_msg` = ?) OR (`sender_msg` = ? AND `receiver_msg` = ?)";
 
 $stmt = $conexiónPDO->prepare($sql);
@@ -25,9 +24,12 @@ if ($stmt) {
 
     if ($resultado->num_rows > 0) {
         $i = 0;
-        //while ($row = $resultado->fetch_assoc()) {
-        //usar while para analizar todos los resultados
-        #while ($row = $resultado->fetch_array(MYSQLI_ASSOC)) {
+        while ($fila = $resultado->fetch_assoc()) {
+            $mensaje[$i]["user"] = $fila["receiver_msg"];
+            $mensaje[$i]["texto"] = $fila["content_msg"];
+            $mensaje[$i]["fecha"] = date("d/m/Y H:i:s", strtotime($fila["fecha"]));
+            $i++;
+        }
         while ($row = $resultado->fetch_object()) {
             echo ("<br>" . var_dump($row) . "<br>");
 
