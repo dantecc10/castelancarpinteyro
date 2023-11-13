@@ -69,7 +69,8 @@ if ($resultado->num_rows > 0) {
     // Acceso denegado, mostrar un mensaje de error y redireccionar a la página de inicio de sesión
     echo "No tienes un chat con el usuario " . $chatUser;
     $conexiónPDO->close();
-    header("Location: ../account.php");
+    echo ($sql);
+    //header("Location: ../account.php");
 }
 
 // Cerrar la conexión a la base de datos
