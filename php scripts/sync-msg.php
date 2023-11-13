@@ -1,28 +1,5 @@
 <?php
-/*
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-include "dynamicSecrets.php";
 
-// Datos de conexión
-$data = generatePasskey('sql');
-$host = "localhost";
-$user = $data[0];
-$pass = $data[1];
-$dbname = $data[2];
-
-// Intentar establecer la conexión
-#$conexiónPDO = new mysqli($host, $user, $pass, $dbname);
-$conexiónPDO = $data[3];
-
-// Verificar la conexión
-if ($conexiónPDO->connect_error) {
-    die("La conexión a la base de datos falló: " . $conexiónPDO->connect_error);
-} else {
-    echo "Conexión establecida";
-}
-*/
 include "dynamicSecrets.php";
 $data = generatePasskey('sql');
 $conexiónPDO = new mysqli("localhost", $data[0], $data[1], $data[2]);
@@ -36,7 +13,8 @@ if ($conexiónPDO->connect_error) {
 
 session_start();
 $otherUser = 5;
-$user = mysqli_real_escape_string($conexiónPDO, $_SESSION['id']);
+$mainUser = $_SESSION['id'];
+$user = mysqli_real_escape_string($conexiónPDO, $mainUser);
 $chatUser = mysqli_real_escape_string($conexiónPDO, $otherUser);
 
 #$username = mysqli_real_escape_string($conexiónPDO, $_POST['email']);
