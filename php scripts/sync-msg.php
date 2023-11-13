@@ -1,5 +1,14 @@
 <?php
 session_start();
+function session_chat_store($a, $b, $c, $d, $e, $index)
+{
+    $_SESSION["chat"]["id_msg"][$index] = $a;
+    $_SESSION["chat"]["sender_msg"][$index] = $b;
+    $_SESSION["chat"]["receiver_msg"][$index] = $c;
+    $_SESSION["chat"]["content_msg"][$index] = $d;
+    $_SESSION["chat"]["type_msg"][$index] = $e;
+}
+
 $otherUser = 5; // Constante para pruebas, luego dinámico para establecer el chateador
 $currentUser = $_SESSION['id'];
 $chatUser = $otherUser;
@@ -36,14 +45,8 @@ if ($stmt) {
             $new_content_msg = $fila["content_msg"];
             $new_type_msg = $fila["type_msg"];
 
-            //Guarda las vairables anteriores en sesión
-            $_SESSION["id_msg"] = $new_id_msg;
-            $_SESSION["sender_msg"] = $new_sender_msg;
-            $_SESSION["receiver_msg"] = $new_receiver_msg;
-            $_SESSION["content_msg"] = $new_content_msg;
-            $_SESSION["type_msg"] = $new_type_msg;
-
             //$_SESSION['chat'][$i] = [intval($new_id_msg), strval($new_sender_msg), strval($new_receiver_msg), strval($new_content_msg), strval($new_type_msg)];
+            session_chat_store($new_id_msg, $new_sender_msg, $new_receiver_msg, $new_content_msg, $new_type_msg, $i);
 
             $i++;
         }
