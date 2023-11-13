@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 include "dynamicSecrets.php";
 $data = generatePasskey('sql');
@@ -11,10 +12,8 @@ if ($conexiónPDO->connect_error) {
     echo ("Conexión establecida");
 }
 
-session_start();
-$otherUser = 5;
-$mainUser = $_SESSION['id'];
-$user = mysqli_real_escape_string($conexiónPDO, $mainUser);
+$otherUser = 5; // Constante para pruebas, luego dinámico para establecer el chateador
+$currentUser = mysqli_real_escape_string($conexiónPDO, $_SESSION['id']);
 $chatUser = mysqli_real_escape_string($conexiónPDO, $otherUser);
 
 #$username = mysqli_real_escape_string($conexiónPDO, $_POST['email']);
