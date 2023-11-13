@@ -2,6 +2,7 @@
 session_start();
 function session_chat_store($a, $b, $c, $d, $e, $f, $index)
 {
+    array_push($_SESSION["chat"]["id_msg"][$index], $a);
     $_SESSION["chat"][$index] = array($a, $b, $c, $d, $e, $f);
     $_SESSION["chat"]["id_msg"][$index] = $a;
     $_SESSION["chat"]["sender_msg"][$index] = $b;
@@ -49,8 +50,7 @@ if ($stmt) {
 
             //$_SESSION['chat'][$i] = [intval($new_id_msg), strval($new_sender_msg), strval($new_receiver_msg), strval($new_content_msg), strval($new_type_msg)];
             $i++;
-            $a = 'i';
-            session_chat_store($new_id_msg, $new_sender_msg, $new_receiver_msg, $new_content_msg, $new_type_msg, $new_time_msg, $$a);
+            session_chat_store($new_id_msg, $new_sender_msg, $new_receiver_msg, $new_content_msg, $new_type_msg, $new_time_msg, $i);
         }
         $_SESSION['límite'] = $i;
         // Cerrar la conexión a la base de datos
