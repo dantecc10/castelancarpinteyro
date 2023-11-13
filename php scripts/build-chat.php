@@ -20,7 +20,7 @@
 
             echo "Mensaje: ";
 
-            if ($_SESSION['chat']['chat']['id_msg'] == $_SESSION['id']) {
+            if ($_SESSION['chat'][0][$i] == $_SESSION['id']) {
                 // El mensaje fue enviado por el usuario logeado
                 echo $apMsgSent . $_SESSION['chat']['chat']['content_msg'] . $clMsgSent;
             } else {
