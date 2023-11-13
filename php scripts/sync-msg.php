@@ -2,7 +2,7 @@
 session_start();
 function session_chat_store($a, $b, $c, $d, $e, $f, $index)
 {
-    array_push($_SESSION["chat"]["id_msg"][$index], $a);
+    array_push($_SESSION["chat"]["id_msg"], $a);
     $_SESSION["chat"][$index] = array($a, $b, $c, $d, $e, $f);
     $_SESSION["chat"]["id_msg"][$index] = $a;
     $_SESSION["chat"]["sender_msg"][$index] = $b;
