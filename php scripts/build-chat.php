@@ -21,12 +21,12 @@
             echo "Mensaje: ";
 
             var_dump($_SESSION['chat']);
-            if ($_SESSION['chat']['chat']['sender_msg'] == $_SESSION['id']) {
+            if ($_SESSION['chat']['chat']['sender_msg'][$i] == $_SESSION['id']) {
                 // El mensaje fue enviado por el usuario logeado
-                echo ("Del usuario " . $_SESSION['chat']['chat']['sender_msg'] . ", para el usuario " . $_SESSION['chat']['chat']['receiver_msg'] . ":" . $apMsgSent . $_SESSION['chat']['chat']['content_msg'][$i] . $clMsgSent);
+                echo ("Del usuario " . $_SESSION['chat']['chat']['sender_msg'][$i] . ", para el usuario " . $_SESSION['chat']['chat']['receiver_msg'][$i] . ":" . $apMsgSent . $_SESSION['chat']['chat']['content_msg'][$i] . $clMsgSent);
             } else {
                 // El mensaje fue enviado por el otro usuario
-                echo ("Del usuario " . $_SESSION['chat']['chat']['sender_msg'] . ", para el usuario " . $_SESSION['chat']['chat']['receiver_msg'] . ":" . $apMsgReceived . $_SESSION['chat']['chat']['content_msg'][$i] . $clMsgReceived);
+                echo ("Del usuario " . $_SESSION['chat']['chat']['sender_msg'][$i] . ", para el usuario " . $_SESSION['chat']['chat']['receiver_msg'][$i] . ":" . $apMsgReceived . $_SESSION['chat']['chat']['content_msg'][$i] . $clMsgReceived);
             }
         }
     } else {
