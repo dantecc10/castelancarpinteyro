@@ -33,6 +33,8 @@
         } else {
             echo "El objeto no está disponible en la sesión.";
         }
+    }else{
+        echo "Aquí no hay nada de chats.";
     }
     ?>
 </body>

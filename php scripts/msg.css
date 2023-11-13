@@ -1,0 +1,9 @@
+.received-msg {
+    color: white;
+    background-color: darkslategray;
+}
+
+.sent-msg {
+    color: white;
+    background-color: rgb(56, 9, 185);
+}
