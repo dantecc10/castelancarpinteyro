@@ -36,7 +36,7 @@ if ($stmt) {
             $new_content_msg = $fila["content_msg"];
             $new_type_msg = $fila["type_msg"];
 
-            $_SESSION['chat'][$i] = [$new_id_msg, $new_sender_msg, $new_receiver_msg, $new_content_msg, $new_type_msg];
+            $_SESSION['chat'][$i] = [intval($new_id_msg), strval($new_sender_msg), strval($new_receiver_msg), strval($new_content_msg), strval($new_type_msg)];
 
             $i++;
         }
