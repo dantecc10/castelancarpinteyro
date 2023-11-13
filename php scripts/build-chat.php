@@ -20,20 +20,21 @@
         // Verificar si el objeto es válido
         if ($objeto) {
             // Recorrer las propiedades del objeto
-            foreach ($objeto as $clave) {
-                echo ("Mensaje");
-                if ($objeto->$sender_msg == $_SESSION['id']) {
-                    //El mensaje fue enviado por el usuario logeado
-                    echo ($apMsgSent . $objeto->content_msg . $clMsgSent);
+            foreach ($objeto as $clave => $valor) {
+                echo "Mensaje:";
+
+                if ($valor->$sender_msg == $_SESSION['id']) {
+                    // El mensaje fue enviado por el usuario logeado
+                    echo $apMsgSent . $valor->content_msg . $clMsgSent;
                 } else {
-                    //El mensaje fue enviado por el otro usuario
-                    echo ($apMsgReceived . $objeto->content_msg . $clMsgReceived);
+                    // El mensaje fue enviado por el otro usuario
+                    echo $apMsgReceived . $valor->content_msg . $clMsgReceived;
                 }
             }
         } else {
             echo "El objeto no está disponible en la sesión.";
         }
-    }else{
+    } else {
         echo "Aquí no hay nada de chats.";
     }
     ?>
