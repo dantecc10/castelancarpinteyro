@@ -4,10 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Iniciar sesión - Castelán Carpinteyro</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9258502939818184"
-     crossorigin="anonymous"></script>
-    
+    <title>Login - Castelán Carpinteyro</title>
     <meta name="twitter:description" content="Panel de administrador de Castelán Carpinteyro; es necesario acceder.">
     <meta name="twitter:image" content="https://castelancarpinteyro.com/admin/assets/img/DanteDEV-Black-Blackground.png">
     <meta property="og:image" content="https://castelancarpinteyro.com/admin/assets/img/DanteDEV-Black-Blackground.png">
@@ -24,7 +21,7 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/extra-admin.css">
 </head>
 
 <body class="bg-gradient-primary color-fresco-degradado">
@@ -42,7 +39,7 @@
                                     <div class="text-center">
                                         <h4 class="text-dark mb-4">Hola de nuevo</h4>
                                     </div>
-                                    <form class="user" method="post" action="php scripts/login.php">
+                                    <form class="user">
                                         <div class="mb-3"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Dirección de correo electrónico" name="email"></div>
                                         <div class="mb-3"><input class="form-control form-control-user" type="password" id="exampleInputPassword" placeholder="Contraseña" name="password"></div>
                                         <div class="mb-3">
@@ -64,7 +61,8 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/theme.js"></script>
 </body>
 
 </html>
