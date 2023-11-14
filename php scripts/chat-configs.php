@@ -49,10 +49,10 @@ $apChatContainerMessages = "<div class='col col-lg-9'>
 $clChatContainerMessages = "        </div>
                                     <div class='card-footer py-3'>
                                         <div class='row d-flex'>
-                                            <div class='col dflex' col-lg-10>
+                                            <div class='col d-flex col-lg-10'>
                                                 <textarea class='textarea-msg'></textarea>
                                             </div>
-                                            <div class='col dflex' col-lg-2>
+                                            <div class='col d-flex col-lg-2'>
                                                 <button class='btn btn-primary'>
                                                     Enviar
                                                 </button>

@@ -23,6 +23,9 @@ div.max-msg-container {
     max-height: 100%;
     overflow-y: scroll;
 }
+div.max-msg-container card-body {
+    overflow-y: scroll;
+}
 
 textarea.textarea-msg {
     height: 100%;
