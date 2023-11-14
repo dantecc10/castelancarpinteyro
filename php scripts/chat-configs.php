@@ -11,7 +11,7 @@ $apMsgSent = "<div class='msg-container d-flex' style='justify-content: flex-end
 $clMsgSent = "      </span>
               </div>";
 
-$apMaxChatContainer = "<div class='container py-5'>
+$apMaxChatContainer = "<div class='container py-5 max-msg-container'>
                         <div class='row d-flex justify-content-center'>";
 $clMaxChatContainer = " </div>
                        </div>";
