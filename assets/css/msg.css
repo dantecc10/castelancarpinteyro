@@ -23,3 +23,9 @@ div.max-msg-container {
     max-height: 100%;
     overflow-y: scroll;
 }
+
+textarea.textarea-msg {
+    height: 100%;
+    width: 100%;
+    resize: none;
+}
