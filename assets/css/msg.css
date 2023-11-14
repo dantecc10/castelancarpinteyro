@@ -37,3 +37,12 @@ p.p-contacto {
     word-wrap: break-word;
     overflow: hidden;
 }
+
+div.send-div {
+    padding: 0% !important;
+    margin: 0% !important;
+    width: 100%;
+    aspect-ratio: 1/1 !important;
+}
+
+div.send-div {}
