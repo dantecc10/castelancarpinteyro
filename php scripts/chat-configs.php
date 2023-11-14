@@ -52,7 +52,7 @@ $apChatContainerMessages = "<div class='col col-lg-9'>
                                     <div class='card-body py-3'>";
 
 $clChatContainerMessages = "        </div>
-                                    <div class='card-footer py-3'>
+                                    <div class='card-footer py-1'>
                                         <div class='row d-flex'>
                                             <div class='col d-flex col-sm-10 col-mb-10 col-lg-10'>
                                                 <textarea class='textarea-msg'></textarea>
