@@ -22,12 +22,12 @@ $apChatContainerContacts = "<div class='col col-lg-3'>
                                     </div>
                                     <div class='card-body py-3'>";
 
-$apUniqueContactContainer = "<div class='row sup-contact-container d-flex align-self-center'>
+$apUniqueContactContaine = "<div class='row sup-contact-container d-flex align-self-center'>
                                 <div class='col d-flex'>
                                     <div class='mb-3 d-flex'>
                                         <div class='d-flex align-items-start'>
                                             <p>";
-$apUniqueContactContainer = "               </p>
+$apUniqueContactContaine = "               </p>
                                         </div>                                                
                                     </div>                                                
                                 </div>
@@ -51,11 +51,11 @@ $clChatContainerMessages = "        </div>
 
 echo (
     $apMaxChatContainer . $apChatContainerContacts .
-    $apUniqueContactContainer
+    $apUniqueContactContaine
     .
     "Dante Castelán Carpinteyro"
     .
-    $ciUniqueContactContainer . $ciChatContainerContacts
+    $ciUniqueContactContaine . $ciChatContainerContacts
     .
     $apChatContainerMessages
     .
