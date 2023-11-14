@@ -24,21 +24,17 @@ $apChatContainerContacts = "<div class='col col-lg-3'>
                                     <div class='card-body py-3'>";
 
 $apUniqueContactContaine = "<div class='row sup-contact-container d-flex align-self-center'>
-                                <div class='col d-flex'>
-                                    <div class='mb-3 d-flex'>
-                                        <div class='d-flex align-items-start'>
-                                            <div class='col col-lg-2 col-mb-3'>
-                                                <div class='row d-flex'>
-                                                    <svg></svg>
-                                                </div>
-                                                <div class='col col-lg-9 col-mb-9'>
-                                                    <p class='p-contacto'>";
-$ciUniqueContactContaine = "                        </p>
-                                                </div>
-                                            </div>
-                                        </div>                                                
-                                    </div>                                                
-                                </div>
+                                <div class='row d-flex justify-content-center'>
+                                    <div class='mb-3 d-flex justify-content-center'><div class='row d-flex'>
+                                        <div class='col col-lg-3 col-mb-3'>
+                                            <svg></svg>
+                                        </div>
+                                        <div class='col col-lg-9 col-mb-9'>
+                                            <p class='p-contacto'>";
+$ciUniqueContactContaine = "                </p>
+                                        </div>
+                                    </div>
+                                </div>                                                
                             </div>";
 
 $ciChatContainerContacts = "
