@@ -55,3 +55,4 @@ if ($stmt) {
         //header("Location: ../account.php");
     }
 }
+?>

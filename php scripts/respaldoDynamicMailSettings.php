@@ -46,3 +46,4 @@ $mail->FromName = $tempFromName;
 
 //$mail = setMailParameters('dante');
 //echo $mail;
+?>

@@ -89,3 +89,4 @@ if (isset($_POST)) {
         header("Location: ../account.php?msg=no-changes");
     }
 }
+?>

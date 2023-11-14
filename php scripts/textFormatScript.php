@@ -59,3 +59,4 @@ function formatearHTML()
     echo $textoFormateado;
 }
 formatearHTML();
+?>

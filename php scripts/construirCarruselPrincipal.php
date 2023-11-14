@@ -66,3 +66,4 @@ $carruselPrincipal .= $carruselÍtems;
 $carruselPrincipal .= $carruselIndexes;
 $carruselPrincipal .= $carruselCSS;
 echo $carruselPrincipal;
+?>

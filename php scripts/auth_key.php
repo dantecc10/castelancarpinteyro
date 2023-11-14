@@ -86,3 +86,4 @@ if ($contador == 5) {
     # code...
 }
     //echo $auth_key; // Debug 🐞
+?>

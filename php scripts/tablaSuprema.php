@@ -26,3 +26,4 @@ while ($columna = mysqli_fetch_array($resultado)) {
 }
 
 echo "</table>"; // Súpercontenedor
+?>

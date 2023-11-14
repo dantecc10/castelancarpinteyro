@@ -24,3 +24,4 @@ if ($stmt->affected_rows == 1) {
     echo "Something went wrong, please try again later.";
 }
 $stmt->close();
+?>

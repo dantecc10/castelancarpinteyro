@@ -52,3 +52,4 @@ if (move_uploaded_file($url_temp, $url_target)) {
 } else {
     echo "Ha habido un error al cargar tu archivo (" . htmlspecialchars(basename($file)) . ").";
 }
+?>

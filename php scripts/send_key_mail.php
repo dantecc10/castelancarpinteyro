@@ -76,3 +76,4 @@ foreach ($_SESSION['nombre'] as $index => $value) {
 }
 
 $_SESSION['nombre'] = array();*/
+?>

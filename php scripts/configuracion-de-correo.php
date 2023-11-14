@@ -30,3 +30,4 @@ $mail->Password = $contraseñaScripts;   /*Tu contraseña*/
 $mail->From = "contacto@castelancarpinteyro.com"; #'academia@classicandsacrum.com';   /*Correo electrónico que estamos autenticando*/
 $mail->FromName = 'Castelán Carpinteyro';   /*Puedes poner tu nombre, el de tu empresa, nombre de tu web, etc.*/
 $mail->CharSet = 'UTF-8';   /*Codificación del mensaje*/
+?>

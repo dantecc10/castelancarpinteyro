@@ -39,3 +39,4 @@ function setMailParameters($turing)
 
 //$mail = setMailParameters('dante');
 //echo $mail;
+?>

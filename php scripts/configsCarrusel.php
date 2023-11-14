@@ -41,3 +41,4 @@ $ciStyleCSS = "</style>";
 //Subcontenedor 3: Link
 $apSubCont3 = ('<p><a class="btn btn-primary btn-lg hero-button" role="button" href=' . $comilla);
 $ciSubCont3 = ($comilla . '>Conocer más</a></p>');
+?>

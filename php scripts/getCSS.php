@@ -58,3 +58,4 @@ $msg .= '</body></html>';
 // Imprime el mensaje completo
 echo $msg;
 */
+?>
