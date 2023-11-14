@@ -45,4 +45,8 @@ div.send-div {
     aspect-ratio: 1/1 !important;
 }
 
-div.send-div {}
+div.send-div svg {
+    margin: 12.5%;
+    height: 75%;
+    width: 75%;
+}
