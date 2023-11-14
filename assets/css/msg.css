@@ -20,6 +20,6 @@
 }
 
 div.max-msg-container {
-    max-height: 200px;
-    overflow-y: hidden;
+    max-height: 100%;
+    overflow-y: scroll;
 }
