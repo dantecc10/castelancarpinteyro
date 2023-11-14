@@ -1,5 +1,5 @@
 <?php
-include "build-chat.php"
+include "build-chat.php";
 /*Los mensajes han de concatenarse en medio de estas variables para encerrar ese simple texto en código HTML
     formateable y estilizable*/
 $apMsgReceived = "<div class='msg-container align-items-left'>
