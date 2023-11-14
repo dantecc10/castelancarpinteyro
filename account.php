@@ -257,7 +257,7 @@ $fechaPredeterminada = date("Y-m-d"); // Fecha actual
                                                 }
                                             }
                                         </style>
-                                        <div id="centrador">
+                                        <div id="centrador" onclick="javascript:activarInput('cambiarIMG');">
                                             <div class="input-div">
                                                 <label for="archivoInput" class="input-label">
                                                     <input id="archivoInput" class="input" name="Ícono" type="file">
@@ -271,7 +271,7 @@ $fechaPredeterminada = date("Y-m-d"); // Fecha actual
                                             </div>
                                         </div>
                                         <input type="text" hidden name="src" id="src_input" value="<?php echo $_SESSION['img']; ?>">
-                                        <input type="submit" value="Cargar imagen" class="btn btn-primary">
+                                        <input type="submit" value="Cargar imagen" id="cambiarIMG" class="btn btn-primary" disabled="true">
                                     </form>
                                 </div>
                             </div>
@@ -574,6 +574,7 @@ $fechaPredeterminada = date("Y-m-d"); // Fecha actual
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/bold-and-dark.js"></script>
     <script src="assets/js/course-navigation.js"></script>
+    <script src="assets/js/enable-input.js"></script>
     <?php
     if (isset($_GET["msg"])) {
         $msg = $_GET['msg'];
