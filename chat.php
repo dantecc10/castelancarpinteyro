@@ -42,6 +42,7 @@ session_start();
     <link rel="stylesheet" href="assets/css/Carousel-Hero.css">
     <link rel="stylesheet" href="assets/css/extra.css">
     <link rel="stylesheet" href="assets/css/uiverse.css">
+    <link rel="stylesheet" href="assets/css/msg.css">
     <script src="assets/js/autoLogin.js"></script>
 </head>
 

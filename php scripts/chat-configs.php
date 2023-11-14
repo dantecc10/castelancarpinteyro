@@ -26,13 +26,13 @@ $apUniqueContactContaine = "<div class='row sup-contact-container d-flex align-s
                                     <div class='mb-3 d-flex'>
                                         <div class='d-flex align-items-start'>
                                             <p>";
-$apUniqueContactContaine = "               </p>
+$ciUniqueContactContaine = "               </p>
                                         </div>                                                
                                     </div>                                                
                                 </div>
                             </div>";
 
-$clChatContainerContacts = "
+$ciChatContainerContacts = "
                                     </div>
                                 </div>
                             </div>";
