@@ -51,28 +51,6 @@ $fechaPredeterminada = date("Y-m-d"); // Fecha actual
 
 <body>
     <!-- Start: Navbar Centered Links -->
-    <?php
-    if (isset($_GET["msg"])) {
-        $msg = $_GET['msg'];
-        switch ($msg) {
-            case 'success':
-                echo "<script>alert('Información actualizada exitosamente.')</script>";
-                break;
-            case 'fail':
-                echo "<script>alert('Falló la actualización de información.')</script>";
-                break;
-            case 'no-photo':
-                echo "<script>alert('Primero debes cargar una imagen en el ícono de carga de archivos.')</script>";
-                break;
-            case 'no-changes':
-                echo "<script>alert('No modificaste nada de información.')</script>";
-                break;
-            default:
-                # code...
-                break;
-        }
-    }
-    ?>
     <nav class="navbar navbar-dark navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="https://castelancarpinteyro.com">
@@ -596,6 +574,28 @@ $fechaPredeterminada = date("Y-m-d"); // Fecha actual
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/bold-and-dark.js"></script>
     <script src="assets/js/course-navigation.js"></script>
+    <?php
+    if (isset($_GET["msg"])) {
+        $msg = $_GET['msg'];
+        switch ($msg) {
+            case 'success':
+                echo "<script>alert('Información actualizada exitosamente.')</script>";
+                break;
+            case 'fail':
+                echo "<script>alert('Falló la actualización de información.')</script>";
+                break;
+            case 'no-photo':
+                echo "<script>alert('Primero debes cargar una imagen en el ícono de carga de archivos.')</script>";
+                break;
+            case 'no-changes':
+                echo "<script>alert('No modificaste nada de información.')</script>";
+                break;
+            default:
+                # code...
+                break;
+        }
+    }
+    ?>
 </body>
 
 </html>
