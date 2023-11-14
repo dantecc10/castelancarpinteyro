@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">

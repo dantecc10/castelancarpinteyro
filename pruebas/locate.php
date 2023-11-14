@@ -3,7 +3,7 @@ $ip = $_SERVER['REMOTE_ADDR'];
 echo $ip;
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">

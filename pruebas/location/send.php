@@ -119,7 +119,7 @@ $_SESSION['mensaje'] = array();
 */
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">
