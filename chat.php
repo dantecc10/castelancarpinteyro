@@ -69,6 +69,9 @@ session_start();
         </div>
     </nav><!-- End: Navbar Centered Links -->
     <section class="py-5">
+        <?php
+        include "php scripts/build-chat.php";
+        ?>
     </section><!-- Start: Footer Multi Column -->
     <footer class="bg-dark">
         <div class="container py-4 py-lg-5">

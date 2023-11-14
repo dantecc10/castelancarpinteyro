@@ -12,7 +12,7 @@ $conexiónPDO = new mysqli("localhost", $data[0], $data[1], $data[2]);
 if ($conexiónPDO->connect_error) {
     die("La conexión a la base de datos falló: " . $conexiónPDO->connect_error);
 } else {
-    echo "Conexión establecida";
+    //echo "Conexión establecida";
 }
 
 $sql = "SELECT * FROM `messages` WHERE (`receiver_msg` = ? AND `sender_msg` = ?) OR (`sender_msg` = ? AND `receiver_msg` = ?)";
@@ -26,7 +26,7 @@ if ($stmt) {
     if ($resultado->num_rows > 0) {
         $i = 0;
         while ($fila = $resultado->fetch_assoc()) {
-            echo ("<br>" . var_dump($fila) . "<br>");
+            //echo ("<br>" . var_dump($fila) . "<br>");
             $new_id_msg = ("" . $fila["id_msg"] . "");
             $new_receiver_msg = ("" . $fila["receiver_msg"] . "");
             $new_sender_msg = ("" . $fila["sender_msg"] . "");
@@ -48,6 +48,7 @@ if ($stmt) {
         // Cerrar la conexión a la base de datos
         $stmt->close();
         $conexiónPDO->close();
+        header("Location: build-chat.php");
     } else {
         // Acceso denegado, mostrar un mensaje de error y redireccionar a la página de inicio de sesión
         echo "No tienes un chat con el usuario " . $chatUser;
@@ -55,4 +56,3 @@ if ($stmt) {
         //header("Location: ../account.php");
     }
 }
-?>
