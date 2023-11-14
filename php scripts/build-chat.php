@@ -1,7 +1,7 @@
     <?php
     session_start();
-    include "chat-configs.php";
-    $echoVar = ""; // Debug
+    //include "chat-configs.php";
+    //$echoVar = ""; // Debug
     if (isset($_SESSION['chat'])) {
         for ($i = 0; $i < $_SESSION['límite']; $i++) {
             //echo "Mensaje ";
@@ -9,10 +9,10 @@
             if ($_SESSION['chat']['chat']['sender_msg'][$i] == $_SESSION['id']) {
                 // El mensaje fue enviado por el usuario logeado
                 //echo (/*"del usuario " . $_SESSION['chat']['chat']['sender_msg'][$i] . ", para el usuario " . */$_SESSION['chat']['chat']['receiver_msg'][$i] . ":" . $apMsgSent . $_SESSION['chat']['chat']['content_msg'][$i] . $clMsgSent);
-                $echoVar  = ($echovar . $apMsgSent . $_SESSION['chat']['chat']['content_msg'][$i] . $clMsgSent);
+                echo ($apMsgSent . $_SESSION['chat']['chat']['content_msg'][$i] . $clMsgSent);
             } else {
                 // El mensaje fue enviado por el otro usuario
-                $echoVar  = ($echovar . $apMsgReceived . $_SESSION['chat']['chat']['content_msg'][$i] . $clMsgReceived);
+                echo  = ($apMsgReceived . $_SESSION['chat']['chat']['content_msg'][$i] . $clMsgReceived);
             }
             //echo "<br>";
         }

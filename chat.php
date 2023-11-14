@@ -70,7 +70,7 @@ session_start();
     </nav><!-- End: Navbar Centered Links -->
     <section class="py-5">
         <?php
-        include "php scripts/build-chat.php";
+        include "php scripts/chat-configs.php";
         ?>
     </section><!-- Start: Footer Multi Column -->
     <footer class="bg-dark">
