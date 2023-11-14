@@ -51,7 +51,7 @@
             }
             //echo "<br>";
         }
-        showTestHTML($echoVar)
+        showTestHTML($echoVar);
     } else {
         echo "Aquí no hay nada de chats.";
         header("Location: ../account.php");
