@@ -19,7 +19,7 @@ session_start();
         gtag('config', 'G-HV59T08TYC');
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Iniciar sesión - Castelán Carpinteyro</title>
+    <title>Chat - Castelán Carpinteyro</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9258502939818184" crossorigin="anonymous"></script>
 
     <meta name="theme-color" content="#5436cd">
