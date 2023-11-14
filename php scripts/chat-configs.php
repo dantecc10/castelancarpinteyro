@@ -47,34 +47,3 @@ $apChatContainerMessages = "<div class='col col-lg-9'>
 $clChatContainerMessages = "        </div>
                                 </div>
                             </div>";
-
-echo (
-    $apMaxChatContainer . $apChatContainerContacts .
-    $apUniqueContactContaine
-    .
-    "Dante Castelán Carpinteyro"
-    .
-    $ciUniqueContactContaine . $ciChatContainerContacts
-    .
-    $apChatContainerMessages
-    .
-
-    $apMsgReceived .
-    "¡Saludos!" .
-    $clMsgReceived .
-
-    $apMsgReceived .
-    "¡Tengo una pregunta!" .
-    $clMsgReceived .
-
-    $apMsgReceived .
-    "¿Cuánto tardará en estar listo el chat de texto?" .
-    $clMsgReceived .
-
-    $apMsgSent .
-    "¡Hola! Espero lanzarlo en máximo un mes." .
-    $clMsgSent .
-    include "build-chat.php";
-    .
-    $clChatContainerMessages . $clMaxChatContainer
-);
