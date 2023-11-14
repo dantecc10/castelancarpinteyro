@@ -19,7 +19,7 @@ $clMaxChatContainer = " </div>
 $apChatContainerContacts = "<div class='col col-lg-3'>
                                 <div class='card'>
                                     <div class='card-header py-3'>
-                                        <p class='text-primary m-0 fw-bold'>Contactos</p>
+                                        <p class='text-primary card-title m-0 fw-bold'>Contactos</p>
                                     </div>
                                     <div class='card-body py-3'>";
 
@@ -42,10 +42,22 @@ $ciChatContainerContacts = "
 $apChatContainerMessages = "<div class='col col-lg-9'>
                                 <div class='card'>
                                     <div class='card-header py-3'>
-                                        <p class='text-primary m-0 fw-bold'>Chat con Dante</p>
+                                        <p class='text-primary card-title m-0 fw-bold'>Chat con Dante</p>
                                     </div>
                                     <div class='card-body py-3'>";
 
 $clChatContainerMessages = "        </div>
+                                    <div class='card-footer py-3'>
+                                        <div class='row d-flex'>
+                                            <div class='col dflex' col-lg-10>
+                                                <textarea class='textarea-msg'></textarea>
+                                            </div>
+                                            <div class='col dflex' col-lg-2>
+                                                <button class='btn btn-primary'>
+                                                    Enviar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>";
