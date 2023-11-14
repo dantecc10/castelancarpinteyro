@@ -36,7 +36,11 @@ if ($resultado->num_rows > 0) {
     }
     $conexiónPDO->close();
     //$fecha=$_SESSION['nacimiento'];
-    header("Location: ../index.php");
+    if (isset($_POST['redirect'])) {
+        header("Location: ../" . $_POST['redirect']);
+    } else {
+        header("Location: ../index.php");
+    }
 } else {
     // Acceso denegado, mostrar un mensaje de error y redireccionar a la página de inicio de sesión
     echo "Nombre de usuario o contraseña incorrectos";
@@ -45,4 +49,3 @@ if ($resultado->num_rows > 0) {
 }
 
 // Cerrar la conexión a la base de datos
-?>
