@@ -1,5 +1,5 @@
     <?php
-    session_start();
+    //session_start();
     include "chat-configs.php";
     function showTestHTML($a)
     {

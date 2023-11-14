@@ -48,7 +48,7 @@ if ($stmt) {
         // Cerrar la conexión a la base de datos
         $stmt->close();
         $conexiónPDO->close();
-        header("Location: build-chat.php");
+        //header("Location: build-chat.php");
     } else {
         // Acceso denegado, mostrar un mensaje de error y redireccionar a la página de inicio de sesión
         echo "No tienes un chat con el usuario " . $chatUser;

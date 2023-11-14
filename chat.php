@@ -74,6 +74,7 @@ if (!isset($_SESSION['id'])) {
     </nav><!-- End: Navbar Centered Links -->
     <section class="py-5">
         <?php
+        include "php scripts/sync-msg.php";
         include "php scripts/build-chat.php";
         ?>
     </section><!-- Start: Footer Multi Column -->
