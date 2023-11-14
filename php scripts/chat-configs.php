@@ -11,8 +11,10 @@ $apMsgSent = "<div class='msg-container align-items-left'>
 $clMsgSent = "      </span>
               </div>";
 
-$apMaxChatContainer = "<div class='row'>";
-$clMaxChatContainer = "</div>";
+$apMaxChatContainer = "<div class='container py-5'>
+                        <div class='row d-flex justify-content-center'>";
+$clMaxChatContainer = " </div>
+                       </div>";
 
 $apChatContainerContacts = "<div class='col col-lg-3'>
                                 <div class='card'>
