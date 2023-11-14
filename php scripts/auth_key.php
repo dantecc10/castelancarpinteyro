@@ -54,7 +54,6 @@ while ($contador < 5) {
     if ($auth_key == null) {
         $auth_key = generateKey($email);
     } else {
-        include "dynamicSecrets.php";
         $data = generatePasskey('sql');
 
         $conexiónPDO = new mysqli("localhost", $data[0], $data[1], $data[2]);
@@ -85,5 +84,4 @@ while ($contador < 5) {
 if ($contador == 5) {
     # code...
 }
-    //echo $auth_key; // Debug 🐞
-?>
+//echo $auth_key; // Debug 🐞
