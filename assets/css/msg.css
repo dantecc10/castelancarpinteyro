@@ -14,6 +14,6 @@
     border-bottom-left-radius: 5%;
 }
 
-.msg-container {
-    margin: 5px 10px;
+.msg-container span {
+    padding: 10px;
 }
