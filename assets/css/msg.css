@@ -32,3 +32,8 @@ textarea.textarea-msg {
     width: 100%;
     resize: none;
 }
+
+p.p-contacto {
+    word-wrap: break-word;
+    overflow: hidden;
+}

@@ -32,7 +32,7 @@ $apUniqueContactContaine = "<div class='row sup-contact-container d-flex align-s
                                                     <svg></svg>
                                                 </div>
                                                     <div class='col col-lg-9 col-mb-9'>
-                                                        <p>";
+                                                        <p class='p-contacto'>";
 $ciUniqueContactContaine = "                            </p>
                                                     </div>
                                                 </div>
