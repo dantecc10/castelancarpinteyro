@@ -6,7 +6,7 @@ $data = generatePasskey('sql');
 $conexión = mysqli_connect("localhost", $data[0], $data[1], $data[2]);
 include "configsCarrusel.php";
 $tablaSQL = "carrusel_principal_ítems"; // Línea de configuración
-$campos = ['', 'id_ítem', 'título_ítem', 'descripción_ítem', 'link_ítem', 'imagen_ítem', 'activo_ítem']; // Línea de configuración
+$campos = ['', 'id_ítem', 'título_ítem', 'descripción_ítem', 'linkV_ítem', 'imagen_ítem', 'activo_ítem']; // Línea de configuración
 
 $consulta = ("SELECT * FROM `" . $tablaSQL  . "` WHERE (`activo_ítem` = true)");
 $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");

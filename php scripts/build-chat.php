@@ -15,9 +15,7 @@
     include "chat-configs.php";
 
     if (isset($_SESSION['chat'])) {
-
         for ($i = 0; $i < $_SESSION['límite']; $i++) {
-
             echo "Mensaje ";
 
             //var_dump($_SESSION['chat']);
