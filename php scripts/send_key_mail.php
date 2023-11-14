@@ -16,7 +16,7 @@ require_once('../vendor/phpmailer/phpmailer/src/SMTP.php');
 require_once('../vendor/phpmailer/phpmailer/src/Exception.php');
 
 include "dynamicSecrets.php";
-include "secrets.php";
+//include "secrets.php";
 
 $data = generatePasskey('auth');
 
@@ -64,6 +64,7 @@ if (($_SESSION['key'] != null) && $_SESSION['email'] != null) {
         //echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
         //echo "Excepción lanzada: " . $e->getMessage();
     }
+    unset($_SESSION['key']);
     header("Location: ../verify.php");
 }
 
