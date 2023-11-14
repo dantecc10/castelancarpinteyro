@@ -49,4 +49,6 @@ div.send-div svg {
     margin: 12.5%;
     height: 75%;
     width: 75%;
+    fill: white;
+    padding: 0% !important;
 }
