@@ -3,8 +3,6 @@
 namespace PHPMailer\PHPMailer;
 
 session_start();
-$_SESSION['key'] = '526722';
-$_SESSION['email'] = 'jeshuaarriaga@gmail.com';
 
 //include "../../php scripts/dynamicMailSettings.php"; // Importación de configuración dinámica
 
