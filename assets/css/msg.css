@@ -16,8 +16,10 @@
 
 .msg-container span {
     padding: 10px;
+    margin-bottom: 2.5px;
 }
 
-div.max-msg-container{
-    
+div.max-msg-container {
+    max-height: 200px;
+    overflow: hidden;
 }
