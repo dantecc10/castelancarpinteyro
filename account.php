@@ -61,6 +61,9 @@ $fechaPredeterminada = date("Y-m-d"); // Fecha actual
             case 'fail':
                 echo "<script>alert('Falló la actualización de información.')</script>";
                 break;
+            case 'no-photo':
+                echo "<script>alert('Primero debes cargar una imagen en el ícono de carga de archivos.')</script>";
+                break;
             case 'no-changes':
                 echo "<script>alert('No modificaste nada de información.')</script>";
                 break;

@@ -50,6 +50,9 @@ if (move_uploaded_file($url_temp, $url_target)) {
     $db->close();
     header("Location: ../account.php");
 } else {
-    echo "Ha habido un error al cargar tu archivo (" . htmlspecialchars(basename($file)) . ").";
+    if (($file == null) || ($file == "")) { # code...
+        header("Location: ../account.php?msg=no-photo");
+    } else {
+        echo "Ha habido un error al cargar tu archivo (" . htmlspecialchars(basename($file)) . ").";
+    }
 }
-?>
