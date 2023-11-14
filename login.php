@@ -95,6 +95,11 @@ session_start();
                                                                                                                                                                 //session_destroy(); // Debug 🐞
                                                                                                                                                             }
                                                                                                                                                             ?>></div>
+                                <?php
+                                if (isset($_GET['redirect'])) {
+                                    echo ("<input type='text' name='redirect' value='" . $_GET['redirect'] . "' hidden>");
+                                }
+                                ?>
                                 <div class="mb-3"><button onload="javascript:checkFields();" class="btn btn-primary shadow d-block w-100" type="submit">Iniciar sesión</button></div>
                                 <p class="text-muted">¿Olvidaste tu <a href="forgot.php">contraseña</a>?</p>
                                 <p class="text-muted">¿No tienes una cuenta?&nbsp;<a href="signin.php">Regístrate</a>.<br></p>

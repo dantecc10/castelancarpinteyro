@@ -20,7 +20,7 @@
             $clMsgReceived .
 
             $apMsgReceived .
-            "¡Tengo una pregunta!" .
+            "¡Tengo dos preguntas!" .
             $clMsgReceived .
 
             $apMsgReceived .
