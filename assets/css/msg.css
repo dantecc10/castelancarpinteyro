@@ -1,9 +1,19 @@
 .received-msg {
     color: white;
     background-color: darkslategray;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
 }
 
 .sent-msg {
     color: white;
     background-color: rgb(56, 9, 185);
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+.msg-container {
+    padding: 20% 0%;
 }
