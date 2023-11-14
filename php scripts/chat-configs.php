@@ -1,13 +1,13 @@
 <?php
 /*Los mensajes han de concatenarse en medio de estas variables para encerrar ese simple texto en código HTML
     formateable y estilizable*/
-$apMsgReceived = "<div class='msg-container d-flex' style='justify-content: flex-initial;'>
-                    <span class='received-msg'>";
+$apMsgReceived = "<div class='msg-container d-flex' justify-content-initial'>
+                    <span class='received-msg msg rounded'>";
 $clMsgReceived = "  </span>
                   </div>";
 
-$apMsgSent = "<div class='msg-container d-flex' style='justify-content: flex-end;'>
-                    <span class='sent-msg'>";
+$apMsgSent = "<div class='msg-container d-flex justify-content-end'>
+                    <span class='sent-msg msg rounded'>";
 $clMsgSent = "      </span>
               </div>";
 
