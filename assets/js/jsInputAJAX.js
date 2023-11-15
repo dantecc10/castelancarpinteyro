@@ -1,11 +1,8 @@
-export function verificarClave() {
+function verificarClave() {
     // Obtener los valores de los campos de entrada
-    let clave = "";
-    for (let i = 1; i <= 6; i++) {
-        clave += document.getElementById("input" + i).value;
-    }
-    let email = document.getElementById("email").value;
-    console.log("Correo: " + email + "\nClave: " + clave); // Debug 🐞
+    receiver = document.getElementById("info-receiver").value;
+    content = document.getElementById("info-content").value;
+    type = document.getElementById("info-type").value;
 
     // Crear objeto XMLHttpRequest
     let xhr = new XMLHttpRequest();
@@ -13,17 +10,33 @@ export function verificarClave() {
         if (this.readyState == 4 && this.status == 200) {
             // Procesar la respuesta del servidor
             if (this.responseText == "true") {
-                // La clave y el email son válidos
-                // Aquí puedes agregar código para manejar una clave y email válidos
-                alert("Clave y email válidos");
+                //Manejar valores
             } else {
-                // La clave o el email no son válidos
-                // Aquí puedes agregar código para manejar una clave o email no válidos
-                alert("Clave o email no válidos");
+                //Manejar valores
             }
         }
     };
-    xhr.open("POST", "jsInputPHP.php", true);
+    xhr.open("POST", "../../php scripts/add-msg.php", true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr.send("clave=" + clave + "&email=" + email);
+    xhr.send("receiver=" + receiver + "&content=" + content + "&type=" + type);
+}
+function rebuild() {
+    // Obtener los valores de los campos de entrada
+    
+
+    // Crear objeto XMLHttpRequest
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            // Procesar la respuesta del servidor
+            if (this.responseText == "true") {
+                //Manejar valores
+            } else {
+                //Manejar valores
+            }
+        }
+    };
+    xhr.open("POST", "../../php scripts/add-msg.php", true);
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.send("receiver=" + receiver + "&content=" + content + "&type=" + type);
 }

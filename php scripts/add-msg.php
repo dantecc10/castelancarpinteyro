@@ -1,9 +1,9 @@
 <?php
 session_start();
-$datos['msg']['sender'] = "1";
-$datos['msg']['receiver'] = "5";
-$datos['msg']['content'] = "Este mensaje fue agregado por un script de prueba.";
-$datos['msg']['type'] = "text";
+//$sender = $_SESSION['id'];
+$datos['msg']['receiver'] = $_POST['receiver'];
+$datos['msg']['content'] = $_POST['content'];
+$datos['msg']['type'] = $_POST['type'];
 function addMsg($sender, $receiver, $content, $type)
 {
     include "dynamicSecrets.php";
@@ -36,16 +36,14 @@ function addMsg($sender, $receiver, $content, $type)
     $conexiónPDO->close();
 }
 
-if (isset(/*$_GET*/$datos['msg'])) {
-    /*$_GET*/
-    $sender = $datos['msg']['sender'];
-    /*$_GET*/
+if (isset($datos['msg'])) {
+    $sender = $_SESSION['id'];
     $receiver = $datos['msg']['receiver'];
-    /*$_GET*/
     $content = $datos['msg']['content'];
-    if (isset(/*$_GET*/$datos['msg']['type'])) {
-        $type = /*$_GET*/ $datos['msg']['type'];
+    if (isset($datos['msg']['type'])) {
+        $type = $datos['msg']['type'];
     } else {
+        //Tipo de dato por defecto
         $type = "text";
     }
     addMsg($sender, $receiver, $content, $type);

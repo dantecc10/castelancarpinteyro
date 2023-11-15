@@ -1,5 +1,5 @@
     <?php
-    //session_start();
+    include "sync-msg.php";
     include "chat-configs.php";
     function showTestHTML($a)
     {
@@ -35,7 +35,7 @@
             $clChatContainerMessages . $clMaxChatContainer
         );
     }
-    
+
     $echoVar = ""; // Debug
     if (isset($_SESSION['chat'])) {
         for ($i = 0; $i < $_SESSION['límite']; $i++) {
