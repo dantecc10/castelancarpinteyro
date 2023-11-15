@@ -47,6 +47,7 @@ if (!isset($_SESSION['id'])) {
     <link rel="stylesheet" href="assets/css/uiverse.css">
     <link rel="stylesheet" href="assets/css/msg.css">
     <script src="assets/js/autoLogin.js"></script>
+    <script src="assets/js/chat-AJAX.js"></script>
 </head>
 
 <body>
