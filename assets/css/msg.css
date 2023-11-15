@@ -22,7 +22,7 @@ div.max-msg-container card-body {
     overflow-y: scroll;
 }
 
-textarea.textarea-msg {
+.textarea-msg {
     height: 100%;
     width: 100%;
     resize: none;
