@@ -1,5 +1,9 @@
 <?php
 session_start();
+$datos['msg']['sender'] = "1";
+$datos['msg']['receiver'] = "5";
+$datos['msg']['content'] = "Este mensaje fue agregado por un script de prueba.";
+$datos['msg']['type'] = "text";
 function addMsg($sender, $receiver, $content, $type)
 {
     include "dynamicSecrets.php";
@@ -23,11 +27,11 @@ function addMsg($sender, $receiver, $content, $type)
 
     // Verificar el éxito de la inserción
     if ($stmt->affected_rows > 0) {
-        echo('Se ha añadido el mensaje a la base de datos');
+        echo ('Se ha añadido el mensaje a la base de datos');
     } else {
         echo "Error al almacenar o procesar el mensaje."; // Debug 🐞
     }
-    
+
     // Cerrar la conexión
     $conexiónPDO->close();
 }
@@ -44,6 +48,7 @@ if (isset(/*$_GET*/$datos['msg'])) {
     } else {
         $type = "text";
     }
+    addMsg($sender, $receiver, $content, $type);
 } else {
     echo ("Parámetros inválidos.");
 }
