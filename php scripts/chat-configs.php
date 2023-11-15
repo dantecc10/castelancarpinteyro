@@ -55,7 +55,7 @@ $clChatContainerMessages = "        </div>
                                     <div class='card-footer py-1'>
                                         <div class='row d-flex'>
                                             <div class='col d-flex col-sm-10 col-md-10 col-lg-10'>
-                                                <textarea class='textarea-msg info-content'></textarea>
+                                                <input class='textarea-msg info-content'>
                                             </div>
                                             <div class='col d-flex p-0 m-0 col-sm-2 col-md-2 col-lg-2' onclick='javascript:addMsg();'>
                                                 <div class='btn btn-primary send-div'>
