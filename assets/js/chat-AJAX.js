@@ -17,7 +17,7 @@ function rebuild() {
 function addMsg() {
     // Obtener los valores de los campos de entrada
     receiver = document.getElementById("info-receiver").value;
-    content = document.getElementById("info-content").value;
+    content = document.getElementsByClassName("info-content")[0].value;
     type = document.getElementById("info-type").value;
 
     // Crear objeto XMLHttpRequest
