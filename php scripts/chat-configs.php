@@ -55,9 +55,9 @@ $clChatContainerMessages = "        </div>
                                     <div class='card-footer py-1'>
                                         <div class='row d-flex'>
                                             <div class='col d-flex col-sm-10 col-md-10 col-lg-10'>
-                                                <textarea class='textarea-msg'></textarea>
+                                                <textarea class='textarea-msg info-content'></textarea>
                                             </div>
-                                            <div class='col d-flex p-0 m-0 col-sm-2 col-md-2 col-lg-2'>
+                                            <div class='col d-flex p-0 m-0 col-sm-2 col-md-2 col-lg-2' onclick='javascript:;'>
                                                 <div class='btn btn-primary send-div'>
                                                     <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='#AF40FF' height='64px' width='64px' version='1.1' id='Layer_1' viewBox='-35.84 -35.84 583.68 583.68' xml:space='preserve' stroke='#AF40FF' transform='matrix(1, 0, 0, 1, 0, 0)rotate(0)' stroke-width='0.00512' style='height: 70%;width: 100%;color:  white !important;'>
                                                         <g id='SVGRepo_bgCarrier' stroke-width='0'></g>                                                
