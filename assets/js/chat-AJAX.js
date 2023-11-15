@@ -14,7 +14,7 @@ function rebuild() {
     //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     //xhr.send("receiver=" + receiver + "&content=" + content + "&type=" + type);
 }
-function addMesg() {
+function addMsg() {
     // Obtener los valores de los campos de entrada
     receiver = document.getElementById("info-receiver").value;
     content = document.getElementById("info-content").value;
