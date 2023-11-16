@@ -2,7 +2,8 @@
 session_start();
 //$sender = $_SESSION['id'];
 $datos['msg']['receiver'] = $_POST['receiver'];
-$datos['msg']['content'] = $_POST['content'];
+$datos['msg']['content'] = str_replace('\n', '
+', $_POST['content']);
 $datos['msg']['type'] = $_POST['type'];
 function addMsg($sender, $receiver, $content, $type)
 {
