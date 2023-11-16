@@ -54,12 +54,11 @@ function prepararEventos() {
             event.preventDefault();
             // Llama a la función que necesitas al presionar 'Enter'
             addMsg();
-        } else {
-            if (event.ctrlKey && event.key === "Enter") {
-                // Aquí coloca la lógica que quieres ejecutar al presionar 'Ctrl + Enter'
-                event.preventDefault();
-                inputField.value += "\n";
-            }
+        }
+        if (event.ctrlKey && event.key === "Enter") {
+            // Aquí coloca la lógica que quieres ejecutar al presionar 'Ctrl + Enter'
+            event.preventDefault();
+            inputField.value += "\n";
         }
     });
 }
