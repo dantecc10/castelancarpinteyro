@@ -38,9 +38,9 @@ function addMsg($sender, $receiver, $content, $type)
 }
 
 if (isset($datos['msg'])) {
-    $sender = $_SESSION['id'][0];
-    $receiver = $datos['msg']['receiver'][0];
-    $content = $datos['msg']['content'][0];
+    $sender = $_SESSION['id'];
+    $receiver = $datos['msg']['receiver'];
+    $content = $datos['msg']['content'];
     if (isset($datos['msg']['type'])) {
         $type = $datos['msg']['type'];
     } else {
