@@ -16,7 +16,7 @@ function addMsg() {
     // Obtener los valores de los campos de entrada
     receiver = document.getElementById("info-receiver").innerText;
 
-    content = document.getElementsById("info-content").value;
+    content = document.getElementById("info-content").value;
     type = document.getElementById("info-type").innerText;
 
     // Crear objeto XMLHttpRequest
