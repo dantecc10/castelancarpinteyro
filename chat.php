@@ -76,7 +76,7 @@ if (!isset($_SESSION['id'])) {
     <div class="chat-data">
         <style>
             .chat-data {
-                display: none;
+                /*display: none;*/
             }
         </style>
         <span id="info-receiver">5</span>
