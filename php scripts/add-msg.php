@@ -29,6 +29,8 @@ function addMsg($sender, $receiver, $content, $type)
     // Verificar el éxito de la inserción
     if ($stmt->affected_rows > 0) {
         echo ('Se ha añadido el mensaje a la base de datos');
+        unset($datos);
+        exit();
     } else {
         echo "Error al almacenar o procesar el mensaje."; // Debug 🐞
     }
@@ -52,4 +54,3 @@ if (isset($datos['msg'])) {
     echo ("Parámetros inválidos.");
 }
 
-unset($datos);
