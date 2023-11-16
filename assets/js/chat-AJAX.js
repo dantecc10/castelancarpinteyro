@@ -47,20 +47,17 @@ window.addEventListener("load", function () {
     chatDiv.scrollTop = chatDiv.scrollHeight;
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    var inputField = document.getElementById("info-content");
-    inputField.addEventListener("keypress", function (event) {
-        if (event.key === "Enter") {
-            // Aquí coloca la lógica que quieres ejecutar al presionar 'Enter'
+document.getElementById("info-content").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        // Aquí coloca la lógica que quieres ejecutar al presionar 'Enter'
+        event.preventDefault();
+        // Llama a la función que necesitas al presionar 'Enter'
+        addMsg();
+    } else {
+        if (event.ctrlKey && event.key === "Enter") {
+            // Aquí coloca la lógica que quieres ejecutar al presionar 'Ctrl + Enter'
             event.preventDefault();
-            // Llama a la función que necesitas al presionar 'Enter'
-            addMsg();
-        } else {
-            if (event.ctrlKey && event.key === "Enter") {
-                // Aquí coloca la lógica que quieres ejecutar al presionar 'Ctrl + Enter'
-                event.preventDefault();
-                inputField.value += "\n";
-            }
+            inputField.value += "\n";
         }
-    });
+    }
 });
