@@ -47,7 +47,6 @@ if (!isset($_SESSION['id'])) {
     <link rel="stylesheet" href="assets/css/uiverse.css">
     <link rel="stylesheet" href="assets/css/msg.css">
     <script src="assets/js/autoLogin.js"></script>
-    <script src="assets/js/chat-AJAX.js"></script>
 </head>
 
 <body>
@@ -149,6 +148,7 @@ if (!isset($_SESSION['id'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/bold-and-dark.js"></script>
+    <script src="assets/js/chat-AJAX.js"></script>
 </body>
 
 </html>

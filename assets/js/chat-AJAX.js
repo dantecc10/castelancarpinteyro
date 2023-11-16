@@ -46,18 +46,19 @@ window.addEventListener("load", function () {
     // Haz scroll hacia abajo, al final del div
     chatDiv.scrollTop = chatDiv.scrollHeight;
 });
-
-document.getElementById("info-content").addEventListener("keypress", function (event) {
-    if (event.key === "Enter") {
-        // Aquí coloca la lógica que quieres ejecutar al presionar 'Enter'
-        event.preventDefault();
-        // Llama a la función que necesitas al presionar 'Enter'
-        addMsg();
-    } else {
-        if (event.ctrlKey && event.key === "Enter") {
-            // Aquí coloca la lógica que quieres ejecutar al presionar 'Ctrl + Enter'
+function prepararEventos() {
+    document.getElementById("info-content").addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            // Aquí coloca la lógica que quieres ejecutar al presionar 'Enter'
             event.preventDefault();
-            inputField.value += "\n";
+            // Llama a la función que necesitas al presionar 'Enter'
+            addMsg();
+        } else {
+            if (event.ctrlKey && event.key === "Enter") {
+                // Aquí coloca la lógica que quieres ejecutar al presionar 'Ctrl + Enter'
+                event.preventDefault();
+                inputField.value += "\n";
+            }
         }
-    }
-});
+    });
+}
