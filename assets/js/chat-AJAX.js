@@ -26,6 +26,7 @@ function addMsg() {
             // Procesar la respuesta del servidor
             if (this.responseText != null) {
                 rebuild();
+                setEvents();
             }
         }
     };
