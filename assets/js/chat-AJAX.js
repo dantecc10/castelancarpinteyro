@@ -25,8 +25,6 @@ function addMsg() {
             // Procesar la respuesta del servidor
             if (this.responseText != null) {
                 rebuild();
-            } else {
-                //Manejar errores
             }
         }
     };
@@ -49,21 +47,20 @@ window.addEventListener("load", function () {
     chatDiv.scrollTop = chatDiv.scrollHeight;
 });
 
-
-var inputField = document.getElementById("info-content");
-inputField.addEventListener("keypress", function (event) {
-    if (event.key === "Enter") {
-        // Aquí coloca la lógica que quieres ejecutar al presionar 'Enter'
-        addMsg();
-        event.preventDefault(); // Evita el comportamiento por defecto, como el salto de línea en un textarea
-        // Llama a la función que necesitas al presionar 'Enter'
-        // sendMessage();
-    } else {
-        if (event.ctrlKey && event.key === "Enter") {
-            // Aquí coloca la lógica que quieres ejecutar al presionar 'Ctrl + Enter'
-            event.preventDefault(); // Evita el comportamiento por defecto, como el salto de línea en un textarea
-            inputField.value += "\n";
+document.addEventListener("DOMContentLoaded", function () {
+    var inputField = document.getElementById("info-content");
+    inputField.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            // Aquí coloca la lógica que quieres ejecutar al presionar 'Enter'
+            event.preventDefault();
+            // Llama a la función que necesitas al presionar 'Enter'
+            addMsg();
+        } else {
+            if (event.ctrlKey && event.key === "Enter") {
+                // Aquí coloca la lógica que quieres ejecutar al presionar 'Ctrl + Enter'
+                event.preventDefault();
+                inputField.value += "\n";
+            }
         }
-    }
-
+    });
 });
