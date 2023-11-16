@@ -1,11 +1,11 @@
 function rebuild() {
     // Obtener los valores de los campos de entrada
     document.getElementById('chat-section-container').innerHTML = "";
-    $(document).ready(function() {
+    $(document).ready(function () {
         $.ajax({
             url: '../../php scripts/build-chat.php',
             method: 'GET', // Método GET para enviar la solicitud sin variables
-            success: function(response) {
+            success: function (response) {
                 // Insertar la respuesta en el elemento con id="resultado"
                 $('#chat-section-container').html(response);
             }
@@ -34,3 +34,36 @@ function addMsg() {
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.send("receiver=" + receiver + "&content=" + content + "&type=" + type);
 }
+
+function selectChat(x) {
+    var chat_id = document.getElementById('info-receiver');
+    chat_id.innerText = x;
+    rebuild();
+}
+
+window.addEventListener("load", function () {
+    // Encuentra el div del chat por su ID
+    var chatDiv = document.getElementById("chatDiv");
+
+    // Haz scroll hacia abajo, al final del div
+    chatDiv.scrollTop = chatDiv.scrollHeight;
+});
+
+
+var inputField = document.getElementById("info-content");
+inputField.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        // Aquí coloca la lógica que quieres ejecutar al presionar 'Enter'
+        addMsg();
+        event.preventDefault(); // Evita el comportamiento por defecto, como el salto de línea en un textarea
+        // Llama a la función que necesitas al presionar 'Enter'
+        // sendMessage();
+    } else {
+        if (event.ctrlKey && event.key === "Enter") {
+            // Aquí coloca la lógica que quieres ejecutar al presionar 'Ctrl + Enter'
+            event.preventDefault(); // Evita el comportamiento por defecto, como el salto de línea en un textarea
+            inputField.value += "\n";
+        }
+    }
+
+});

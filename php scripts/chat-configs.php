@@ -49,13 +49,13 @@ $apChatContainerMessages = "<div class='col col-lg-9'>
                                     <div class='card-header py-3'>
                                         <p class='text-primary card-title m-0 fw-bold'>Chat con Dante</p>
                                     </div>
-                                    <div class='card-body py-3'>";
+                                    <div id='chatDiv' class='card-body scrollable-div py-3'>";
 
 $clChatContainerMessages = "        </div>
                                     <div class='card-footer py-1'>
                                         <div class='row d-flex'>
                                             <div class='col d-flex col-sm-10 col-md-10 col-lg-10'>
-                                                <textarea class='textarea-msg info-content'></textarea>
+                                                <textarea id='info-content' class='textarea-msg info-content'></textarea>
                                             </div>
                                             <div class='col d-flex p-0 m-0 col-sm-2 col-md-2 col-lg-2' onclick='javascript:addMsg();'>
                                                 <div class='btn btn-primary send-div'>
