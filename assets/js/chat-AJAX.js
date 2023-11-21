@@ -19,20 +19,24 @@ function addMsg() {
     content = document.getElementById("info-content").value;
     type = document.getElementById("info-type").innerText;
 
-    // Crear objeto XMLHttpRequest
-    let xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            // Procesar la respuesta del servidor
-            if (this.responseText != null) {
-                rebuild();
-                setEvents();
+    if (content != "") {
+        // Crear objeto XMLHttpRequest
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                // Procesar la respuesta del servidor
+                if (this.responseText != null) {
+                    rebuild();
+                    setEvents();
+                }
             }
-        }
-    };
-    xhr.open("POST", "../../php scripts/add-msg.php", true);
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr.send("receiver=" + receiver + "&content=" + content + "&type=" + type);
+        };
+        xhr.open("POST", "../../php scripts/add-msg.php", true);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.send("receiver=" + receiver + "&content=" + content + "&type=" + type);
+    }else{
+        console.log("No se escribió nada.");
+    }
 }
 
 function selectChat(x) {
