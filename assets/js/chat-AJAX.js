@@ -35,7 +35,7 @@ function addMsg() {
         xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhr.send("receiver=" + receiver + "&content=" + content + "&type=" + type);
     }else{
-        console.log("No se escribió nada.");
+        //console.log("No se escribió nada.");
     }
 }
 

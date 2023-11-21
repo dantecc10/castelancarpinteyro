@@ -48,9 +48,6 @@ if ($conexiónPDO->connect_error) {
 
             $_SESSION['chat'] = $datos;
             $_SESSION['límite'] = $i;
-            // Cerrar la conexión a la base de datos
-            $stmt->close();
-            $conexiónPDO->close();
             //header("Location: build-chat.php");
         } else {
             // Acceso denegado, mostrar un mensaje de error y redireccionar a la página de inicio de sesión
@@ -60,3 +57,6 @@ if ($conexiónPDO->connect_error) {
         }
     }
 }
+// Cerrar la conexión a la base de datos
+$stmt->close();
+$conexiónPDO->close();

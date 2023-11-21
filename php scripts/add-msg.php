@@ -1,10 +1,6 @@
 <?php
 session_start();
-//$sender = $_SESSION['id'];
-$datos['msg']['receiver'] = $_POST['receiver'];
-$datos['msg']['content'] = str_replace('\n', '
-', $_POST['content']);
-$datos['msg']['type'] = $_POST['type'];
+
 function addMsg($sender, $receiver, $content, $type)
 {
     include "dynamicSecrets.php";
@@ -28,7 +24,7 @@ function addMsg($sender, $receiver, $content, $type)
 
     // Verificar el éxito de la inserción
     if ($stmt->affected_rows > 0) {
-        echo ('Se ha añadido el mensaje a la base de datos');
+        echo ('Se ha añadido el mensaje a la base de datos.');
         //unset($datos);
         exit();
     } else {
@@ -39,7 +35,14 @@ function addMsg($sender, $receiver, $content, $type)
     $conexiónPDO->close();
 }
 
-if (isset($datos['msg'])) {
+/*if (isset($datos['msg'])) {
+
+    //$sender = $_SESSION['id'];
+    $datos['msg']['receiver'] = $_POST['receiver'];
+    $datos['msg']['content'] = str_replace('\n', '
+', $_POST['content']);
+    $datos['msg']['type'] = $_POST['type'];
+
     $sender = $_SESSION['id'];
     $receiver = $datos['msg']['receiver'];
     $content = $datos['msg']['content'];
@@ -49,8 +52,11 @@ if (isset($datos['msg'])) {
         //Tipo de dato por defecto
         $type = "text";
     }
-    addMsg($sender, $receiver, $content, $type);
+    addMsg($_SESSION['id'], $_POST['receiver'], str_replace('\n', '
+    ', $_POST['content']), $_POST['type']);
 } else {
     echo ("Parámetros inválidos.");
-}
+}*/
 
+addMsg($_SESSION['id'], $_POST['receiver'], str_replace('\n', '
+', $_POST['content']), $_POST['type']);
