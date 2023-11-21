@@ -44,7 +44,7 @@
         }
     }
     if (fetchChat() != null) {
-        showTestHTML($echoVar);
+        showTestHTML(fetchChat());
     } else {
         header("Location: ../account.php");
     }
