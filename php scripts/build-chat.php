@@ -37,14 +37,14 @@
                 }
                 //echo "<br>";
             }
-            return $echoVar;
+            return $echovar;
         } else {
             echo "Aquí no hay nada de chats.";
             return null;
         }
     }
     if (fetchChat() != null) {
-        showTestHTML(fetchChat());
+        showTestHTML($echoVar);
     } else {
         header("Location: ../account.php");
     }
