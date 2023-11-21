@@ -20,10 +20,12 @@ if ($conexiónPDO->connect_error) {
         $stmt->bind_param("iiii", $currentUser, $chatUser, $currentUser, $chatUser);
         $stmt->execute();
         $resultado = $stmt->get_result();
-        if (isset($datos)) {
-            unset($datos);
-        }
         if ($resultado->num_rows > 0) {
+            if (isset($datos)) {
+                if ((sizeof($datos['chat']['id_msg'])) > $resultado->num_rows) {
+                    unset($datos);
+                }
+            }
             $i = 0;
             while ($fila = $resultado->fetch_assoc()) {
                 //echo ("<br>" . var_dump($fila) . "<br>");
@@ -43,6 +45,7 @@ if ($conexiónPDO->connect_error) {
                 $datos['chat']['time_msg'][$i] = $new_time_msg;
                 $i++;
             }
+
             $_SESSION['chat'] = $datos;
             $_SESSION['límite'] = $i;
             // Cerrar la conexión a la base de datos
