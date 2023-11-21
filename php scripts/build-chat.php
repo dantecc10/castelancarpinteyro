@@ -37,7 +37,7 @@
                 }
                 //echo "<br>";
             }
-            return $echovar;
+            return $echoVar;
         } else {
             echo "Aquí no hay nada de chats.";
             return null;
