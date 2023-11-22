@@ -6,7 +6,6 @@ if (isset($_GET['email'])) {
     $email = $_SESSION['email'];
 }
 
-
 function generateKey($email)
 { // Operative ✅
     # $contadorDígitos = 0;
@@ -19,9 +18,7 @@ function generateKey($email)
     // Crear la conexión
     include "dynamicSecrets.php";
     $data = generatePasskey('sql');
-
-    //$conexión = mysqli_connect("localhost", $data[0], $data[1], $data[2]);
-
+    
     $conexiónPDO = new mysqli("localhost", $data[0], $data[1], $data[2]);
 
     // Verificar la conexión
@@ -33,19 +30,14 @@ function generateKey($email)
     $sql = "SELECT * FROM `auth_keys` WHERE ((`auth_key` = '$key_compare') OR (`related_email` = '$email')) AND (`status` = 'Enabled')";
     $result = $conexiónPDO->query($sql);
 
-    // Verificar si se encontraron resultados
     if ($result->num_rows > 0) {
-
-        //header("Location: ../signin.php");
         $conexiónPDO->close();
-        //echo "La clave ya está existe o esa cuenta ya tiene una clave activa."; // Debug 🐞
         return null;
     } else {
         $conexiónPDO->close();
         return $auth_key;
     }
 }
-
 
 $auth_key = generateKey($email);
 $contador = 0;
