@@ -6,7 +6,6 @@ session_start();
 
 //include "../../php scripts/dynamicMailSettings.php"; // Importación de configuración dinámica
 
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
@@ -75,6 +74,4 @@ unset($_SESSION['key']);
 foreach ($_SESSION['nombre'] as $index => $value) {
     unset($_SESSION['nombre'][$index]);
 }
-
 $_SESSION['nombre'] = array();*/
-?>
