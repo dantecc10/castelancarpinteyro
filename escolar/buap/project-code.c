@@ -281,6 +281,7 @@ int main(int argc, char *argv[])
                     }
                 }
                 i++;
+                jugadores++;
             }
             equipos++;
             break;
