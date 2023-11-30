@@ -290,3 +290,19 @@ int main(int argc, char *argv[])
     }
     printf("\niHasta pronto, organizador!");
 }
+
+
+void corrimiento(Equipos Free[8], Equipos Junior[8], int index, int opt, int mode){
+	if(mode = 0){ // Recorrer equipo
+		if(opt ==1){
+			for(int i=(index-1); i<6; i++){
+				Junior[index] = Junior[index-1];
+				strcpy(Junior[7].nombre, "");
+				
+			}
+		}else{
+			
+		}	
+	}
+	
+}
