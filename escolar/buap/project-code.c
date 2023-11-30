@@ -119,7 +119,7 @@ int validateAge(int birth[3], int limits[2]) // recibo parámetros como arreglo:
     return accepted;
 }
 
-void registerPlayer(int opt, int birthInfo[3], int limitAges[2], Equipos Junior[8], Equipos Free[8], int equipos, int i, Cadena name[10][3])
+int registerPlayer(int opt, int birthInfo[3], int limitAges[2], Equipos Junior[8], Equipos Free[8], int equipos, int i, Cadena name[10][3])
 {
     switch (opt)
     {
@@ -136,6 +136,7 @@ void registerPlayer(int opt, int birthInfo[3], int limitAges[2], Equipos Junior[
             Junior[equipos].Players[i].nacimiento[1] = birthInfo[1];
             Junior[equipos].Players[i].nacimiento[2] = birthInfo[2];
         }
+        return 1;
         break;
     }
     case 2:
@@ -151,11 +152,12 @@ void registerPlayer(int opt, int birthInfo[3], int limitAges[2], Equipos Junior[
             Free[equipos].Players[i].nacimiento[1] = birthInfo[1];
             Free[equipos].Players[i].nacimiento[2] = birthInfo[2];
         }
+        return 1;
         break;
     }
 
     default:
-        printf("Error en datos para registro.");
+        return 0;
     }
 }
 
@@ -269,8 +271,14 @@ int main(int argc, char *argv[])
 
                 if (opt == 1 || opt == 2)
                 {
-                    registerPlayer(opt, birthInfo, limitAges, Junior, Free, equipos, i, name);
-                    printf("\nJugador registrado exitosamente.\n");
+                    if (registerPlayer(opt, birthInfo, limitAges, Junior, Free, equipos, i, name) == 1)
+                    {
+                        printf("\nJugador registrado exitosamente.\n");
+                    }
+                    else
+                    {
+                        printf("\nJugador no registrado.\n");
+                    }
                 }
                 i++;
             }
