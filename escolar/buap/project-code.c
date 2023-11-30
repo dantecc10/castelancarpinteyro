@@ -291,36 +291,42 @@ int main(int argc, char *argv[])
     printf("\niHasta pronto, organizador!");
 }
 
-
-void corrimiento(Equipos Free[8], Equipos Junior[8], int index, int opt, int mode){
-	if(mode = 0){ // Recorrer equipo
-		if(opt ==1){
-			for(int i=(index-1); i<6; i++){
-				Junior[index] = Junior[index-1];
-				strcpy(Junior[7].nombre, "");
-			}
-			for(int j = 0; j<7; j++){
-				strcpy(Junior[7].nombre[j], "");
-				strcpy(Junior[7].apPaterno[j], "");
-				strcpy(Junior[7].apMaterno[j], "");
-				Junior[7].nacimiento[0] = 0;
-				Junior[7].nacimiento[1] = 0;
-				Junior[7].nacimiento[2] = 0;
-			}
-		}else{
-			for(int i=(index-1); i<6; i++){
-				Free[index] = Free[index-1];
-				strcpy(Free[7].nombre, "");
-			}
-			for(int j = 0; j<7; j++){
-				strcpy(Free[7].nombre[j], "");
-				strcpy(Free[7].apPaterno[j], "");
-				strcpy(Free[7].apMaterno[j], "");
-				Free[7].nacimiento[0] = 0;
-				Free[7].nacimiento[1] = 0;
-				Free[7].nacimiento[2] = 0;
-			}
-		}	
-	}
-	
-}
+void corrimiento(Equipos Free[8], Equipos Junior[8], int index, int opt, int mode)
+{
+    if (mode = 0)
+    { // Recorrer equipo
+        if (opt == 1)
+        {
+            for (int i = (index - 1); i < 6; i++)
+            {
+                Junior[index] = Junior[index - 1];
+                strcpy(Junior[7].nombre, "");
+            }
+            for (int j = 0; j < 7; j++)
+            {
+                strcpy(Junior[7].nombre, "");
+                strcpy(Junior[7].Players[j].apPaterno, "");
+                strcpy(Junior[7].Players[j].apMaterno, "");
+                Junior[7].Players[j].nacimiento[0] = 0;
+                Junior[7].Players[j].nacimiento[1] = 0;
+                Junior[7].Players[j].nacimiento[2] = 0;
+            }
+        }
+        else
+        {
+            for (int i = (index - 1); i < 6; i++)
+            {
+                Free[index] = Free[index - 1];
+                strcpy(Free[7].nombre, "");
+            }
+            for (int j = 0; j < 7; j++)
+            {
+                strcpy(Free[7].nombre, "");
+                strcpy(Free[7].Players[j].apPaterno, "");
+                strcpy(Free[7].Players[j].apMaterno, "");
+                Free[7].Players[j].nacimiento[0] = 0;
+                Free[7].Players[j].nacimiento[1] = 0;
+                Free[7].Players[j].nacimiento[2] = 0;
+            }
+        }
+    }
