@@ -17,6 +17,54 @@ typedef struct Teams
     Jugadores Players[10];
 } Equipos;
 
+Cadena playerDetails(Cadena datos[3], int nacimiento[3])
+{
+    Cadena mes;
+    switch (nacimiento[2])
+    {
+    case 1:
+        mes = enero;
+        break;
+    case 2:
+        mes = febrero;
+        break;
+    case 3:
+        mes = marzo;
+        break;
+    case 4:
+        mes = abril;
+        break;
+    case 5:
+        mes = mayo;
+        break;
+    case 6:
+        mes = junio;
+        break;
+    case 7:
+        mes = julio;
+        break;
+    case 8:
+        mes = agosto;
+        break;
+    case 9:
+        mes = septiembre;
+        break;
+    case 10:
+        mes = octubre;
+        break;
+    case 11:
+        mes = noviembre;
+        break;
+    case 12:
+        mes = diciembre;
+        break;
+
+    default:
+        break;
+    }
+    printf("\n%s %s %s, nacido el %d de %s del %d\n", datos[0], datos[1], datos[2], nacimiento[0], mes, nacimiento[2]);
+}
+
 int validateAge(int birth[3], int limits[2]) // recibo parámetros como arreglo: dia, mes, anio y limite inferior - superior de edades en anios
 {
     int accepted = 0;
