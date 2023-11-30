@@ -298,10 +298,28 @@ void corrimiento(Equipos Free[8], Equipos Junior[8], int index, int opt, int mod
 			for(int i=(index-1); i<6; i++){
 				Junior[index] = Junior[index-1];
 				strcpy(Junior[7].nombre, "");
-				
+			}
+			for(int j = 0; j<7; j++){
+				strcpy(Junior[7].nombre[j], "");
+				strcpy(Junior[7].apPaterno[j], "");
+				strcpy(Junior[7].apMaterno[j], "");
+				Junior[7].nacimiento[0] = 0;
+				Junior[7].nacimiento[1] = 0;
+				Junior[7].nacimiento[2] = 0;
 			}
 		}else{
-			
+			for(int i=(index-1); i<6; i++){
+				Free[index] = Free[index-1];
+				strcpy(Free[7].nombre, "");
+			}
+			for(int j = 0; j<7; j++){
+				strcpy(Free[7].nombre[j], "");
+				strcpy(Free[7].apPaterno[j], "");
+				strcpy(Free[7].apMaterno[j], "");
+				Free[7].nacimiento[0] = 0;
+				Free[7].nacimiento[1] = 0;
+				Free[7].nacimiento[2] = 0;
+			}
 		}	
 	}
 	
