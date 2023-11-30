@@ -302,7 +302,7 @@ int main(int argc, char *argv[])
                 scanf("%s", tempString);
                 strcpy(name[i][1], tempString);
 
-                printf("\nIndica el apellido paterno: ");
+                printf("\nIndica el apellido materno: ");
                 scanf("%s", tempString);
                 strcpy(name[i][2], tempString);
 
