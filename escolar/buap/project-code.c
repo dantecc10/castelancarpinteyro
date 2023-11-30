@@ -119,8 +119,9 @@ int validateAge(int birth[3], int limits[2]) // recibo parámetros como arreglo:
     return accepted;
 }
 
-int registerPlayer(int opt, int birthInfo[3], int limitAges[2], Equipos Junior[8], Equipos Free[8], int equipos, int i, Cadena name[10][3])
+int registerPlayer(int opt, int birthInfo[3], Equipos Junior[8], Equipos Free[8], int equipos, int i, Cadena name[10][3])
 {
+    int limitAges[2];
     switch (opt)
     {
     case 1:
@@ -227,8 +228,7 @@ int main(int argc, char *argv[])
             printf("Escribe el nombre del equipo:\n");
             scanf("%s", &team_name);
             printf("\n");
-            int i = 0, limitAges[2];
-            int salir = 0;
+            int i = 0, limitAges[2], salir = 0;
             while (jugadores < 6 && salir != 1 && i < 10)
             {
                 if (jugadores > 5)
@@ -271,7 +271,7 @@ int main(int argc, char *argv[])
 
                 if (opt == 1 || opt == 2)
                 {
-                    if (registerPlayer(opt, birthInfo, limitAges, Junior, Free, equipos, i, name) == 1)
+                    if (registerPlayer(opt, birthInfo, Junior, Free, equipos, i, name) == 1)
                     {
                         printf("\nJugador registrado exitosamente.\n");
                     }
