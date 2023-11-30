@@ -215,7 +215,7 @@ int main(int argc, char *argv[])
             opt = 0;
             int jugadores = 0, birthInfo[3];
             Cadena team_name = "", name[10][3], tempString;
-            
+
             while (opt != 1 && opt != 2)
             {
                 printf("Elija una categoria:\n");
