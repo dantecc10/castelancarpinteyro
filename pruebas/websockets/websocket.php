@@ -17,7 +17,7 @@ $key = base64_encode(pack(
     'H*',
     sha1($matches[1] . '258EAFA5-E914-47DA-95CA-C5AB0DC85B11')
 ));
-$headers = "HTTP/1.1 101 Switching Protocols\r\n";
+$headers = "HTTPS/1.1 101 Switching Protocols\r\n";
 $headers .= "Upgrade: websocket\r\n";
 $headers .= "Connection: Upgrade\r\n";
 $headers .= "Sec-WebSocket-Version: 13\r\n";
