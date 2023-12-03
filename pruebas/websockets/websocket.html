@@ -1,0 +1,14 @@
+<html>
+
+<body>
+    <div id="root"></div>
+    <script>
+        var host = 'ws://74.208.62.188:3095/websockets.php';
+        var socket = new WebSocket(host);
+        socket.onmessage = function (e) {
+            document.getElementById('root').innerHTML = e.data;
+        };
+    </script>
+</body>
+
+</html>
