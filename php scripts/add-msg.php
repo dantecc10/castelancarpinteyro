@@ -60,3 +60,4 @@ function addMsg($sender, $receiver, $content, $type)
 
 addMsg($_SESSION['id'], $_POST['receiver'], str_replace('\n', '
 ', $_POST['content']), $_POST['type']);
+?>

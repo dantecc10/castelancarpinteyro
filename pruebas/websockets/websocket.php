@@ -5,7 +5,9 @@ $port = 3095;
 
 // Create WebSocket.
 $server = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
+
 socket_set_option($server, SOL_SOCKET, SO_REUSEADDR, 1);
+
 socket_bind($server, $address, $port);
 socket_listen($server);
 $client = socket_accept($server);
