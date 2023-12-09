@@ -1,12 +1,20 @@
+<!DOCTYPE html>
 <html>
 
 <body>
     <div id="root"></div>
     <script>
-        var host = 'wss://74.208.62.188:3095/websockets.php';
+        var host = 'ws://74.208.62.188:3095'; // Cambia a tu dirección IP y puerto del servidor
         var socket = new WebSocket(host);
-        socket.onmessage = function (e) {
-            document.getElementById('root').innerHTML = e.data;
+
+        socket.onopen = function (event) {
+            console.log('Conectado al servidor');
+            socket.send('¡Hola, servidor!');
+        };
+
+        socket.onmessage = function (event) {
+            console.log('Mensaje del servidor:', event.data);
+            document.getElementById('root').innerHTML = event.data;
         };
     </script>
 </body>
