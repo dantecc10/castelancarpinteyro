@@ -16,7 +16,7 @@ require_once('../../vendor/phpmailer/phpmailer/src/SMTP.php');
 require_once('../../vendor/phpmailer/phpmailer/src/Exception.php');
 
 include "../../php scripts/dynamicSecrets.php";
-include "../../php scripts/secrets.php.php";
+//include "../../php scripts/secrets.php";
 
 $data = generatePasskey('newsletter');
 
