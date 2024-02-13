@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Drag and Drop Example</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<!-- You can create a separate CSS file for your styles -->
+	</head>
+	<body>
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col col-12 col-md-6">
+					<h5>Drag these words:</h5>
+					<div id="wordList" class="list-group">
+						<div class="list-group-item draggable" draggable="true" id="word1">
+							Hello
+						</div>
+						<div class="list-group-item draggable" draggable="true" id="word2">
+							World
+						</div>
+						<div class="list-group-item draggable" draggable="true" id="word3">
+							Goodbye
+						</div>
+						<div class="list-group-item draggable" draggable="true" id="word4">
+							JavaScript
+						</div>
+					</div>
+				</div>
+				<div class="col col-12 col-md-6">
+					<h5>Drop words here to build a phrase:</h5>
+					<div
+						id="dropZone"
+						class="border p-3 dropzone"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+		<!-- You can create a separate JavaScript file for your scripts -->
+	</body>
+</html>
