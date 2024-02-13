@@ -12,6 +12,28 @@
 		<!-- You can create a separate CSS file for your styles -->
 	</head>
 	<body>
+		<style>
+			.draggable {
+				width: 100px;
+				height: 50px;
+				background-color: #f1f1f1;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				text-align: center;
+				line-height: 50px;
+				cursor: pointer;
+				user-select: none;
+			}
+			.dropzone {
+				width: 200px;
+				height: 100px;
+				background-color: #e0e0e0;
+				border: 2px dashed #999;
+				border-radius: 5px;
+				margin-top: 20px;
+				padding: 10px;
+			}
+		</style>
 		<div class="container mt-5">
 			<div class="row">
 				<div class="col col-12 col-md-6">
@@ -42,7 +64,55 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			const draggable = document.querySelector(".draggable");
+			const dropzone = document.querySelector(".dropzone");
 
+			// Add touch event handlers
+			draggable.addEventListener("touchstart", handleTouchStart);
+			draggable.addEventListener("touchmove", handleTouchMove);
+			draggable.addEventListener("touchend", handleTouchEnd);
+
+			let touchStartX;
+			let touchStartY;
+
+			function handleTouchStart(event) {
+				touchStartX = event.touches[0].clientX;
+				touchStartY = event.touches[0].clientY;
+			}
+
+			function handleTouchMove(event) {
+				const touchEndX = event.touches[0].clientX;
+				const touchEndY = event.touches[0].clientY;
+				const deltaX = touchEndX - touchStartX;
+				const deltaY = touchEndY - touchStartY;
+				draggable.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+			}
+
+			function handleTouchEnd() {
+				draggable.style.transform = "translate(0, 0)";
+			}
+
+			// Add mouse event handlers (for non-touch devices)
+			draggable.addEventListener("dragstart", handleDragStart);
+			dropzone.addEventListener("dragover", handleDragOver);
+			dropzone.addEventListener("drop", handleDrop);
+
+			function handleDragStart(event) {
+				event.dataTransfer.setData("text/plain", event.target.id);
+			}
+
+			function handleDragOver(event) {
+				event.preventDefault();
+			}
+
+			function handleDrop(event) {
+				event.preventDefault();
+				const data = event.dataTransfer.getData("text/plain");
+				const draggableElement = document.getElementById(data);
+				dropzone.appendChild(draggableElement);
+			}
+		</script>
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
