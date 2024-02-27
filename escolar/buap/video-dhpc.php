@@ -1,1 +1,1 @@
-header("Location: De%20la%20Sociedad%20de%20la%20Información%20a%20la%20Sociedad%20del%20Conocimiento%20(Economía%20del%20Conocimiento).mp4");
+header("Location: https%3A%2F%2Fcastelancarpinteyro.com%2Fescolar%2Fbuap%2FDe%20la%20Sociedad%20de%20la%20Informaci%C3%B3n%20a%20la%20Sociedad%20del%20Conocimiento%20(Econom%C3%ADa%20del%20Conocimiento).mp4");
