@@ -7,6 +7,11 @@ namespace Composer\Autoload;
 class ComposerStaticInitd461e5c8d49946ab5f695c940c1b2779
 {
     public static $prefixLengthsPsr4 = array (
+        'c' => 
+        array (
+            'chillerlan\\Settings\\' => 20,
+            'chillerlan\\QRCode\\' => 18,
+        ),
         'T' => 
         array (
             'TelegramBot\\Api\\' => 16,
@@ -18,6 +23,14 @@ class ComposerStaticInitd461e5c8d49946ab5f695c940c1b2779
     );
 
     public static $prefixDirsPsr4 = array (
+        'chillerlan\\Settings\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/chillerlan/php-settings-container/src',
+        ),
+        'chillerlan\\QRCode\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/chillerlan/php-qrcode/src',
+        ),
         'TelegramBot\\Api\\' => 
         array (
             0 => __DIR__ . '/..' . '/telegram-bot/api/src',

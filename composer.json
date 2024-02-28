@@ -2,6 +2,7 @@
     "require": {
         "phpmailer/phpmailer": "^6.8",
         "mpdf/mpdf": "^6.1",
-        "telegram-bot/api": "^2.4"
+        "telegram-bot/api": "^2.4",
+        "chillerlan/php-qrcode": "^5.0"
     }
 }
