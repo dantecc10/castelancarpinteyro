@@ -1,4 +1,10 @@
 <?php
+
+if(isset($_GET['url'])){
+    $url = $_GET['url'];
+}else{
+    $url = "https://castelancarpinteyro.com";
+}
 /**
  * GdImage output example
  *
@@ -62,7 +68,7 @@ $options->moduleValues        = [
 ];
 
 
-$out = (new QRCode($options))->render('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+$out = (new QRCode($options))->render($ur);
 
 //header('Content-type: image/png');
 
