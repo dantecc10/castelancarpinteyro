@@ -1,16 +1,15 @@
 <?php
 
+include_once "../vendor/autoload.php";
 use chillerlan\QRCode\QRCode;
 
 if (isset($_GET['url'])) {
-    include_once "../vendor/autoload.php";
     
     // Define el nombre del archivo del código QR
     $name = "qr-" . time() . ".png";
     
     // Define la ruta del archivo del código QR
-    $path = __DIR__ . "/generated-qrs/" . $name;
-
+    $path = (__DIR__ . "/generated-qrs/" . $name);
     // Crea una instancia de QRCode
     $qrcode = new QRCode;
 
