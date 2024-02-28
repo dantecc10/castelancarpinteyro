@@ -56,14 +56,11 @@ $options->moduleValues        = [
 
 // Generar el código QR
 $out = (new QRCode($options))->render('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
-
+echo($out);
 // Convertir imagen SVG a PNG
 $image = new Imagick();
 $image->readImageBlob($out);
 $image->setImageFormat("png24");
-
-// Redimensionar la imagen (por ejemplo, a 400x400 píxeles)
-$image->resizeImage(400, 400, Imagick::FILTER_LANCZOS, 1);
 
 // Guardar la imagen como archivo PNG
 $image->writeImage("generated-qrs/sample.png");
