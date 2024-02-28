@@ -20,7 +20,7 @@ if (isset($_GET['url'])) {
     //header("Location: ../generated-qr.php?file=$name");
 echo(var_dump($path));
 echo(var_dump($name));
-echo("<img src='$path'>")
+echo("<img src='$path'>");
 } else {
     // Redirige de vuelta a la página anterior si no se proporcionó una URL
     header("Location: ../qr-code.php");
