@@ -61,10 +61,7 @@ if (isset($_GET['url'])) {
     // Define la ruta del archivo del código QR
     $path = (__DIR__ . "/generated-qrs/" . $name);
     // Crea una instancia de QRCode
-    $qrcode = new QRCode($options);
-
-    // Genera el código QR y guarda la imagen en la ruta de salida
-    $qrcode->render($_GET['url'], (__DIR__ . $name));
+    $out = (new QRCode($options))->render($_GET['url'], (__DIR__ . $name));
     // Generar el código QR
 
     // Redirige a la página que muestra el código QR generado
