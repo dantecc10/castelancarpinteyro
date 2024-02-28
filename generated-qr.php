@@ -152,6 +152,9 @@ if (!isset($_GET['file'])) {
 
                             // Configurar el atributo src con la URL del SVG
                             img.src = svgUrl;
+                            img.width = 500;
+                            img.height = 500;
+
 
                             // Manejar el evento onload para ejecutar la conversión y descarga
                             img.onload = function() {
