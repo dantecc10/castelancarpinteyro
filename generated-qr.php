@@ -178,7 +178,7 @@ if (!isset($_GET['file'])) {
                                 // downloadLink.click();
                             };
                         }
-                        window.onload(convertSVGtoPNG);
+                        convertSVGtoPNG();
                     </script>
                 </div>
             </div>
