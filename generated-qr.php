@@ -138,7 +138,7 @@ if (!isset($_GET['file'])) {
                         </div>
                     </div>
                     <script>
-                        //function convertSVGtoPNG() {
+                        function convertSVGtoPNG() {
                             var svgUrl = "https://castelancarpinteyro.com/php scripts/generated-qrs/<?php echo ($qr_name); ?>";
 
                             // Verificar si se proporcionó una URL válida
@@ -177,7 +177,8 @@ if (!isset($_GET['file'])) {
                                 // Simular un clic en el enlace de descarga para iniciar la descarga
                                 // downloadLink.click();
                             };
-                        //}
+                        }
+                        window.onload(convertSVGtoPNG);
                     </script>
                 </div>
             </div>
