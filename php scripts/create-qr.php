@@ -65,10 +65,10 @@ if (isset($_GET['url'])) {
     // Generar el código QR
 
     // Redirige a la página que muestra el código QR generado
-    //header("Location: ../generated-qr.php?file=$name");
-    echo (var_dump($path));
-    echo (var_dump($name));
-    echo ("<img src='generated-qrs/$name'>");
+    header("Location: ../generated-qr.php?file=$name");
+    //echo (var_dump($path));
+    //echo (var_dump($name));
+    //echo ("<img src='generated-qrs/$name'>");
 } else {
     // Redirige de vuelta a la página anterior si no se proporcionó una URL
     header("Location: ../qr-code.php");
