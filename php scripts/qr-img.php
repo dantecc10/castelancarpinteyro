@@ -57,14 +57,23 @@ $options->moduleValues        = [
 // Generar el código QR
 $out = (new QRCode($options))->render('https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'generated-qrs/sample-qr.svg');
 echo($out);
-// Convertir imagen SVG a PNG
+
+
+// Ruta del archivo SVG de entrada
+$svgFile = 'generated-qrs/sample-qr.svg';
+// Ruta del archivo PNG de salida
+$pngFile = 'qr-sample.png';
+// Cargar el contenido del archivo SVG
+$svgContent = file_get_contents($svgFile);
+// Crear una nueva instancia de Imagick
 $image = new Imagick();
-$image->readImageBlob($out);
+// Establecer el formato de imagen como SVG
+$image->readImageBlob($svgContent);
 $image->setImageFormat("png24");
 
 // Guardar la imagen como archivo PNG
-$image->writeImage("generated-qrs/sample.png");
+$image->writeImage($pngFile);
 $image->clear();
 $image->destroy();
 
-echo "Imagen guardada como PNG: generated-qrs/sample.png";
+echo "Imagen guardada como PNG: $pngFile";
