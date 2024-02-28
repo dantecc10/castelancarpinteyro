@@ -78,3 +78,4 @@ $image->clear();
 $image->destroy();
 
 echo "Imagen guardada como PNG: $pngFile";
+echo "<img src='$pngFile'>";
