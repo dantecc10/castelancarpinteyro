@@ -51,7 +51,7 @@ if (!isset($_GET['file'])) {
     <script>
         function convertirSVGaPNG() {
             // Ruta del archivo SVG
-            var urlSVG = 'https://castelancarpinteyro.com/php scripts/generated-qrs/<?php echo ($qr_name);?>';
+            var urlSVG = 'https://castelancarpinteyro.com/php scripts/generated-qrs/<?php echo ($qr_name); ?>';
 
             // Realizar una petición AJAX para obtener el contenido del archivo SVG
             var xhr = new XMLHttpRequest();
@@ -127,11 +127,57 @@ if (!isset($_GET['file'])) {
                         <div class="col col-12 text-center"><img class="col-12 col-sm-8 col-lg-6 align-self-center" src="php scripts/generated-qrs/<?php echo ($qr_name); ?>" style="background-color: white;"></div>
                     </div>
                     <div class="row">
-                        <div class="col text-center btn btn-primary div2-efecto"><a href="<?php echo ($qr_name); ?>" download="<?php echo ($qr_name); ?>"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                        <div class="col text-center btn btn-primary div2-efecto">
+                            <a id="download-button" href="<?php echo ($qr_name); ?>" download="<?php echo ($qr_name); ?>">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                                     <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                                     <path d="M480 352h-133.5l-45.25 45.25C289.2 409.3 273.1 416 256 416s-33.16-6.656-45.25-18.75L165.5 352H32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h448c17.67 0 32-14.33 32-32v-96C512 366.3 497.7 352 480 352zM432 456c-13.2 0-24-10.8-24-24c0-13.2 10.8-24 24-24s24 10.8 24 24C456 445.2 445.2 456 432 456zM233.4 374.6C239.6 380.9 247.8 384 256 384s16.38-3.125 22.62-9.375l128-128c12.49-12.5 12.49-32.75 0-45.25c-12.5-12.5-32.76-12.5-45.25 0L288 274.8V32c0-17.67-14.33-32-32-32C238.3 0 224 14.33 224 32v242.8L150.6 201.4c-12.49-12.5-32.75-12.5-45.25 0c-12.49 12.5-12.49 32.75 0 45.25L233.4 374.6z"></path>
-                                </svg>&nbsp;Descargar el QR en PNG</a></div>
+                                </svg>&nbsp;Descargar el QR en PNG
+                            </a>
+                        </div>
                     </div>
+                    <script>
+                        function convertSVGtoPNG() {
+                            var svgUrl = "https://castelancarpinteyro.com/php scripts/generated-qrs/<?php echo($qr_name);?>";
+
+                            // Verificar si se proporcionó una URL válida
+                            if (svgUrl.trim() === "") {
+                                alert("Por favor, introduce una URL válida del archivo SVG.");
+                                return;
+                            }
+
+                            // Crear un elemento <img> para cargar el SVG
+                            var img = document.createElement("img");
+
+                            // Configurar el atributo src con la URL del SVG
+                            img.src = svgUrl;
+
+                            // Manejar el evento onload para ejecutar la conversión y descarga
+                            img.onload = function() {
+                                // Crear un elemento <canvas> para dibujar el SVG
+                                var canvas = document.createElement("canvas");
+                                var context = canvas.getContext("2d");
+
+                                // Establecer el tamaño del canvas para que coincida con el SVG
+                                canvas.width = img.width;
+                                canvas.height = img.height;
+
+                                // Dibujar el SVG en el canvas
+                                context.drawImage(img, 0, 0);
+
+                                // Obtener la URL del canvas como un archivo PNG
+                                var pngUrl = canvas.toDataURL("image/png");
+
+                                // Crear un enlace <a> para descargar el archivo PNG
+                                var downloadLink = document.getElementById("download-button");
+                                downloadLink.href = pngUrl;
+                                downloadLink.download = "converted_image.png";
+
+                                // Simular un clic en el enlace de descarga para iniciar la descarga
+                                downloadLink.click();
+                            };
+                        }
+                    </script>
                 </div>
             </div>
         </div><!-- End: Hero Clean Reverse -->
