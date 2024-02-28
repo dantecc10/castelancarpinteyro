@@ -3,6 +3,10 @@
         "phpmailer/phpmailer": "^6.8",
         "mpdf/mpdf": "^6.1",
         "telegram-bot/api": "^2.4",
-        "chillerlan/php-qrcode": "^5.0"
+        "chillerlan/php-qrcode": "^5.0",
+        "phar-io/manifest": "^2.0",
+        "composer/ca-bundle": "^1.4",
+        "spatie/image": "^2.2",
+        "calcinai/php-imagick": "^0.1.2"
     }
 }
