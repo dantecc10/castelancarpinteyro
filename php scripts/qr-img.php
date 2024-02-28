@@ -68,7 +68,7 @@ $options->moduleValues        = [
 ];
 
 
-$out = (new QRCode($options))->render($ur);
+$out = (new QRCode($options))->render($url);
 
 //header('Content-type: image/png');
 
