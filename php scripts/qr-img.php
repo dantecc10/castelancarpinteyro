@@ -55,7 +55,7 @@ $options->moduleValues        = [
 ];
 
 // Generar el código QR
-$out = (new QRCode($options))->render('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+$out = (new QRCode($options))->render('https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'generated-qrs/sample-qr.svg');
 echo($out);
 // Convertir imagen SVG a PNG
 $image = new Imagick();
