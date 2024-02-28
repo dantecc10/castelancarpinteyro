@@ -72,7 +72,7 @@ $out = (new QRCode($options))->render($url);
 
 //header('Content-type: image/png');
 
-echo $out;
+//echo $out;
 
 // Convertir imagen SVG a PNG
 $image = new Imagick();
