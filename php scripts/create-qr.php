@@ -7,7 +7,7 @@ if (isset($_GET['url'])) {
     include_once "../vendor/autoload.php";
     $qrcode = new QRcode;
     $qr_img = $qrcode->render($_GET['url']);
-    $name = ("generated-qrs/qr-" . time() . ".png");
+    $name = ("qr-" . time() . ".png");
     $path = ($name);
     file_put_contents((__DIR__ . $path), $qr_img);
     header("Location: ../generated-qr.php?file=$name");
