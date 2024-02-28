@@ -62,7 +62,7 @@ echo($out);
 // Ruta del archivo SVG de entrada
 $svgFile = 'generated-qrs/sample-qr.svg';
 // Ruta del archivo PNG de salida
-$pngFile = 'qr-sample.png';
+$pngFile = 'generated-qrs/qr-sample.png';
 // Cargar el contenido del archivo SVG
 $svgContent = file_get_contents($svgFile);
 // Crear una nueva instancia de Imagick
