@@ -87,7 +87,7 @@ if (!isset($_GET['file'])) {
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col col-12 text-center"><img class="col-12 col-sm-8 col-lg-6 align-self-center" src="generated-qrs/<?php echo ($qr_name);?>" style="background-color: white;"></div>
+                        <div class="col col-12 text-center"><img class="col-12 col-sm-8 col-lg-6 align-self-center" src="php scripts/generated-qrs/<?php echo ($qr_name);?>" style="background-color: white;"></div>
                     </div>
                     <div class="row">
                         <div class="col text-center btn btn-primary div2-efecto"><a href="<?php echo ($qr_name);?>" download="<?php echo ($qr_name);?>"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
