@@ -70,6 +70,7 @@ $image = new Imagick();
 // Establecer el formato de imagen como SVG
 $image->readImageBlob($svgContent);
 $image->setImageFormat("png24");
+$image->resizeImage(500, 500, imagick::FILTER_LANCZOS, 1);
 
 // Guardar la imagen como archivo PNG
 $image->writeImage($pngFile);
