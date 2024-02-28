@@ -1,6 +1,7 @@
 <?php
 
 use chillerlan\QRCode\QRCode;
+use chillerlan\QRCode\QROptions;
 
 if (isset($_GET['url'])) {
     include_once "../vendor/autoload.php";
