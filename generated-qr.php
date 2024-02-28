@@ -172,7 +172,7 @@ if (!isset($_GET['file'])) {
                                 // Crear un enlace <a> para descargar el archivo PNG
                                 var downloadLink = document.getElementById("download-button");
                                 downloadLink.href = pngUrl;
-                                downloadLink.download = "converted_image.png";
+                                downloadLink.download = "generated-qr.png";
 
                                 // Simular un clic en el enlace de descarga para iniciar la descarga
                                 // downloadLink.click();
