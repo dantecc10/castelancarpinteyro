@@ -51,7 +51,7 @@ if (!isset($_GET['file'])) {
     <script>
         function convertirSVGaPNG() {
             // Ruta del archivo SVG
-            var urlSVG = '<?php echo ($qr_name);?>';
+            var urlSVG = 'https://castelancarpinteyro.com/php scripts/generated-qrs/<?php echo ($qr_name);?>';
 
             // Realizar una petición AJAX para obtener el contenido del archivo SVG
             var xhr = new XMLHttpRequest();
