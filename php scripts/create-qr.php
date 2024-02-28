@@ -1,6 +1,7 @@
 <?php
 if(isset($_GET['url'])){
     include "functions.php";
+    include_once "../vendor/autoload.php";
     use chillerlan\QRCode\QRCode;
     $qrcode = new QRcode;
 
