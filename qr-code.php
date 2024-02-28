@@ -78,7 +78,7 @@
                     <form method="get" action="php scripts/create-qr.php">
                         <div class="input-group col-12"><span class="input-group-text">URL</span><input class="form-control" type="url" name="url" required="">
                         <br>
-                        <button class="btn btn-primary" type="button">Button</button></div><button class="btn btn-primary div2-efecto" type="button">¡Generar código QR!</button>
+                        <button class="btn btn-primary" type="submit">Button</button></div><button class="btn btn-primary div2-efecto" type="button">¡Generar código QR!</button>
                     </form>
                 </div>
             </div>
