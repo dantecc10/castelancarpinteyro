@@ -12,7 +12,7 @@ use chillerlan\QRCode\{QRCode, QROptions};
 use chillerlan\QRCode\Data\QRMatrix;
 use chillerlan\QRCode\Output\QRGdImagePNG;
 
-require_once __DIR__.'/../vendor/autoload.php';
+require_once "../vendor/autoload.php";
 
 $options = new QROptions;
 
