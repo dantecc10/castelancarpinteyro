@@ -9,7 +9,7 @@ if (isset($_GET['url'])) {
 
     $qr_img = $qrcode->render($_GET['url']);
     $name = ("generated-qrs/qr-" . time() . ".png");
-    $path = ("../" . $name);
+    $path = ($name);
     file_put_contents($path, $qr_img);
     header("Location: ../generated-qr.php?file=$name");
 } else {
