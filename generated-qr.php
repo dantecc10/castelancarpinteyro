@@ -33,20 +33,57 @@ if (!isset($_GET['file'])) {
     <meta property="og:image" content="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
-    <link rel="icon" type="image/png" sizes="4405x3333" href="../assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
-    <link rel="icon" type="image/png" sizes="4398x3333" href="../assets/img/castelancarpinteyro/DanteDEV.png">
-    <link rel="icon" type="image/png" sizes="4405x3333" href="../assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="manifest" href="../manifest.json">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="assets/img/castelancarpinteyro/DanteDEV.png">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="assets/img/castelancarpinteyro/DanteDEV.png">
+    <link rel="icon" type="image/png" sizes="4405x3333" href="assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
+    <link rel="icon" type="image/png" sizes="4398x3333" href="assets/img/castelancarpinteyro/DanteDEV.png">
+    <link rel="icon" type="image/png" sizes="4405x3333" href="assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="../assets/css/Accordion.css">
-    <link rel="stylesheet" href="../assets/css/Carousel-Hero.css">
-    <link rel="stylesheet" href="../assets/css/extra.css">
+    <link rel="stylesheet" href="assets/css/Accordion.css">
+    <link rel="stylesheet" href="assets/css/Carousel-Hero.css">
+    <link rel="stylesheet" href="assets/css/extra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="../assets/css/uiverse.css">
+    <link rel="stylesheet" href="assets/css/uiverse.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvg/1.5/canvg.min.js"></script>
+    <script>
+        function convertirSVGaPNG() {
+            // Ruta del archivo SVG
+            var urlSVG = '<?php echo ($qr_name);?>';
+
+            // Realizar una petición AJAX para obtener el contenido del archivo SVG
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', urlSVG, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Obtener el contenido del archivo SVG
+                    var svgData = xhr.responseText;
+
+                    // Crear un objeto Canvas
+                    var canvas = document.createElement('canvas');
+                    var context = canvas.getContext('2d');
+
+                    // Convertir el archivo SVG a Canvas
+                    canvg(canvas, svgData);
+
+                    // Obtener la URL de la imagen PNG
+                    var dataURL = canvas.toDataURL('image/png');
+
+                    // Mostrar la imagen PNG en un contenedor
+                    var imagenPNG = document.createElement('img');
+                    imagenPNG.src = dataURL;
+
+                    // Agregar la imagen al contenedor
+                    var contenedor = document.getElementById('imagen-png');
+                    contenedor.innerHTML = ''; // Limpiar el contenedor
+                    contenedor.appendChild(imagenPNG);
+                }
+            };
+            xhr.send();
+        }
+    </script>
 </head>
 
 <body style="/*background: url(&quot;design.jpg&quot;);*/background-position: 0 -60px;">
@@ -87,10 +124,10 @@ if (!isset($_GET['file'])) {
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col col-12 text-center"><img class="col-12 col-sm-8 col-lg-6 align-self-center" src="php scripts/generated-qrs/<?php echo ($qr_name);?>" style="background-color: white;"></div>
+                        <div class="col col-12 text-center"><img class="col-12 col-sm-8 col-lg-6 align-self-center" src="php scripts/generated-qrs/<?php echo ($qr_name); ?>" style="background-color: white;"></div>
                     </div>
                     <div class="row">
-                        <div class="col text-center btn btn-primary div2-efecto"><a href="<?php echo ($qr_name);?>" download="<?php echo ($qr_name);?>"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                        <div class="col text-center btn btn-primary div2-efecto"><a href="<?php echo ($qr_name); ?>" download="<?php echo ($qr_name); ?>"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                                     <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                                     <path d="M480 352h-133.5l-45.25 45.25C289.2 409.3 273.1 416 256 416s-33.16-6.656-45.25-18.75L165.5 352H32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h448c17.67 0 32-14.33 32-32v-96C512 366.3 497.7 352 480 352zM432 456c-13.2 0-24-10.8-24-24c0-13.2 10.8-24 24-24s24 10.8 24 24C456 445.2 445.2 456 432 456zM233.4 374.6C239.6 380.9 247.8 384 256 384s16.38-3.125 22.62-9.375l128-128c12.49-12.5 12.49-32.75 0-45.25c-12.5-12.5-32.76-12.5-45.25 0L288 274.8V32c0-17.67-14.33-32-32-32C238.3 0 224 14.33 224 32v242.8L150.6 201.4c-12.49-12.5-32.75-12.5-45.25 0c-12.49 12.5-12.49 32.75 0 45.25L233.4 374.6z"></path>
                                 </svg>&nbsp;Descargar el QR en PNG</a></div>
@@ -158,9 +195,9 @@ if (!isset($_GET['file'])) {
     </footer><!-- End: Footer Multi Column -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/bs-init.js"></script>
-    <script src="../assets/js/bold-and-dark.js"></script>
-    <script src="../assets/js/course-navigation.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/bold-and-dark.js"></script>
+    <script src="assets/js/course-navigation.js"></script>
 </body>
 
 </html>
