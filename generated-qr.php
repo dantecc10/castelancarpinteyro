@@ -25,10 +25,11 @@ if (!isset($_GET['file'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>¡QR generado con éxito! - Castelán Carpinteyro</title>
     <meta name="theme-color" content="#5436cd">
-    <meta name="description" content="Programación; artículos, tutoriales y cursos disponibles para entusiastas de la programación en Castelán Carpinteyro.">
+    <meta name="description" content="Genera códigos QR para tus enlaces, gratis y en formato PNG o SVG. Castelán Carpinteyro. #TimeToCode!">
     <meta name="twitter:description" content="Cursos de programación y servicios de hosting web">
     <meta name="twitter:title" content="Castelán Carpinteyro">
     <meta name="author" content="Dante Castelán Carpinteyro">
+    <meta name="keywords" content="qr, code, qr-code, código, qr, código qr, Dante, Castelán, Carpinteyro, Dante Castelán Carpinteyro" />
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">
     <meta name="twitter:card" content="summary_large_image">
