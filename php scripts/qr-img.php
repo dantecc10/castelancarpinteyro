@@ -67,3 +67,15 @@ $out = (new QRCode($options))->render('https://www.youtube.com/watch?v=dQw4w9WgX
 //header('Content-type: image/png');
 
 echo $out;
+
+// Convertir imagen SVG a PNG
+$image = new Imagick();
+$image->readImageBlob($out);
+$image->setImageFormat("png24");
+
+// Guardar la imagen como archivo PNG
+$image->writeImage("generated-qrs/sample.png");
+$image->clear();
+$image->destroy();
+
+echo "Imagen guardada como PNG: generated-qrs/sample.png";
