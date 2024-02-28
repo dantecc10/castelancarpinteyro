@@ -6,7 +6,7 @@ if (!isset($_GET['file'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="utf-8">
@@ -23,7 +23,7 @@ if (!isset($_GET['file'])) {
         gtag('config', 'G-HV59T08TYC');
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>¡QR generado con éxito! - Castelán Carpinteyro</title>
     <meta name="theme-color" content="#5436cd">
     <meta name="description" content="Programación; artículos, tutoriales y cursos disponibles para entusiastas de la programación en Castelán Carpinteyro.">
     <meta name="twitter:description" content="Cursos de programación y servicios de hosting web">
