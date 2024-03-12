@@ -3991,3 +3991,10 @@ To https://github.com/dantecc10/castelancarpinteyro.git
    6817489..8bf27cf  main -> main
 
 
+----------
+
+Tue Mar 12 2024 00:15:09 GMT-0600 (hora estándar central)
+
+fatal: unable to access 'https://github.com/dantecc10/castelancarpinteyro.git/': Could not resolve host: github.com
+
+
