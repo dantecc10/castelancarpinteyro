@@ -1,9 +1,6 @@
 <?php
-if (!isset($_GET['file'])) {
-    header("Location: qr-code.php");
-} else {
-    $qr_name = $_GET['file'];
-}
+(!isset($_GET['file'])) ? header("Location: qr-code.php") : $qr_name = $_GET['file'];
+
 ?>
 <!DOCTYPE html>
 <html lang="es-MX">
