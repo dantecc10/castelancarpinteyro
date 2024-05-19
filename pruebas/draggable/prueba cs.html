@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Example</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .draggable {
+            cursor: pointer;
+        }
+        .dropzone {
+            min-height: 50px;
+            border: 2px dashed #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Ordena las palabras para formar una frase</h2>
+        <div class="row">
+            <div class="col-12">
+                <div id="wordContainer" class="d-flex justify-content-center flex-wrap">
+                    <!-- Palabras que se pueden arrastrar -->
+                    <span class="draggable p-2 m-2 bg-primary text-white rounded" draggable="true">Hola</span>
+                    <span class="draggable p-2 m-2 bg-primary text-white rounded" draggable="true">mundo</span>
+                    <span class="draggable p-2 m-2 bg-primary text-white rounded" draggable="true">esto</span>
+                    <span class="draggable p-2 m-2 bg-primary text-white rounded" draggable="true">es</span>
+                    <span class="draggable p-2 m-2 bg-primary text-white rounded" draggable="true">una</span>
+                    <span class="draggable p-2 m-2 bg-primary text-white rounded" draggable="true">prueba</span>
+                </div>
+            </div>
+            <div class="col-12 mt-4">
+                <div id="dropContainer" class="d-flex justify-content-center flex-wrap dropzone">
+                    <!-- Espacios para arrastrar las palabras -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript para funcionalidad drag and drop
+        document.addEventListener('DOMContentLoaded', function () {
+            const draggables = document.querySelectorAll('.draggable');
+            const dropzone = document.getElementById('dropContainer');
+
+            draggables.forEach(draggable => {
+                draggable.addEventListener('dragstart', dragStart);
+            });
+
+            dropzone.addEventListener('dragover', dragOver);
+            dropzone.addEventListener('drop', drop);
+
+            function dragStart(event) {
+                event.dataTransfer.setData('text', event.target.textContent);
+            }
+
+            function dragOver(event) {
+                event.preventDefault();
+            }
+
+            function drop(event) {
+                event.preventDefault();
+                const data = event.dataTransfer.getData('text');
+                const dropElement = document.createElement('span');
+                dropElement.className = 'p-2 m-2 bg-success text-white rounded';
+                dropElement.textContent = data;
+                dropzone.appendChild(dropElement);
+            }
+        });
+    </script>
+</body>
+</html>
