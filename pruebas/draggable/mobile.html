@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Drag and Drop Example</title>
+		<link
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<style>
+			.draggable {
+				cursor: pointer;
+			}
+			.dropzone {
+				min-height: 50px;
+				border: 2px dashed #ccc;
+				padding: 10px;
+				margin-bottom: 10px;
+			}
+			.dropzone .draggable {
+				margin: 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container mt-5">
+			<h2 class="text-center">Ordena las palabras para formar una frase</h2>
+			<div class="row">
+				<div class="col-12">
+					<div
+						id="wordContainer"
+						class="d-flex justify-content-center flex-wrap"
+					>
+						<!-- Palabras que se pueden arrastrar -->
+						<span
+							id="word1"
+							class="draggable p-2 m-2 bg-primary text-white rounded"
+							draggable="true"
+							>Hola</span
+						>
+						<span
+							id="word2"
+							class="draggable p-2 m-2 bg-primary text-white rounded"
+							draggable="true"
+							>mundo</span
+						>
+						<span
+							id="word3"
+							class="draggable p-2 m-2 bg-primary text-white rounded"
+							draggable="true"
+							>esto</span
+						>
+						<span
+							id="word4"
+							class="draggable p-2 m-2 bg-primary text-white rounded"
+							draggable="true"
+							>es</span
+						>
+						<span
+							id="word5"
+							class="draggable p-2 m-2 bg-primary text-white rounded"
+							draggable="true"
+							>una</span
+						>
+						<span
+							id="word6"
+							class="draggable p-2 m-2 bg-primary text-white rounded"
+							draggable="true"
+							>prueba</span
+						>
+					</div>
+				</div>
+				<div class="col-12 mt-4">
+					<div
+						id="dropContainer"
+						class="d-flex justify-content-center flex-wrap dropzone"
+					>
+						<!-- Espacios para arrastrar las palabras -->
+					</div>
+				</div>
+			</div>
+			<div class="text-center mt-3">
+				<button id="checkOrderBtn" class="btn btn-success">
+					Revisar orden
+				</button>
+			</div>
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const draggables = document.querySelectorAll(".draggable");
+				const dropzone = document.getElementById("dropContainer");
+				const checkOrderBtn = document.getElementById("checkOrderBtn");
+				const correctOrder = ["Hola", "mundo", "esto", "es", "una", "prueba"]; // Orden correcto para la validación
+
+				draggables.forEach((draggable) => {
+					draggable.addEventListener("dragstart", dragStart);
+					draggable.addEventListener("touchstart", touchStart);
+				});
+
+				dropzone.addEventListener("dragover", dragOver);
+				dropzone.addEventListener("drop", drop);
+				dropzone.addEventListener("touchmove", touchMove);
+				dropzone.addEventListener("touchend", touchEnd);
+
+				function dragStart(event) {
+					event.dataTransfer.setData("text/plain", event.target.id);
+				}
+
+				function dragOver(event) {
+					event.preventDefault();
+				}
+
+				function drop(event) {
+					event.preventDefault();
+					const data = event.dataTransfer.getData("text/plain");
+					const draggedElement = document.getElementById(data);
+					if (!dropzone.contains(draggedElement)) {
+						dropzone.appendChild(draggedElement);
+					}
+				}
+
+				function touchStart(event) {
+					const touch = event.touches[0];
+					this.startX = touch.clientX;
+					this.startY = touch.clientY;
+					this.originalParent = this.parentNode;
+					this.touchElement = this;
+				}
+
+				function touchMove(event) {
+					event.preventDefault();
+					const touch = event.touches[0];
+					const touchElement = document.elementFromPoint(
+						touch.clientX,
+						touch.clientY
+					);
+
+					if (touchElement && touchElement.classList.contains("dropzone")) {
+						touchElement.appendChild(this.touchElement);
+					}
+				}
+
+				function touchEnd(event) {
+					const touch = event.changedTouches[0];
+					const dropTarget = document.elementFromPoint(
+						touch.clientX,
+						touch.clientY
+					);
+					if (dropTarget && dropTarget.classList.contains("dropzone")) {
+						dropTarget.appendChild(this.touchElement);
+					} else {
+						this.originalParent.appendChild(this.touchElement);
+					}
+				}
+
+				checkOrderBtn.addEventListener("click", function () {
+					const words = Array.from(dropzone.querySelectorAll(".draggable")).map(
+						(el) => el.textContent
+					);
+					if (arraysEqual(words, correctOrder)) {
+						alert("¡Orden correcto!");
+					} else {
+						alert("El orden es incorrecto. Inténtalo de nuevo.");
+					}
+				});
+
+				function arraysEqual(arr1, arr2) {
+					if (arr1.length !== arr2.length) return false;
+					for (let i = 0; i < arr1.length; i++) {
+						if (arr1[i] !== arr2[i]) return false;
+					}
+					return true;
+				}
+			});
+		</script>
+	</body>
+</html>

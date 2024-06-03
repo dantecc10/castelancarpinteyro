@@ -1,42 +1,28 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<style>
-			#getData {
-				width: 250px;
-				height: 200px;
-				padding: 10px;
-				border: 1px solid #4f4d4d;
-			}
-		</style>
-		<script>
-			function allowDrop(even) {
-				even.preventDefault();
-			}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Template</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Agrega estilos adicionales aquí si es necesario */
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Contenedor de Palabras</h2>
+        <div id="wordContainer" class="list-group">
+            <!-- Aquí se agregarán las palabras -->
+            <button type="button" class="list-group-item list-group-item-action">Palabra 1</button>
+            <button type="button" class="list-group-item list-group-item-action">Palabra 2</button>
+            <button type="button" class="list-group-item list-group-item-action">Palabra 3</button>
+            <!-- Puedes agregar más palabras según sea necesario -->
+        </div>
+    </div>
 
-			function drag(even) {
-				even.dataTransfer.setData("text", even.target.id);
-			}
-
-			function drop(even) {
-				even.preventDefault();
-				var fetchData = even.dataTransfer.getData("text");
-				even.target.appendChild(document.getElementById(fetchData));
-			}
-		</script>
-	</head>
-
-	<body>
-		<h3>Drag the GeekforGeeks image into the rectangle:</h3>
-		<div id="getData" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-		<br />
-		<img
-			id="dragData"
-			src="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png"
-			draggable="true"
-			ondragstart="drag(event)"
-			width="250"
-			height="200"
-		/>
-	</body>
+    <script>
+        // Agrega scripts aquí si es necesario
+    </script>
+</body>
 </html>
