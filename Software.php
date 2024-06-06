@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HV59T08TYC"></script>
     <script>
