@@ -5,4 +5,4 @@ CREATE TABLE `test_mn` (
     `email_destino_mn` VARCHAR(255) NOT NULL,
     `status_mn` VARCHAR(255) NOT NULL,
     `fecha_mn` DATE NOT NULL
-);
+); 
