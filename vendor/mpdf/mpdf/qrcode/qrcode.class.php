@@ -2,7 +2,7 @@
 /*
  * Generateur de QRCode
  * (QR Code is registered trademark of DENSO WAVE INCORPORATED | http://www.denso-wave.com/qrcode/)
- * Fortement inspiré de "QRcode image PHP scripts version 0.50g (C)2000-2005,Y.Swetake"
+ * Fortement inspiré de "QRcode image php-scripts version 0.50g (C)2000-2005,Y.Swetake"
  * 
  * Distribué sous la licence LGPL. 
  *

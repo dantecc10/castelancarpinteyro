@@ -3,7 +3,7 @@ function rebuild() {
     document.getElementById('chat-section-container').innerHTML = "";
     $(document).ready(function () {
         $.ajax({
-            url: '../../php scripts/build-chat.php',
+            url: '../../php-scripts/build-chat.php',
             method: 'GET', // Método GET para enviar la solicitud sin variables
             success: function (response) {
                 // Insertar la respuesta en el elemento con id="resultado"
@@ -31,7 +31,7 @@ function addMsg() {
                 }
             }
         };
-        xhr.open("POST", "../../php scripts/add-msg.php", true);
+        xhr.open("POST", "../../php-scripts/add-msg.php", true);
         xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhr.send("receiver=" + receiver + "&content=" + content + "&type=" + type);
     }else{

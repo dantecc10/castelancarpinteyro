@@ -49,7 +49,7 @@
     <script>
         function convertirSVGaPNG() {
             // Ruta del archivo SVG
-            var urlSVG = 'https://castelancarpinteyro.com/php scripts/generated-qrs/<?php echo ($qr_name); ?>';
+            var urlSVG = 'https://castelancarpinteyro.com/php-scripts/generated-qrs/<?php echo ($qr_name); ?>';
 
             // Realizar una petición AJAX para obtener el contenido del archivo SVG
             var xhr = new XMLHttpRequest();
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col col-12 text-center"><img class="col-12 col-sm-8 col-lg-6 align-self-center" src="php scripts/generated-qrs/<?php echo ($qr_name); ?>" style="background: rgb(22,255,194); background: linear-gradient(225deg, rgba(22,255,194,1) 0%, rgba(50,146,253,1) 32%, rgba(190,0,241,1) 75%);"></div>
+                        <div class="col col-12 text-center"><img class="col-12 col-sm-8 col-lg-6 align-self-center" src="php-scripts/generated-qrs/<?php echo ($qr_name); ?>" style="background: rgb(22,255,194); background: linear-gradient(225deg, rgba(22,255,194,1) 0%, rgba(50,146,253,1) 32%, rgba(190,0,241,1) 75%);"></div>
                     </div>
                     <br>
                     <div class="row">
@@ -137,7 +137,7 @@
                     </div>
                     <script>
                         function convertSVGtoPNG() {
-                            var svgUrl = "https://castelancarpinteyro.com/php scripts/generated-qrs/<?php echo ($qr_name); ?>";
+                            var svgUrl = "https://castelancarpinteyro.com/php-scripts/generated-qrs/<?php echo ($qr_name); ?>";
 
                             // Verificar si se proporcionó una URL válida
                             if (svgUrl.trim() === "") {

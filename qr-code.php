@@ -76,7 +76,7 @@
                 <div class="col">
                     <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">¿Necesitas un código QR? A continuación, inserta el link al que quieres un enlace para entregarte un código QR en formato PNG que podrás usar en tus documentos y trabajos.</span><br></p>
                     <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">Te presento mi generador gratuito de códigos QR. No necesitas una suscripción ni pagar por la descarga de tu QR. Si deseas contribuir, considera hacerme una donación en <a href="https://paypal.me/CastelanCarpinteyroD">PayPal</a>. ¡Disfruta tu QR!</span><br></p>
-                    <form method="get" action="php scripts/create-qr.php">
+                    <form method="get" action="php-scripts/create-qr.php">
                         <div class="input-group col-12"><span class="input-group-text">URL</span><input class="form-control" type="url" name="url" required="">
             
                         <button class="btn btn-primary" type="submit">Generar</button></div><br><button class="btn btn-primary div2-efecto" type="submit">¡Generar código QR!</button>

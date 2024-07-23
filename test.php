@@ -1,2 +1,2 @@
 <?php
-include "php scripts/index.php";
+include "php-scripts/index.php";

@@ -18,7 +18,7 @@ require_once('PHPMailer.php');
 require_once('SMTP.php');
 require_once('Exception.php');
 
-include "../php scripts/secrets.php";
+include "../php-scripts/secrets.php";
 
 $mail = new PHPMailer;
 

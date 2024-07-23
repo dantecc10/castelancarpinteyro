@@ -4,7 +4,7 @@ namespace PHPMailer\PHPMailer;
 
 session_start();
 
-//include "../../php scripts/dynamicMailSettings.php"; // Importación de configuración dinámica
+//include "../../php-scripts/dynamicMailSettings.php"; // Importación de configuración dinámica
 
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -15,8 +15,8 @@ require_once('../../vendor/phpmailer/phpmailer/src/PHPMailer.php');
 require_once('../../vendor/phpmailer/phpmailer/src/SMTP.php');
 require_once('../../vendor/phpmailer/phpmailer/src/Exception.php');
 
-include "../../php scripts/dynamicSecrets.php";
-include "../../php scripts/secrets.php.php";
+include "../../php-scripts/dynamicSecrets.php";
+include "../../php-scripts/secrets.php.php";
 
 $data = generatePasskey('dante');
 

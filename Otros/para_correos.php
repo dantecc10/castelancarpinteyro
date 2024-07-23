@@ -5,8 +5,8 @@
 
 include "vendor/autoload.php";
 
-include "php scripts/configuracion-de-correo.php";
-include "php scripts/secrets.php";
+include "php-scripts/configuracion-de-correo.php";
+include "php-scripts/secrets.php";
 
 #$asunto = $_GET['asunto'];
 #$mensaje = $_GET['mensaje'];

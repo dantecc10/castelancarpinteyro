@@ -74,7 +74,7 @@ session_start();
                                     <!--<a class="dropdown-item" href="signin.php">Registrarse</a>-->
                                     <a class="dropdown-item" href="account.php">Mi cuenta</a>
                                     <a class="dropdown-item" href="cursos.php">Mis cursos</a>
-                                    <a class="dropdown-item restrict-style" href="php scripts/logout.php">Cerrar sesión</a>
+                                    <a class="dropdown-item restrict-style" href="php-scripts/logout.php">Cerrar sesión</a>
                                     <!-- Agrega más opciones según sea necesario -->
                                 </div>
                                 <style>
@@ -111,8 +111,8 @@ session_start();
         </div><!-- End: Hero Clean Reverse -->
     </header><!-- Start: Brands -->
     <?php
-    #include "php scripts/construirCarruselPrincipal.php";
-    include "php scripts/selectorConstructores.php";
+    #include "php-scripts/construirCarruselPrincipal.php";
+    include "php-scripts/selectorConstructores.php";
     seleccionarConstructor(1);
     ?>
     <!-- Start: Brands -->
@@ -278,7 +278,7 @@ session_start();
                     <h2 class="fw-bold mb-2">Suscríbete a nuestro newsletter</h2>
                     <p class="mb-0">Recibe novedades de artículos y guías.</p>
                 </div>
-                <form class="d-flex justify-content-center flex-wrap flex-lg-nowrap" method="post" action="php scripts/suscripción.php">
+                <form class="d-flex justify-content-center flex-wrap flex-lg-nowrap" method="post" action="php-scripts/suscripción.php">
                     <div class="my-2"><input class="border rounded-pill shadow-sm form-control" type="email" name="email" placeholder="Correo electrónico"></div>
                     <div class="my-2"><button class="btn btn-primary shadow ms-2" type="submit">Suscríbete</button></div>
                 </form>

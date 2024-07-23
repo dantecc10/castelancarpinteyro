@@ -56,7 +56,7 @@ if ($result->num_rows > 0) {
         $nombreDestino = $row['nombre_destino_mn'];
         //saludar($id);
 
-        include "../../php scripts/respaldoDynamicMailSettings.php";
+        include "../../php-scripts/respaldoDynamicMailSettings.php";
 
 
         $mail->ClearAllRecipients();

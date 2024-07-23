@@ -42,12 +42,12 @@ async function pause() {
                     } else {
                         alert("La clave de verificación se ha inhabilitado por el número de intentos. Generaremos una nueva."); // Debug 🐞
                         pause(); // Pausa
-                        window.location.href = ("../../php scripts/auth_key.php?email=" + encodeURI(email)); // Redirección
+                        window.location.href = ("../../php-scripts/auth_key.php?email=" + encodeURI(email)); // Redirección
                     }
                 }
             }
         };
-        xhr.open("POST", "../../php scripts/jsInputPHP.php", true);
+        xhr.open("POST", "../../php-scripts/jsInputPHP.php", true);
         xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhr.send("clave=" + clave + "&email=" + email + "&tries=" + contador);
     }
@@ -128,12 +128,12 @@ function verificarClave(contador) {
                 } else {
                     alert("La clave de verificación se ha inhabilitado por el número de intentos. Generaremos una nueva."); // Debug 🐞
                     pause(); // Pausa
-                    window.location.href = ("../../php scripts/auth_key.php?email=" + encodeURI(email)); // Redirección
+                    window.location.href = ("../../php-scripts/auth_key.php?email=" + encodeURI(email)); // Redirección
                 }
             }
         }
     };
-    xhr.open("POST", "../../php scripts/jsInputPHP.php", true);
+    xhr.open("POST", "../../php-scripts/jsInputPHP.php", true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.send("clave=" + clave + "&email=" + email + "&tries=" + contador);
 }

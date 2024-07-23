@@ -84,8 +84,8 @@ if (!isset($_SESSION['id'])) {
     </div>
     <section class="py-5" id="chat-section-container">
         <?php
-        //include "php scripts/sync-msg.php";
-        include "php scripts/build-chat.php";
+        //include "php-scripts/sync-msg.php";
+        include "php-scripts/build-chat.php";
         ?>
     </section><!-- Start: Footer Multi Column -->
     <footer class="bg-dark">

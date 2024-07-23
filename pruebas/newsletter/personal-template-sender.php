@@ -4,7 +4,7 @@ namespace PHPMailer\PHPMailer;
 
 session_start();
 
-//include "../../php scripts/dynamicMailSettings.php"; // Importación de configuración dinámica
+//include "../../php-scripts/dynamicMailSettings.php"; // Importación de configuración dinámica
 
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -15,8 +15,8 @@ require_once('../../vendor/phpmailer/phpmailer/src/PHPMailer.php');
 require_once('../../vendor/phpmailer/phpmailer/src/SMTP.php');
 require_once('../../vendor/phpmailer/phpmailer/src/Exception.php');
 
-include "../../php scripts/dynamicSecrets.php";
-include "../../php scripts/secrets.php.php";
+include "../../php-scripts/dynamicSecrets.php";
+include "../../php-scripts/secrets.php.php";
 
 $data = generatePasskey('newsletter');
 
@@ -47,7 +47,7 @@ for ($i = 0; $i < $_SESSION['límite']; $i++) {
         $mail->IsHTML(true);  // Podemos activar o desactivar HTML en el mensaje
         $mail->Subject = 'Correo de prueba del newsletter de Castelán Carpinteyro';
 
-        include '../../php scripts/getCSS.php';
+        include '../../php-scripts/getCSS.php';
 
         $msg = ('<html lang="es-MX"><head>    <meta charset="utf-8">    <!-- Google tag (gtag.js) -->    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HV59T08TYC"></script>    <script>        window.dataLayer = window.dataLayer || [];        function gtag() { dataLayer.push(arguments); }        gtag("js", new Date());        gtag("config", "G-HV59T08TYC");    </script>    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">    <title>Mensaje de correo electrónico</title>    <meta name="theme-color" content="#5436cd">    <meta name="description"        content="Programación; artículos, tutoriales y cursos disponibles para entusiastas de la programación en Castelán Carpinteyro.">    <meta name="twitter:description" content="Cursos de programación y servicios de hosting web">    <meta name="twitter:title" content="Castelán Carpinteyro">    <meta name="author" content="Dante Castelán Carpinteyro">    <meta property="og:type" content="website">    <meta property="og:image"        content="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">    <meta name="twitter:card" content="summary_large_image">    <meta name="twitter:image"        content="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">    <link rel="icon" type="image/png" sizes="4398x3333"        href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV.png">    <link rel="icon" type="image/png" sizes="4398x3333"        href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV.png">    <link rel="icon" type="image/png" sizes="4405x3333"        href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">    <link rel="icon" type="image/png" sizes="4398x3333"        href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV.png">    <link rel="icon" type="image/png" sizes="4405x3333"        href="https://castelancarpinteyro.com/assets/img/castelancarpinteyro/DanteDEV-Black-Blackground.png">    <link rel="stylesheet" href="https://castelancarpinteyro.com/assets/bootstrap/css/bootstrap.min.css">    <link rel="manifest" href="https://castelancarpinteyro.com/manifest.json">    <link rel="stylesheet"        href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">    <link rel="stylesheet" href="https://castelancarpinteyro.com/assets/css/Accordion.css">    <link rel="stylesheet" href="https://castelancarpinteyro.com/assets/css/Carousel-Hero.css">    <link rel="stylesheet" href="https://castelancarpinteyro.com/assets/css/extra.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">    <link rel="stylesheet" href="https://castelancarpinteyro.com/assets/css/uiverse.css"></head><body style="/*background: url(&quot;design.jpg&quot;);*/background-position: 0 -60px;">' . $styleTag . '<!-- Start: Navbar Centered Links -->    <nav class="navbar align-items-center navbar-dark navbar-expand-md sticky-top py-3" id="mainNav">        <div class="container"><a class="navbar-brand d-flex align-items-center"                href="https://castelancarpinteyro.com"><span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon rueda-logo"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-code-slash"> <path     d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"> </path> </svg></span><span>Castelán Carpinteyro</span></a>        </div>    </nav><!-- End: Navbar Centered Links -->    <header class="">        <!-- Start: Hero Clean Reverse -->        <div class="container pt-4 pt-xl-5">            <div class="bg-dark rounded-2 row pt-5">                <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto"> <div class="text-center"> <p class="fw-bold text-success mb-2">'
 

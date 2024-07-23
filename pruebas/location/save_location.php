@@ -34,7 +34,7 @@ function sendEntryResultsByEmail($ip, $locationData, $latitude, $longitude, $dat
   require 'path/to/PHPMailer/src/SMTP.php';
   */
 
-    include "../../php scripts/configuracion-de-correo.php";
+    include "../../php-scripts/configuracion-de-correo.php";
 
     $mail->ClearAllRecipients();
 

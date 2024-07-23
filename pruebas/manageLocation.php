@@ -6,7 +6,7 @@ $registrarLongitud = $_GET['longitude'];
 
 include "../correos/configuracion-de-correo.php";
 
-//include "../php scripts/Conexión.php";
+//include "../php-scripts/Conexión.php";
 $conexión = new mysqli("localhost", "darkseid", "DarkseidPower23!!", "localizacionesLink");
 $sql = $conexión->query("INSERT INTO `displays` VALUES('', '$registrarIP', '$registrarLatitud', '$registrarLongitud')");
 

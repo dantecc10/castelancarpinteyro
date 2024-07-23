@@ -86,7 +86,7 @@ $fechaPredeterminada = date("Y-m-d"); // Fecha actual
                                     <a class="dropdown-item" href="index.php">Inicio</a>
                                     <!--<a class="dropdown-item" href="account.php">Mi cuenta</a>-->
                                     <a class="dropdown-item" href="cursos.php">Mis cursos</a>
-                                    <a class="dropdown-item restrict-style" href="php scripts/logout.php">Cerrar sesión</a>
+                                    <a class="dropdown-item restrict-style" href="php-scripts/logout.php">Cerrar sesión</a>
                                     <!--<a class="dropdown-item" href="signin.php">Registrarse</a>-->
                                     <!-- Agrega más opciones según sea necesario -->
                                 </div>
@@ -141,7 +141,7 @@ $fechaPredeterminada = date("Y-m-d"); // Fecha actual
                             <div class="card-body text-center shadow">
                                 <img class="rounded-circle mb-3 mt-4" src="<?php echo $_SESSION['img']; ?>" width="160" height="160" />
                                 <div class="mb-3">
-                                    <form action="php scripts/change_image.php" method="post" enctype="multipart/form-data">
+                                    <form action="php-scripts/change_image.php" method="post" enctype="multipart/form-data">
                                         <label for="Ícono">Carga tu nueva imagen</label>
                                         <style>
                                             .input-label {
@@ -348,7 +348,7 @@ $fechaPredeterminada = date("Y-m-d"); // Fecha actual
                                         <p class="text-primary m-0 fw-bold">Configuración de usuario</p>
                                     </div>
                                     <div class="card-body">
-                                        <form method="post" action="php scripts/save-account-changes.php">
+                                        <form method="post" action="php-scripts/save-account-changes.php">
                                             <div class="row">
                                                 <div class="col">
                                                     <div class="mb-3">

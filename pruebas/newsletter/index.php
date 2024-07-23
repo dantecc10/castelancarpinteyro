@@ -5,7 +5,7 @@ function send()
     header("Location: envío.php");
 }
 
-include "../../php scripts/dynamicSecrets.php";
+include "../../php-scripts/dynamicSecrets.php";
 $data = generatePasskey('sql');
 
 $conn = new mysqli("localhost", $data[0], $data[1], $data[2]);

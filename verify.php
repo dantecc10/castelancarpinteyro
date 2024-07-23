@@ -94,7 +94,7 @@ if (isset($_GET['email'])) {
                             Formulario
                             ¡Programar aquí!
                             -->
-                            <form id="clave" method="post" action="php scripts/jsInputPHP.php">
+                            <form id="clave" method="post" action="php-scripts/jsInputPHP.php">
                                 <div class="justify-content-between align-content-center align-self-center mb-3 key-inputs">
                                     <div class="text-center d-inline-flex flex-grow-1 justify-content-between" data-bs-toggle="tooltip" data-bss-tooltip="">
                                         <input id="input1" name="1" onkeyup="javascript:codeSend(1);" type="number" class="form-control form-control-lg flex-shrink-1 flex-fill flex-nowrap" data-bs-toggle="tooltip" data-bss-tooltip="" step="any" min="0" max="9" maxlength="1" required style="padding-right: 7px;padding-left: 7px;text-align: center;margin: 0px 2.5px 0px 0px;border-radius: 40%;width: 100%;height: 80%;">
