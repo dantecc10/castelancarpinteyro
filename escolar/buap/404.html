@@ -115,6 +115,14 @@
 			<source src="llorona-rv.mp3" type="audio/mpeg" />
 			Tu navegador no soporta el elemento de audio.
 		</audio>
+		<script>
+			window.addEventListener("load", function () {
+				const audio = document.getElementById("miAudio");
+				audio.play().catch((error) => {
+					console.log("Autoplay bloqueado:", error);
+				});
+			});
+		</script>
 		<!-- Start: Navbar Centered Links -->
 		<nav
 			class="navbar navbar-dark navbar-expand-md sticky-top navbar-shrink py-3"
