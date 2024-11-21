@@ -13,7 +13,7 @@ if (isset($_GET['url'])) {
         Tu matrícula es: " . $_GET['matricula'] . ". Puedes responder la encuesta aquí: " . $_GET['url'] . ".");
         $_SESSION['cecyte_link'] = ("https://wa.me/52" . $_GET['mobile'] . "?text=" . urlencode($_GET['proto_text']));
         $_SESSION['cecyte_text'] = $proto_text;
-    }else{
+    } else {
         echo "No es cecyte";
     }
     // Inicializar las opciones del código QR
@@ -77,8 +77,9 @@ if (isset($_GET['url'])) {
     // Redirige a la página que muestra el código QR generado
     if (isset($_SESSION['cecyte_link'])) {
         header("Location: ../generated-qr.php?file=$name&cecyte=true");
+    } else {
+        header("Location: ../generated-qr.php?file=$name");
     }
-    header("Location: ../generated-qr.php?file=$name");
     //echo (var_dump($path));
     //echo (var_dump($name));
     //echo ("<img src='generated-qrs/$name'>");
