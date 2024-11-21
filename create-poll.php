@@ -97,6 +97,7 @@ $_SESSION['cecyte_text'] = $proto_text;
                                 Enviar mensaje por WhatsApp
                             </a>
                         </div>
+                        <br>
                         <?php
                         echo ("<textarea class='form-control' rows='3' readonly>" . $_SESSION['cecyte_text'] . "</textarea>");
                         ?>
