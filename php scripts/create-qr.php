@@ -1,5 +1,4 @@
 <?php
-session_start();
 include_once "../vendor/autoload.php";
 
 use chillerlan\QRCode\{QRCode, QROptions};
@@ -7,6 +6,7 @@ use chillerlan\QRCode\Data\QRMatrix;
 use chillerlan\QRCode\Output\QRGdImagePNG;
 
 if (isset($_GET['url'])) {
+    session_start();
     if ($_GET['cecyte'] != null) {
         echo ("Cecyte");
         $proto_text = ("Hola, " . $_GET['name'] . ". Me comunico del área de Control Escolar de CECyTE Plantel Chignahuapan, con el objetivo de solicitarte de la manera más atenta responder la encuesta de satisfacción para egresados del " . $_GET['group'] . ". Para realizarla, es necesario ingresar con la matrícula y con tu CURP.
