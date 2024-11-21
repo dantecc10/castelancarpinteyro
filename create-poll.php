@@ -2,7 +2,7 @@
 //(!isset($_GET['file'])) ? header("Location: qr-code.php") : $qr_name = $_GET['file'];
 session_start();
 $proto_text = ("Hola, " . $_GET['name'] . ". Me comunico del área de Control Escolar de CECyTE Plantel Chignahuapan, con el objetivo de solicitarte de la manera más atenta responder la encuesta de satisfacción para egresados del " . $_GET['group'] . ". Para realizarla, es necesario ingresar con la matrícula y con tu CURP.
-        Tu matrícula es: " . $_GET['matricula'] . ". Puedes responder la encuesta aquí: " . $_GET['url'] . ".");
+Tu matrícula es: " . $_GET['matricula'] . ". Puedes responder la encuesta aquí: " . $_GET['url'] . ".");
 $_SESSION['cecyte_link'] = ("https://wa.me/52" . $_GET['mobile'] . "?text=" . urlencode($proto_text));
 $_GET['url'] = $_SESSION['cecyte_link'];
 $_SESSION['cecyte_text'] = $proto_text;
@@ -96,57 +96,11 @@ $_SESSION['cecyte_text'] = $proto_text;
                             <a href="<?php echo ($_SESSION['cecyte_link']); ?>">
                                 Enviar mensaje por WhatsApp
                             </a>
-                            <?php
-                            echo ("<textarea class='form-control' rows='3' readonly>" . $_SESSION['cecyte_text'] . "</textarea>");
-                            ?>
                         </div>
+                        <?php
+                        echo ("<textarea class='form-control' rows='3' readonly>" . $_SESSION['cecyte_text'] . "</textarea>");
+                        ?>
                     </div>
-                    <script>
-                        function convertSVGtoPNG() {
-                            var svgUrl = "https://castelancarpinteyro.com/php-scripts/generated-qrs/<?php echo ($qr_name); ?>";
-
-                            // Verificar si se proporcionó una URL válida
-                            if (svgUrl.trim() === "") {
-                                alert("Por favor, introduce una URL válida del archivo SVG.");
-                                return;
-                            }
-
-                            // Crear un elemento <img> para cargar el SVG
-                            var img = document.createElement("img");
-
-                            // Configurar el atributo src con la URL del SVG
-                            img.src = svgUrl;
-                            img.width = 500;
-                            img.height = 500;
-
-
-                            // Manejar el evento onload para ejecutar la conversión y descarga
-                            img.onload = function() {
-                                // Crear un elemento <canvas> para dibujar el SVG
-                                var canvas = document.createElement("canvas");
-                                var context = canvas.getContext("2d");
-
-                                // Establecer el tamaño del canvas para que coincida con el SVG
-                                canvas.width = img.width;
-                                canvas.height = img.height;
-
-                                // Dibujar el SVG en el canvas
-                                context.drawImage(img, 0, 0);
-
-                                // Obtener la URL del canvas como un archivo PNG
-                                var pngUrl = canvas.toDataURL("image/png");
-
-                                // Crear un enlace <a> para descargar el archivo PNG
-                                var downloadLink = document.getElementById("download-button");
-                                downloadLink.href = pngUrl;
-                                downloadLink.download = "generated-qr.png";
-
-                                // Simular un clic en el enlace de descarga para iniciar la descarga
-                                // downloadLink.click();
-                            };
-                        }
-                        convertSVGtoPNG();
-                    </script>
                 </div>
             </div>
         </div><!-- End: Hero Clean Reverse -->
