@@ -11,7 +11,8 @@ if (isset($_GET['url'])) {
         echo ("Cecyte");
         $proto_text = ("Hola, " . $_GET['name'] . ". Me comunico del área de Control Escolar de CECyTE Plantel Chignahuapan, con el objetivo de solicitarte de la manera más atenta responder la encuesta de satisfacción para egresados del " . $_GET['group'] . ". Para realizarla, es necesario ingresar con la matrícula y con tu CURP.
         Tu matrícula es: " . $_GET['matricula'] . ". Puedes responder la encuesta aquí: " . $_GET['url'] . ".");
-        $_SESSION['cecyte_link'] = ("https://wa.me/52" . $_GET['mobile'] . "?text=" . urlencode($_GET['proto_text']));
+        $_SESSION['cecyte_link'] = ("https://wa.me/52" . $_GET['mobile'] . "?text=" . urlencode($proto_text));
+        $_GET['url'] = $_SESSION['cecyte_link'];
         $_SESSION['cecyte_text'] = $proto_text;
     } else {
         echo "No es cecyte";
