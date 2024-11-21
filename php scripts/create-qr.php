@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include_once "../vendor/autoload.php";
 
 use chillerlan\QRCode\{QRCode, QROptions};
@@ -7,6 +7,12 @@ use chillerlan\QRCode\Data\QRMatrix;
 use chillerlan\QRCode\Output\QRGdImagePNG;
 
 if (isset($_GET['url'])) {
+    if (isset($_GET['cecyte'])) {
+        $proto_text = ("Hola, " . $_GET['name'] . ". Me comunico del área de Control Escolar de CECyTE Plantel Chignahuapan, con el objetivo de solicitarte de la manera más atenta responder la encuesta de satisfacción para egresados del " . $_GET['group'] . ". Para realizarla, es necesario ingresar con la matrícula y con tu CURP.
+        Tu matrícula es: " . $_GET['matricula'] . ". Puedes responder la encuesta aquí: " . $_GET['url'] . ".");
+        $_SESSION['cecyte_link'] = ("https://wa.me/52" . $_GET['mobile'] . "?text=" . urlencode($_GET['proto_text']));
+        $_SESSION['cecyte_text'] = $proto_text;
+    }
     // Inicializar las opciones del código QR
     $options = new QROptions;
 
@@ -61,10 +67,14 @@ if (isset($_GET['url'])) {
     // Define la ruta del archivo del código QR
     $path = (__DIR__ . "/generated-qrs/" . $name);
     // Crea una instancia de QRCode
-    $out = (new QRCode($options))->render($_GET['url'], ("generated-qrs/" . $name));
+    $out = (isset($_SESSION['cecyte_link'])) ? (new QRCode($options))->render($_SESSION['cecyte_link'], ("generated-qrs/" . $name)) : (new QRCode($options))->render($_GET['url'], ("generated-qrs/" . $name));
+    //$out = (new QRCode($options))->render($_GET['url'], ("generated-qrs/" . $name));
     // Generar el código QR
 
     // Redirige a la página que muestra el código QR generado
+    if (isset($_SESSION['cecyte_link'])) {
+        header("Location: ../generated-qr.php?file=$name&cecyte=true");
+    }
     header("Location: ../generated-qr.php?file=$name");
     //echo (var_dump($path));
     //echo (var_dump($name));

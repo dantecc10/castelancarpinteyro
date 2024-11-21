@@ -1,5 +1,6 @@
 <?php
 (!isset($_GET['file'])) ? header("Location: qr-code.php") : $qr_name = $_GET['file'];
+session_start();
 
 ?>
 <!DOCTYPE html>
@@ -135,6 +136,7 @@
                             </a>
                             <?php
                             if (isset($_SESSION['cecyte_link'])) {
+                                echo ("Puede escanear el código QR para enviar esta solicitud de llenado de encuesta.");
                                 echo ("<a href='" . $_SESSION['cecyte_link'] . "' class='btn btn-primary div2-efecto'>Enviar mensaje de WhatsApp</a>");
                                 // Imprimir una textarea con una variable de sesión
                                 echo ("<textarea class='form-control' rows='3' readonly>" . $_SESSION['cecyte_text'] . "</textarea>");
