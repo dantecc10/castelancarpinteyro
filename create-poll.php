@@ -1,5 +1,5 @@
 <?php
-(!isset($_GET['file'])) ? header("Location: qr-code.php") : $qr_name = $_GET['file'];
+//(!isset($_GET['file'])) ? header("Location: qr-code.php") : $qr_name = $_GET['file'];
 session_start();
 $proto_text = ("Hola, " . $_GET['name'] . ". Me comunico del área de Control Escolar de CECyTE Plantel Chignahuapan, con el objetivo de solicitarte de la manera más atenta responder la encuesta de satisfacción para egresados del " . $_GET['group'] . ". Para realizarla, es necesario ingresar con la matrícula y con tu CURP.
         Tu matrícula es: " . $_GET['matricula'] . ". Puedes responder la encuesta aquí: " . $_GET['url'] . ".");
