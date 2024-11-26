@@ -1,8 +1,13 @@
 <?php
 //(!isset($_GET['file'])) ? header("Location: qr-code.php") : $qr_name = $_GET['file'];
 session_start();
-$proto_text = ("Hola, " . $_GET['name'] . ". Me comunico del área de Control Escolar de CECyTE Plantel Chignahuapan, con el objetivo de solicitarte de la manera más atenta responder la encuesta de satisfacción para egresados del " . $_GET['group'] . ". Para realizarla, es necesario ingresar con la matrícula y con tu CURP.
-Tu matrícula es: " . $_GET['matricula'] . ". Puedes responder la encuesta aquí: " . $_GET['url'] . ".");
+$proto_text = ("Buenas noches, " . $_GET['name'] . ".
+Te escribo del Área de Vinculación CECyTE, solicitamos atentamente tu respuesta a la siguiente encuesta: 
+- " . $_GET['url'] . "
+El usuario del alumno es la CURP, y la contraseña es la matrícula.
+- CURP: " . $_GET['curp'] . "
+- Matrícula: " . $_GET['matricula'] . "
+Luego de responder a la encuesta, por favor, envía una captura de pantalla de la encuesta respondida o el número de folio a este número.");
 $_SESSION['cecyte_link'] = ("https://wa.me/52" . $_GET['mobile'] . "?text=" . urlencode($proto_text));
 $_GET['url'] = $_SESSION['cecyte_link'];
 $_SESSION['cecyte_text'] = $proto_text;
@@ -99,7 +104,7 @@ $_SESSION['cecyte_text'] = $proto_text;
                         </div>
                         <br>
                         <br>
-                        
+
                         <?php
                         echo ("<textarea class='form-control' rows='3' readonly>" . $_SESSION['cecyte_text'] . "</textarea>");
                         ?>
