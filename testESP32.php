@@ -1,5 +1,5 @@
 <?php
-require_once('php-scripts/dynamicMailSettings.php');   // Importa tu archivo con setMailParameters()
+include ('php-scripts/dynamicMailSettings.php');   // Importa tu archivo con setMailParameters()
 
 try {
     // Obtiene un PHPMailer ya configurado según tu función
