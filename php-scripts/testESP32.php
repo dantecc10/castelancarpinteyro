@@ -118,30 +118,46 @@ $ts = date('Y-m-d H:i:s');
         echo '<p><strong>Excepción al enviar:</strong> ' . htmlspecialchars($e->getMessage(), ENT_QUOTES, 'UTF-8') . '</p>';
     }
 
-    // Enviar también por WebSocket al servidor local (para visualización en tiempo real)
-    // Configurable vía env: WS_FORWARD_HOST, WS_FORWARD_PORT, WS_FORWARD_PATH
+    // Enviar también por WebSocket al servidor (para visualización en tiempo real)
+    // Configurable vía env: WS_FORWARD_SCHEME (ws|wss), WS_FORWARD_HOST, WS_FORWARD_PORT, WS_FORWARD_PATH
+    $wsScheme = getenv('WS_FORWARD_SCHEME') ?: 'ws';
     $wsHost = getenv('WS_FORWARD_HOST') ?: '127.0.0.1';
-    $wsPort = getenv('WS_FORWARD_PORT') ?: 8080;
+    $wsPort = getenv('WS_FORWARD_PORT') ?: ($wsScheme === 'wss' ? 443 : 8080);
     $wsPath = getenv('WS_FORWARD_PATH') ?: '/';
+    $wsVerify = getenv('WS_FORWARD_VERIFY') !== '0'; // por defecto true; poner 0 para permitir self-signed
 
     /**
-     * Envia un mensaje de texto simple a un servidor WebSocket (ws://) y cierra.
-     * Implementación mínima: handshake HTTP y envío de un frame enmascarado.
+     * Envia un mensaje de texto simple a un servidor WebSocket (ws:// o wss://) y cierra.
+     * Usa stream_socket_client con contexto SSL cuando se requiere TLS.
      * Devuelve true si el handshake y envío parecen correctos.
      */
-    function send_simple_ws_message($host, $port, $path, $message, &$err = null)
+    function send_simple_ws_message($host, $port, $path, $message, $useTls = false, $verifyPeer = true, &$err = null)
     {
         $errno = 0;
         $errstr = '';
-        $fp = @fsockopen($host, (int)$port, $errno, $errstr, 2);
+
+        $remote = ($useTls ? 'ssl://' : '') . $host . ':' . $port;
+        $contextOptions = [];
+        if ($useTls) {
+            $contextOptions['ssl'] = [
+                'verify_peer' => $verifyPeer,
+                'verify_peer_name' => $verifyPeer,
+                'allow_self_signed' => !$verifyPeer,
+                'SNI_enabled' => true,
+                'peer_name' => $host,
+            ];
+        }
+        $context = stream_context_create($contextOptions);
+
+        $fp = @stream_socket_client($remote, $errno, $errstr, 3, STREAM_CLIENT_CONNECT, $context);
         if (!$fp) {
-            $err = "fsockopen failed: $errstr ($errno)";
+            $err = "stream_socket_client failed: $errstr ($errno)";
             return false;
         }
 
         $key = base64_encode(random_bytes(16));
         $out = "GET " . $path . " HTTP/1.1\r\n";
-        $out .= "Host: " . $host . ":" . $port . "\r\n";
+        $out .= "Host: " . $host . (is_numeric($port) ? ":" . $port : '') . "\r\n";
         $out .= "Upgrade: websocket\r\n";
         $out .= "Connection: Upgrade\r\n";
         $out .= "Sec-WebSocket-Key: $key\r\n";
@@ -150,7 +166,7 @@ $ts = date('Y-m-d H:i:s');
 
         fwrite($fp, $out);
 
-        // Leer respuesta de handshake
+        // Leer respuesta de handshake (headers)
         $response = '';
         while (!feof($fp)) {
             $line = fgets($fp);
@@ -204,18 +220,15 @@ $ts = date('Y-m-d H:i:s');
     }
     $json = json_encode($payload);
 
+    $useTls = strtolower($wsScheme) === 'wss';
     $wsErr = null;
-    if (send_simple_ws_message($wsHost, $wsPort, $wsPath, $json, $wsErr)) {
-        echo '<p><strong>Enviado por WebSocket a ' . htmlspecialchars($wsHost . ':' . $wsPort . $wsPath, ENT_QUOTES, 'UTF-8') . '.</strong></p>';
+    if (send_simple_ws_message($wsHost, $wsPort, $wsPath, $json, $useTls, $wsVerify, $wsErr)) {
+        echo '<p><strong>Enviado por WebSocket a ' . htmlspecialchars(($useTls ? 'wss' : 'ws') . '://' . $wsHost . ':' . $wsPort . $wsPath, ENT_QUOTES, 'UTF-8') . '.</strong></p>';
     } else {
         echo '<p><strong>Error enviando por WebSocket:</strong> ' . htmlspecialchars($wsErr ?? 'desconocido', ENT_QUOTES, 'UTF-8') . '</p>';
     }
 
     ?>
-</body>
-
-</html>
-?>
 </body>
 
 </html>
