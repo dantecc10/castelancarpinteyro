@@ -14,7 +14,7 @@ include('dynamicMailSettings.php');   // Importa tu archivo con setMailParameter
 
 include "dynamicSecrets.php";
 
-$data = generatePasskey($turing);
+$data = generatePasskey('tester');
 
 
 $mail = new PHPMailer;
