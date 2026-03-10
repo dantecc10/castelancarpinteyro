@@ -1,3 +1,7 @@
+<?php
+$onedrive_link = "https://cecytepuebla-my.sharepoint.com/:f:/g/personal/d_castelanc_chg_2023_cecytepuebla_edu_mx/IgCHnRfBkHsjRqE0x9RFhQeQAdK6kKWhqruOnAsNA187PeM?e=dmpo7c";
+?>
+
 <!DOCTYPE html>
 <html lang="es-MX">
 
@@ -82,7 +86,7 @@
                     <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">¿Qué tal? Soy Dante Castelán Carpinteyro; y en este sitio web podrás tener acceso gratuito a una amplia gama de programas y software tanto para ser más productivo en la computadora; como para comenzar en programación o divertirte jugando.</span><br></p>
                     <p class="sangría" style="text-align: justify;"><span style="background-color: rgba(248, 249, 250, 0);">El software que aquí se encuentra está alojado en un servidor de OneDrive, por lo que es posible que el link caduque y no te permita acceder; en ese caso; contáctame por cualquiera de las vías disponibles en la parte inferior de esta página web para que lo genere nuevamente y funcione.</span><br></p>
                     <p class="sangría" style="text-align: justify;">Cabe aclarar, que no todo es legítimo, y es el resultado de una colección de varios años, por lo que deberías ser cauteloso. Si conoces a alguien que necesite algún programa, apoya a <strong><em>Castelán Carpinteyro </em></strong>en la distribución de este link. ¡Compartir y enseñar es aprender y reforzar lo aprendido!</p>
-                    <p class="sangría" style="text-align: justify;"><a href="https://cecytepuebla-my.sharepoint.com/:f:/g/personal/d_castelanc_chg_2023_cecytepuebla_edu_mx/EvE4niWkWDFIgkHzd8jHWnABlPGvV6haf6Wt_7AVo7FHlw?e=LTtqFl" target="_blank">Da click aquí</a> para ir a la carpeta de software.</p>
+                    <p class="sangría" style="text-align: justify;"><a href="<?php echo $onedrive_link; ?>" target="_blank">Da click aquí</a> para ir a la carpeta de software.</p>
                     <p class="sangría" style="text-align: justify;">Recuerda que puedes contribuir con una <a href="https://www.paypal.me/CastelanCarpinteyroD" target="_blank">donación en PayPal</a>; así podremos buscar más software y ponerlo disponible para la comunidad 🤓😎😉.</p>
                 </div>
             </div>
