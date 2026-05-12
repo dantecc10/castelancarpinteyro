@@ -1,5 +1,5 @@
 <?php
-$onedrive_link = "https://cecytepuebla-my.sharepoint.com/:f:/g/personal/d_castelanc_chg_2023_cecytepuebla_edu_mx/IgCHnRfBkHsjRqE0x9RFhQeQAdK6kKWhqruOnAsNA187PeM?e=dmpo7c";
+$onedrive_link = "https://cecytepuebla-my.sharepoint.com/:f:/g/personal/d_castelanc_chg_2023_cecytepuebla_edu_mx/IgCHnRfBkHsjRqE0x9RFhQeQASaGjfE86RWz2wczYWGEf7I?e=zOrDXE";
 ?>
 
 <!DOCTYPE html>
